@@ -1,0 +1,10 @@
+.font-poppins{
+  font-family: "Poppins", sans-serif;
+}
+.clip-image {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+
+.clip-left-triangle {
+  clip-path: polygon(0 100%, 100% 100%, 0 0);
+}
