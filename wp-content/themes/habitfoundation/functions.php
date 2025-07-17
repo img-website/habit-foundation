@@ -36,40 +36,70 @@ function habit_custom_header_shortcode() {
 
         <nav class="flex justify-center mx-auto">
           <ul class="lg:flex items-center hidden space-x-10">
-            <li><a href="#" class="text-[#262525] xl:text-sm lg:text-xs text-sm !leading-6 font-medium hover:text-black">About Us</a></li>
-            <li><a href="#" class="text-[#262525] xl:text-sm lg:text-xs text-sm !leading-6 font-medium hover:text-black">Focus</a></li>
-            <li><a href="#" class="text-[#262525] xl:text-sm lg:text-xs text-sm !leading-6 font-medium hover:text-black">Benefits</a></li>
-            <li><a href="#" class="text-[#262525] xl:text-sm lg:text-xs text-sm !leading-6 font-medium hover:text-black">Events</a></li>
-            <li><a href="#" class="text-[#262525] xl:text-sm lg:text-xs text-sm !leading-6 font-medium hover:text-black">Contact Us</a></li>
+          <li>
+          <a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              before:content-[''] before:absolute before:-bottom-2 before:right-0 
+              before:h-[3px] before:w-full before:bg-[#bf4b50] 
+              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
+              hover:before:scale-x-100 hover:before:origin-top-left duration-300">
+              About Us
+          </a>
+          </li>  
+            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              before:content-[''] before:absolute before:-bottom-2 before:right-0 
+              before:h-[3px] before:w-full before:bg-[#bf4b50] 
+              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
+              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Focus</a></li>
+
+            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              before:content-[''] before:absolute before:-bottom-2 before:right-0 
+              before:h-[3px] before:w-full before:bg-[#bf4b50] 
+              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
+              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Benefits</a></li>
+
+            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              before:content-[''] before:absolute before:-bottom-2 before:right-0 
+              before:h-[3px] before:w-full before:bg-[#bf4b50] 
+              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
+              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Events</a></li>
+
+            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              before:content-[''] before:absolute before:-bottom-2 before:right-0 
+              before:h-[3px] before:w-full before:bg-[#bf4b50] 
+              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
+              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Contact Us</a></li>
           </ul>
         </nav>
-        <ul class="lg:flex flex-col items-end hidden justify-center pe-12 gap-2">
-          <li class="flex items-center gap-2">
-            <svg class="flex items-center w-8 h-8 text-white bg-[#323131] p-[7px] rounded-full" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-            <a href="mailto:info@habitfoundation.in" class="text-[#262525] text-sm font-medium hover:underline">
-              Email: info@habitfoundation.in
+        <ul class="lg:flex flex-col items-end hidden justify-center gap-1">
+          <li class="flex items-center gap-2 py-2 px-4 rounded-sm">
+            <div class="flex items-center text-black rounded-full ">
+              <svg class="w-8 h-8 bg-gradient-to-r from-[#BF4B50] to-[#1A2C38] p-[7px] text-white rounded-xl" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M13 19h-8a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v6"></path><path d="M3 7l9 6l9 -6"></path><path d="M16 22l5 -5"></path><path d="M21 21.5v-4.5h-4.5"></path></svg>
+            </div>
+            <a href="mailto:info@habitfoundation.in" class="text-black text-base font-medium hover:underline">
+              info@habitfoundation.in
             </a>
           </li>
 
-          <li class="flex items-center gap-2">
-            <svg class="flex items-center w-8 h-8 text-white bg-[#323131] p-[7px] rounded-full" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <li class="flex items-center gap-2 flex items-center py-2 px-4 rounded-sm">
+            <div class="flex items-center gap-3 text-black">
+            <svg class="w-8 h-8 bg-gradient-to-r from-[#BF4B50] to-[#1A2C38] p-[7px] text-white rounded-xl" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2c-3.03 0-5.89-1.17-8.63-3.07a19.5 19.5 0 0 1-6-6C4.2 11.1 3 8.23 3 5.2A2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.15.96.4 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.3 1.85.55 2.81.7a2 2 0 0 1 1.71 1.91z"/>
             </svg>
-            <a href="tel:+918591962429" class="text-[#262525] text-sm font-medium hover:underline">
-              Mob: +91-8591962429
+            <svg class="w-8 h-8 bg-gradient-to-r from-[#BF4B50] to-[#1A2C38] p-[7px] text-white rounded-xl" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M414.73 97.1A222.14 222.14 0 0 0 256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0 0 29.78 111L32 480l118.25-30.87a223.63 223.63 0 0 0 106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 0 0 414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 0 1-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0 1 71.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 0 1 185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 0 0-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0 0 31.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"></path></svg>
+            </div>
+            <a href="tel:+918591962429" class="text-black text-base font-medium hover:underline">
+              +91-8591962429
             </a>
           </li>
         </ul>
-
+      <!-- 
         <div class="lg:flex items-end justify-end space-x-4 hidden">
           <button id="openDrawer" class="focus:outline-none *:size-12 absolute bg-[#bf4b50] text-white top-0 right-0 h-full w-20 flex items-center justify-center">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path>
             </svg>
           </button>
-        </div>
+        </div> -->
         
         <div class="flex items-end space-x-4">
           <button id="menuToggle" class="lg:hidden p-2 focus:outline-none z-50 absolute lg:*:size-12 *:size-7 bg-[#bf4b50] text-white h-full w-14 flex items-center justify-center top-0 right-0">
@@ -97,7 +127,7 @@ function habit_custom_header_shortcode() {
         </ul>
       </div>
 
-      <div id="offCanvas" class="fixed top-0 right-0 w-96 h-full bg-black shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+      <!-- <div id="offCanvas" class="fixed top-0 right-0 w-96 h-full bg-black shadow-lg transform translate-x-full transition-transform duration-300 z-50">
         <div class="py-4 px-3 flex justify-between items-end border-b border-gray-700">
           <button id="closeDrawer" class="text-xl font-bold text-white">&times;</button>
         </div>
@@ -128,7 +158,7 @@ function habit_custom_header_shortcode() {
                 </a>
             </div>
         </div>
-      </div>
+      </div> -->
 
       <div id="drawerOverlay" class="fixed inset-0 bg-black bg-opacity-20 hidden z-30"></div>
     </header>
@@ -273,3 +303,9 @@ function habit_footer_shortcode() {
   return ob_get_clean();
 }
 add_shortcode('habit_footer', 'habit_footer_shortcode');
+
+function enqueue_swiper_assets() {
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');

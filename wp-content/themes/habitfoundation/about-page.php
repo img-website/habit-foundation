@@ -25,33 +25,213 @@ get_header();
   </div>
 </section>
 
-<section class="w-full bg-white relative lg:pb-16 md:py-8 py-6">
+<section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <?php for ($i = 1; $i <= 4; $i++): ?>
-          <?php
-            $image = get_field("person_{$i}_image");
-            $name = get_field("person_{$i}_name");
-            $position = get_field("person_{$i}_position");
-            $organization = get_field("person_{$i}_organization");
-          ?>
-          <?php if ($image || $name || $position || $organization): ?>
-            <div class="text-center">
-              <?php if ($image): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($name); ?>" class="rounded-xl w-full h-auto object-cover mb-4" />
-              <?php endif; ?>
-              <?php if ($name): ?>
-                <h3 class="font-semibold text-lg text-[#111827]"><?php echo esc_html($name); ?></h3>
-              <?php endif; ?>
-              <?php if ($position): ?>
-                <p class="text-gray-500 font-semibold"><?php echo esc_html($position); ?></p>
-              <?php endif; ?>
-              <?php if ($organization): ?>
-                <p class="text-gray-500 text-sm"><?php echo esc_html($organization); ?></p>
-              <?php endif; ?>
-            </div>
+     <div class="w-full flex flex-col">
+          <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+            <?php the_field('director_sec_badge'); ?>
+          </span>
+          <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+            <?php the_field('director_sec_heading'); ?>
+          </h2>
+      </div>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 py-6">
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+        <?php $img1 = get_field('director_1_image'); ?>
+        <?php if ($img1): ?>
+          <div class="py-2 px-2 w-full">
+            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('director_1_name')); ?>" alt="Shri Baldev Boolani" title="Shri Baldev Boolani" width="420" height="320" class="size-full object-cover rounded-md">
+          </div>
           <?php endif; ?>
-        <?php endfor; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('director_1_name'); ?></h4>
+          </div>
+      </div>
+      
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+        <?php $img2 = get_field('director_2_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('director_2_name')); ?>" alt="Shri Rajesh Gehani" title="Shri Rajesh Gehani" width="420" height="320" class="size-full object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('director_2_name'); ?></h4>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+        <?php $img2 = get_field('director_3_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('director_3_name')); ?>" alt="Shri Rajesh Gehani" title="Shri Rajesh Gehani" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('director_3_name'); ?></h4>
+          </div>
+      </div>
+      
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('director_4_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('director_4_name')); ?>"  title="<?php echo esc_attr(get_field('director_4_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('director_4_name'); ?></h4>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('director_5_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('director_5_name')); ?>"  title="<?php echo esc_attr(get_field('director_5_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('director_5_name'); ?></h4>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('director_6_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('director_6_name')); ?>" title="<?php echo esc_attr(get_field('director_6_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('director_6_name'); ?></h4>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="w-full bg-[#f6f5f2] relative lg:py-6 md:py-4">
+  <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
+     <div class="w-full flex flex-col">
+          <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+            <?php the_field('leadership_team_sec_badge'); ?>
+          </span>
+          <h2 class="lg:text-3xl md:text-2xl text-xl lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+            <?php the_field('leadership_team_sec_heading'); ?>
+          </h2>
+      </div>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 py-6">
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+        <?php $img1 = get_field('leadership_team_1_image'); ?>
+        <?php if ($img1): ?>
+          <div class="py-2 px-2 w-full">
+            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('leadership_team_1_name')); ?>" title="<?php echo esc_attr(get_field('leadership_team_1_name')); ?>i" width="420" height="320" class="size-full object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_1_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_1_designation'); ?></p>
+          </div>
+      </div>
+      
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+        <?php $img2 = get_field('leadership_team_2_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('leadership_team_2_name')); ?>"  title="<?php echo esc_attr(get_field('leadership_team_2_name')); ?>" width="420" height="320" class="size-full object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_2_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_2_designation'); ?>
+            </p>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+        <?php $img2 = get_field('leadership_team_3_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('leadership_team_3_name')); ?>" title="<?php echo esc_attr(get_field('leadership_team_3_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_3_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_3_designation'); ?></p>
+          </div>
+      </div>
+      
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('leadership_team_4_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('leadership_team_4_name')); ?>"  title="<?php echo esc_attr(get_field('leadership_team_4_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_4_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_4_designation'); ?>
+            </p>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('leadership_team_5_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" alt="<?php echo esc_attr(get_field('leadership_team_5_name')); ?>"  title="<?php echo esc_attr(get_field('leadership_team_5_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_5_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_5_designation'); ?></p>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('leadership_team_6_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" 
+              alt="<?php echo esc_attr(get_field('leadership_team_6_name')); ?>" title="<?php echo esc_attr(get_field('leadership_team_6_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_6_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_6_designation'); ?></p>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('leadership_team_7_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" 
+              alt="<?php echo esc_attr(get_field('leadership_team_7_name')); ?>" title="<?php echo esc_attr(get_field('leadership_team_7_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_7_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_7_designation'); ?></p>
+          </div>
+      </div>
+
+      <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+        <?php $img2 = get_field('leadership_team_8_image'); ?>
+        <?php if ($img2): ?>
+          <div class="py-2 px-2 w-full h-[270px]">
+              <img src="<?php echo esc_url($img2['url']); ?>" 
+              alt="<?php echo esc_attr(get_field('leadership_team_8_name')); ?>" title="<?php echo esc_attr(get_field('leadership_team_8_name')); ?>" width="420" height="320" class="size-full object-top object-cover rounded-md">
+          </div>
+          <?php endif; ?>
+          <div class="flex flex-col gap-y-1 px-4 py-4">
+            <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]"><?php the_field('leadership_team_8_name'); ?></h4>
+            <p class="font-medium text-gray-800 lg:text-base text-sm"><?php the_field('leadership_team_8_designation'); ?></p>
+          </div>
+      </div>
+
     </div>
   </div>
 </section>

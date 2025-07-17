@@ -37,8 +37,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
     </div>
 
     <div class="lg:w-3/5 w-full flex flex-col">
-      <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
-        <?php the_field('company_badge'); ?>
+      <span class=" text-sm font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+          <?php the_field('company_badge'); ?>
       </span>
       <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal font-semibold text-[#2a1313] mb-4">
         <?php the_field('company_heading'); ?>
@@ -49,8 +49,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
           <img src="<?php echo esc_url($img['url']); ?>" alt="Company" title="Company" width="477" height="414" class="w-full rounded-md">
         <?php endif; ?>
       </div>
-      <p class="font-normal md:text-sm text-xs text-[#606060] !leading-7 lg:mb-6 mb-4"><?php the_field('company_mission'); ?></p>
-      <p class="font-normal md:text-sm text-xs text-[#606060] !leading-7 lg:mb-6 mb-4"><?php the_field('company_mission2'); ?></p>
+      <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4"><?php the_field('company_mission'); ?></p>
+      <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4"><?php the_field('company_mission2'); ?></p>
 
       <a href="<?php the_field('about_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
         <?php the_field('about_btn_text'); ?>
@@ -67,7 +67,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="w-full flex flex-wrap lg:flex-nowrap items-center lg:gap-x-10 gap-6 relative">
       <div class="lg:w-3/5 w-full flex flex-col">
-        <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+        <span class="text-sm font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
         <?php the_field('mission_badge'); ?>
       </span>
       <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal font-semibold text-[#2a1313] mb-4">
@@ -79,7 +79,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
           <img src="<?php echo esc_url($img['url']); ?>" alt="Our Mission" title="Our Mission" width="477" height="293" class="w-full rounded-md">
         <?php endif; ?>
       </div>
-      <p class="font-normal md:text-sm text-xs text-[#606060] !leading-7 lg:mb-6 mb-4"><?php the_field('mission_desc'); ?></p>
+      <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4"><?php the_field('mission_desc'); ?></p>
       
       </div>
       <div class="lg:w-2/5 w-full lg:flex flex-col hidden">
@@ -103,7 +103,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <?php endif; ?>
       </div>
       <div class="lg:w-3/5 w-full flex flex-col">
-        <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+        <span class="text-sm font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit  lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
         <?php the_field('vision_badge'); ?>
       </span>
       <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal font-semibold text-[#2a1313] mb-4">
@@ -115,7 +115,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
           <img src="<?php echo esc_url($img['url']); ?>" alt="Our Vision" title="Our Vision" width="477" height="293" class="w-full rounded-md">
         <?php endif; ?>
       </div>
-      <p class="font-normal md:text-sm text-xs text-[#606060] !leading-7 lg:mb-6 mb-4"><?php the_field('vision_desc'); ?></p>
+      <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4"><?php the_field('vision_desc'); ?></p>
       
       </div>
     </div>
@@ -124,7 +124,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
 <!-- <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
   <div class="max-w-7xl mx-auto px-4 lg:px-6">
-    <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+    <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-base font-normal mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
       <?php the_field('poster_sec_badge'); ?>
     </span>
     <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
@@ -233,24 +233,90 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
 <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
   <div class="max-w-7xl mx-auto px-4 lg:px-6">
-    
-    <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+    <div class="w-full flex flex-col">
+    <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
       <?php the_field('poster_sec_badge'); ?>
     </span>
 
     <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
       <?php the_field('poster_sec_heading'); ?>
     </h2>
+    </div>
 
     <div class="flex flex-wrap lg:flex-nowrap lg:gap-6 gap-4">
       
-      <div class="lg:w-1/3 bg-white border py-6 px-6 rounded-md w-full shadow-md flex flex-col items-start gap-3">
-        <?php $event_img = get_field('event_image'); ?>
-        <?php if ($event_img): ?>
-          <div class="w-full justify-center hidden lg:flex">
-            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+      <div class="swiper NewSwiper lg:w-1/3 bg-white border py-6 px-4 rounded-md w-full shadow-md flex flex-col items-start gap-3">
+        <div class="swiper-wrapper lg:h-auto lg:h-auto"> 
+          <div class="swiper-slide w-full  justify-center">
+              <?php $event_img = get_field('event_image'); ?>
+              <?php if ($event_img): ?> 
+              <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+              </div>
+              <?php endif; ?>
           </div>
-        <?php endif; ?>
+       
+           <div class="swiper-slide w-full  justify-center"> 
+            <?php $event_img = get_field('event_image_1'); ?>
+              <?php if ($event_img): ?> 
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+          
+          <div class="swiper-slide w-full  justify-center"> 
+            <?php $event_img = get_field('event_image_2'); ?>
+              <?php if ($event_img): ?> 
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+
+          <div class="swiper-slide w-full  justify-center"> 
+            <?php $event_img = get_field('event_image_3'); ?>
+              <?php if ($event_img): ?> 
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+            <div class="swiper-slide w-full  justify-center"> 
+            <?php $event_img = get_field('event_image_4'); ?>
+              <?php if ($event_img): ?> 
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+            <div class="swiper-slide w-full  justify-center"> 
+            <?php $event_img = get_field('event_image_5'); ?>
+              <?php if ($event_img): ?> 
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+            <div class="swiper-slide w-full  justify-center"> 
+            <?php $event_img = get_field('event_image_6'); ?>
+              <?php if ($event_img): ?> 
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+              <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+        </div>
+         <div class="absolute top-[7rem] -translate-y-1/2 left-0 z-10">
+          <button class="swiper-button-prev-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg ml-4">
+            ←
+          </button>
+        </div>
+        <div class="absolute top-[7rem] -translate-y-1/2 right-0 z-10">
+          <button class="swiper-button-next-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg mr-4">
+            →
+          </button>
+        </div>
 
         <?php if (get_field('event_heading')): ?>
           <h2 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]"><?php the_field('event_heading'); ?></h2>
@@ -263,7 +329,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <?php endif; ?>
 
         <?php if (get_field('event_desc')): ?>
-          <p class="font-normal text-[#606060] w-full md:text-sm text-xs !leading-7 line-clamp-6"><?php the_field('event_desc'); ?></p>
+          <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow line-clamp-6"><?php the_field('event_desc'); ?></p>
         <?php endif; ?>
 
         <a href="<?php the_field('event_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 ps-4 pe-2 lg:ps-6 lg:pe-3 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
@@ -274,13 +340,65 @@ echo do_shortcode('[smartslider3 slider="2"]');
         </a>
       </div>
 
-      <div class="lg:w-1/3 bg-white border py-6 px-6 rounded-md w-full shadow-md flex flex-col items-start gap-3">
-        <?php $orientation_image = get_field('orientation_image'); ?>
-        <?php if ($orientation_image): ?>
-          <div class="w-full justify-center hidden lg:flex">
-            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientation Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+      <div class="swiper NewSwiper lg:w-1/3 bg-white border py-6 px-4 rounded-md w-full shadow-md flex flex-col items-start gap-3">
+        
+         <div class="swiper-wrapper lg:h-auto"> 
+          <div class="swiper-slide w-full  justify-center">
+                <?php $orientation_image = get_field('orientation_image'); ?>
+                  <?php if ($orientation_image): ?>
+                    <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                      <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientation Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                    </div>
+                  <?php endif; ?>
           </div>
-        <?php endif; ?>
+       
+            <div class="swiper-slide w-full  justify-center"> 
+              <?php $orientation_image_2 = get_field('orientation_image_2'); ?>
+              <?php if ($orientation_image_2): ?>
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                  <img src="<?php echo esc_url($orientation_image_2['url']); ?>" alt="Orientation Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+          
+            <div class="swiper-slide w-full  justify-center"> 
+              <?php $orientation_image_3 = get_field('orientation_image_3'); ?>
+                <?php if ($orientation_image_3): ?>
+                  <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                    <img src="<?php echo esc_url($orientation_image_3['url']); ?>" alt="Orientation Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                  </div>
+                <?php endif; ?>
+            </div>
+
+          <div class="swiper-slide w-full  justify-center"> 
+            <?php $orientation_image_4 = get_field('orientation_image_4'); ?>
+              <?php if ($orientation_image_4): ?>
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                  <img src="<?php echo esc_url($orientation_image_4['url']); ?>" alt="Orientation Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+            <div class="swiper-slide w-full  justify-center"> 
+              <?php $orientation_image_5 = get_field('orientation_image_5'); ?>
+              <?php if ($orientation_image_5): ?>
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                  <img src="<?php echo esc_url($orientation_image_5['url']); ?>" alt="Orientation Image" width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+        </div>
+        <div class="absolute top-[7rem] -translate-y-1/2 left-0 z-10">
+          <button class="swiper-button-prev-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg ml-4">
+            ←
+          </button>
+        </div>
+        <div class="absolute top-[7rem] -translate-y-1/2 right-0 z-10">
+          <button class="swiper-button-next-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg mr-4">
+            →
+          </button>
+        </div>
+       
+    
 
         <?php if (get_field('orientation_heading')): ?>
           <h2 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]"><?php the_field('orientation_heading'); ?></h2>
@@ -292,7 +410,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
           </div>
         <?php endif; ?>
 
-        <p class="font-normal w-full md:text-sm text-xs text-[#606060] !leading-7 line-clamp-6"><?php the_field('orientation_desc'); ?></p>
+        <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow line-clamp-6"><?php the_field('orientation_desc'); ?></p>
 
         <a href="<?php the_field('orientation_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 ps-4 pe-2 lg:ps-6 lg:pe-3 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
           <?php the_field('orientation_btn_text'); ?>
@@ -302,14 +420,55 @@ echo do_shortcode('[smartslider3 slider="2"]');
         </a>
       </div>
 
-     <div class="lg:w-1/3 bg-white border py-6 px-6 rounded-md w-full shadow-md flex flex-col items-start gap-3">
-        <?php $patent_image = get_field('patent_image'); ?>
-        <?php if ($patent_image): ?>
-          <div class="w-full justify-center hidden lg:flex">
-            <img src="<?php echo esc_url($patent_image['url']); ?>" alt="Patent Image"  width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+      <div class="swiper NewSwiper lg:w-1/3 bg-white border py-6 px-4 rounded-md w-full shadow-md flex flex-col items-start gap-3">
+        <div class="swiper-wrapper lg:h-auto"> 
+          <div class="swiper-slide w-full justify-center">
+                <?php $patent_image = get_field('patent_image'); ?>
+                <?php if ($patent_image): ?>
+                  <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                    <img src="<?php echo esc_url($patent_image['url']); ?>" alt="Patent Image"  width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                  </div>
+                <?php endif; ?>
           </div>
-        <?php endif; ?>
 
+            <div class="swiper-slide w-full  justify-center"> 
+              <?php $patent_image_1 = get_field('patent_image_1'); ?>
+              <?php if ($patent_image_1): ?>
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                  <img src="<?php echo esc_url($patent_image_1['url']); ?>" alt="Patent Image"  width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+          
+            <div class="swiper-slide w-full  justify-center"> 
+              <?php $patent_image_2 = get_field('patent_image_2'); ?>
+              <?php if ($patent_image_2): ?>
+                <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                  <img src="<?php echo esc_url($patent_image_2['url']); ?>" alt="Patent Image"  width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+                </div>
+              <?php endif; ?>
+            </div>
+
+          <div class="swiper-slide w-full  justify-center"> 
+            <?php $patent_image_3 = get_field('patent_image_3'); ?>
+            <?php if ($patent_image_3): ?>
+              <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
+                <img src="<?php echo esc_url($patent_image_3['url']); ?>" alt="Patent Image"  width="395" height="170" class="w-full h-full object-cover rounded-md shadow" />
+              </div>
+            <?php endif; ?>
+          </div>
+        
+        </div>
+        <div class="absolute top-[7rem] -translate-y-1/2 left-0 z-10">
+          <button class="swiper-button-prev-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg ml-4">
+            ←
+          </button>
+        </div>
+        <div class="absolute top-[7rem] -translate-y-1/2 right-0 z-10">
+          <button class="swiper-button-next-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg mr-4">
+            →
+          </button>
+        </div>
         <?php if (get_field('patent_heading')): ?>
           <h2 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]">
             <?php the_field('patent_heading'); ?>
@@ -323,7 +482,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <?php endif; ?>
 
         <?php if (get_field('patent_desc')): ?>
-          <p class="font-normal w-full md:text-sm text-xs text-[#606060] !leading-7 line-clamp-6">
+          <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow line-clamp-6">
             <?php the_field('patent_desc'); ?>
           </p>
         <?php endif; ?>
@@ -343,9 +502,11 @@ echo do_shortcode('[smartslider3 slider="2"]');
 </section>
 
 
+
+
 <section class="w-full relative lg:py-16 md:py-10 py-8">
   <div class="max-w-7xl mx-auto px-4 lg:px-6 flex flex-col justify-center">
-    <span class="text-sm font-medium inline-block text-[#bf4b50] text-center lg:text-lg font-medium mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
+    <span class="text-sm font-medium flex items-center mx-auto inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
       <?php the_field('partners_badge'); ?>
     </span>
 
