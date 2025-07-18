@@ -37,7 +37,7 @@ function habit_custom_header_shortcode() {
         <nav class="flex justify-center mx-auto">
           <ul class="lg:flex items-center hidden space-x-10">
           <li>
-          <a href="http://localhost/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+          <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
               before:h-[3px] before:w-full before:bg-[#bf4b50] 
               before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
@@ -247,7 +247,7 @@ function habit_footer_shortcode() {
       <div class="lg:w-[25%] w-[50%]">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">About HABIT</h3>
         <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
-          <li><a href="http://localhost/habit-foundation/about-us/" class="hover:text-white">About Us</a></li>
+          <li><a href="https://project.imgglobal.in/habit-foundation/about-us/" class="hover:text-white">About Us</a></li>
           <li><a href="#" class="hover:text-white">Focus</a></li>
           <li><a href="#" class="hover:text-white">Benefits</a></li>
           <li><a href="#" class="hover:text-white">Events</a></li>
