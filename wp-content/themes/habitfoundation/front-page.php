@@ -329,7 +329,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <?php endif; ?>
 
         <?php if (get_field('event_desc')): ?>
-          <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow line-clamp-6"><?php the_field('event_desc'); ?></p>
+          <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow "><?php the_field('event_desc'); ?></p>
         <?php endif; ?>
 
         <a href="<?php the_field('event_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 ps-4 pe-2 lg:ps-6 lg:pe-3 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
@@ -410,7 +410,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
           </div>
         <?php endif; ?>
 
-        <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow line-clamp-6"><?php the_field('orientation_desc'); ?></p>
+        <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow "><?php the_field('orientation_desc'); ?></p>
 
         <a href="<?php the_field('orientation_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 ps-4 pe-2 lg:ps-6 lg:pe-3 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
           <?php the_field('orientation_btn_text'); ?>
@@ -482,7 +482,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <?php endif; ?>
 
         <?php if (get_field('patent_desc')): ?>
-          <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow line-clamp-6">
+          <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
             <?php the_field('patent_desc'); ?>
           </p>
         <?php endif; ?>
