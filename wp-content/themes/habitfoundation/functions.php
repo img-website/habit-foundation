@@ -171,7 +171,7 @@ add_shortcode('habit_header', 'habit_custom_header_shortcode');
 function habit_orientation_section_shortcode() {
   ob_start();
   ?>
-  <section class="w-full lg:py-16 md:py-10 py-8 relative overflow-hidden lg:h-96 h-[70vh] w-full bg-cover bg-center" style="background-image: url('https://www.thealternativeboard.co.uk/hubfs/TAB%20UK%20Website/Blog/Business-Owners-Learn-From-Each-Other.jpeg');">
+  <section class="w-full lg:py-16 md:py-10 py-8 relative overflow-hidden lg:h-96 h-[70vh] w-full bg-cover bg-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/Business-Owners-Learn-From-Each-Other.webp');">
     <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
     <div class="max-w-7xl mx-auto px-4 lg:px-6 relative z-20 top-16">
