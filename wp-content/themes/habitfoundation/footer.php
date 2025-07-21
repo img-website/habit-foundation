@@ -53,38 +53,21 @@
   });
 </script>
 
+
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  const tabContents = document.querySelectorAll(".tab-content-new");
-
-  tabButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      // Reset all buttons
-      tabButtons.forEach(btn => {
-        btn.classList.remove("bg-[#bf4b50]", "text-white");
-        btn.classList.add("bg-[#dbdbdb]", "text-[#212121]");
-      });
-
-      // Highlight active button
-      button.classList.add("bg-[#bf4b50]", "text-white");
-      button.classList.remove("bg-[#dbdbdb]", "text-[#212121]");
-
-      // Hide all contents
-      tabContents.forEach(content => content.classList.add("hidden"));
-
-      // Show selected tab
-      const tabId = button.getAttribute("data-tab");
-      const tabToShow = document.getElementById(tabId);
-      if (tabToShow) tabToShow.classList.remove("hidden");
+    var swiper = new Swiper(".NewSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop:true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    navigation: {
+        nextEl: ".swiper-button-prev-custom",
+        prevEl: ".swiper-button-next-custom",
+      },
     });
-  });
-});
-
-</script>
-
-
-
-
+  </script>
 </body>
 </html>

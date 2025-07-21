@@ -113,7 +113,7 @@ get_header();?>
 
 <section class="w-full bg-[#f6f5f2] relative lg:py-6 md:py-4">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
-     <div class="w-full flex flex-col">
+    <div class="w-full flex flex-col">
           <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
             <?php the_field('leadership_team_sec_badge'); ?>
           </span>
