@@ -3,59 +3,68 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const tabs = {
-      product: {
-        tab: document.getElementById("productTab"),
-        content: document.getElementById("productContent"),
-      },
-      service: {
-        tab: document.getElementById("serviceTab"),
-        content: document.getElementById("serviceContent"),
-      },
-    };
+  
+// tabbing 
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = {
+    product: {
+      tab: document.getElementById("productTab"),
+      content: document.getElementById("productContent"),
+    },
+    service: {
+      tab: document.getElementById("serviceTab"),
+      content: document.getElementById("serviceContent"),
+    },
+  };
 
-    function showTab(name) {
-      for (const key in tabs) {
-        const { tab, content } = tabs[key];
-        const isActive = key === name;
+  function showTab(name) {
+    Object.keys(tabs).forEach((key) => {
+      const tab = tabs[key].tab;
+      const content = tabs[key].content;
+      const isActive = key === name;
 
-        // Toggle tab background
-        tab.classList.toggle("bg-[#bf4b50]", isActive);
-        tab.classList.toggle("bg-[#000000]", !isActive);
+      if (!tab || !content) return; // Avoid error if any element is missing
 
-        // Toggle icon and text color inside span.icon-text
-        const iconText = tab.querySelector(".icon-text");
-        if (iconText) {
-          iconText.classList.toggle("text-white", isActive);
-          iconText.classList.toggle("text-[#212121]", !isActive);
-        }
+      // Toggle active tab background color
+      tab.classList.toggle("bg-[#bf4b50]", isActive);
+      tab.classList.toggle("bg-[#000000]", !isActive);
 
-        // Show or hide content
-        if (content) {
-          content.classList.toggle("hidden", !isActive);
-        }
+      // Toggle icon-text color inside tab
+      const iconText = tab.querySelector(".icon-text");
+      if (iconText) {
+        iconText.classList.toggle("text-white", isActive);
+        iconText.classList.toggle("text-[#212121]", !isActive);
       }
 
-      localStorage.setItem("activeTab", name);
-    }
+      // Show or hide tab content
+      content.classList.toggle("hidden", !isActive);
+    });
 
-    // Set click listeners
-    Object.keys(tabs).forEach((key) => {
-      tabs[key].tab.addEventListener("click", (e) => {
+    // Save active tab
+    localStorage.setItem("activeTab", name);
+  }
+
+  // Set click listeners for all tabs
+  Object.keys(tabs).forEach((key) => {
+    const tab = tabs[key].tab;
+    if (tab) {
+      tab.addEventListener("click", (e) => {
         e.preventDefault();
         showTab(key);
       });
-    });
-
-    // Load saved tab or default to product
-    showTab(localStorage.getItem("activeTab") || "product");
+    }
   });
+
+  // Load saved tab or default to "product"
+  const savedTab = localStorage.getItem("activeTab") || "product";
+  showTab(savedTab);
+});
 </script>
 
 
 <script>
-    var swiper = new Swiper(".NewSwiper", {
+// swiper slider js   
+var swiper = new Swiper(".NewSwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
       loop:true,
@@ -68,6 +77,6 @@
         prevEl: ".swiper-button-next-custom",
       },
     });
-  </script>
+</script>
 </body>
 </html>
