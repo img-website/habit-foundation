@@ -92,14 +92,6 @@ function habit_custom_header_shortcode() {
           </li>
           
         </ul>
-      <!-- 
-        <div class="lg:flex items-end justify-end space-x-4 hidden">
-          <button id="openDrawer" class="focus:outline-none *:size-12 absolute bg-[#bf4b50] text-white top-0 right-0 h-full w-20 flex items-center justify-center">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path>
-            </svg>
-          </button>
-        </div> -->
         
         <div class="flex items-end space-x-4">
           <button id="menuToggle" class="lg:hidden p-2 focus:outline-none z-50 absolute lg:*:size-12 *:size-7 bg-[#bf4b50] text-white h-full w-14 flex items-center justify-center top-0 right-0">
