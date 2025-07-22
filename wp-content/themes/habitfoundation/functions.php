@@ -239,7 +239,7 @@ function habit_footer_shortcode() {
       <div class="lg:w-[25%] w-[50%]">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">About HABIT</h3>
         <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
-          <li><a href="http://localhost/habit-foundation/about-us/" class="hover:text-white">About Us</a></li>
+          <li><a href="https://project.imgglobal.in/habit-foundation/about-us/" class="hover:text-white">About Us</a></li>
           <li><a href="#" class="hover:text-white">Focus</a></li>
           <li><a href="#" class="hover:text-white">Benefits</a></li>
           <li><a href="#" class="hover:text-white">Events</a></li>
