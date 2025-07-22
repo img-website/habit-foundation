@@ -282,7 +282,7 @@
               </div>
               <div class="flex items-start gap-2 rounded-lg duration-300 ">
                   <span class="*:size-6 text-gray-800">
-                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path></svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path></svg>
                   </span>
                   <div class="flex flex-col gap-y-1 ">
                     <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium"><?php the_field('product_title_17'); ?></h4>
