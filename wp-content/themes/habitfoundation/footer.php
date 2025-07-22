@@ -64,17 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
 // swiper slider js   
-var swiper = new Swiper(".NewSwiper", {
+    var swiper = new Swiper(".NewSwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
-      loop:true,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    navigation: {
-        nextEl: ".swiper-button-prev-custom",
-        prevEl: ".swiper-button-next-custom",
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-custom",  
+        prevEl: ".swiper-button-prev-custom",  
       },
     });
 </script>

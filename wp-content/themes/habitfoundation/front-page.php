@@ -255,8 +255,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
               </div>
               <?php endif; ?>
           </div>
-       
-           <div class="swiper-slide w-full  justify-center"> 
+
+          <div class="swiper-slide w-full  justify-center"> 
             <?php $event_img = get_field('event_image_1'); ?>
               <?php if ($event_img): ?> 
                 <div class="w-full justify-center lg:h-[12rem] hidden lg:flex">
@@ -307,15 +307,14 @@ echo do_shortcode('[smartslider3 slider="2"]');
               <?php endif; ?>
             </div>
         </div>
-         <div class="absolute top-[7rem] -translate-y-1/2 left-0 z-10">
-          <button class="swiper-button-prev-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg ml-4">
-            ←
-          </button>
+        <div class="absolute top-[7.5rem] -translate-y-1/2 left-[-14px] z-10">
+            <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
+              <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path></svg>          </button>
         </div>
-        <div class="absolute top-[7rem] -translate-y-1/2 right-0 z-10">
-          <button class="swiper-button-next-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg mr-4">
-            →
-          </button>
+        <div class="absolute top-[7.5rem] -translate-y-1/2 right-[-14px] z-10">
+            <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
+              <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+            </button>
         </div>
 
         <?php if (get_field('event_heading')): ?>
@@ -387,19 +386,17 @@ echo do_shortcode('[smartslider3 slider="2"]');
               <?php endif; ?>
             </div>
         </div>
-        <div class="absolute top-[7rem] -translate-y-1/2 left-0 z-10">
-          <button class="swiper-button-prev-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg ml-4">
-            ←
-          </button>
-        </div>
-        <div class="absolute top-[7rem] -translate-y-1/2 right-0 z-10">
-          <button class="swiper-button-next-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg mr-4">
-            →
-          </button>
-        </div>
-       
-    
+        <div class="absolute top-[7.5rem] -translate-y-1/2 left-[-14px] z-10">
+            <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
+              <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path></svg>          </button>
+          </div>
+          <div class="absolute top-[7.5rem] -translate-y-1/2 right-[-14px] z-10">
+            <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
+              <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+            </button>
+          </div>
 
+        
         <?php if (get_field('orientation_heading')): ?>
           <h2 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]"><?php the_field('orientation_heading'); ?></h2>
         <?php endif; ?>
@@ -459,16 +456,15 @@ echo do_shortcode('[smartslider3 slider="2"]');
           </div>
         
         </div>
-        <div class="absolute top-[7rem] -translate-y-1/2 left-0 z-10">
-          <button class="swiper-button-prev-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg ml-4">
-            ←
-          </button>
-        </div>
-        <div class="absolute top-[7rem] -translate-y-1/2 right-0 z-10">
-          <button class="swiper-button-next-custom bg-[#837b7c] text-white px-2 py-1 rounded-full shadow-lg mr-4">
-            →
-          </button>
-        </div>
+        <div class="absolute top-[7.5rem] -translate-y-1/2 left-[-14px] z-10">
+            <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
+              <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path></svg>          </button>
+          </div>
+          <div class="absolute top-[7.5rem] -translate-y-1/2 right-[-14px] z-10">
+            <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
+              <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+            </button>
+          </div>
         <?php if (get_field('patent_heading')): ?>
           <h2 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]">
             <?php the_field('patent_heading'); ?>
