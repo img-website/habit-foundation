@@ -1,6 +1,6 @@
 <?php
 /* Template Name: focus page */get_header();?>
-<section class="relative w-full h-[300px] md:h-[350px] flex items-center">
+<section class="relative w-full h-[250px] flex items-center">
   <?php $bg = get_field('focus_banner_image'); ?>
   <?php if ($bg): ?>
     <div class="absolute inset-0">
@@ -10,12 +10,12 @@
   <?php endif; ?>
 
   <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-    <h2 class="text-white text-4xl md:text-5xl font-bold mb-4">
+    <h2 class="text-white text-4xl md:text-5xl font-bold mb-4 text-center justify-center">
       <?php the_field('focus_main_heading'); ?>
       <span class="text-[lime-500]"><?php the_field('focus_highlight'); ?></span>
     </h2>
 
-    <div class="flex items-center text-white text-sm font-medium space-x-2">
+    <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
       <span class="font-medium inline-block text-[#bf4b50]">—</span>
       <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_focus'); ?></span>
@@ -134,7 +134,7 @@
                 </div>
               <div class="flex items-start gap-2 rounded-lg duration-300 ">
                   <span class="*:size-6 text-gray-800">
-                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path></svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path></svg>
                   </span>
                   <div class="flex flex-col gap-y-1 ">
                     <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium"><?php the_field('product_title_6'); ?></h4>

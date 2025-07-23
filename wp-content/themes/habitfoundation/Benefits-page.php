@@ -1,6 +1,6 @@
 <?php
 /* Template Name: benefits page */get_header();?>
-<section class="relative w-full h-[300px] md:h-[350px] flex items-center">
+<section class="relative w-full h-[250px] flex items-center">
   <?php $bg = get_field('benefits_banner_image'); ?>
   <?php if ($bg): ?>
     <div class="absolute inset-0">
@@ -9,11 +9,11 @@
     </div>
   <?php endif; ?>
   <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-    <h2 class="text-white text-4xl md:text-5xl font-bold mb-4">
+    <h2 class="text-white text-4xl md:text-5xl font-bold mb-4 text-center justify-center">
       <?php the_field('benefits_main_heading'); ?>
       <span class="text-[lime-500]"><?php the_field('benefits_highlight'); ?></span>
     </h2>
-    <div class="flex items-center text-white text-sm font-medium space-x-2">
+    <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
       <span class="font-medium inline-block text-[#bf4b50]">—</span>
       <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_benefits'); ?></span>

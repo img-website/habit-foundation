@@ -36,20 +36,22 @@ function habit_custom_header_shortcode() {
 
         <nav class="flex justify-center mx-auto">
           <ul class="lg:flex items-center hidden space-x-10">
-          <li>
-          <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+            <li>
+              <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+                before:content-[''] before:absolute before:-bottom-2 before:right-0 
+                before:h-[3px] before:w-full before:bg-[#bf4b50] 
+                before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
+                hover:before:scale-x-100 hover:before:origin-top-left duration-300">
+                About Us
+              </a>
+            </li>  
+            <li>
+              <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
               before:h-[3px] before:w-full before:bg-[#bf4b50] 
               before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-              hover:before:scale-x-100 hover:before:origin-top-left duration-300">
-              About Us
-          </a>
-          </li>  
-            <li><a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
-              before:content-[''] before:absolute before:-bottom-2 before:right-0 
-              before:h-[3px] before:w-full before:bg-[#bf4b50] 
-              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Focus</a></li>
+              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Focus</a>
+            </li>
 
             <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
@@ -203,9 +205,9 @@ function habit_footer_shortcode() {
 
   <footer class="w-full relative lg:pt-16 lg:pb-4 md:py-10 py-8 h-full w-full bg-cover bg-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/dark-background.jpg');">
   <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-  <div class="max-w-7xl mx-auto px-4 relative z-20">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 relative z-20">
     <div class="flex flex-row flex-wrap lg:flex-nowrap items-start gap-8">
-      <div class="lg:w-[40%] w-[50%]">
+      <div class="lg:w-2/5 w-full">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">Contact Info</h3>
         <ul class="space-y-3 text-sm/6 text-gray-300 tracking-[0.8px]">
           <li class="inline-flex items-start gap-2">
@@ -214,29 +216,18 @@ function habit_footer_shortcode() {
               Address: VES Trust Office, 1st Floor, <br>  Sindhi Society, Chembur, Mumbai – 400074 <br>
             </div>
           </li>
-          <!-- <li class="inline-flex items-start gap-2">
-           <svg class="w-6 h-6 text-[#bf4b50]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
-            <div class="text-gray-300 text-xs lg:text-[15px] sm:w-2/3 w-full text-start leading-6 whitespace-nowrap">
-            Email Id: info@habitfoundation.in
-            </div>
-          </li> -->
+
           <li class="inline-flex items-start gap-2">
-           <svg class="w-6 h-6 text-[#bf4b50]" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z" fill="currentColor"></path><path d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z" fill="currentColor"></path><path d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z" fill="currentColor"></path><path d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" fill="currentColor"></path></svg>
-            <div class="text-gray-300 text-xs lg:text-[15px] sm:w-2/3 w-full text-start leading-6 whitespace-nowrap"> Website: 
-            <a href="https://habitfoundation.in/" class="text-[#b0c8ff]">
-              https://habitfoundation.in/ </a><br>
-            </div>
-          </li>
-          <!-- <li class="inline-flex items-start gap-2">
-            <svg class="w-6 h-6 text-[#bf4b50]" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <div class="text-gray-300 text-xs lg:text-[15px] sm:w-2/3 w-full text-start leading-6 whitespace-nowrap">
-              Phone:  8591962429
-            </div>
-          </li> -->
+            <svg class="w-6 h-6 text-[#bf4b50]" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z" fill="currentColor"></path><path d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z" fill="currentColor"></path><path d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z" fill="currentColor"></path><path d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" fill="currentColor"></path></svg>
+              <div class="text-gray-300 text-xs lg:text-[15px] sm:w-2/3 w-full text-start leading-6 whitespace-nowrap"> Website: 
+                <a href="https://habitfoundation.in/" class="text-[#b0c8ff]">
+                https://habitfoundation.in/ </a><br>
+              </div>
+          </li> 
         </ul>
       </div>
 
-      <div class="lg:w-[25%] w-[50%]">
+      <div class="lg:w-1/4 md:w-1/2 w-full">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">About HABIT</h3>
         <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
           <li><a href="https://project.imgglobal.in/habit-foundation/about-us/" class="hover:text-white">About Us</a></li>
@@ -247,7 +238,7 @@ function habit_footer_shortcode() {
         </ul>
       </div>
 
-      <div class="lg:w-[30%] w-[50%]">
+      <div class="lg:w-1/4 md:w-1/2 w-full">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">Follow Us On</h3>
           <div class="flex items-center gap-3">
             <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 hover:-translate-y-2 hover:bg-[#a33438]">
@@ -283,7 +274,7 @@ function habit_footer_shortcode() {
 
       </div>
     </div>
-    
+
   </div>
   <div class="mt-6 border-t border-gray-700 text-gray-300 pt-3 text-center text-sm relative z-20">
     &copy; <?php echo date('Y'); ?> HABIT Foundation. All Right Reserved.
