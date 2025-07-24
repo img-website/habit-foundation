@@ -3,7 +3,7 @@
   echo do_shortcode('[smartslider3 slider="2"]');
 ?>
 
-<section class="w-full bg-white relative lg:pb-12 md:py-10 py-8">
+<!-- <section class="w-full bg-white relative lg:pb-12 md:py-10 py-8">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex items-center justify-center lg:-mt-28">
       <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
@@ -25,7 +25,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="w-full bg-white relative lg:py-16 md:py-10 py-8">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
@@ -38,10 +38,10 @@
       </div>
 
     <div class="lg:w-3/5 md:3/5 w-full flex flex-col">
-      <span class=" text-sm font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+      <span class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
           <?php the_field('company_badge'); ?>
       </span>
-      <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal font-semibold text-[#2a1313] mb-4">
+      <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
         <?php the_field('company_heading'); ?>
       </h2>
       <div class="lg:w-2/5 md:2/5 w-full flex flex-col lg:hidden mb-4">
@@ -68,10 +68,10 @@
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-center lg:gap-x-10 gap-6 relative">
       <div class="lg:w-7/12 md:w-7/12 w-full md:flex flex-col">
-        <span class="text-sm font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+        <span class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
           <?php the_field('mission_badge'); ?>
         </span>
-        <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal font-semibold text-[#2a1313] mb-4">
+        <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
           <?php the_field('mission_heading'); ?>
         </h2>
         <div class="lg:w-5/12 md:w-5/12 w-full flex flex-col md:hidden mb-4">
@@ -102,10 +102,10 @@
         <?php endif; ?>
       </div>
       <div class="lg:w-7/12 md:w-7/12 w-full flex flex-col">
-        <span class="text-sm font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit  lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+        <span class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
           <?php the_field('vision_badge'); ?>
         </span>
-        <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal font-semibold text-[#2a1313] mb-4">
+        <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
           <?php the_field('vision_heading'); ?>
         </h2>
         <div class="lg:w-5/12 md:w-5/12 w-full flex flex-col md:hidden mb-4">
@@ -125,7 +125,7 @@
     <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-base font-normal mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
       <?php the_field('poster_sec_badge'); ?>
     </span>
-    <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
     <?php the_field('poster_sec_heading'); ?>   </h2>
     <div class="lg:w-full flex flex-wrap lg:flex-nowrap items-start">
       <div class="lg:w-1/3 w-full flex flex-col flex-wrap lg:flex-nowrap items-start lg:gap-x-10 gap-3 relative">
@@ -232,11 +232,11 @@
 <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
   <div class="max-w-7xl mx-auto px-4 lg:px-6">
     <div class="w-full flex flex-col">
-    <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+    <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
       <?php the_field('poster_sec_badge'); ?>
     </span>
 
-    <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
       <?php the_field('poster_sec_heading'); ?>
     </h2>
     </div>
@@ -494,11 +494,11 @@
 
 <section class="w-full relative lg:py-16 md:py-10 py-8">
   <div class="max-w-7xl mx-auto px-4 lg:px-6 flex flex-col justify-center">
-    <span class="text-sm font-medium flex items-center mx-auto inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full lg:text-base font-normal mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+    <span class="flex items-center mx-auto inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
       <?php the_field('partners_badge'); ?>
     </span>
 
-    <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
       <?php the_field('partners_heading'); ?>
     </h2>
 

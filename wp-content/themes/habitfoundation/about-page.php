@@ -1,7 +1,7 @@
 <?php
 /* Template Name: about page */
 get_header();?>
-<section class="relative w-full h-[250px] flex items-center">
+<section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
   <?php $bg = get_field('about_banner_image'); ?>
   <?php if ($bg): ?>
     <div class="absolute inset-0">
@@ -26,10 +26,10 @@ get_header();?>
 <section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="w-full flex flex-col">
-          <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+          <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
             <?php the_field('director_sec_badge'); ?>
           </span>
-          <h2 class="lg:text-3xl md:text-2xl text-xl !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+          <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
             <?php the_field('director_sec_heading'); ?>
           </h2>
       </div>
@@ -113,10 +113,10 @@ get_header();?>
 <section class="w-full bg-[#f6f5f2] relative lg:py-6 md:py-4">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="w-full flex flex-col">
-          <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
+          <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
             <?php the_field('leadership_team_sec_badge'); ?>
           </span>
-          <h2 class="lg:text-3xl md:text-2xl text-xl lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+          <h2 class="lg:text-2xl md:text-xl text-lg lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
             <?php the_field('leadership_team_sec_heading'); ?>
           </h2>
       </div>
@@ -236,10 +236,10 @@ get_header();?>
 <section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="w-full flex flex-col">
-          <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
+          <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
             <?php the_field('guidelines_sec_badge'); ?>
           </span>
-          <h2 class="lg:text-3xl md:text-2xl text-xl lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+          <h2 class="lg:text-2xl md:text-xl text-lg lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
             <?php the_field('guidelines_sec_heading'); ?>
           </h2>
       </div>

@@ -1,6 +1,6 @@
 <?php
 /* Template Name: events page */get_header();?>
-<section class="relative w-full h-[250px] flex items-center">
+<section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
   <?php $bg = get_field('events_banner_image'); ?>
   <?php if ($bg): ?>
     <div class="absolute inset-0">
@@ -24,10 +24,10 @@
 <section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="w-full flex flex-col">
-        <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+        <!-- <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
           <?php the_field('events_sec_badge'); ?>
-        </span>
-        <h2 class="lg:w-9/12 w-full lg:text-3xl md:text-2xl text-xl mx-auto !leading-normal text-center font-semibold text-[#2a1313] lg:mb-10 mb-4">
+        </span> -->
+        <h2 class="lg:w-9/12 w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold text-[#2a1313] lg:mb-10 mb-4">
           <?php the_field('events_sec_heading'); ?>
         </h2>
     </div>

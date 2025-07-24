@@ -1,6 +1,6 @@
 <?php
 /* Template Name: benefits page */get_header();?>
-<section class="relative w-full h-[250px] flex items-center">
+<section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
   <?php $bg = get_field('benefits_banner_image'); ?>
   <?php if ($bg): ?>
     <div class="absolute inset-0">
