@@ -38,7 +38,7 @@
       </div>
 
     <div class="lg:w-3/5 md:3/5 w-full flex flex-col">
-      <span class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+      <span class="flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
           <?php the_field('company_badge'); ?>
       </span>
       <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
@@ -68,7 +68,7 @@
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-center lg:gap-x-10 gap-6 relative">
       <div class="lg:w-7/12 md:w-7/12 w-full md:flex flex-col">
-        <span class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+        <span class="flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
           <?php the_field('mission_badge'); ?>
         </span>
         <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
@@ -102,7 +102,7 @@
         <?php endif; ?>
       </div>
       <div class="lg:w-7/12 md:w-7/12 w-full flex flex-col">
-        <span class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+        <span class="flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
           <?php the_field('vision_badge'); ?>
         </span>
         <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
