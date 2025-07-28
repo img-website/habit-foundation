@@ -441,26 +441,21 @@ get_header();?>
 
     </div>
 </section>
+
 <!-- PDF Modal Background -->
 <div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
     onclick="handleOutsideClick(event)">
-    <!-- Modal Box -->
+    
     <div id="pdfModalBox"
-        class="relative max-w-5xl w-full lg:h-[80%] h-96 flex flex-wrap items-stretch bg-white rounded-xl shadow-lg overflow-hidden">
-        <!-- Close Button -->
+        class="fixed inset-0 relative max-w-5xl w-full top-2 lg:h-[80%] h-96 flex flex-wrap items-stretch bg-white rounded-xl shadow-lg overflow-y-auto overflow-x-hidden">
         <button onclick="closePDFPopup()"
-            class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[7px] rounded-full shadow z-10">
+            class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-10">
             ✖
         </button>
 
-        <!-- PDF iframe -->
+
         <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
     </div>
-</div>
-
-
-
-
-
+</div> 
 
 <?php get_footer();?>

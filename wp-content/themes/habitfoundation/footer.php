@@ -79,11 +79,35 @@ var swiper = new Swiper(".NewSwiper", {
 </script>
 
 <script>
+// function openPDFPopup(pdfUrl) {
+//     const popup = document.getElementById('pdfPopup');
+//     document.getElementById('pdfFrame').src = pdfUrl;
+//     popup.classList.remove('hidden');
+//     popup.classList.add('flex');
+// }
+
+// function closePDFPopup() {
+//     const popup = document.getElementById('pdfPopup');
+//     popup.classList.add('hidden');
+//     popup.classList.remove('flex');
+//     document.getElementById('pdfFrame').src = '';
+// }
+
+// function handleOutsideClick(event) {
+//     const modalBox = document.getElementById('pdfModalBox');
+//     if (!modalBox.contains(event.target)) {
+//         closePDFPopup();
+//     }
+// }
+
 function openPDFPopup(pdfUrl) {
     const popup = document.getElementById('pdfPopup');
     document.getElementById('pdfFrame').src = pdfUrl;
     popup.classList.remove('hidden');
     popup.classList.add('flex');
+
+    // ✅ Lock scroll on body
+    document.body.classList.add('overflow-hidden');
 }
 
 function closePDFPopup() {
@@ -91,6 +115,9 @@ function closePDFPopup() {
     popup.classList.add('hidden');
     popup.classList.remove('flex');
     document.getElementById('pdfFrame').src = '';
+
+    // ✅ Unlock scroll on body
+    document.body.classList.remove('overflow-hidden');  // ← Fix here
 }
 
 function handleOutsideClick(event) {
@@ -99,6 +126,7 @@ function handleOutsideClick(event) {
         closePDFPopup();
     }
 }
+
 </script>
 
 
@@ -106,7 +134,7 @@ function handleOutsideClick(event) {
 document.addEventListener("DOMContentLoaded", () => {
     const popup1 = document.getElementById("acfPopup");
     const trigger1 = document.querySelector('a[href="#readmore"]');
-    const closeBtn1 = document.getElementById("popupCloseBtn");
+    const closeBtn1 = document.getElementById("popupCloseBtn1");
 
     const popup2 = document.getElementById("popup2");
     const trigger2 = document.querySelector('a[href="#readmore2"]');

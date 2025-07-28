@@ -37,7 +37,7 @@ function habit_custom_header_shortcode() {
         <nav class="flex justify-center mx-auto">
           <ul class="lg:flex items-center hidden space-x-10">
             <li>
-              <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
                 before:content-[''] before:absolute before:-bottom-2 before:right-0 
                 before:h-[3px] before:w-full before:bg-[#bf4b50] 
                 before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
@@ -46,26 +46,26 @@ function habit_custom_header_shortcode() {
               </a>
             </li>  
             <li>
-              <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
               before:h-[3px] before:w-full before:bg-[#bf4b50] 
               before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
               hover:before:scale-x-100 hover:before:origin-top-left duration-300">Focus</a>
             </li>
 
-            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
               before:h-[3px] before:w-full before:bg-[#bf4b50] 
               before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
               hover:before:scale-x-100 hover:before:origin-top-left duration-300">Benefits</a></li>
 
-            <li><a href="https://project.imgglobal.in/habit-foundation/events/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+            <li><a href="https://project.imgglobal.in/habit-foundation/events/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
               before:h-[3px] before:w-full before:bg-[#bf4b50] 
               before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
               hover:before:scale-x-100 hover:before:origin-top-left duration-300">Events</a></li>
 
-            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
               before:content-[''] before:absolute before:-bottom-2 before:right-0 
               before:h-[3px] before:w-full before:bg-[#bf4b50] 
               before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
