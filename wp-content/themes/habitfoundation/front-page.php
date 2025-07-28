@@ -80,7 +80,7 @@
 <section class="w-full bg-white relative lg:py-16 md:py-10 py-8">
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div
-            class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-center lg:gap-x-10 gap-6 relative">
+            class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-start lg:gap-x-10 gap-6 relative">
             <div class="lg:w-7/12 md:w-7/12 w-full md:flex flex-col">
                 <span
                     class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
@@ -113,7 +113,7 @@
 <section class="w-full bg-white relative lg:pb-16 md:py-8 py-6">
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div
-            class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-center lg:gap-x-10 gap-6 relative">
+            class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-start lg:gap-x-10 gap-6 relative">
             <div class="lg:w-5/12 md:w-5/12 w-full md:flex flex-col hidden">
                 <?php $img = get_field('vision_image'); ?>
                 <?php if ($img): ?>
@@ -255,22 +255,19 @@
 <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
-            <span
-                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+            <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
                 <?php the_field('poster_sec_badge'); ?>
             </span>
 
-            <h2
-                class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+            <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
                 <?php the_field('poster_sec_heading'); ?>
             </h2>
         </div>
 
-        <div class="flex flex-wrap lg:flex-nowrap lg:gap-6 gap-4">
+        <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
 
-            <div
-                class="swiper NewSwiper lg:w-1/3 bg-white border py-6 px-4 rounded-md w-full shadow-md flex flex-col items-start gap-3">
-                <div class="swiper-wrapper lg:h-auto lg:h-auto">
+            <div class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+                <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $event_img = get_field('event_image'); ?>
                         <?php if ($event_img): ?>
@@ -345,7 +342,7 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="absolute top-[7.5rem] -translate-y-1/2 left-[-14px] z-10">
+                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
                     <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -354,7 +351,7 @@
                             </path>
                         </svg> </button>
                 </div>
-                <div class="absolute top-[7.5rem] -translate-y-1/2 right-[-14px] z-10">
+                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
                     <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -370,12 +367,12 @@
                     <?php the_field('event_heading'); ?></h2>
                 <?php endif; ?>
 
-                <?php if ($event_img): ?>
+                <!-- <?php if ($event_img): ?>
                 <div class="w-full flex justify-center lg:hidden">
                     <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361" height="156"
                         class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
                 </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
 
                 <?php if (get_field('event_desc')): ?>
                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
@@ -395,10 +392,9 @@
                 </a>
             </div>
 
-            <div
-                class="swiper NewSwiper lg:w-1/3 bg-white border py-6 px-4 rounded-md w-full shadow-md flex flex-col items-start gap-3">
+            <div class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
 
-                <div class="swiper-wrapper lg:h-auto">
+                <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $orientation_image = get_field('orientation_image'); ?>
                         <?php if ($orientation_image): ?>
@@ -451,7 +447,7 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="absolute top-[7.5rem] -translate-y-1/2 left-[-14px] z-10">
+                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
                     <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -460,7 +456,7 @@
                             </path>
                         </svg> </button>
                 </div>
-                <div class="absolute top-[7.5rem] -translate-y-1/2 right-[-14px] z-10">
+                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
                     <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -476,13 +472,13 @@
                     <?php the_field('orientation_heading'); ?></h2>
                 <?php endif; ?>
 
-                <?php if ($orientation_image): ?>
+                <!-- <?php if ($orientation_image): ?>
                 <div class="w-full flex justify-center lg:hidden">
                     <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientation Image" width="361"
                         height="156"
                         class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
                 </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
 
                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
                     <?php the_field('orientation_desc'); ?></p>
@@ -500,9 +496,8 @@
                 </a>
             </div>
 
-            <div
-                class="swiper NewSwiper lg:w-1/3 bg-white border py-6 px-4 rounded-md w-full shadow-md flex flex-col items-start gap-3">
-                <div class="swiper-wrapper lg:h-auto">
+            <div class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+                <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $patent_image = get_field('patent_image'); ?>
                         <?php if ($patent_image): ?>
@@ -548,7 +543,7 @@
                     </div>
 
                 </div>
-                <div class="absolute top-[7.5rem] -translate-y-1/2 left-[-14px] z-10">
+                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
                     <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -557,7 +552,7 @@
                             </path>
                         </svg> </button>
                 </div>
-                <div class="absolute top-[7.5rem] -translate-y-1/2 right-[-14px] z-10">
+                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
                     <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -573,12 +568,12 @@
                 </h2>
                 <?php endif; ?>
 
-                <?php if ($patent_image): ?>
+                <!-- <?php if ($patent_image): ?>
                 <div class="w-full flex justify-center lg:hidden">
                     <img src="<?php echo esc_url($patent_image['url']); ?>" alt="Patent Image" width="361" height="156"
                         class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
                 </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
 
                 <?php if (get_field('patent_desc')): ?>
                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
@@ -650,9 +645,11 @@
             ✖
         </button>
         <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
-            <?php the_field('popup_title'); ?></h2>
+            <?php the_field('popup_title'); ?>
+        </h2>
         <div class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6">
-            <?php the_field('popup_content'); ?></div>
+            <?php the_field('popup_content'); ?>
+        </div>
     </div>
 </div>
 

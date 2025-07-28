@@ -96,30 +96,56 @@ function habit_custom_header_shortcode() {
         </ul>
         
         <div class="flex items-end space-x-4">
-          <button id="menuToggle" class="lg:hidden p-2 focus:outline-none z-50 absolute lg:*:size-12 *:size-7 bg-[#bf4b50] text-white h-full w-14 flex items-center justify-center top-0 right-0">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path>
+          <button id="menuToggle"
+            class="lg:hidden p-2 focus:outline-none z-50 absolute right-0 top-0 bg-[#bf4b50] text-white h-full w-14 flex items-center justify-center">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd"></path>
             </svg>
           </button>
         </div>
       </div>
 
-      <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+      <!-- Overlay -->
+        <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-      <div id="mobile-menu" class="fixed top-0 right-0 w-3/4 max-w-sm h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg">
-        <div class="flex justify-between items-center p-4 border-b">
-          <h2 class="text-lg font-semibold">Menu</h2>
-          <button id="menuClose" class="text-black text-2xl font-bold">&times;</button>
+        <!-- Mobile Slide-in Menu -->
+        <div id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="mobileMenuLabel"
+          class="fixed top-0 right-0 h-full w-full max-w-xs bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg overflow-y-auto">
+          
+          <!-- Header with Close -->
+          <div class="flex justify-between items-center p-4 border-b">
+            <h2 id="mobileMenuLabel" class="text-lg font-semibold">Menu</h2>
+            <button id="menuClose" aria-label="Close Menu" class="text-black text-2xl font-bold">&times;</button>
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="flex flex-col p-4 space-y-4">
+            <li>
+              <a href="<?php echo get_template_directory_uri(); ?>/" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="http://localhost/habit-foundation/about-us/" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Focus</a>
+            </li>
+            <li>
+              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Benefits</a>
+            </li>
+            <li>
+              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Events</a>
+            </li>
+            <li>
+              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        <ul class="flex flex-col p-4 space-y-4">
-          <li><a href="<?php echo get_template_directory_uri(); ?>/" class="text-[#262525] text-base font-medium hover:text-black">Home</a></li>
-          <li><a href="http://localhost/habit-foundation/about-us/" class="text-[#262525] text-base font-medium hover:text-black">About Us</a></li>
-          <li><a href="#" class="text-[#262525] text-base font-medium hover:text-black">Focus</a></li>
-          <li><a href="#" class="text-[#262525] text-base font-medium hover:text-black">Benefits</a></li>
-          <li><a href="#" class="text-[#262525] text-base font-medium hover:text-black">Events</a></li>
-          <li><a href="#" class="text-[#262525] text-base font-medium hover:text-black">Contact Us</a></li>
-        </ul>
-      </div>
 
       <!-- <div id="offCanvas" class="fixed top-0 right-0 w-96 h-full bg-black shadow-lg transform translate-x-full transition-transform duration-300 z-50">
         <div class="py-4 px-3 flex justify-between items-end border-b border-gray-700">
@@ -165,10 +191,10 @@ add_shortcode('habit_header', 'habit_custom_header_shortcode');
 function habit_orientation_section_shortcode() {
   ob_start();
   ?>
-  <section class="w-full lg:py-16 md:py-10 py-8 relative overflow-hidden lg:h-96 h-[70vh] w-full bg-cover bg-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/Business-Owners-Learn-From-Each-Other.webp');">
+  <section class="w-full lg:py-16 md:py-10 py-8 relative overflow-hidden lg:h-96 h-full w-full bg-cover bg-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/Business-Owners-Learn-From-Each-Other.webp');">
     <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
-    <div class="max-w-7xl mx-auto px-4 lg:px-6 relative z-20 top-16">
+    <div class="max-w-7xl mx-auto px-4 lg:px-6 relative z-20 lg:top-16">
       <div class="flex flex-col items-center gap-y-3 ">
         <span class="text-sm font-medium inline-block text-[#ffffff] text-center lg:text-lg font-medium tracking-[2.4px] leading-[1.5] ">
           Ready to Build Your Vision?
@@ -203,7 +229,7 @@ function habit_footer_shortcode() {
   ob_start();
   ?>
 
-  <footer class="w-full relative lg:pt-16 lg:pb-4 md:py-10 py-8 h-full w-full bg-cover bg-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/dark-background.jpg');">
+<footer class="w-full relative lg:pt-16 lg:pb-4 md:py-10 py-8 h-full w-full bg-cover bg-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/dark-background.jpg');">
   <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
   <div class="max-w-7xl mx-auto px-4 lg:px-6 relative z-20">
     <div class="flex flex-row flex-wrap lg:flex-nowrap items-start gap-8">
@@ -230,42 +256,43 @@ function habit_footer_shortcode() {
       <div class="lg:w-1/4 md:w-1/2 w-full">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">About HABIT</h3>
         <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
-          <li><a href="https://project.imgglobal.in/habit-foundation/about-us/" class="hover:text-white">About Us</a></li>
-          <li><a href="#" class="hover:text-white">Focus</a></li>
-          <li><a href="#" class="hover:text-white">Benefits</a></li>
-          <li><a href="#" class="hover:text-white">Events</a></li>
-          <li><a href="#" class="hover:text-white">Contact Us</a></li>
+          <li><a href="https://project.imgglobal.in/habit-foundation/about-us/" class="md:hover:text-white">About Us</a></li>
+          <li><a href="#" class="md:hover:text-white">Focus</a></li>
+          <li><a href="#" class="md:hover:text-white">Benefits</a></li>
+          <li><a href="#" class="md:hover:text-white">Events</a></li>
+          <li><a href="#" class="md:hover:text-white">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="lg:w-1/4 md:w-1/2 w-full">
         <h3 class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">Follow Us On</h3>
           <div class="flex items-center gap-3">
-            <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 hover:-translate-y-2 hover:bg-[#a33438]">
+
+            <a href="https://www.facebook.com/people/Habit-Foundation/61570220092085" target="_blank" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 md:hover:-translate-y-2 md:hover:bg-[#a33438]">
               <svg class="size-4 text-white" stroke="currentColor" fill="currentColor" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
               </svg>
             </a>
 
-            <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 hover:-translate-y-2 hover:bg-[#a33438]">
+            <a href="" target="_blank" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 md:hover:-translate-y-2 md:hover:bg-[#a33438]">
               <svg class="size-4 text-white" fill="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
               </svg>
             </a>
 
-            <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 hover:-translate-y-2 hover:bg-[#a33438]">
+            <a href="https://www.linkedin.com/company/habit-foundation/" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 md:hover:-translate-y-2 md:hover:bg-[#a33438]">
               <svg class="size-4 text-white" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
               </svg>
             </a>
 
-            <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 hover:-translate-y-2 hover:bg-[#a33438]">
+            <a href="https://www.youtube.com/@habitfoundation" target="_blank" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 md:hover:-translate-y-2 md:hover:bg-[#a33438]">
               <svg class="size-4 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
             </a>
 
-            <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 hover:-translate-y-2 hover:bg-[#a33438]">
+            <a href="https://www.instagram.com/habit.foundation/" target="_blank"  class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300 md:hover:-translate-y-2 md:hover:bg-[#a33438]">
               <svg class="size-4 text-white" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
               </svg>

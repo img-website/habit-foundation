@@ -33,11 +33,11 @@ get_header();?>
                 <?php the_field('director_sec_badge'); ?>
             </span>
             <h2
-                class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+                class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14">
                 <?php the_field('director_sec_heading'); ?>
             </h2>
         </div>
-        <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-8 py-6">
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 py-6">
             <div
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img1 = get_field('director_1_image'); ?>
@@ -156,11 +156,11 @@ get_header();?>
                 <?php the_field('leadership_team_sec_badge'); ?>
             </span>
             <h2
-                class="lg:text-2xl md:text-xl text-lg lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+                class="lg:text-2xl md:text-xl text-lg lg:w-9/12 !leading-normal mx-auto text-center font-semibold text-[#2a1313] lg:mb-14">
                 <?php the_field('leadership_team_sec_heading'); ?>
             </h2>
         </div>
-        <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-8 py-6">
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 py-6">
             <div
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img1 = get_field('leadership_team_1_image'); ?>
@@ -338,17 +338,16 @@ get_header();?>
                 <?php the_field('guidelines_sec_heading'); ?>
             </h2>
         </div>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-6 gap-4 items-center">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 items-center">
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_1'); ?>"
-                    class="flex items-center justify-between lg:gap-10 gap-6"
+                    class="flex items-center justify-between w-full gap-6 lg:gap-10"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_1'); ?>')">
-
-                    <h4 class="lg:text-base font-medium !leading-6 mt-4 mb-3 block text-start text-[#212121]">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
                         <?php the_field('guidelines_sec_title_1'); ?></h4>
 
-                    <div class="*:size-6 flex items-end bg-[#bf4b50] p-2 rounded-full text-white">
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                             stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -357,30 +356,29 @@ get_header();?>
                     </div>
                 </a>
             </div>
-            <div
-                class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+
+            <div class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_2'); ?>"
-                    class="flex items-center justify-between lg:gap-10 gap-6"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
-                    <h4 class="lg:text-base font-medium !leading-6 mt-4 mb-3 block text-start text-[#212121]">
-                        <?php the_field('guidelines_sec_title_2'); ?></h4>
-                    <div class="*:size-6 flex items-end bg-[#bf4b50] p-2 rounded-full text-white">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </div>
+                  class="flex items-center justify-between lg:gap-10 gap-6"
+                  onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
+                  <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
+                      <?php the_field('guidelines_sec_title_2'); ?></h4>
+                  <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
                 </a>
             </div>
-            <div
-                class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+            <div class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_3'); ?>"
                     class="flex items-center justify-between lg:gap-10 gap-6"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
-                    <h4 class="lg:text-base font-medium !leading-6 mt-4 mb-3 block text-start text-[#212121]">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
                         <?php the_field('guidelines_sec_title_3'); ?></h4>
-                    <div class="*:size-6 flex items-end bg-[#bf4b50] p-2 rounded-full text-white">
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                             stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -394,9 +392,9 @@ get_header();?>
                 <a href="<?php the_field('guidelines_sec_link_4'); ?>"
                     class="flex items-center justify-between lg:gap-10 gap-6"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
-                    <h4 class="lg:text-base font-medium !leading-6 mt-4 mb-3 block text-start text-[#212121]">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
                         <?php the_field('guidelines_sec_title_4'); ?></h4>
-                    <div class="*:size-6 flex items-end bg-[#bf4b50] p-2 rounded-full text-white">
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                             stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -410,9 +408,9 @@ get_header();?>
                 <a href="<?php the_field('guidelines_sec_link_5'); ?>"
                     class="flex items-center justify-between lg:gap-10 gap-6"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_5'); ?>')">
-                    <h4 class="lg:text-base font-medium !leading-6 mt-4 mb-3 block text-start text-[#212121]">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
                         <?php the_field('guidelines_sec_title_5'); ?></h4>
-                    <div class="*:size-6 flex items-end bg-[#bf4b50] p-2 rounded-full text-white">
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                             stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -426,9 +424,41 @@ get_header();?>
                 <a href="<?php the_field('guidelines_sec_link_6'); ?>"
                     class="flex items-center justify-between lg:gap-10 gap-6"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_6'); ?>')">
-                    <h4 class="lg:text-base font-medium !leading-6 mt-4 mb-3 block text-start text-[#212121]">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
                         <?php the_field('guidelines_sec_title_6'); ?></h4>
-                    <div class="*:size-6 flex items-end bg-[#bf4b50] p-2 rounded-full text-white">
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+                <a href="<?php the_field('guidelines_sec_link_7'); ?>"
+                    class="flex items-center justify-between lg:gap-10 gap-6"
+                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
+                        <?php the_field('guidelines_sec_title_7'); ?></h4>
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="w-full h-full bg-white border border-[#e9e7e3] rounded-2xl py-4 px-5 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+                <a href="<?php the_field('guidelines_sec_link_8'); ?>"
+                    class="flex items-center justify-between lg:gap-10 gap-6"
+                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_8'); ?>')">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121]">
+                        <?php the_field('guidelines_sec_title_8'); ?></h4>
+                    <div class="*:size-6 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                             stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
