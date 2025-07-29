@@ -173,3 +173,71 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedTab = localStorage.getItem("activeTab") || "product";
     showTab(savedTab);
 });
+
+//sub event tabbing 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".agile-tab-btn");
+    const contents = document.querySelectorAll(".agile-tab-content");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = button.getAttribute("data-tab");
+
+        // Remove active classes from all buttons
+        buttons.forEach(btn => {
+          btn.classList.remove("border-b-2", "border-[#bf4b50]", "text-[#bf4b50]");
+          btn.classList.add("text-gray-700");
+        });
+
+        // Add active class to clicked button
+        button.classList.remove("text-gray-700");
+        button.classList.add("border-b-2", "border-[#bf4b50]", "text-[#bf4b50]");
+
+        // Hide all tab contents
+        contents.forEach((content) => {
+          content.classList.add("hidden");
+        });
+
+        // Show selected tab content
+        const targetContent = document.getElementById(target);
+        if (targetContent) {
+          targetContent.classList.remove("hidden");
+        }
+      });
+    });
+  });
+//sub event tabbing 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".event-tabs2");
+    if (!container) return;
+
+    const buttons = container.querySelectorAll("button[data-tab]");
+    const contents = container.querySelectorAll(".orientation-tab-content, .horizon-tab-content");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-tab");
+
+        // Remove active class from all buttons
+        buttons.forEach(b => {
+          b.classList.remove("border-b-2", "border-[#bf4b50]", "text-[#bf4b50]");
+          b.classList.add("text-gray-700");
+        });
+
+        // Add active class to clicked button
+        btn.classList.remove("text-gray-700");
+        btn.classList.add("border-b-2", "border-[#bf4b50]", "text-[#bf4b50]");
+
+        // Hide all content panels
+        contents.forEach(content => content.classList.add("hidden"));
+
+        // Show the selected content panel
+        const targetContent = container.querySelector(`#${targetId}`);
+        if (targetContent) {
+          targetContent.classList.remove("hidden");
+        }
+      });
+    });
+  });
