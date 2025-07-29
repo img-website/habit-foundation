@@ -10,11 +10,11 @@ get_header();?>
     </div>
     <?php endif; ?>
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <h2 class="text-white text-4xl md:text-5xl font-bold mb-4 text-center justify-center">
+        <h2 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start justify-start">
             <?php the_field('events_main_heading'); ?>
             <span class="text-[lime-500]"><?php the_field('events_highlight'); ?></span>
         </h2>
-        <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
+        <div class="flex items-center text-white text-sm font-medium space-x-2 justify-start">
             <a href="<?php echo esc_url(home_url('/')); ?>"
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
@@ -32,46 +32,46 @@ get_header();?>
             <?php the_field('events_sec_badge'); ?>
             </span> -->
                 <h2
-                    class="lg:w-9/12 w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold text-[#2a1313] lg:mb-10 mb-4">
+                    class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-start font-semibold text-[#2a1313] lg:mb-6 mb-4">
                     <?php the_field('events_sec_heading'); ?>
                 </h2>
         </div>
         <div class="w-full flex flex-col mx-auto group mt-5 lg:gap-6 gap-4">
             <ul class="flex flex-wrap justify-start gap-4 mb-8">
-                <li class="group/event cursor-pointer">
-                    <label for="event1" class="inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-lg w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-has-[#event1:checked]:!bg-[#bf4b50]">
+                <li class="group/event">
+                    <label for="event1" class=" cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event1:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block">
                                 <svg class="!text-[#bf4b50] group-has-[#event1:checked]:!text-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>               
                             </span>
-                            <div class="text-[#bf4b50] group-has-[#event1:checked]:!text-white uppercase font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
+                            <div class="text-[#bf4b50] group-has-[#event1:checked]:!text-white  font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
                             <?php the_field('event_top_heading_1'); ?>
                             </div>
                         </div>
                     </label>     
                 </li>
 
-                <li class="group/event cursor-pointer">
-                    <label for="event2" class="inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-lg w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-has-[#event2:checked]:!bg-[#bf4b50]">
+                <li class="group/event">
+                    <label for="event2" class="cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event2:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block ">
                                 <svg class="!text-[#bf4b50] group-has-[#event2:checked]:!text-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>               
                             </span>
-                            <div class="text-[#bf4b50] group-has-[#event2:checked]:!text-white uppercase font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
+                            <div class="text-[#bf4b50] group-has-[#event2:checked]:!text-white font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
                             <?php the_field('event_top_heading_2'); ?>
                             </div>
                         </div>
                     </label>     
                 </li>
 
-                <li class="group/event cursor-pointer">
-                    <label for="event3" class="inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-lg w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-has-[#event3:checked]:!bg-[#bf4b50]">
+                <li class="group/event">
+                    <label for="event3" class=" cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event3:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block group-has-[#event2:checked]:!text-white">
                                 <svg class="!text-[#bf4b50] group-has-[#event3:checked]:!text-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>               
                             </span>
-                            <div class="text-[#bf4b50] group-has-[#event3:checked]:!text-white uppercase font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
-                            UPCOMING EVENT
+                            <div class="text-[#bf4b50] group-has-[#event3:checked]:!text-white  font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
+                                Upcoming Event
                             </div>
                         </div>
                         
@@ -80,7 +80,7 @@ get_header();?>
             </ul>
             <div class="content-sec w-full">
                 <div class="block">
-                    <label for="event1" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full duration-300 transition-all bg-theme4 group-has-[#event1:checked]:!bg-[#0876bd]">
+                    <!-- <label for="event1" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full duration-300 transition-all bg-theme4 group-has-[#event1:checked]:!bg-[#0876bd]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block">
                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"></path><path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"></path></svg>     
@@ -92,7 +92,7 @@ get_header();?>
                         <div class="md:size-8 size-5 *:size-full md:opacity-0 md:group-has-[#event1:checked]:opacity-100 max-md:rotate-90 group-has-[#event1:checked]:max-md:-rotate-90">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
                         </div>
-                    </label>
+                    </label> -->
                     <input type="radio" name="event" id="event1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                     <div class="w-full event-tabs ">
@@ -105,12 +105,12 @@ get_header();?>
                     <div class="agile-tab-content mt-8" id="tab1">
                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                             <div class="flex flex-col gap-y-1 mb-4">
-                                <span
-                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span>
+                                <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                 <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
                                     <?php the_field('event_title_1'); ?></h4>
                                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                    <?php the_field('event_description_1'); ?></p>
+                                    <?php the_field('event_description_1'); ?>
+                                </p>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 grid-cols-1">
                                 <?php $img1 = get_field('event_image_1'); ?>
@@ -142,8 +142,7 @@ get_header();?>
                         <div
                             class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                             <div class="flex flex-col gap-y-1 mb-4">
-                                <span
-                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span>
+                                <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                 <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
                                     <?php the_field('event_title_2'); ?></h4>
                                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
@@ -180,8 +179,7 @@ get_header();?>
                         <div
                             class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                             <div class="flex flex-col gap-y-1 mb-4">
-                                <span
-                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span>
+                                <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                 <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
                                     <?php the_field('event_title_3'); ?></h4>
                                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
@@ -218,8 +216,7 @@ get_header();?>
                         <div
                             class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                             <div class="flex flex-col gap-y-1 mb-4">
-                                <span
-                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span>
+                                <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                 <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
                                     <?php the_field('event_title_4'); ?></h4>
                                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
@@ -255,8 +252,7 @@ get_header();?>
                         <div
                             class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                             <div class="flex flex-col gap-y-1 mb-4">
-                                <span
-                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span>
+                                <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                 <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
                                     <?php the_field('event_title_5'); ?></h4>
                                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
@@ -292,8 +288,7 @@ get_header();?>
                         <div
                             class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                             <div class="flex flex-col gap-y-1 mb-4">
-                                <span
-                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span>
+                                <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                 <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
                                     <?php the_field('event_title_6'); ?></h4>
                                 <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
@@ -429,7 +424,7 @@ get_header();?>
                     </div>
                 </div>
                 <div class="block">
-                <label for="event2" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full hover:md:bg-black/10 duration-300 transition-all bg-theme4 group-has-[#event2:checked]:!bg-[#0876bd]">
+                <!-- <label for="event2" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full hover:md:bg-black/10 duration-300 transition-all bg-theme4 group-has-[#event2:checked]:!bg-[#0876bd]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -443,7 +438,7 @@ get_header();?>
                         <span class="md:size-8 size-5 *:size-full md:opacity-0 md:group-has-[#event2:checked]:opacity-100 max-md:rotate-90 group-has-[#event2:checked]:max-md:-rotate-90">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
                         </span>
-                </label>
+                </label> -->
                 <input type="radio" name="event" id="event2" class="hidden peer">
                 <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                 
@@ -630,7 +625,7 @@ get_header();?>
                 </div>
                 </div>
                 <div class="block">
-                    <label for="event3" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full hover:md:bg-black/10 duration-300 transition-all bg-theme4 group-has-[#event3:checked]:!bg-[#0876bd]">
+                    <!-- <label for="event3" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full hover:md:bg-black/10 duration-300 transition-all bg-theme4 group-has-[#event3:checked]:!bg-[#0876bd]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -644,7 +639,7 @@ get_header();?>
                         <span class="md:size-8 size-5 *:size-full md:opacity-0 md:group-has-[#event3:checked]:opacity-100 max-md:rotate-90 group-has-[#event3:checked]:max-md:-rotate-90">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
                         </span>
-                    </label>
+                    </label> -->
                     <input type="radio" name="event" id="event3" class="hidden peer">
                     <div class="hidden peer-checked:flex flex-wrap">
                         <div class="w-full flex flex-wrap">

@@ -255,7 +255,7 @@
 <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
-            <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+            <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
                 <?php the_field('poster_sec_badge'); ?>
             </span>
 
@@ -601,7 +601,7 @@
 <section class="w-full relative lg:py-16 md:py-10 py-8">
     <div class="max-w-7xl mx-auto px-4 lg:px-6 flex flex-col justify-center">
         <span
-            class="flex items-center mx-auto inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+            class="flex items-center mx-auto inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full lg:text-3xl md:text-2xl text-xl font-medium mb-[15px] tracking-[1px] leading-[1.5] mb-6">
             <?php the_field('partners_badge'); ?>
         </span>
 

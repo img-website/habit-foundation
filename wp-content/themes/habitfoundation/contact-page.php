@@ -49,5 +49,107 @@
       </div>
     </div>
 </section>
+<section>
+    <div class="w-full md:w-[50%]">
+                    <div class="p-[20px]  flex flex-col gap-2 w-full">
+                       
+ 
+                        <form action="" class="pt-2 flex flex-col gap-4 md:gap-3.5 xl:gap-5">
+                           
+                                <div class="w-full">
+                                    <input type="text" name="name" id="" placeholder="Full Name*" class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
+                                </div>
+                                <div class="w-full">
+                                    <input type="email" name="email" id="" placeholder="Email*" class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
+                                </div>
+                     
+ 
+                         
+                                <div class="w-full">
+                                    <input type="tel" name="phone number" id="" placeholder="Phone Number*" class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
+                                </div>
+                                <div class="w-full flex items-center ">
+                                   <div class="relative inline-block text-left w-full" id="dropdownWrapper">
+                        <button type="button" onclick="toggleDropdown()" class=" px-[15px] py-[10px] lg:py-[13px] xl:py-[12px] 2xl:py-[13px]  border border-[#d4d4d4] rounded-[5px]  w-full flex justify-between items-center gap-[50px] cursor-pointer">
+                          <span id="selectedText" class="font-medium font-primary text-sm text-gray-500">Property Type</span>
+                          <span>
+                            <!-- down-arrow -->
+                            <svg id="iconDown" class="transition duration-300" stroke="#9CA3AF" fill="#9CA3AF" stroke-width="0" viewBox="0 0 1024 1024" height="11px" width="11px" xmlns="http://www.w3.org/2000/svg"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg>
+                            <!-- up-arrow -->
+                            <svg id="iconUp" class="transition duration-300 hidden" stroke="#9CA3AF" fill="#9CA3AF" stroke-width="0" viewBox="0 0 512 512" height="11px" width="11px" xmlns="http://www.w3.org/2000/svg"><path d="M448 368 256 144 64 368h384z"></path></svg>
+ 
+                          </span>
+                        </button>
+ 
+                       <div id="dropdown" class="hidden absolute z-50 bg-white w-full border border-[#d4d4d4] rounded-bl-[3px]">
+ 
+                          <ul id="dropdownList" class="text-black text-[13px] font-primary w-full overflow-y-auto">
+ 
+                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">Villa</li>
+                             <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">House</li>
+                              <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">Appartment</li>
+                           </ul>
+                        </div>
+                    </div>
+                                </div>
+                         
+ 
+                            <div class="w-full">
+                                <textarea name="" id="" placeholder="Message" class="px-[15px] pt-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] min-h-[100px]  overflow-y-auto w-full placeholder:font-primary placeholder:font-medium"></textarea>
+                            </div>
+ 
+                            <div class="">
+                                <a href="" class="inline-flex items-center justify-center gap-2 px-[30px] py-[14px] font-primary font-medium xl:font-semibold  text-white  rounded-[5px] overflow-hidden bg-[#f48120]  transition-all duration-300 group capitalize text-sm xl:text-base">Submit </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+</section>
+ 
+ 
+<script>
+   function toggleDropdown() {
+  const dropdown = document.getElementById("dropdown");
+  const iconDown = document.getElementById("iconDown");
+  const iconUp = document.getElementById("iconUp");
+ 
+  const isHidden = dropdown.classList.contains("hidden");
+ 
+  if (isHidden) {
+    dropdown.classList.remove("hidden");
+    iconDown.classList.add("hidden");
+    iconUp.classList.remove("hidden");
+  } else {
+    dropdown.classList.add("hidden");
+    iconDown.classList.remove("hidden");
+    iconUp.classList.add("hidden");
+  }
+}
+ 
+function selectItem(element) {
+  const items = document.querySelectorAll('#dropdownList li');
+  items.forEach(item => {
+    item.classList.remove("bg-white", "text-black");
+  });
+ 
+  element.classList.add("bg-white", "text-black");
+  document.getElementById("selectedText").textContent = element.textContent;
+ 
+  document.getElementById("dropdown").classList.add("hidden");
+  document.getElementById("iconUp").classList.add("hidden");
+  document.getElementById("iconDown").classList.remove("hidden");
+}
+ 
+// Close dropdown if clicked outside
+document.addEventListener("click", function (event) {
+  const wrapper = document.getElementById("dropdownWrapper");
+  if (!wrapper.contains(event.target)) {
+    document.getElementById("dropdown").classList.add("hidden");
+    document.getElementById("iconUp").classList.add("hidden");
+    document.getElementById("iconDown").classList.remove("hidden");
+  }
+});
+ 
+  </script>
 
 <?php get_footer();?>

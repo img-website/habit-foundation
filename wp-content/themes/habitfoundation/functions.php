@@ -28,48 +28,59 @@ add_filter('upload_mimes', 'allow_svg_uploads');
 function habit_custom_header_shortcode() {
     ob_start();
     ?>
-    <header class="w-full relative bg-white shadow-[0px_4px_4px_0px_#0000001F] sticky top-0 z-40">
-      <div class="max-w-7xl mx-auto px-4 lg:px-6 py-2 flex justify-between items-center">
+    <header class="w-full relative bg-white shadow-[0px_4px_4px_0px_#0000001F] border-b-2 border-[#b93a40] sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto lg:px-4 lg:px-6 lg:py-2 flex justify-between items-center ">
         <div class="flex items-center">
-          <a href="https://project.imgglobal.in/habit-foundation"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png" alt="Left Logo" class="lg:w-20 w-12"></a>
+          <a href="https://project.imgglobal.in/habit-foundation" class="block h-auto w-full">
+            <!-- Desktop Logo -->
+            <img 
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png" 
+              alt="Habit Foundation Logo" 
+              class="hidden lg:block w-20"
+            />
+            <!-- Mobile Logo -->
+            <img 
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-header.webp" 
+              alt="Habit Foundation Mobile Logo" 
+              class="block lg:hidden max-w-full aspect-[800/126] object-cover h-full w-[920px]" width="800" height="126" 
+            />
+          </a>
         </div>
 
-        <nav class="flex justify-center mx-auto">
-          <ul class="lg:flex items-center hidden space-x-10">
+        <nav class="lg:flex justify-center mx-auto hidden">
+          <ul class="lg:flex items-center space-x-10">
             <li>
-              <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+              <!-- <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
                 before:content-[''] before:absolute before:-bottom-2 before:right-0 
                 before:h-[3px] before:w-full before:bg-[#bf4b50] 
                 before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
                 hover:before:scale-x-100 hover:before:origin-top-left duration-300">
                 About Us
+              </a> -->
+              <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
+              duration-300">
+                About Us
               </a>
             </li>  
             <li>
-              <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
-              before:content-[''] before:absolute before:-bottom-2 before:right-0 
-              before:h-[3px] before:w-full before:bg-[#bf4b50] 
-              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Focus</a>
+              <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
+              duration-300">Focus</a>
             </li>
 
-            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
-              before:content-[''] before:absolute before:-bottom-2 before:right-0 
-              before:h-[3px] before:w-full before:bg-[#bf4b50] 
-              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Benefits</a></li>
+            <li>
+              <a href="#" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits
+              </a>
+            </li>
 
-            <li><a href="https://project.imgglobal.in/habit-foundation/events/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
-              before:content-[''] before:absolute before:-bottom-2 before:right-0 
-              before:h-[3px] before:w-full before:bg-[#bf4b50] 
-              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Events</a></li>
+            <li>
+              <a href="https://project.imgglobal.in/habit-foundation/events/" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Events
+              <span class="*:size-5"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"></path></svg></span>
+              </a>
+            </li>
 
-            <li><a href="#" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
-              before:content-[''] before:absolute before:-bottom-2 before:right-0 
-              before:h-[3px] before:w-full before:bg-[#bf4b50] 
-              before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-              hover:before:scale-x-100 hover:before:origin-top-left duration-300">Contact Us</a></li>
+            <li>
+              <a href="#" class="relative text-[#0c0c0c] xl:text-[17px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
+            </li>
           </ul>
         </nav>
         <ul class="lg:flex flex-col items-start hidden gap-1">
@@ -96,8 +107,7 @@ function habit_custom_header_shortcode() {
         </ul>
         
         <div class="flex items-end space-x-4">
-          <button id="menuToggle"
-            class="lg:hidden p-2 focus:outline-none z-50 absolute right-0 top-0 bg-[#bf4b50] text-white h-full w-14 flex items-center justify-center">
+          <button id="menuToggle" class="lg:hidden px-6 focus:outline-none z-50 absolute right-0 top-0 bg-[#af2a30] *:size-8 text-white h-full w-20 flex items-center justify-center">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -120,29 +130,31 @@ function habit_custom_header_shortcode() {
           
           <!-- Header with Close -->
           <div class="flex justify-between items-center p-4 border-b">
-            <h2 id="mobileMenuLabel" class="text-lg font-semibold">Menu</h2>
+            <a href="https://project.imgglobal.in/habit-foundation" class="block h-auto w-full">  <img 
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png" 
+              alt="Habit Foundation Logo" 
+              class="w-20"
+            /></a>
+          
             <button id="menuClose" aria-label="Close Menu" class="text-black text-2xl font-bold">&times;</button>
           </div>
 
           <!-- Navigation Links -->
           <ul class="flex flex-col p-4 space-y-4">
             <li>
-              <a href="<?php echo get_template_directory_uri(); ?>/" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Home</a>
+              <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">About Us</a>
             </li>
             <li>
-              <a href="http://localhost/habit-foundation/about-us/" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">About Us</a>
+              <a href="https://project.imgglobal.in/habit-foundation/focus" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Focus</a>
             </li>
             <li>
-              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Focus</a>
+              <a href="https://project.imgglobal.in/habit-foundation/benefits" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Benefits</a>
             </li>
             <li>
-              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Benefits</a>
+              <a href="https://project.imgglobal.in/habit-foundation/events" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Events</a>
             </li>
             <li>
-              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Events</a>
-            </li>
-            <li>
-              <a href="#" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Contact Us</a>
+              <a href="http://localhost/habit-foundation/contact-us" class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Contact Us</a>
             </li>
           </ul>
         </div>
