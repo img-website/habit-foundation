@@ -25,24 +25,28 @@ function allow_svg_uploads($mimes) {
 }
 add_filter('upload_mimes', 'allow_svg_uploads');
 
-function habit_custom_header_shortcode() {
+function habit_custom_header_shortcode() {  
     ob_start();
     ?>
 <header
-    class="w-full relative bg-white shadow-[0px_4px_4px_0px_#0000001F] border-b-2 border-[#b93a40] sticky top-0 z-40">
+    class="w-full relative bg-white shadow-[0px_4px_4px_0px_#0000001F] border-b-[3px] border-[#b93a40] sticky top-0 z-40">
     <div class="max-w-7xl mx-auto lg:px-4 lg:px-6 lg:py-2 flex justify-between items-center ">
         <div class="flex items-center">
-            <a href="https://project.imgglobal.in/habit-foundation" class="block h-auto w-full">
-                <!-- Desktop Logo -->
+            <!-- Desktop Logo -->
+            <a href="https://project.imgglobal.in/habit-foundation" class="hidden lg:block w-20 cursor-pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png"
-                    alt="Habit Foundation Logo" class="hidden lg:block w-20" />
-                <!-- Mobile Logo -->
+                    alt="Habit Foundation Logo" class="w-full h-auto" />
+            </a>
+
+            <!-- Mobile Logo -->
+            <a href="https://project.imgglobal.in/habit-foundation" class="block lg:hidden w-full cursor-pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-header.webp"
-                    alt="Habit Foundation Mobile Logo"
-                    class="block lg:hidden max-w-full aspect-[800/126] object-cover h-full w-[920px]" width="800"
-                    height="126" />
+                    alt="Habit Foundation Mobile Logo" class="max-w-full object-cover h-full aspect-[1100/160]"
+                    width="1100" height="160" />
             </a>
         </div>
+
+
 
         <nav class="lg:flex justify-center mx-auto hidden">
             <ul class="lg:flex items-center space-x-10">
@@ -70,7 +74,7 @@ function habit_custom_header_shortcode() {
                     </a>
                 </li>
 
-                <li>
+                <li class="relative group/cs">
                     <a href="https://project.imgglobal.in/habit-foundation/events/"
                         class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Events
                         <span class="*:size-5"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -79,8 +83,59 @@ function habit_custom_header_shortcode() {
                                 <path
                                     d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z">
                                 </path>
-                            </svg></span>
+                            </svg>
+                        </span>
                     </a>
+                    <ul
+                        class="bg-white w-72 absolute top-[3.2rem] -left-5 rounded-md p-0 opacity-0 z-40 transition-all translate-y-4 shadow-[0px_7px_10px_-1px_rgba(0,0,0,0.2)] invisible group-hover/cs:visible group-hover/cs:opacity-100">
+                        <li
+                            class="relative w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <span class="*:size-5 inline-block *:text-black"><svg stroke="currentColor" fill="none"
+                                    stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="m9 16 2 2 4-4"></path>
+                                </svg></span>
+                            Key Events
+                        </li>
+                        <li
+                            class="relative w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="M8 14h.01"></path>
+                                    <path d="M12 14h.01"></path>
+                                    <path d="M16 14h.01"></path>
+                                    <path d="M8 18h.01"></path>
+                                    <path d="M12 18h.01"></path>
+                                    <path d="M16 18h.01"></path>
+                                </svg>
+                            </span>
+                            Basic Events
+                        </li>
+                        <li
+                            class="relative w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z">
+                                    </path>
+                                </svg>
+                            </span>
+                            Upcoming Events
+                        </li>
+                    </ul>
+
                 </li>
 
                 <li>
@@ -130,9 +185,9 @@ function habit_custom_header_shortcode() {
 
         <div class="flex items-end space-x-4">
             <button id="menuToggle"
-                class="lg:hidden px-6 focus:outline-none z-50 absolute right-0 top-0 bg-[#af2a30] *:size-8 text-white h-full w-20 flex items-center justify-center">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24"
-                    width="24" xmlns="http://www.w3.org/2000/svg">
+                class="lg:hidden px-4 focus:outline-none z-50 absolute right-0 top-0 pt-2  text-white h-full flex items-center justify-center">
+                <svg class="text-[#af2a30] lg:size-12 md:size-8 size-6" stroke="currentColor" fill="currentColor"
+                    stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
                         clip-rule="evenodd"></path>
@@ -150,17 +205,17 @@ function habit_custom_header_shortcode() {
 
         <!-- Header with Close -->
         <div class="flex justify-between items-center p-4 border-b">
-            <a href="https://project.imgglobal.in/habit-foundation" class="block h-auto w-full"> <img
+            <a href="https://project.imgglobal.in/habit-foundation" class="cursor-pointer block h-auto w-full"> <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png"
-                    alt="Habit Foundation Logo" class="w-20" /></a>
+                    alt="Habit Foundation Logo" class="w-12" /></a>
 
-            <button id="menuClose" aria-label="Close Menu" class="text-black text-2xl font-bold">&times;</button>
+            <button id="menuClose" aria-label="Close Menu" class="text-gray-700 text-4xl font-normal">&times;</button>
         </div>
 
         <!-- Navigation Links -->
         <ul class="flex flex-col p-4 space-y-4">
             <li>
-                <a href="https://project.imgglobal.in/habit-foundation/about-us/"
+                <a href="https://project.imgglobal.in/habit-foundation/about-us"
                     class="block text-[#262525] text-base font-medium hover:text-black transition-colors">About Us</a>
             </li>
             <li>
@@ -327,9 +382,11 @@ function habit_footer_shortcode() {
                 <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
                     <li><a href="https://project.imgglobal.in/habit-foundation/about-us/"
                             class="md:hover:text-white">About Us</a></li>
-                    <li><a href="#" class="md:hover:text-white">Focus</a></li>
+                    <li><a href="https://project.imgglobal.in/habit-foundation/focus"
+                            class="md:hover:text-white">Focus</a></li>
                     <li><a href="#" class="md:hover:text-white">Benefits</a></li>
-                    <li><a href="#" class="md:hover:text-white">Events</a></li>
+                    <li><a href="https://project.imgglobal.in/habit-foundation/events"
+                            class="md:hover:text-white">Events</a></li>
                     <li><a href="#" class="md:hover:text-white">Contact Us</a></li>
                 </ul>
             </div>

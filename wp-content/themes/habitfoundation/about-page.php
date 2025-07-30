@@ -29,7 +29,7 @@ get_header();?>
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <span
-                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
                 <?php the_field('director_sec_badge'); ?>
             </span>
             <h2
@@ -38,7 +38,7 @@ get_header();?>
             </h2>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 py-6">
-            
+
             <div
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img1 = get_field('director_1_image'); ?>
@@ -153,7 +153,7 @@ get_header();?>
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <span
-                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
+                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
                 <?php the_field('leadership_team_sec_badge'); ?>
             </span>
             <h2
@@ -331,7 +331,7 @@ get_header();?>
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <span
-                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
+                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5] ">
                 <?php the_field('guidelines_sec_badge'); ?>
             </span>
             <h2
@@ -348,44 +348,91 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_1'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+            <div
+                class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_2'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_2'); ?></h4>
                     <div class="flex items-center gap-2">
-                            <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
-                            </div>
-                            <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
-                            </div>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+            <div
+                class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_3'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
                     onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_3'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
@@ -398,11 +445,26 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_4'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
@@ -415,11 +477,26 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_5'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
@@ -432,11 +509,26 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_6'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
@@ -449,11 +541,26 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_7'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
@@ -466,24 +573,39 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_8'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg>
+                        <div
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-        
+
     </div>
 </section>
 
 <!-- PDF Modal Background -->
 <div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
     onclick="handleOutsideClick(event)">
-    
+
     <div id="pdfModalBox"
         class="fixed inset-0 relative max-w-5xl w-full top-2 lg:h-[80%] h-96 flex flex-wrap items-stretch bg-white rounded-xl shadow-lg overflow-y-auto overflow-x-hidden">
         <button onclick="closePDFPopup()"
@@ -494,6 +616,6 @@ get_header();?>
 
         <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
     </div>
-</div> 
+</div>
 
 <?php get_footer();?>

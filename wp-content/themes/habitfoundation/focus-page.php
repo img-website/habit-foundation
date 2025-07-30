@@ -27,7 +27,7 @@
 
 <section
     class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6  animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
-    <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
+    <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <!-- <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
             <?php the_field('focus_sec_badge'); ?>
@@ -38,9 +38,9 @@
             </h2>
         </div>
 
-        <div class="w-full flex items-center flex-row justify-center lg:gap-x-10 gap-6 flex-wrap pb-8 ">
+        <div class="w-full flex items-center flex-row justify-center lg:gap-x-10 sm:gap-3 gap-2 lg:pb-8 pb-6">
             <a href="<?php the_field('innovative_product_link'); ?>" id="productTab"
-                class="tab-btn active-tab flex items-center gap-2 lg:text-lg tracking-[0.5px] font-medium bg-[#bf4b50] py-3 px-6 rounded-md text-white text-center duration-300 hover:bg-[#000000] hover:text-white">
+                class="tab-btn active-tab flex items-center lg:gap-2 gap-1 lg:text-lg md:text-base xs:text-sm text-[13px] tracking-[0.5px] font-medium bg-[#bf4b50] lg:py-3 lg:px-6 md:py-3 md:px-4 py-2 px-2 rounded-md text-white text-center duration-300">
                 <svg class="size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
                     fill-rule="evenodd" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -50,7 +50,7 @@
                 <?php the_field('innovative_product_title'); ?>
             </a>
             <a href="<?php the_field('innovative_service_link'); ?>" id="serviceTab"
-                class="tab-btn flex items-center gap-2 lg:text-lg tracking-[0.5px] font-medium bg-[#000000] py-3 px-6 rounded-md text-white text-center duration-300 hover:bg-[#bf4b50] hover:text-white">
+                class="tab-btn flex items-center lg:gap-2 gap-1 lg:text-lg md:text-base xs:text-sm text-[13px] tracking-[0.5px] font-medium bg-[#000000] lg:py-3 lg:px-6 md:py-3 md:px-4 py-2 px-2 rounded-md text-white text-center duration-300">
                 <svg class="size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                     height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                     <path fill="none" d="M0 0h24v24H0z"></path>
@@ -63,9 +63,9 @@
         </div>
 
         <div id="productContent" class="tab-content w-full flex flex-col">
-            <div class="w-full mb-6 rounded-lg">
+            <!-- <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -88,15 +88,15 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_1'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_1'); ?></p>
                             </div>
                         </div>
-                        <div class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300"
-                            onclick="changeImage('<?php echo get_field('change_image_2'); ?>')">
+                        <div
+                            class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300">
                             <span class=" *:size-6 text-gray-800">
                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                                     height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -141,15 +141,100 @@
 
 
 
-            </div>
+            </div> -->
 
+            <div class="w-full mb-6 rounded-lg">
+                <h4
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
+                    <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
+                            stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                                d="M13 11.33 18 18H6l5-6.67V6h2m2.96-2H8.04c-.42 0-.65.48-.39.81L9 6.5v4.17L3.2 18.4c-.49.66-.02 1.6.8 1.6h16c.82 0 1.29-.94.8-1.6L15 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81z">
+                            </path>
+                        </svg></span>
+
+                    <?php the_field('product_1'); ?>
+                </h4>
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                        <div class="w-full lg:h-80 h-full flex items-center lg:hidden">
+                            <?php $img = get_field('product_image_1'); ?>
+                            <?php if ($img): ?>
+                            <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
+                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]">
+                            <?php endif; ?>
+                        </div>
+                        <div
+                            class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300 ">
+                            <span class="*:size-6 text-gray-800">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                                </svg>
+                            </span>
+                            <div class="flex flex-col gap-y-1 ">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
+                                    <?php the_field('product_title_1'); ?></h4>
+                                <p
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    <?php the_field('product_description_1'); ?></p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300 ">
+                            <span class="*:size-6 text-gray-800">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                                </svg>
+                            </span>
+                            <div class="flex flex-col gap-y-1 ">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
+                                    <?php the_field('product_title_2'); ?></h4>
+                                <p
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    <?php the_field('product_description_2'); ?></p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300 ">
+                            <span class="*:size-6 text-gray-800">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                                </svg>
+                            </span>
+                            <div class="flex flex-col gap-y-1 ">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
+                                    <?php the_field('product_title_3'); ?></h4>
+                                <p
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    <?php the_field('product_description_3'); ?></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                        <div class="w-full lg:h-80 h-full lg:flex items-center hidden">
+                            <?php $img = get_field('product_image_1'); ?>
+                            <?php if ($img): ?>
+                            <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
+                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]">
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
 
 
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +265,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_4'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -196,7 +281,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_5'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -212,7 +297,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_6'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -228,7 +313,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_7'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -244,7 +329,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_8'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -257,7 +342,7 @@
 
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +371,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_9'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -303,7 +388,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_10'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -319,7 +404,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_11'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -335,7 +420,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_12'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -352,7 +437,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_13'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -373,7 +458,7 @@
             </div>
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -404,7 +489,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_14'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -420,7 +505,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_15'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -436,7 +521,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_16'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -452,7 +537,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_17'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -467,7 +552,7 @@
         <div id="serviceContent" class="tab-content hidden w-full flex flex-col items-center lg:gap-6 gap-4">
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -489,7 +574,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_1'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -505,7 +590,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_2'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -521,7 +606,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_3'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -543,7 +628,7 @@
 
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -574,7 +659,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_4'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -590,7 +675,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_5'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -606,7 +691,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_6'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -622,7 +707,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_7'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -638,7 +723,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_8'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -651,7 +736,7 @@
 
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -680,7 +765,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_9'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -696,7 +781,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_10'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -712,7 +797,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_11'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -728,7 +813,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_12'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -744,7 +829,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_13'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -760,7 +845,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_14'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -782,7 +867,7 @@
 
             <div class="w-full mb-6 rounded-lg">
                 <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-bold py-4 text-center duration-400 mb-3">
+                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -814,7 +899,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_15'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -830,7 +915,7 @@
                                 </svg>
                             </span>
                             <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
+                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_16'); ?></h4>
                                 <p
                                     class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
