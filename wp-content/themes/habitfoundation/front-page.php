@@ -93,7 +93,7 @@
                     <?php $img = get_field('mission_image'); ?>
                     <?php if ($img): ?>
                     <img src="<?php echo esc_url($img['url']); ?>" alt="Our Mission" title="Our Mission" width="477"
-                        height="293" class="w-full rounded-md">
+                        height="293" class="w-full rounded-md object-cover aspect-[497/296]">
                     <?php endif; ?>
                 </div>
                 <p class="font-normal md:text-base text-sm tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -103,7 +103,7 @@
                 <?php $img = get_field('mission_image'); ?>
                 <?php if ($img): ?>
                 <img src="<?php echo esc_url($img['url']); ?>" alt="Our Mission" title="Our Mission" width="477"
-                    height="293" class="w-full rounded-md">
+                    height="293" class="w-full rounded-md object-cover aspect-[497/296]">
                 <?php endif; ?>
             </div>
         </div>
@@ -118,7 +118,7 @@
                 <?php $img = get_field('vision_image'); ?>
                 <?php if ($img): ?>
                 <img src="<?php echo esc_url($img['url']); ?>" alt="Our Vision" title="Our Vision" width="477"
-                    height="293" class="w-full rounded-md">
+                    height="293" class="w-full rounded-md object-cover aspect-[497/296]">
                 <?php endif; ?>
             </div>
             <div class="lg:w-7/12 md:w-7/12 w-full flex flex-col">
@@ -133,7 +133,7 @@
                     <?php $img = get_field('vision_image'); ?>
                     <?php if ($img): ?>
                     <img src="<?php echo esc_url($img['url']); ?>" alt="Our Vision" title="Our Vision" width="477"
-                        height="293" class="w-full rounded-md">
+                        height="293" class="w-full rounded-md object-cover aspect-[497/296]">
                     <?php endif; ?>
                 </div>
                 <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -255,18 +255,21 @@
 <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
-            <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+            <span
+                class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
                 <?php the_field('poster_sec_badge'); ?>
             </span>
 
-            <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
+            <h2
+                class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
                 <?php the_field('poster_sec_heading'); ?>
             </h2>
         </div>
 
         <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
 
-            <div class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+            <div
+                class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
                 <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $event_img = get_field('event_image'); ?>
@@ -392,7 +395,8 @@
                 </a>
             </div>
 
-            <div class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+            <div
+                class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
 
                 <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
@@ -496,7 +500,8 @@
                 </a>
             </div>
 
-            <div class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+            <div
+                class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
                 <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $patent_image = get_field('patent_image'); ?>

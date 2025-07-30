@@ -43,7 +43,6 @@ get_header();?>
                         class=" cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event1:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block">
-
                                 <svg class="!text-[#bf4b50] group-has-[#event1:checked]:!text-white"
                                     stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                     stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -52,7 +51,12 @@ get_header();?>
                                     <path d="M16 2v4"></path>
                                     <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                     <path d="M3 10h18"></path>
-                                    <path d="m9 16 2 2 4-4"></path>
+                                    <path d="M8 14h.01"></path>
+                                    <path d="M12 14h.01"></path>
+                                    <path d="M16 14h.01"></path>
+                                    <path d="M8 18h.01"></path>
+                                    <path d="M12 18h.01"></path>
+                                    <path d="M16 18h.01"></path>
                                 </svg>
                             </span>
                             <div
@@ -117,6 +121,19 @@ get_header();?>
             </ul>
             <div class="content-sec w-full">
                 <div class="block">
+                    <!-- <label for="event1" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full duration-300 transition-all bg-theme4 group-has-[#event1:checked]:!bg-[#0876bd]">
+                        <div class="flex items-center gap-4">
+                            <span class="size-6 *:!size-full inline-block">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"></path><path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"></path></svg>     
+                            </span>
+                            <div class="text-white lg:text-[16px] xs:text-[13px] sm:text-[13px] font-medium">
+                                KEY EVENT
+                            </div>
+                        </div>
+                        <div class="md:size-8 size-5 *:size-full md:opacity-0 md:group-has-[#event1:checked]:opacity-100 max-md:rotate-90 group-has-[#event1:checked]:max-md:-rotate-90">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
+                        </div>
+                    </label> -->
                     <input type="radio" name="event" id="event1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                         <div class="w-full event-tabs ">
@@ -131,19 +148,19 @@ get_header();?>
                             </div>
                             <!-- Tab Content -->
                             <div class="agile-tab-content mt-8" id="tab1">
-
                                 <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_1'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_1'); ?>
+                                        </p>
+                                    </div>
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 grid-cols-1">
-                                        <?php $img1 = get_field('event_image_3'); ?>
-                                        <?php if ($img1): ?>
-                                        <div class="py-2 px-2 w-full flex justify-center">
-                                            <img src="<?php echo esc_url($img1['url']); ?>"
-                                                alt="<?php the_field('event_title_1'); ?>"
-                                                title="<?php the_field('event_title_1'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
-                                        </div>
-                                        <?php endif; ?>
                                         <?php $img1 = get_field('event_image_1'); ?>
                                         <?php if ($img1): ?>
                                         <div class="py-2 px-2 w-full flex justify-center">
@@ -162,23 +179,28 @@ get_header();?>
                                                 class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
-
+                                        <?php $img1 = get_field('event_image_3'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_1'); ?>"
+                                                title="<?php the_field('event_title_1'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
+                                </div>
+                                <div
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                         <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-3">
-                                            <?php the_field('event_title_1'); ?></h4>
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_2'); ?></h4>
                                         <p
                                             class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_1'); ?>
-                                        </p>
+                                            <?php the_field('event_description_2'); ?></p>
                                     </div>
-
-
-                                </div>
-
-                                <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_4'); ?>
                                         <?php if ($img1): ?>
@@ -186,7 +208,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_2'); ?>"
                                                 title="<?php the_field('event_title_2'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
                                         <?php $img1 = get_field('event_image_5'); ?>
@@ -208,20 +230,19 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_2'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_2'); ?></p>
-                                    </div>
-
                                 </div>
 
                                 <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_3'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_3'); ?></p>
+                                    </div>
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_8'); ?>
                                         <?php if ($img1): ?>
@@ -229,7 +250,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_3'); ?>"
                                                 title="<?php the_field('event_title_3'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
                                         <?php $img1 = get_field('event_image_9'); ?>
@@ -251,20 +272,19 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_3'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_3'); ?></p>
-                                    </div>
-
                                 </div>
 
                                 <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_4'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_4'); ?></p>
+                                    </div>
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_11'); ?>
                                         <?php if ($img1): ?>
@@ -272,7 +292,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_4'); ?>"
                                                 title="<?php the_field('event_title_4'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
                                         <?php $img1 = get_field('event_image_12'); ?>
@@ -294,20 +314,18 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
+                                </div>
+                                <div
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
                                         <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                         <h4
                                             class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_4'); ?></h4>
+                                            <?php the_field('event_title_5'); ?></h4>
                                         <p
                                             class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_4'); ?></p>
+                                            <?php the_field('event_description_5'); ?></p>
                                     </div>
-
-                                </div>
-
-                                <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_14'); ?>
                                         <?php if ($img1): ?>
@@ -315,7 +333,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_5'); ?>"
                                                 title="<?php the_field('event_title_5'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
                                         <?php $img1 = get_field('event_image_15'); ?>
@@ -337,20 +355,18 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
+                                </div>
+                                <div
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
                                         <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
                                         <h4
                                             class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_5'); ?></h4>
+                                            <?php the_field('event_title_6'); ?></h4>
                                         <p
                                             class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_5'); ?></p>
+                                            <?php the_field('event_description_6'); ?></p>
                                     </div>
-
-                                </div>
-
-                                <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_17'); ?>
                                         <?php if ($img1): ?>
@@ -358,7 +374,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_6'); ?>"
                                                 title="<?php the_field('event_title_6'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
                                         <?php $img1 = get_field('event_image_18'); ?>
@@ -380,24 +396,21 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_6'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_6'); ?></p>
-                                    </div>
-
                                 </div>
-
                             </div>
-
-
                             <div class="agile-tab-content hidden mt-8" id="tab2">
                                 <div
                                     class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_2'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_7'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_7'); ?></p>
+                                    </div>
                                     <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_20'); ?>
                                         <?php if ($img1): ?>
@@ -414,7 +427,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_7'); ?>"
                                                 title="<?php the_field('event_title_7'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
                                         <?php $img1 = get_field('event_image_22'); ?>
@@ -436,23 +449,23 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <span
-                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_2'); ?></span>
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_7'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_7'); ?></p>
-                                    </div>
-
                                 </div>
                             </div>
-
                             <div class="agile-tab-content hidden mt-8" id="tab3">
                                 <div
                                     class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4">
+
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_8'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_8'); ?></p>
+                                    </div>
+
                                     <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_24'); ?>
                                         <?php if ($img1): ?>
@@ -470,7 +483,7 @@ get_header();?>
                                             <img src="<?php echo esc_url($img1['url']); ?>"
                                                 alt="<?php the_field('event_title_8'); ?>"
                                                 title="<?php the_field('event_title_8'); ?>" width="373" height="240"
-                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-contain object-top rounded-md inset-0 backdrop-blur-md bg-[#000000]">
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
                                         </div>
                                         <?php endif; ?>
 
@@ -494,18 +507,6 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <span
-                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_8'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_8'); ?></p>
-                                    </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -542,7 +543,17 @@ get_header();?>
                             <!-- tab content -->
                             <div class="orientation-tab-content mt-8" id="orientation-tab">
                                 <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_4'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_9'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_9'); ?></p>
+                                    </div>
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_28'); ?>
                                         <?php if ($img1): ?>
@@ -572,21 +583,10 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <span
-                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_4'); ?></span>
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_9'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_9'); ?></p>
-                                    </div>
-
                                 </div>
                                 <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
-                                    <div class="flex flex-col gap-y-1 my-4">
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
                                         <span
                                             class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_4'); ?></span>
                                         <h4
@@ -629,7 +629,7 @@ get_header();?>
                                 <div
                                     class="w-full h-full flex lg:flex-row flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                                     <div class="lg:w-4/5 w-full h-full flex items-center">
-                                        <div class="flex flex-col gap-y-1 my-4">
+                                        <div class="flex flex-col gap-y-1 mb-4">
                                             <span
                                                 class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_4'); ?></span>
                                             <h4
@@ -654,7 +654,7 @@ get_header();?>
                                 <div
                                     class="w-full h-full flex lg:flex-row flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
                                     <div class="lg:w-4/5 w-full h-full flex items-center">
-                                        <div class="flex flex-col gap-y-1 my-4">
+                                        <div class="flex flex-col gap-y-1 mb-4">
                                             <span
                                                 class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_4'); ?></span>
                                             <h4
@@ -681,7 +681,17 @@ get_header();?>
                             </div>
                             <div class="horizon-tab-content mt-8 hidden" id="horizon-tab">
                                 <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
+                                    class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:px-4 lg:py-4 px-2 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 mb-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_5'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                                            <?php the_field('event_title_13'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('event_description_13'); ?></p>
+                                    </div>
                                     <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3">
                                         <?php $img1 = get_field('event_image_36'); ?>
                                         <?php if ($img1): ?>
@@ -722,17 +732,6 @@ get_header();?>
                                         </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="flex flex-col gap-y-1 my-4">
-                                        <span
-                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_5'); ?></span>
-                                        <h4
-                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                                            <?php the_field('event_title_13'); ?></h4>
-                                        <p
-                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                            <?php the_field('event_description_13'); ?></p>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -767,7 +766,6 @@ get_header();?>
             </div>
 
         </div>
-    </div>
     </div>
 </section>
 
