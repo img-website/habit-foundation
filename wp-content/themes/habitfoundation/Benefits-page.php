@@ -9,7 +9,7 @@
     </div>
   <?php endif; ?>
   <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-    <h2 class="text-white text-4xl md:text-5xl font-bold mb-4 text-center justify-center">
+    <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
       <?php the_field('benefits_main_heading'); ?>
       <span class="text-[lime-500]"><?php the_field('benefits_highlight'); ?></span>
     </h2>

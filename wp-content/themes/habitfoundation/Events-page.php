@@ -40,7 +40,7 @@ get_header();?>
             <ul class="flex flex-wrap justify-start gap-4 mb-8">
                 <li class="group/event">
                     <label for="event1"
-                        class=" cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event1:checked]:!bg-[#bf4b50]">
+                        class=" cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-has-[#event1:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block">
 
@@ -65,7 +65,7 @@ get_header();?>
 
                 <li class="group/event">
                     <label for="event2"
-                        class="cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event2:checked]:!bg-[#bf4b50]">
+                        class="cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event2:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block ">
                                 <svg class="!text-[#bf4b50] group-has-[#event2:checked]:!text-white"
@@ -94,7 +94,7 @@ get_header();?>
 
                 <li class="group/event">
                     <label for="event3"
-                        class=" cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-hover:shadow-[rgba(149,157,165,0.3)_0px_8px_24px_0px] group-has-[#event3:checked]:!bg-[#bf4b50]">
+                        class="cursor-pointer inline-flex items-center justify-between lg:py-4 lg:px-12 py-3 px-7 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event3:checked]:!bg-[#bf4b50]">
                         <div class="flex items-center gap-4">
                             <span class="size-6 *:!size-full inline-block group-has-[#event3:checked]:!text-white">
                                 <svg class="!text-[#bf4b50] group-has-[#event3:checked]:!text-white"

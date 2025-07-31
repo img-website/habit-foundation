@@ -10,7 +10,7 @@
     <?php endif; ?>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <h2 class="text-white text-4xl md:text-5xl font-bold mb-4 text-center justify-center">
+        <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
             <?php the_field('focus_main_heading'); ?>
             <span class="text-[lime-500]"><?php the_field('focus_highlight'); ?></span>
         </h2>
@@ -31,7 +31,7 @@
         <div class="w-full flex flex-col">
             <!-- <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
             <?php the_field('focus_sec_badge'); ?>
-          </span> -->
+            </span> -->
             <h2
                 class="lg:w-9/12 w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold text-[#2a1313] lg:mb-10 mb-4">
                 <?php the_field('focus_sec_heading'); ?>
@@ -63,86 +63,7 @@
         </div>
 
         <div id="productContent" class="tab-content w-full flex flex-col">
-            <!-- <div class="w-full mb-6 rounded-lg">
-                <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
-                    <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
-                            stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                            height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path
-                                d="M13 11.33 18 18H6l5-6.67V6h2m2.96-2H8.04c-.42 0-.65.48-.39.81L9 6.5v4.17L3.2 18.4c-.49.66-.02 1.6.8 1.6h16c.82 0 1.29-.94.8-1.6L15 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81z">
-                            </path>
-                        </svg></span>
-
-                    <?php the_field('product_1'); ?>
-                </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
-                        <div
-                            class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300 ">
-                            <span class=" *:size-6 text-gray-800">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                                </svg>
-                            </span>
-                            <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
-                                    <?php the_field('product_title_1'); ?></h4>
-                                <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
-                                    <?php the_field('product_description_1'); ?></p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300">
-                            <span class=" *:size-6 text-gray-800">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                                </svg>
-                            </span>
-                            <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
-                                    <?php the_field('product_title_2'); ?></h4>
-                                <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
-                                    <?php the_field('product_description_2'); ?></p>
-                            </div>
-                        </div>
-                        <div class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300"
-                            onclick="changeImage('<?php echo get_field('change_image_3'); ?>')">
-                            <span class="*:size-6 text-gray-800">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                                </svg>
-                            </span>
-                            <div class="flex flex-col gap-y-1 ">
-                                <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-medium">
-                                    <?php the_field('product_title_3'); ?></h4>
-                                <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
-                                    <?php the_field('product_description_3'); ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full lg:flex items-center hidden">
-                            <?php $img = get_field('product_image_1'); ?>
-                            <?php if ($img): ?>
-                            <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
-                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]">
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div> -->
-
+            
             <div class="w-full mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
@@ -159,7 +80,7 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
-                        <div class="w-full lg:h-80 h-full flex items-center lg:hidden">
+                        <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
@@ -217,7 +138,7 @@
 
                     </div>
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full lg:flex items-center hidden">
+                        <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
@@ -228,10 +149,7 @@
 
                 </div>
             </div>
-
-
-
-
+            
             <div class="w-full mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
@@ -247,7 +165,7 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full flex items-center">
+                        <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('product_image_2'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
@@ -355,7 +273,7 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
-                        <div class="w-full lg:h-80 h-full flex items-center lg:hidden">
+                        <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Engineering" title="Engineering"
@@ -446,7 +364,7 @@
                         </div>
                     </div>
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full lg:flex items-center hidden">
+                        <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Engineering" title="Engineering"
@@ -471,7 +389,7 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full flex items-center">
+                        <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('product_image_4'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
@@ -565,6 +483,13 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 pt-8">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                        <div class="w-full lg:h-80 md:h-72 flex items-center lg:hidden">
+                            <?php $img = get_field('service_image_1'); ?>
+                            <?php if ($img): ?>
+                            <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
+                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                            <?php endif; ?>
+                        </div>
                         <div
                             class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300">
                             <span class="*:size-6 text-gray-800">
@@ -615,7 +540,7 @@
                         </div>
                     </div>
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full h-80 flex items-center">
+                        <div class="w-full lg:h-80 md:h-72 lg:flex items-center hidden">
                             <?php $img = get_field('service_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
@@ -749,7 +674,7 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
-                        <div class="w-full lg:h-80 h-full flex items-center lg:hidden">
+                        <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Law" title="Law" width="477"
@@ -854,7 +779,7 @@
                         </div>
                     </div>
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full lg:flex items-center hidden">
+                        <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Management" title="Management"
@@ -880,7 +805,7 @@
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
-                        <div class="w-full lg:h-80 h-full flex items-center">
+                        <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('service_image_4'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Law" title="Law" width="477"
