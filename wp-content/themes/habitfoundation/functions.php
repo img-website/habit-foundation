@@ -245,7 +245,7 @@ function habit_custom_header_shortcode() {
                     <ul
                         class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all">
                         <li
-                            class="relative w-full py-3 px-3 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            class="relative w-full py-3 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
                             <span class="*:size-5 inline-block *:text-black"><svg stroke="currentColor" fill="none"
                                     stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
                                     height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +311,7 @@ function habit_custom_header_shortcode() {
                 <ul
                     class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all max-h-0 overflow-hidden peer-checked:max-h-[500px] peer-checked:py-2 duration-300">
                     <li
-                        class="relative w-full py-3 px-3 flex items-center gap-2 rounded-tr-md font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        class="relative w-full py-3 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black text-sm !leading-7 cursor-pointer">
                         <span class="*:size-5 inline-block *:text-black">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                                 stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -326,7 +326,7 @@ function habit_custom_header_shortcode() {
                     </li>
 
                     <li
-                        class="relative w-full py-3 px-3 flex items-center gap-2 border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        class="relative w-full py-3 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
                         <span class="*:size-5 inline-block *:text-black">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                                 stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +346,7 @@ function habit_custom_header_shortcode() {
                     </li>
 
                     <li
-                        class="relative w-full py-3 px-3 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        class="relative w-full py-3 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
                         <span class="*:size-5 inline-block *:text-black">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px"
                                 width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -361,10 +361,9 @@ function habit_custom_header_shortcode() {
                 </ul>
             </li>
 
-
             <li class="relative flex flex-col ">
                 <a href="http://localhost/habit-foundation/contact-us"
-                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
+                class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
             </li>
             
         </ul>
