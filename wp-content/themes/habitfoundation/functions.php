@@ -51,21 +51,22 @@ function habit_custom_header_shortcode() {
         <nav class="lg:flex justify-center mx-auto hidden">
             <ul class="lg:flex items-center space-x-10">
                 <li>
-                    <!-- <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
+                <!-- <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
                 before:content-[''] before:absolute before:-bottom-2 before:right-0 
                 before:h-[3px] before:w-full before:bg-[#bf4b50] 
                 before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
                 hover:before:scale-x-100 hover:before:origin-top-left duration-300">
                 About Us
-              </a> -->
+                </a> -->
                     <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
-              duration-300">
+                    duration-300">
                         About Us
                     </a>
                 </li>
                 <li>
                     <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
-              duration-300">Focus</a>
+                    duration-300">Focus
+                    </a>
                 </li>
 
                 <li>
@@ -87,7 +88,7 @@ function habit_custom_header_shortcode() {
                         </span>
                     </a>
                     <ul
-                        class="bg-white w-72 absolute top-[3.2rem] -left-5 rounded-md p-0 opacity-0 z-40 transition-all translate-y-4 shadow-[0px_7px_10px_-1px_rgba(0,0,0,0.2)] invisible group-hover/cs:visible group-hover/cs:opacity-100">
+                        class="bg-white w-52 absolute top-[3.2rem] -left-5 rounded-md p-0 opacity-0 z-40 transition-all translate-y-4 shadow-[0px_7px_10px_-1px_rgba(0,0,0,0.2)] invisible group-hover/cs:visible group-hover/cs:opacity-100">
                         <li
                             class="relative w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
                             <span class="*:size-5 inline-block *:text-black"><svg stroke="currentColor" fill="none"
@@ -214,63 +215,163 @@ function habit_custom_header_shortcode() {
 
         <!-- Navigation Links -->
         <ul class="flex flex-col p-4 space-y-4">
-            <li>
+            <li class="relative flex flex-col">
                 <a href="https://project.imgglobal.in/habit-foundation/about-us"
-                    class="block text-[#262525] text-base font-medium hover:text-black transition-colors">About Us</a>
+                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">About Us</a>
             </li>
-            <li>
+
+            <li class="relative flex flex-col">
                 <a href="https://project.imgglobal.in/habit-foundation/focus"
-                    class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Focus</a>
+                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Focus</a>
             </li>
-            <li>
+
+            <li class="relative flex flex-col">
                 <a href="https://project.imgglobal.in/habit-foundation/benefits"
-                    class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Benefits</a>
+                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
             </li>
-            <li>
-                <a href="https://project.imgglobal.in/habit-foundation/events"
-                    class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Events</a>
+
+            <!-- <li class="relative flex flex-col gap-y-3">
+                <a href="https://project.imgglobal.in/habit-foundation/events/"
+                        class="relative flex items-center justify-between gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Events
+                        <span class="*:size-5"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul
+                        class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all">
+                        <li
+                            class="relative w-full py-3 px-3 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <span class="*:size-5 inline-block *:text-black"><svg stroke="currentColor" fill="none"
+                                    stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="m9 16 2 2 4-4"></path>
+                                </svg></span>
+                            Key Events
+                        </li>
+                        <li
+                            class="relative w-full py-3 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="M8 14h.01"></path>
+                                    <path d="M12 14h.01"></path>
+                                    <path d="M16 14h.01"></path>
+                                    <path d="M8 18h.01"></path>
+                                    <path d="M12 18h.01"></path>
+                                    <path d="M16 18h.01"></path>
+                                </svg>
+                            </span>
+                            Basic Events
+                        </li>
+                        <li
+                            class="relative w-full py-3 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z">
+                                    </path>
+                                </svg>
+                            </span>
+                            Upcoming Events
+                        </li>
+                    </ul>
+            </li> -->
+            <li class="relative flex flex-col">
+                <input type="checkbox" id="events-toggle" class="peer hidden">
+
+                <label for="events-toggle"
+                    class="relative flex items-center justify-between gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold tracking-[0.5px] duration-300 cursor-pointer">
+                    Events
+                    <span class="*:size-5">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny"
+                            viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z">
+                            </path>
+                        </svg>
+                    </span>
+                </label>
+
+                <ul
+                    class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all max-h-0 overflow-hidden peer-checked:max-h-[500px] peer-checked:py-2 duration-300">
+                    <li
+                        class="relative w-full py-3 px-3 flex items-center gap-2 rounded-tr-md font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                                stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                                <path d="m9 16 2 2 4-4"></path>
+                            </svg>
+                        </span>
+                        Key Events
+                    </li>
+
+                    <li
+                        class="relative w-full py-3 px-3 flex items-center gap-2 border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                                stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                                <path d="M8 14h.01"></path>
+                                <path d="M12 14h.01"></path>
+                                <path d="M16 14h.01"></path>
+                                <path d="M8 18h.01"></path>
+                                <path d="M12 18h.01"></path>
+                                <path d="M16 18h.01"></path>
+                            </svg>
+                        </span>
+                        Basic Events
+                    </li>
+
+                    <li
+                        class="relative w-full py-3 px-3 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px"
+                                width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z">
+                                </path>
+                            </svg>
+                        </span>
+                        Upcoming Events
+                    </li>
+                </ul>
             </li>
-            <li>
+
+
+            <li class="relative flex flex-col ">
                 <a href="http://localhost/habit-foundation/contact-us"
-                    class="block text-[#262525] text-base font-medium hover:text-black transition-colors">Contact Us</a>
+                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
             </li>
+            
         </ul>
     </div>
-
-    <!-- <div id="offCanvas" class="fixed top-0 right-0 w-96 h-full bg-black shadow-lg transform translate-x-full transition-transform duration-300 z-50">
-        <div class="py-4 px-3 flex justify-between items-end border-b border-gray-700">
-          <button id="closeDrawer" class="text-xl font-bold text-white">&times;</button>
-        </div>
-        <div class="flex flex-col py-4 px-6 gap-y-3">
-            <h3 class="text-[#dbdbdb] font-medium text-xl/8 mb-6">Igniting Ideas. Empowering Changemakers. Building Tomorrow.</h3>
-            <h5 class="text-[#dbdbdb] font-normal text-white text-lg">Find Us</h5>
-            <div class="text-[#dbdbdb] flex items-start gap-3 mb-3">
-                <svg class="w-6 h-6 mt-1" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                <div class="text-sm mt-0.5 lg:w-10/12">VES Trust Office, 1st Floor, Sindhi Society, Chembur, Mumbai - 400074</div>
-            </div>
-            
-            <h5 class="text-[#dbdbdb] font-normal text-white text-lg">Follow Us</h5>
-            <div class="flex items-center gap-3">
-                <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full">
-                <svg class="size-4 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg>
-                </a>
-                <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full">
-                <svg class="size-4 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
-                </a>
-                <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full">
-                <svg class="size-4 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-                </a>
-                <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full">
-                <svg class="size-4 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-                </a>
-                <a href="javascript:;" class="bg-[#bf4b50] p-2 rounded-full">
-                <svg class="size-4 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                </a>
-            </div>
-        </div>
-      </div> -->
-
+    
     <div id="drawerOverlay" class="fixed inset-0 bg-black bg-opacity-20 hidden z-30"></div>
+
 </header>
 <?php
     return ob_get_clean();
@@ -279,8 +380,8 @@ add_shortcode('habit_header', 'habit_custom_header_shortcode');
 
 
 function habit_orientation_section_shortcode() {
-  ob_start();
-  ?>
+    ob_start();
+    ?>
 <section class="w-full lg:py-16 md:py-10 py-8 relative overflow-hidden lg:h-96 h-full w-full bg-cover bg-center"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/Business-Owners-Learn-From-Each-Other.webp');">
     <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>

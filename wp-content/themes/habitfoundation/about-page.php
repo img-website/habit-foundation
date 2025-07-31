@@ -43,10 +43,10 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img1 = get_field('director_1_image'); ?>
                 <?php if ($img1): ?>
-                <div class="py-2 px-2 w-full">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img1['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_1_name')); ?>" alt="Shri Baldev Boolani"
-                        title="Shri Baldev Boolani" width="257" height="171" class="size-full object-cover rounded-md">
+                        title="Shri Baldev Boolani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -60,10 +60,10 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img2 = get_field('director_2_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full">
+                <div class="py-2 px-2 w-full h-auto h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_2_name')); ?>" alt="Shri Rajesh Gehani"
-                        title="Shri Rajesh Gehani" width="257" height="171" class="size-full object-cover rounded-md">
+                        title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -77,11 +77,10 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img2 = get_field('director_3_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_3_name')); ?>" alt="Shri Rajesh Gehani"
-                        title="Shri Rajesh Gehani" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -95,11 +94,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('director_4_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_4_name')); ?>"
                         title="<?php echo esc_attr(get_field('director_4_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -113,11 +112,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('director_5_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_5_name')); ?>"
                         title="<?php echo esc_attr(get_field('director_5_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -131,11 +130,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('director_6_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_6_name')); ?>"
                         title="<?php echo esc_attr(get_field('director_6_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -166,11 +165,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img1 = get_field('leadership_team_1_image'); ?>
                 <?php if ($img1): ?>
-                <div class="py-2 px-2 w-full">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img1['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_1_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_1_name')); ?>i" width="257" height="171"
-                        class="size-full object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -186,11 +185,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img2 = get_field('leadership_team_2_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_2_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_2_name')); ?>" width="257" height="171"
-                        class="size-full object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -207,11 +206,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img2 = get_field('leadership_team_3_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_3_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_3_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -227,11 +226,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('leadership_team_4_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_4_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_4_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -248,11 +247,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('leadership_team_5_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_5_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_5_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -268,11 +267,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('leadership_team_6_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_6_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_6_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -288,11 +287,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('leadership_team_7_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_7_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_7_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -308,11 +307,11 @@ get_header();?>
                 class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                 <?php $img2 = get_field('leadership_team_8_image'); ?>
                 <?php if ($img2): ?>
-                <div class="py-2 px-2 w-full h-[270px]">
+                <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_8_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_8_name')); ?>" width="257" height="171"
-                        class="size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
                 <div class="flex flex-col gap-y-1 px-4 py-4">

@@ -83,7 +83,7 @@
             class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-start lg:gap-x-10 gap-6 relative">
             <div class="lg:w-7/12 md:w-7/12 w-full md:flex flex-col">
                 <span
-                    class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+                    class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl mb-[15px] tracking-[1px] leading-[1.5] mb-6">
                     <?php the_field('mission_badge'); ?>
                 </span>
                 <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
@@ -123,7 +123,7 @@
             </div>
             <div class="lg:w-7/12 md:w-7/12 w-full flex flex-col">
                 <span
-                    class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl font-bold mb-[15px] tracking-[1px] leading-[1.5] mb-6">
+                    class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl mb-[15px] tracking-[1px] leading-[1.5] mb-6">
                     <?php the_field('vision_badge'); ?>
                 </span>
                 <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
@@ -345,7 +345,7 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
+                <div class="absolute lg:top-[6rem] md:top-[7rem] sm:top-[9.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
                     <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -354,7 +354,7 @@
                             </path>
                         </svg> </button>
                 </div>
-                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
+                <div class="absolute lg:top-[6rem] md:top-[7rem] sm:top-[9.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
                     <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -451,7 +451,7 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
+                <div class="absolute lg:top-[6rem] md:top-[7rem] sm:top-[9.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
                     <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -460,7 +460,7 @@
                             </path>
                         </svg> </button>
                 </div>
-                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
+                <div class="absolute lg:top-[6rem] md:top-[7rem] sm:top-[9.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
                     <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -548,7 +548,7 @@
                     </div>
 
                 </div>
-                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
+                <div class="absolute lg:top-[6rem] md:top-[7rem] sm:top-[9.5rem] top-[5.5rem] -translate-y-1/2 left-[-14px] z-10">
                     <button class="swiper-button-prev-custom bg-white p-1 rounded-full ml-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -557,7 +557,7 @@
                             </path>
                         </svg> </button>
                 </div>
-                <div class="absolute lg:top-[7.5rem] sm:top-[6.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
+                <div class="absolute lg:top-[6rem] md:top-[7rem] sm:top-[9.5rem] top-[5.5rem] -translate-y-1/2 right-[-14px] z-10">
                     <button class="swiper-button-next-custom bg-white p-1 rounded-full mr-4">
                         <svg class="text-black size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
                             viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
