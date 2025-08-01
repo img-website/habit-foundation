@@ -87,6 +87,30 @@ function handleOutsideClick(event) {
   }
 }
 
+// ------------- guidelines form popup -------------
+function openFormPopup(pdfUrl) {
+  const popup = document.getElementById('gdfPopup');
+  if (!popup) return;
+  const input = popup.querySelector('input[name="pdf"]');
+  if (input) input.value = pdfUrl;
+  popup.classList.remove('hidden');
+  popup.classList.add('flex');
+}
+
+function closeGdfPopup() {
+  const popup = document.getElementById('gdfPopup');
+  if (!popup) return;
+  popup.classList.add('hidden');
+  popup.classList.remove('flex');
+}
+
+function handleFormOutsideClick(event) {
+  const modalBox = document.getElementById('gdfModalBox');
+  if (modalBox && !modalBox.contains(event.target)) {
+    closeGdfPopup();
+  }
+}
+
 //-------------------cover page popup-----------------
 document.addEventListener("DOMContentLoaded", () => {
   const popup1 = document.getElementById("acfPopup");
