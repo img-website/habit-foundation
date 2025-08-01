@@ -359,7 +359,8 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="#readmore2" class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)" class="*:size-4 contactFormLink flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_1'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -389,8 +390,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)"
+                            class="*:size-4 contactFormLink flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_2'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -420,8 +422,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_3'); ?>"
+                            class="*:size-4 contactFormLink flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_3'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -451,8 +454,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
+                        <a href="<?php the_field('guidelines_sec_link_4'); ?>"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_4'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -615,7 +619,7 @@ get_header();?>
 
     <div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
         <div class="lg:w-3/5 h-auto top-12 bg-white rounded-xl relative py-6 px-4 overflow-y-auto">
-            <button class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
+            <button id="button" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
                 <div class="w-full mx-auto bg-white py-3 px-7 rounded-2xl">
                 <div class="flex flex-col gap-2 w-full">
                     <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#bf4b50] mb-2">
@@ -665,14 +669,14 @@ function selectItem(element) {
 }
 
 // Close dropdown if clicked outside
-document.addEventListener("click", function(event) {
-    const wrapper = document.getElementById("dropdownWrapper");
-    if (!wrapper.contains(event.target)) {
-        document.getElementById("dropdown").classList.add("hidden");
-        document.getElementById("iconUp").classList.add("hidden");
-        document.getElementById("iconDown").classList.remove("hidden");
-    }
-});
+// document.addEventListener("click", function(event) {
+//     const wrapper = document.getElementById("dropdownWrapper");
+//     if (!wrapper.contains(event.target)) {
+//         document.getElementById("dropdown").classList.add("hidden");
+//         document.getElementById("iconUp").classList.add("hidden");
+//         document.getElementById("iconDown").classList.remove("hidden");
+//     }
+// });
 
 
 
@@ -704,9 +708,57 @@ function closePDFPopup() {
     // ...existing code for closing popup...
     resetContactForm7Popup();
 }
-
+ 
 // NOTE: If you are on localhost (xampp), install and configure 'WP Mail SMTP' plugin for email delivery.
 </script>
 
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function () {
+  const popupForm = document.querySelector('#popup2 form.wpcf7-form');
 
+  if (popupForm) {
+    popupForm.addEventListener('submit', function (e) {
+      e.preventDefault(); // Stop the default submit
+
+      console.log("Form submission intercepted");
+    
+    const localStorageLink = localStorage.getItem('childPdfLink');
+    const downloadUrl = localStorageLink.replace('preview','export?format=pdf')
+
+ 
+      const link = document.createElement('a');
+      link.href = downloadUrl // Your PDF path
+      link.download = 'DownloadedFile.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+ 
+      setTimeout(() => {
+        popupForm.submit(); 
+      }, 2000);  
+    });
+  }
+});
+
+</script> 
+
+<script>
+    
+    // if(localStorage.getItem('childPdfLink')){
+
+    //     const localStorageLink = localStorage.getItem('childPdfLink');
+    //     const downloadUrl = localStorageLink.replace('preview','export?format=pdf')
+
+    //     const a = document.createElement('a');
+    //     a.href = downloadUrl;
+    //     a.download = 'DownloadedFile.pdf'; // Change the filename if needed
+    //     document.body.appendChild(a);
+    //     a.click();
+    //     document.body.removeChild(a);
+
+    //     localStorage.removeItem('childPdfLink')
+    // }
+ 
+</script>
 <?php get_footer();?>

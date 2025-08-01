@@ -89,22 +89,36 @@ function handleOutsideClick(event) {
 
 //-------------------cover page popup-----------------
 document.addEventListener("DOMContentLoaded", () => {
-  const popup1 = document.getElementById("acfPopup");
+  
+  const popup1 = document.getElementById("popup2");
   const trigger1 = document.querySelector('a[href="#readmore"]');
-  const closeBtn1 = document.getElementById("popupCloseBtn1");
+  const closeBtn1 = document.getElementById("button");
 
-  const popup2 = document.getElementById("popup2");
-  const trigger2 = document.querySelector('a[href="#readmore2"]');
-  const closeBtn2 = popup2.querySelector("button"); // Assuming second close button is inside popup2
+  const boxes = document.querySelectorAll('.contactFormLink');
 
-  // Handler for Popup 1
-  if (trigger1 && popup1) {
-    trigger1.addEventListener("click", e => {
-      e.preventDefault();
-      popup1.classList.remove("hidden");
-      popup1.classList.add("flex");
+  boxes.forEach(box => {
+    box.addEventListener('click', (e) => {
+      // Use a specific selector if your structure is more complex
+      const contentElement = box.querySelector('.readMoreLink');
+
+      if (contentElement) {
+        const content = contentElement.textContent.trim();
+        console.log('Clicked content:', content);
+        localStorage.setItem("childPdfLink", content);
+        e.preventDefault();
+        popup1.classList.remove("hidden");
+        popup1.classList.add("flex");
+        // You can also show it in a popup, alert, etc.
+      } else {
+        console.warn('No .info element found in clicked div.');
+      }
     });
-
+  });
+ 
+  
+  // Handler for Popup 1
+  if (popup1) {
+  
     popup1.addEventListener("click", e => {
       if (e.target === popup1) closePopup(popup1);
     });
@@ -115,27 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (closeBtn1) {
       closeBtn1.addEventListener("click", () => closePopup(popup1));
-    }
-  }
-
-  // Handler for Popup 2
-  if (trigger2 && popup2) {
-    trigger2.addEventListener("click", e => {
-      e.preventDefault();
-      popup2.classList.remove("hidden");
-      popup2.classList.add("flex");
-    });
-
-    popup2.addEventListener("click", e => {
-      if (e.target === popup2) closePopup(popup2);
-    });
-
-    document.addEventListener("keydown", e => {
-      if (e.key === "Escape") closePopup(popup2);
-    });
-
-    if (closeBtn2) {
-      closeBtn2.addEventListener("click", () => closePopup(popup2));
     }
   }
 
