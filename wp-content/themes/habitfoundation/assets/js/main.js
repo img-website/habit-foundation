@@ -195,40 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
   showTab(savedTab);
 });
 
-//sub event tabbing 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".agile-tab-btn");
-  const contents = document.querySelectorAll(".agile-tab-content");
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = button.getAttribute("data-tab");
-
-      // Remove active classes from all buttons
-      buttons.forEach(btn => {
-        btn.classList.remove("border-b-2", "border-[#bf4b50]", "text-[#bf4b50]");
-        btn.classList.add("text-gray-700");
-      });
-
-      // Add active class to clicked button
-      button.classList.remove("text-gray-700");
-      button.classList.add("border-b-2", "border-[#bf4b50]", "text-[#bf4b50]");
-
-      // Hide all tab contents
-      contents.forEach((content) => {
-        content.classList.add("hidden");
-      });
-
-      // Show selected tab content
-      const targetContent = document.getElementById(target);
-      if (targetContent) {
-        targetContent.classList.remove("hidden");
-      }
-    });
-  });
-});
-//sub event tabbing 
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".event-tabs2");
@@ -262,3 +229,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+  document.addEventListener("DOMContentLoaded", () => {
+            const popup = document.getElementById("popup2");
+            const trigger = document.querySelector('a[href="#readmore2"]');
+            const closeBtn = popup.querySelector("button"); // Assumes the close button is inside popup
+
+            // Open popup on trigger click
+            if (trigger && popup) {
+            trigger.addEventListener("click", (e) => {
+                e.preventDefault();
+                popup.classList.remove("hidden");
+                popup.classList.add("flex");
+            });
+
+            // Close popup on background click
+            popup.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                closePopup();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") {
+                closePopup();
+                }
+            });
+
+            // Close on button click
+            if (closeBtn) {
+                closeBtn.addEventListener("click", closePopup);
+            }
+            }
+
+            function closePopup() {
+            popup.classList.add("hidden");
+            popup.classList.remove("flex");
+            }
+        });

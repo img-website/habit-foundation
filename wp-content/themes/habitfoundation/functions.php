@@ -18,12 +18,15 @@ function habitfoundation_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'habitfoundation_enqueue_assets');
 
+
 // Allow SVG uploads
 function allow_svg_uploads($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
 }
 add_filter('upload_mimes', 'allow_svg_uploads');
+
+
 
 function habit_custom_header_shortcode() {  
     ob_start();
@@ -186,7 +189,7 @@ function habit_custom_header_shortcode() {
         <div class="flex items-end space-x-4">
             <button id="menuToggle"
                 class="lg:hidden px-4 focus:outline-none z-50 absolute right-0 top-0 pt-2  text-white h-full flex items-center justify-center">
-                <svg class="text-[#af2a30] lg:size-12 md:size-8 size-6" stroke="currentColor" fill="currentColor"
+                <svg class="text-[#af2a30] lg:size-12 md:size-10 size-6" stroke="currentColor" fill="currentColor"
                     stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z"
@@ -207,7 +210,7 @@ function habit_custom_header_shortcode() {
         <div class="flex justify-between items-center p-4 border-b">
             <a href="https://project.imgglobal.in/habit-foundation" class="cursor-pointer block h-auto w-full"> <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png"
-                    alt="Habit Foundation Logo" class="w-12" /></a>
+                    alt="Habit Foundation Logo" class="sm:w-16 w-12" /></a>
 
             <button id="menuClose" aria-label="Close Menu" class="text-gray-700 text-4xl font-normal">&times;</button>
         </div>
@@ -312,6 +315,9 @@ function habit_custom_header_shortcode() {
     <div id="drawerOverlay" class="fixed inset-0 bg-black bg-opacity-20 hidden z-30"></div>
 
 </header>
+
+
+
 <?php
     return ob_get_clean();
 }
@@ -500,7 +506,7 @@ function habit_footer_shortcode() {
 </footer>
 
 <?php
-  return ob_get_clean();
+    return ob_get_clean();
 }
 add_shortcode('habit_footer', 'habit_footer_shortcode');
 
@@ -513,3 +519,4 @@ function enqueue_custom_scripts() {
     wp_enqueue_script('custom-tabs', get_template_directory_uri() . '/js/tabs.js', array(), false, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+

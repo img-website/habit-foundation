@@ -19,8 +19,10 @@ get_header();?>
             <a href="<?php echo esc_url(home_url('/')); ?>"
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
+            <a href="https://project.imgglobal.in/habit-foundation/about-us/">
             <span
                 class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label'); ?></span>
+            </a>    
         </div>
     </div>
 </section>
@@ -341,14 +343,13 @@ get_header();?>
         <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 items-center">
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_1'); ?>"
-                    class="flex items-center justify-between w-full gap-3"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_1'); ?>')">
+                <div class="flex items-center justify-between w-full gap-3">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_1'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_1'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_1'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -357,9 +358,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        </a>
+                        <a href="#readmore2" class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -367,21 +367,19 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
 
-            <div
-                class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_2'); ?>"
-                    class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
+            <div class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+                <div class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_2'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_2'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -390,8 +388,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -400,20 +398,19 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_3'); ?>"
-                    class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
+                <div class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_3'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_3'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -422,8 +419,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -432,20 +429,19 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_4'); ?>"
-                    class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
+                <div class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_4'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_4'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -454,8 +450,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -464,20 +460,20 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_5'); ?>"
-                    class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_5'); ?>')">
+                <div
+                    class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_5'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_5'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_5'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -486,8 +482,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -496,20 +492,20 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_6'); ?>"
-                    class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_6'); ?>')">
+                <div class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
-                        <?php the_field('guidelines_sec_title_6'); ?></h4>
+                        <?php the_field('guidelines_sec_title_6'); ?>
+                    </h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_6'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_6'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -518,8 +514,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -528,20 +524,19 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_7'); ?>"
-                    class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
+                <div class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
-                        <?php the_field('guidelines_sec_title_7'); ?></h4>
+                    <?php the_field('guidelines_sec_title_7'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_7'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -550,8 +545,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -560,20 +555,21 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <a href="<?php the_field('guidelines_sec_link_8'); ?>"
+                <div
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_8'); ?>')">
+                    >
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_8'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="<?php the_field('guidelines_sec_link_8'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_8'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -582,8 +578,8 @@ get_header();?>
                                     d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
                                 </path>
                             </svg>
-                        </div>
-                        <div
+                        </a>
+                        <a href="javascript:;"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -592,9 +588,9 @@ get_header();?>
                                 <path d="m12 21 4-4"></path>
                                 <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
                             </svg>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
 
@@ -616,5 +612,129 @@ get_header();?>
         <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
     </div>
 </div>
+
+    <div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="lg:w-3/5 h-auto top-12 bg-white rounded-xl relative py-6 px-4 overflow-y-auto">
+            <button class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
+                <div class="w-full mx-auto bg-white py-3 px-7 rounded-2xl">
+                <div class="flex flex-col gap-2 w-full">
+                    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#bf4b50] mb-2">
+                        Contact Us
+                    </h2>
+                    <form action="" class="pt-2 flex flex-col gap-4 md:gap-3.5 xl:gap-5">
+                            <div class="w-full">
+                                <input type="text" name="name" id="" placeholder="Full Name*"
+                                    class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
+                            </div>
+                            <div class="w-full">
+                                <input type="email" name="email" id="" placeholder="Email*"
+                                    class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
+                            </div>
+
+                            <div class="w-full">
+                                <input type="tel" name="phone number" id="" placeholder="Phone Number*"
+                                    class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
+                            </div>
+                            <div class="w-full flex items-center ">
+                                <div class="relative inline-block text-left w-full" id="dropdownWrapper">
+                                    <button type="button" onclick="toggleDropdown()"
+                                        class=" px-[15px] py-[10px] lg:py-[13px] xl:py-[12px] 2xl:py-[13px]  border border-[#d4d4d4] rounded-[5px]  w-full flex justify-between items-center gap-[50px] cursor-pointer">
+                                        <span id="selectedText"
+                                            class="font-medium font-primary text-sm text-gray-500">Purpose</span>
+                                        <span>
+                                            <svg id="iconDown" class="transition duration-300" stroke="#9CA3AF"
+                                                fill="#9CA3AF" stroke-width="0" viewBox="0 0 1024 1024" height="11px"
+                                                width="11px" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                </path>
+                                            </svg>
+                                            <svg id="iconUp" class="transition duration-300 hidden" stroke="#9CA3AF"
+                                                fill="#9CA3AF" stroke-width="0" viewBox="0 0 512 512" height="11px"
+                                                width="11px" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 368 256 144 64 368h384z"></path>
+                                            </svg>
+
+                                        </span>
+                                    </button>
+
+                                    <div id="dropdown"
+                                        class="hidden z-50 bg-white my-2 shadow-lg border border-[#d4d4d4] rounded-bl-[3px]">
+
+                                        <ul id="dropdownList"
+                                            class="text-black text-[13px] font-primary w-full overflow-y-auto">
+                                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">
+                                                Mentor
+                                            </li>
+                                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">
+                                                Incubatee
+                                            </li>
+                                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">Other
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="w-full mx-auto flex justify-center">
+                                <a href=""
+                                    class="inline-flex items-center justify-center gap-2 px-12 py-3 font-primary font-medium xl:font-semibold  text-white  rounded-[5px] overflow-hidden bg-[#bf4b50] transition-all duration-300 group capitalize text-sm xl:text-base">Submit
+                                </a>
+                            </div>
+                    </form> 
+                </div>
+                </div>
+        </div>
+    </div>
+
+<script>
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown");
+    const iconDown = document.getElementById("iconDown");
+    const iconUp = document.getElementById("iconUp");
+
+    const isHidden = dropdown.classList.contains("hidden");
+
+    if (isHidden) {
+        dropdown.classList.remove("hidden");
+        iconDown.classList.add("hidden");
+        iconUp.classList.remove("hidden");
+    } else {
+        dropdown.classList.add("hidden");
+        iconDown.classList.remove("hidden");
+        iconUp.classList.add("hidden");
+    }
+}
+
+function selectItem(element) {
+    const items = document.querySelectorAll('#dropdownList li');
+    items.forEach(item => {
+        item.classList.remove("bg-white", "text-black");
+    });
+
+    element.classList.add("bg-white", "text-black");
+    document.getElementById("selectedText").textContent = element.textContent;
+
+    document.getElementById("dropdown").classList.add("hidden");
+    document.getElementById("iconUp").classList.add("hidden");
+    document.getElementById("iconDown").classList.remove("hidden");
+}
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function(event) {
+    const wrapper = document.getElementById("dropdownWrapper");
+    if (!wrapper.contains(event.target)) {
+        document.getElementById("dropdown").classList.add("hidden");
+        document.getElementById("iconUp").classList.add("hidden");
+        document.getElementById("iconDown").classList.remove("hidden");
+    }
+});
+
+
+
+</script>
+
 
 <?php get_footer();?>

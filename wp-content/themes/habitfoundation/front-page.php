@@ -617,25 +617,25 @@
 
         <div class="flex justify-center items-center gap-0 divide-x-2 divide-dotted divide-gray-700">
             <?php
-        $logos = [
-          'startup_logo_1',
-          'startup_logo_2',
-          'startup_logo_3',
-        ];
+            $logos = [
+            'startup_logo_1',
+            'startup_logo_2',
+            'startup_logo_3',
+            ];
 
         $total = count($logos);
         $i = 1;
 
-        foreach ($logos as $field_name) {
-          $logo = get_field($field_name);
-          if ($logo) {
-            echo '<div class="lg:px-12 px-6">';
-            echo '<img src="' . esc_url($logo['url']) . '" alt="Partner Logo" title="Partner Logo" width="133" height="120" class="max-w-full max-h-[120px] object-contain" />';
-            echo '</div>';
-            $i++;
-          }
-        }
-      ?>
+            foreach ($logos as $field_name) {
+            $logo = get_field($field_name);
+            if ($logo) {
+                echo '<div class="lg:px-12 px-6">';
+                echo '<img src="' . esc_url($logo['url']) . '" alt="Partner Logo" title="Partner Logo" width="133" height="120" class="max-w-full max-h-[120px] object-contain" />';
+                echo '</div>';
+                $i++;
+            }
+            }
+        ?>
         </div>
     </div>
 </section>
