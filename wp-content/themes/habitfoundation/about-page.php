@@ -343,7 +343,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_1'); ?>"
                     class="flex items-center justify-between w-full gap-3"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_1'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_1'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_1'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -376,7 +376,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_2'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_2'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -408,7 +408,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_3'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_3'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -440,7 +440,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_4'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_4'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -472,7 +472,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_5'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_5'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_5'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_5'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -504,7 +504,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_6'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_6'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_6'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_6'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -536,7 +536,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_7'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_7'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -568,7 +568,7 @@ get_header();?>
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <a href="<?php the_field('guidelines_sec_link_8'); ?>"
                     class="flex items-center justify-between gap-3 w-full"
-                    onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_8'); ?>')">
+                    onclick="event.preventDefault(); openFormPopup('<?php the_field('guidelines_sec_link_8'); ?>')">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_8'); ?></h4>
                     <div class="flex items-center gap-2">
@@ -614,6 +614,13 @@ get_header();?>
 
 
         <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
+    </div>
+</div>
+
+<div id="gdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center" onclick="handleFormOutsideClick(event)">
+    <div id="gdfModalBox" class="relative bg-white rounded-xl w-96 p-6">
+        <button type="button" onclick="closeGdfPopup()" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-10">✖</button>
+        <?php echo do_shortcode('[guidelines_form pdf=""]'); ?>
     </div>
 </div>
 
