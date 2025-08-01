@@ -1,6 +1,7 @@
 <?php
 /* Template Name: basic-event page */
 get_header();?>
+
 <section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
     <?php $bg = get_field('events_banner_image'); ?>
     <?php if ($bg): ?>

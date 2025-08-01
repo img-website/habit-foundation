@@ -621,69 +621,11 @@ get_header();?>
                     <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#bf4b50] mb-2">
                         Contact Us
                     </h2>
-                    <form action="" class="pt-2 flex flex-col gap-4 md:gap-3.5 xl:gap-5">
-                            <div class="w-full">
-                                <input type="text" name="name" id="" placeholder="Full Name*"
-                                    class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
-                            </div>
-                            <div class="w-full">
-                                <input type="email" name="email" id="" placeholder="Email*"
-                                    class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
-                            </div>
-
-                            <div class="w-full">
-                                <input type="tel" name="phone number" id="" placeholder="Phone Number*"
-                                    class="px-[15px] border border-[#d4d4d4] text-sm focus:outline-none rounded-[5px] h-[40px] md:h-[44px] w-full placeholder:font-primary placeholder:font-medium">
-                            </div>
-                            <div class="w-full flex items-center ">
-                                <div class="relative inline-block text-left w-full" id="dropdownWrapper">
-                                    <button type="button" onclick="toggleDropdown()"
-                                        class=" px-[15px] py-[10px] lg:py-[13px] xl:py-[12px] 2xl:py-[13px]  border border-[#d4d4d4] rounded-[5px]  w-full flex justify-between items-center gap-[50px] cursor-pointer">
-                                        <span id="selectedText"
-                                            class="font-medium font-primary text-sm text-gray-500">Purpose</span>
-                                        <span>
-                                            <svg id="iconDown" class="transition duration-300" stroke="#9CA3AF"
-                                                fill="#9CA3AF" stroke-width="0" viewBox="0 0 1024 1024" height="11px"
-                                                width="11px" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
-                                                </path>
-                                            </svg>
-                                            <svg id="iconUp" class="transition duration-300 hidden" stroke="#9CA3AF"
-                                                fill="#9CA3AF" stroke-width="0" viewBox="0 0 512 512" height="11px"
-                                                width="11px" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 368 256 144 64 368h384z"></path>
-                                            </svg>
-
-                                        </span>
-                                    </button>
-
-                                    <div id="dropdown"
-                                        class="hidden z-50 bg-white my-2 shadow-lg border border-[#d4d4d4] rounded-bl-[3px]">
-
-                                        <ul id="dropdownList"
-                                            class="text-black text-[13px] font-primary w-full overflow-y-auto">
-                                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">
-                                                Mentor
-                                            </li>
-                                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">
-                                                Incubatee
-                                            </li>
-                                            <li onclick="selectItem(this)" class="px-[12px] py-[10px] cursor-pointer ">Other
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="w-full mx-auto flex justify-center">
-                                <a href=""
-                                    class="inline-flex items-center justify-center gap-2 px-12 py-3 font-primary font-medium xl:font-semibold  text-white  rounded-[5px] overflow-hidden bg-[#bf4b50] transition-all duration-300 group capitalize text-sm xl:text-base">Submit
-                                </a>
-                            </div>
-                    </form> 
+                    <!-- Contact Form 7 Shortcode Start -->
+                    <div class="w-full mx-auto flex justify-center">
+                        <?php echo do_shortcode('[contact-form-7 id="49c2112" title="popup-contact"]'); ?>
+                    </div>
+                    <!-- Contact Form 7 Shortcode End -->
                 </div>
                 </div>
         </div>
@@ -734,6 +676,36 @@ document.addEventListener("click", function(event) {
 
 
 
+
+// Reset Contact Form 7 form and remove validation messages when popup opens
+function resetContactForm7Popup() {
+    var popup = document.getElementById('popup2');
+    if (!popup) return;
+    var form = popup.querySelector('form.wpcf7-form');
+    if (form) {
+        form.reset();
+        // Remove validation error messages
+        var messages = form.querySelectorAll('.wpcf7-not-valid-tip, .wpcf7-response-output');
+        messages.forEach(function(msg) { msg.remove(); });
+        // Remove error classes
+        form.querySelectorAll('.wpcf7-not-valid').forEach(function(el) { el.classList.remove('wpcf7-not-valid'); });
+    }
+    // Re-initialize Contact Form 7 JS for AJAX if needed
+    if (typeof wpcf7 !== 'undefined' && typeof wpcf7.init === 'function') {
+        wpcf7.init(popup);
+    }
+}
+
+// Call this function when opening the popup (add to your popup open button)
+// Example: document.getElementById('openPopupBtn').onclick = function() { ...; resetContactForm7Popup(); };
+
+// Optionally, also reset when closing the popup
+function closePDFPopup() {
+    // ...existing code for closing popup...
+    resetContactForm7Popup();
+}
+
+// NOTE: If you are on localhost (xampp), install and configure 'WP Mail SMTP' plugin for email delivery.
 </script>
 
 
