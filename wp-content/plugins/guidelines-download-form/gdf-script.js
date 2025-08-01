@@ -14,23 +14,25 @@ jQuery(document).ready(function($){
         });
     });
 });
-function openFormPopup(pdfUrl){
-    var popup=document.getElementById('gdfPopup');
-    var input=popup.querySelector('input[name="pdf"]');
-    if(input){
-        input.value=pdfUrl;
+window.openFormPopup = function (pdfUrl) {
+    var popup = document.getElementById('gdfPopup');
+    var input = popup.querySelector('input[name="pdf"]');
+    if (input) {
+        input.value = pdfUrl;
     }
     popup.classList.remove('hidden');
     popup.classList.add('flex');
-}
-function closeGdfPopup(){
-    var popup=document.getElementById('gdfPopup');
+};
+
+window.closeGdfPopup = function () {
+    var popup = document.getElementById('gdfPopup');
     popup.classList.add('hidden');
     popup.classList.remove('flex');
-}
-function handleFormOutsideClick(e){
-    var modal=document.getElementById('gdfModalBox');
-    if(!modal.contains(e.target)){
-        closeGdfPopup();
+};
+
+window.handleFormOutsideClick = function (e) {
+    var modal = document.getElementById('gdfModalBox');
+    if (!modal.contains(e.target)) {
+        window.closeGdfPopup();
     }
-}
+};
