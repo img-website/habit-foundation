@@ -359,7 +359,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_1'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -392,7 +393,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_2'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -424,7 +426,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -456,7 +459,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -488,7 +492,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_5'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +525,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_6'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -552,7 +558,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -584,7 +591,8 @@ get_header();?>
                             </svg>
                         </div>
                         <div
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); event.stopPropagation(); openFormPopup('<?php the_field('guidelines_sec_link_8'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -614,6 +622,13 @@ get_header();?>
 
 
         <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
+    </div>
+</div>
+
+<div id="gdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center" onclick="handleFormOutsideClick(event)">
+    <div id="gdfModalBox" class="relative bg-white rounded-xl w-96 p-6">
+        <button type="button" onclick="closeGdfPopup()" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-10">✖</button>
+        <?php echo do_shortcode('[guidelines_form pdf=""]'); ?>
     </div>
 </div>
 
