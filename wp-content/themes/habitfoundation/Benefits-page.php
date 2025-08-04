@@ -21,7 +21,7 @@
   </div>
 </section>
 
-<section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6  animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
+<section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
   <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
     <div class="w-full flex flex-col">
         <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white text-sm lg:text-base font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
@@ -179,6 +179,409 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="w-full bg-white relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
+    <div class="max-w-7xl mx-auto px-4 lg:px-6">
+        <div class="w-full flex flex-col">
+            <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+              <?php the_field('benefits_badge'); ?>
+            </span>
+            <h2
+                class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto text-[#2a1313] lg:mb-6 mb-4">
+                <?php the_field('benefits_title'); ?>
+            </h2>
+        </div>
+        <div class="w-full flex flex-col mx-auto group mt-6 lg:gap-6 gap-4">
+            <ul class="flex flex-wrap justify-center gap-3">
+                <li class="group/benefit">
+                    <label for="benefit1" class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-7 py-3 px-5 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50] group-has-[#benefit1:checked]:!bg-[#bf4b50]">
+                      <div class="flex items-center lg:gap-2 gap-1">
+                        <span class="size-5 *:!size-full inline-block">
+                                <svg class="!text-[#bf4b50] group-has-[#benefit1:checked]:!text-white"
+                                    stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="m9 16 2 2 4-4"></path>
+                                </svg>
+                        </span>
+                        <div class="text-[#bf4b50] group-has-[#benefit1:checked]:!text-white font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
+                          <?php the_field('benefit_top_heading_1'); ?>
+                        </div>
+                      </div>
+                    </label>
+                </li>
+
+                <li class="group/benefit">
+                    <label for="benefit3"
+                        class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-7 py-3 px-5 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#benefit3:checked]:!bg-[#bf4b50]">
+                        <div class="flex items-center lg:gap-2 gap-1">
+                            <span class="size-5 *:!size-full inline-block ">
+                                <svg class="!text-[#bf4b50] group-has-[#benefit3:checked]:!text-white"
+                                    stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="M8 14h.01"></path>
+                                    <path d="M12 14h.01"></path>
+                                    <path d="M16 14h.01"></path>
+                                    <path d="M8 18h.01"></path>
+                                    <path d="M12 18h.01"></path>
+                                    <path d="M16 18h.01"></path>
+                                </svg>
+                            </span>
+                            <div
+                                class="text-[#bf4b50] group-has-[#benefit3:checked]:!text-white font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
+                                <?php the_field('benefit_top_heading_2'); ?>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+                <li class="group/benefit">
+                    <label for="benefit3"
+                        class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-7 py-3 px-5 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#benefit3:checked]:!bg-[#bf4b50]">
+                        <div class="flex items-center lg:gap-2 gap-1">
+                            <span class="size-5 *:!size-full inline-block ">
+                                <svg class="!text-[#bf4b50] group-has-[#benefit3:checked]:!text-white"
+                                    stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                    <path d="M8 14h.01"></path>
+                                    <path d="M12 14h.01"></path>
+                                    <path d="M16 14h.01"></path>
+                                    <path d="M8 18h.01"></path>
+                                    <path d="M12 18h.01"></path>
+                                    <path d="M16 18h.01"></path>
+                                </svg>
+                            </span>
+                            <div
+                                class="text-[#bf4b50] group-has-[#benefit3:checked]:!text-white font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
+                                <?php the_field('benefit_top_heading_3'); ?>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+            <div class="content-sec w-full">
+                <div class="block">
+                    <input type="radio" name="benefit" id="benefit1" class="hidden peer" checked="">
+                    <div class="hidden peer-checked:flex flex-wrap *:w-auto">
+                      <div class="w-full benefit-tabs">
+                            <div class="w-full mt-5">
+                            <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 my-4">
+                                    <span
+                                        class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('benefit_sub_heading_4'); ?></span>
+                                    <h4
+                                        class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                        <?php the_field('benefit_title_1'); ?></h4>
+                                    <p
+                                        class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                    <?php the_field('benefit_description_1'); ?></p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
+                                        <?php $img1 = get_field('benefit_image_1'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative lg:py-2 lg:px-2 w-full flex justify-center mb-2">
+                                            <div class="absolute inset-0 w-full lg:top-[8px] lg:left-[8px] lg:max-w-[383px] lg:h-[324px] rounded-md bg-cover bg-center filter blur-xs brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('benefit_title_1'); ?>" 
+                                                title="<?php the_field('benefit_title_1'); ?>" 
+                                                width="284" 
+                                                height="188"
+                                                class="relative z-10 w-full aspect-[284/240] h-auto rounded-md shadow object-contain object-top"
+                                            >
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('benefit_image_2'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_1'); ?>"
+                                                title="<?php the_field('benefit_title_1'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_3'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_1'); ?>"
+                                                title="<?php the_field('benefit_title_1'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                    </div>
+                            </div>
+                            
+                            <div
+                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 my-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('benefit_sub_heading_4'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('benefit_title_2'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('benefit_description_2'); ?></p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3">
+                                        <?php $img1 = get_field('benefit_image_4'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative lg:py-2 lg:px-2 w-full flex justify-center mb-2">
+                                            <div class="absolute inset-0 w-full lg:top-[8px] lg:left-[8px] lg:max-w-[383px] lg:h-[324px] rounded-md bg-cover bg-center filter blur-xs brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('benefit_title_2'); ?>" 
+                                                title="<?php the_field('benefit_title_2'); ?>" 
+                                                width="284" 
+                                                height="188"
+                                                class="relative z-10 w-full aspect-[284/240] h-auto rounded-md shadow object-contain object-top"
+                                            >
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_5'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_2'); ?>"
+                                                title="<?php the_field('benefit_title_2'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_6'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_2'); ?>"
+                                                title="<?php the_field('benefit_title_2'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                    </div>
+                            </div>
+                            <div
+                                    class="w-full h-full flex lg:flex-row bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="lg:w-4/5 w-full h-full flex items-center">
+                                        <div class="flex flex-col gap-y-1 my-4">
+                                            <span
+                                                class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('benefit_sub_heading_4'); ?></span>
+                                            <h4
+                                                class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                <?php the_field('benefit_title_11'); ?></h4>
+                                            <p
+                                                class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                                <?php the_field('benefit_description_11'); ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="lg:w-1/5 w-full h-full flex items-end">
+                                        <?php $img1 = get_field('benefit_image_34'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_11'); ?>"
+                                                title="<?php the_field('benefit_title_11'); ?>" width="473" height="440"
+                                                class="w-full rounded-md shadow aspect-[361/440] h-auto object-contain object-top rounded-md">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div
+                                class="w-full h-full flex lg:flex-row bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="lg:w-4/5 w-full h-full flex items-center">
+                                        <div class="flex flex-col gap-y-1 my-4">
+                                            <span
+                                                class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('benefit_sub_heading_4'); ?></span>
+                                            <h4
+                                                class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                <?php the_field('benefit_title_12'); ?></h4>
+                                            <p
+                                                class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                                <?php the_field('benefit_description_12'); ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="lg:w-1/5 w-full h-full flex items-end">
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_35'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_12'); ?>"
+                                                title="<?php the_field('benefit_title_12'); ?>" width="473" height="440"
+                                                class="w-full rounded-md shadow aspect-[361/440] h-auto object-contain object-top rounded-md">
+                                        </div>
+                                        <?php endif; ?>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- second tab  -->
+                <div class="block">
+                    <input type="radio" name="benefit" id="benefit2" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap *:w-auto">
+                        <div class="w-full benefit-tabs2">
+                            <!-- tab content -->
+                            <div class="w-full mt-5" id="orientation-tab">
+                                <div
+                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 my-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('benefit_sub_heading_5'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('benefit_title_13'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('benefit_description_13'); ?></p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3">
+                                        <?php $img1 = get_field('benefit_image_36'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative lg:py-2 lg:px-2 w-full flex justify-center mb-2">
+                                            <div class="absolute inset-0 w-full lg:top-[8px] lg:left-[8px] lg:max-w-[284px] lg:h-[190px] rounded-md bg-cover bg-center filter blur-xs brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('benefit_title_13'); ?>" 
+                                                title="<?php the_field('benefit_title_13'); ?>" 
+                                                width="284" 
+                                                height="188"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                            >
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_37'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_13'); ?>"
+                                                title="<?php the_field('benefit_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('benefit_image_38'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_13'); ?>"
+                                                title="<?php the_field('benefit_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_39'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_13'); ?>"
+                                                title="<?php the_field('benefit_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third tab  -->
+                <div class="block">
+                    <input type="radio" name="benefit" id="benefit3" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap *:w-auto">
+                        <div class="w-full benefit-tabs2">
+                            <!-- tab content -->
+                            <div class="w-full mt-5" id="orientation-tab">
+                                <div
+                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 my-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('benefit_sub_heading_5'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('benefit_title_13'); ?></h4>
+                                        <p
+                                            class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                            <?php the_field('benefit_description_13'); ?></p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3">
+                                        <?php $img1 = get_field('benefit_image_36'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative lg:py-2 lg:px-2 w-full flex justify-center mb-2">
+                                            <div class="absolute inset-0 w-full lg:top-[8px] lg:left-[8px] lg:max-w-[284px] lg:h-[190px] rounded-md bg-cover bg-center filter blur-xs brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('benefit_title_13'); ?>" 
+                                                title="<?php the_field('benefit_title_13'); ?>" 
+                                                width="284" 
+                                                height="188"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                            >
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_37'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_13'); ?>"
+                                                title="<?php the_field('benefit_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('benefit_image_38'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_13'); ?>"
+                                                title="<?php the_field('benefit_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('benefit_image_39'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="py-2 px-2 w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('benefit_title_13'); ?>"
+                                                title="<?php the_field('benefit_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <?php get_footer();?>

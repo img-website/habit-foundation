@@ -410,7 +410,7 @@ get_header();?>
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
                         <?php the_field('guidelines_sec_title_3'); ?></h4>
                     <div class="flex items-center gap-2">
-                        <a href="<?php the_field('guidelines_sec_link_3'); ?>"
+                        <a href="javascript:void(0)"
                             class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
                             onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_3'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
@@ -443,7 +443,7 @@ get_header();?>
                         <?php the_field('guidelines_sec_title_4'); ?></h4>
                     <div class="flex items-center gap-2">
                         <a href="<?php the_field('guidelines_sec_link_4'); ?>"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            class="*:size-4 flex flex  items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
                             onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_4'); ?>')">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -454,8 +454,8 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="<?php the_field('guidelines_sec_link_4'); ?>"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)"
+                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
                             <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_4'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -487,8 +487,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)"
+                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_5'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -519,8 +520,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)"
+                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_6'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -550,8 +552,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)"
+                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_7'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -583,8 +586,9 @@ get_header();?>
                                 </path>
                             </svg>
                         </a>
-                        <a href="javascript:;"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                        <a href="javascript:void(0)"
+                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_8'); ?></pre>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -602,29 +606,29 @@ get_header();?>
 </section>
 
 <!-- PDF Modal Background -->
-<div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
+    <div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
     onclick="handleOutsideClick(event)">
 
-    <div id="pdfModalBox"
-        class="fixed inset-0 relative max-w-5xl w-full top-2 lg:h-[80%] h-96 flex flex-wrap items-stretch bg-white rounded-xl shadow-lg overflow-y-auto overflow-x-hidden">
-        <button onclick="closePDFPopup()"
-            class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-10">
-            ✖
-        </button>
+        <div id="pdfModalBox"
+            class="fixed inset-0 relative max-w-5xl w-full top-2 lg:h-[80%] h-96 flex flex-wrap items-stretch bg-white rounded-xl shadow-lg overflow-y-auto overflow-x-hidden">
+            <button onclick="closePDFPopup()"
+                class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-10">
+                ✖
+            </button>
 
-
-        <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
+            <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
+        </div>
     </div>
-</div>
 
     <div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="lg:w-3/5 h-auto top-12 bg-white rounded-xl relative py-6 px-4 overflow-y-auto">
+        <div class="lg:w-3/5 w-full h-auto lg:top-12 top-4 bg-white rounded-xl relative lg:py-6 lg:px-4 overflow-y-auto">
             <button id="button" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
                 <div class="w-full mx-auto bg-white py-3 px-7 rounded-2xl">
                 <div class="flex flex-col gap-2 w-full">
-                    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#bf4b50] mb-2">
+                    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#bf4b50]">
                         Contact Us
                     </h2>
+                    <span class="lg:text-lg md:text-base text-sm !leading-normal text-center font-semibold text-[#2a1313] mb-4">Submit Your Details to Download the PDF</span>
                     <!-- Contact Form 7 Shortcode Start -->
                     <div class="w-full mx-auto flex justify-center">
                         <?php echo do_shortcode('[contact-form-7 id="49c2112" title="popup-contact"]'); ?>
