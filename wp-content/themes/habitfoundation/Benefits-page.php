@@ -300,13 +300,10 @@
                     <input type="radio" name="benefit" id="benefit1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                     <div class="w-full flex flex-col justify-center items-center gap-4">
-                        <!-- <h2 class="py-3 px-3 w-full lg:text-lg text-[#bf4b50] text-lg mx-auto font-semibold text-center flex items-center">
-                            <span class="text-[#bf4b50] *:size-6 mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
-                                <path d="M12 2C12.55 6 16 9.45 20 10c-4 .55-7.45 4-8 8-.55-4-4-7.45-8-8 4-.55 7.45-4 8-8z"></path>
-                            </svg>
-                            </span>Management Infrastructure
-                        </h2> -->
+                        <h2 class="max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight tracking-[-0.04em] text-black text-balance first:*:font-normal
+                            last:*:font-bold">
+                            <span class="font-normal">Management </span><span class="font-bold"> Infrastructure</span>
+                        </h2>
                         <div class="grid grid-cols-2 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
                             <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
                                 <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
@@ -529,17 +526,15 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="w-full flex flex-col justify-center items-center gap-4 lg:mt-12 mt-8">
+                        <h2 class="max-md:text-2xl/tight max-xl:text-2xl/tight text-3xl/tight tracking-[-0.04em] text-black text-balance first:*:font-normal
+                            last:*:font-bold">
+                            <span class="font-normal">VESP </span><span class="font-bold"> Infrastructure</span>
+                        </h2>
+                                        
 
-
-                    <div class="w-full flex flex-col justify-center items-center gap-4">
-                        <!-- <h2 class="py-3 px-3 w-full lg:text-lg text-[#bf4b50] text-lg mx-auto font-semibold text-center flex items-center">
-                            <span class="text-[#bf4b50] *:size-6 mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
-                                <path d="M12 2C12.55 6 16 9.45 20 10c-4 .55-7.45 4-8 8-.55-4-4-7.45-8-8 4-.55 7.45-4 8-8z"></path>
-                            </svg>
-                            </span>Management Infrastructure
-                        </h2> -->
-                        <div class="grid grid-cols-1 lg:grid-cols-1 flex-wrap items-start lg:gap-6 gap-4 h-auto w-full lg:mt-12 mt-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-1 flex-wrap items-start lg:gap-6 gap-4 h-auto w-full">
                             <div class="w-full flex flex-wrap relative items-center justify-center lg:py-6 lg:px-4 py-4 rounded-xl px-3 h-full grow">
                                     <div class="flex flex-col w-full">
                                         <div class="flex lg:flex-nowrap justify-between items-center gap-4 md:gap-6">
@@ -680,51 +675,48 @@
                             </div>
                         </div>
                         
-                        </div>
                     </div>
-
-
-
-                <div class="relative bg-slate-50 py-6 md:py-8 lg:py-16 select-nonee group/flip">
-                    <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
-                        <div class="mx-auto max-w-container gap-7 flex max-lg:flex-col group-[]/flip:flex-row-reverse group-[]/flip:max-lg:flex-col max-lg:gap-4 
-                                [&amp;&gt;*:first-child]:[&amp;:has(.content1-img)]:lg:block 
-                                [&amp;:first-child] [&amp;&gt;*:last-child]:[&amp;:has(.content1-img)]:max-w-3xl 
-                                [&amp;&gt;*:last-child]:[&amp;:has(.content1-img)]:lg:w-3xl">
-                            <!-- <div class="relative z-10 pointer-events-none h-auto lg:sticky lg:top-24 self-start mx-auto">
-                                <div class="flex [transform:rotateY(180deg)] group-[]/flip:[transform:rotateY(0deg)]">
-                                    <div class="relative flex-shrink-0 p-4 w-full">
-                                        <div class="relative z-10 overflow-hidden *:rounded-xl [transform:rotateY(180deg)] group-[]/flip:[transform:rotateY(0deg)] [&amp;~*]:[&amp;:has(.mask)]:lg:hidden">
-                                            <img class="object-cover w-full h-auto content1-img" width="336" height="687" loading="lazy" fetchpriority="low" src="https://d1y41eupgbwbb2.cloudfront.net/images/website-design2.webp" alt="website-design2">
+                    <div class="relative bg-slate-50 py-6 md:py-8 lg:py-16 select-nonee group/flip">
+                        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+                            <div class="mx-auto max-w-container gap-7 flex max-lg:flex-col group-[]/flip:flex-row-reverse group-[]/flip:max-lg:flex-col max-lg:gap-4 
+                                    [&amp;&gt;*:first-child]:[&amp;:has(.content1-img)]:lg:block 
+                                    [&amp;:first-child] [&amp;&gt;*:last-child]:[&amp;:has(.content1-img)]:max-w-3xl 
+                                    [&amp;&gt;*:last-child]:[&amp;:has(.content1-img)]:lg:w-3xl">
+                                    <!-- <div class="relative z-10 pointer-events-none h-auto lg:sticky lg:top-24 self-start mx-auto">
+                                    <div class="flex [transform:rotateY(180deg)] group-[]/flip:[transform:rotateY(0deg)]">
+                                        <div class="relative flex-shrink-0 p-4 w-full">
+                                            <div class="relative z-10 overflow-hidden *:rounded-xl [transform:rotateY(180deg)] group-[]/flip:[transform:rotateY(0deg)] [&amp;~*]:[&amp;:has(.mask)]:lg:hidden">
+                                                <img class="object-cover w-full h-auto content1-img" width="336" height="687" loading="lazy" fetchpriority="low" src="https://d1y41eupgbwbb2.cloudfront.net/images/website-design2.webp" alt="website-design2">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div> -->
-                            <div class="relative z-20 mx-auto lg:mx-0 lg:pr-4 md:py-6 md:md:py-8 h-auto md:sticky md:top-24 self-start shrink-1 grow-0 basis-auto w-full">
-                                <!-- <h2 class="
-                                    max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight tracking-[-0.04em] text-black text-balance first:*:font-normal
-                                    last:*:font-bold">
-                                    <span class="font-normal">Universal Testing </span><span class="font-bold"> Machine</span>
+                                    </div> -->
+                                <div class="relative z-20 mx-auto lg:mx-0 lg:pr-4 md:py-6 md:md:py-8 h-auto md:sticky md:top-24 self-start shrink-1 grow-0 basis-auto w-full">
+                                    <h2 class="
+                                        max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight text-black text-balance first:*:font-normal
+                                        last:*:font-bold mb-3">
+                                        <span class="font-normal">Universal Testing </span><span class="font-bold"> Machine</span>
+                                    </h2>
+                                    <!-- <div class="relative text-lg md:text-xl font-semibold transition-all duration-500">
+                                        Universal Testing Machine 
+                                    </div> -->
+                                    <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">A universal testing machine (UTM), also known as a universal tester, universal tensile machine, materials testing machine, materials test frame, is used to test the tensile strength (pulling) and compressive strength (pushing), flexural strength, bending, shear, hardness, and torsion testing, providing valuable data for designing and ensuring the quality of materials.</p>
+                                    <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">Creating expressive design which eases screen communication with the user. Building websites to connect users of the site with your business and adjoining top rated ideas and technology. As one of the trusted website design company, we deliver highly conventional designs meeting growing needs of the market to fulfil client requirements.</p>
+                                    <h3 class="w-full 2xl:text-3xl xl:text-2xl lg:text-xl text-lg font-semibold text-[#000000] md:pb-6 pb-4"></h3>
                                     
-                                </h2> -->
-                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500">
-                                                        Universal Testing Machine
-                                                                                                   </div>
-                                <p class="mt-4 text-sm md:text-base leading-7 text-slate-600">A universal testing machine (UTM), also known as a universal tester, universal tensile machine, materials testing machine, materials test frame, is used to test the tensile strength (pulling) and compressive strength (pushing), flexural strength, bending, shear, hardness, and torsion testing, providing valuable data for designing and ensuring the quality of materials.</p>
-                                <p class="mt-4 text-sm md:text-base leading-7 text-slate-600">Creating expressive design which eases screen communication with the user. Building websites to connect users of the site with your business and adjoining top rated ideas and technology. As one of the trusted website design company, we deliver highly conventional designs meeting growing needs of the market to fulfil client requirements.</p>
-                                <h3 class="w-full 2xl:text-3xl xl:text-2xl lg:text-xl text-lg font-semibold text-[#000000] md:pb-6 pb-4"></h3>
-                                
-                                <div class="mt-8 flex gap-4">
-                                    <a href="https://www.habitfoundation.com/website-design/" class="inline-flex justify-center rounded-full text-sm font-semibold py-2 md:py-3 px-3 md:px-4 bg-slate-900 text-white hover:bg-slate-700">
-                                        <span class="select-nonee">
-                                            Explore More <span aria-hidden="true" class="">→</span>
-                                        </span>
-                                    </a>
+                                    <div class="mt-8 flex gap-4">
+                                        <a href="https://www.habitfoundation.com/website-design/" class="inline-flex justify-center rounded-full text-sm font-semibold py-2 md:py-3 px-3 md:px-4 bg-slate-900 text-white hover:bg-slate-700">
+                                            <span class="select-nonee">
+                                                Explore More <span aria-hidden="true" class="">→</span>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
+
                 </div>
                 <!-- second tab  -->
                 <div class="block">
@@ -797,50 +789,51 @@
                 </div>
                 <!-- third tab -->
                 <div class="block">
-                <input type="radio" name="benefit" id="benefit3" class="hidden peer">
-                <div class="hidden peer-checked:flex flex-wrap">
-                <div class="grid grid-cols-2 md:grid-3 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full">
-                    <div class="w-full flex flex-wrap">
-                        <div class="p-[15px] md:p-[30px] md:pb-[70px] lg:pb-[30px] bg-white rounded-[25px] shadow-[0_2px_5px_rgba(0,0,0,0.2)] flex flex-col items-start gap-5 md:gap-10 w-full">
+                    <input type="radio" name="benefit" id="benefit3" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap">
+                    <div class="grid grid-cols-2 md:grid-3 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full">
+                        <div class="w-full flex flex-wrap">
+                            <div class="p-[15px] md:p-[30px] md:pb-[70px] lg:pb-[30px] bg-white rounded-[25px] shadow-[0_2px_5px_rgba(0,0,0,0.2)] flex flex-col items-start gap-5 md:gap-10 w-full">
 
-                            <!-- Top Image -->
-                            <div class="flex items-center">
-                            <img class="h-full w-full object-cover" src="<?php the_field('top_image'); ?>" alt="">
-                            </div>
+                                <!-- Top Image -->
+                                <div class="flex items-center">
+                                <img class="h-full w-full object-cover" src="<?php the_field('top_image'); ?>" alt="">
+                                </div>
 
-                            <div class="flex flex-col gap-7">
-                            <div class="flex flex-col gap-1.5 md:gap-9 lg:gap-12">
-                                <div class="flex flex-col gap-3 md:gap-8">
-                                <div class="flex flex-col gap-4">
-                                    <!-- Title -->
-                                    <div class="text-[18px] md:text-xl font-semibold font-primary">
-                                    <?php the_field('title'); ?>
+                                <div class="flex flex-col gap-7">
+                                <div class="flex flex-col gap-1.5 md:gap-9 lg:gap-12">
+                                    <div class="flex flex-col gap-3 md:gap-8">
+                                    <div class="flex flex-col gap-4">
+                                        <!-- Title -->
+                                        <div class="text-[18px] md:text-xl font-semibold font-primary">
+                                        <?php the_field('title'); ?>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Description -->
-                                <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
-                                    <?php the_field('description'); ?>
-                                </div>
-                                </div>
-
-                                <!-- Explore More Link -->
-                                <div>
-                                <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
-                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                    <?php the_field('explore_text'); ?>
+                                    <!-- Description -->
+                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
+                                        <?php the_field('description'); ?>
                                     </div>
+                                    </div>
+
+                                    <!-- Explore More Link -->
                                     <div>
-                                    <img src="<?php the_field('explore_icon'); ?>" alt="">
+                                    <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                        <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
+                                        <?php the_field('explore_text'); ?>
+                                        </div>
+                                        <div>
+                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
+                                        </div>
+                                    </a>
                                     </div>
-                                </a>
                                 </div>
-                            </div>
-                            </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                    </div>
                 </div>
                 <div class="block">
                     <input type="radio" name="benefit" id="benefit4" class="hidden peer">
@@ -930,7 +923,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
     </div>
 </section>
 
