@@ -763,6 +763,6 @@ function closePDFPopup() {
 
     //     localStorage.removeItem('childPdfLink')
     // }
- 
+
 </script>
 <?php get_footer();?>

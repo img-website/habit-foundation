@@ -117,3 +117,22 @@
 .wpcf7-response-output {
   display: none !important;
 }
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 15px; 
+  margin-bottom: 15px;
+  border: 1px solid #d4d4d4;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 400;
+  color:#555855;
+}
+
+.form-input:focus {
+  border-color: #6e6c6c;
+  background-color: #fff;
+  outline: none;
+}

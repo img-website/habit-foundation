@@ -54,9 +54,9 @@
                         height="414" class="w-full rounded-md">
                     <?php endif; ?>
                 </div>
-                <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                     <?php the_field('company_mission'); ?></p>
-                <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                     <?php the_field('company_mission2'); ?></p>
 
                 <a href="<?php the_field('about_btn_link'); ?>"
@@ -96,7 +96,7 @@
                         height="293" class="w-full rounded-md object-cover aspect-[497/296]">
                     <?php endif; ?>
                 </div>
-                <p class="font-normal md:text-base text-sm tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                     <?php the_field('mission_desc'); ?></p>
             </div>
             <div class="lg:w-5/12 md:w-5/12 w-full md:flex flex-col hidden">
@@ -136,7 +136,7 @@
                         height="293" class="w-full rounded-md object-cover aspect-[497/296]">
                     <?php endif; ?>
                 </div>
-                <p class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                     <?php the_field('vision_desc'); ?></p>
             </div>
         </div>
@@ -378,7 +378,7 @@
                 <?php endif; ?> -->
 
                 <?php if (get_field('event_desc')): ?>
-                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
+                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow ">
                     <?php the_field('event_desc'); ?></p>
                 <?php endif; ?>
 
@@ -484,7 +484,7 @@
                 </div>
                 <?php endif; ?> -->
 
-                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
+                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow ">
                     <?php the_field('orientation_desc'); ?></p>
 
                 <a href="<?php the_field('orientation_btn_link'); ?>"
@@ -581,7 +581,7 @@
                 <?php endif; ?> -->
 
                 <?php if (get_field('patent_desc')): ?>
-                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow ">
+                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow ">
                     <?php the_field('patent_desc'); ?>
                 </p>
                 <?php endif; ?>

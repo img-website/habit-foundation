@@ -81,7 +81,7 @@
                     <?php the_field('product_1'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
@@ -101,7 +101,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_1'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_1'); ?></p>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_2'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_2'); ?></p>
                             </div>
                         </div>
@@ -133,13 +133,13 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_3'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_3'); ?></p>
                             </div>
                         </div>
 
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
@@ -166,7 +166,7 @@
                     <?php the_field('product_2'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('product_image_2'); ?>
                             <?php if ($img): ?>
@@ -175,7 +175,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div
                             class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300 ">
                             <span class="*:size-6 text-gray-800">
@@ -188,7 +188,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_4'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_4'); ?></p>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_5'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_5'); ?></p>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_6'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_6'); ?></p>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_7'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_7'); ?></p>
                             </div>
                         </div>
@@ -252,7 +252,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_8'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_8'); ?></p>
                             </div>
                         </div>
@@ -274,7 +274,7 @@
                     <?php the_field('product_3'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
@@ -294,7 +294,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_9'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_9'); ?></p>
                             </div>
                         </div>
@@ -311,7 +311,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_10'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_10'); ?></p>
                             </div>
                         </div>
@@ -327,7 +327,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_11'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_11'); ?></p>
                             </div>
                         </div>
@@ -343,7 +343,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_12'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_12'); ?></p>
                             </div>
                         </div>
@@ -360,12 +360,12 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_13'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_13'); ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
@@ -390,7 +390,7 @@
                     <?php the_field('product_4'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('product_image_4'); ?>
                             <?php if ($img): ?>
@@ -399,7 +399,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div
                             class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300">
                             <span class="*:size-6 text-gray-800">
@@ -412,7 +412,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_14'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_14'); ?></p>
                             </div>
                         </div>
@@ -428,7 +428,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_15'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_15'); ?></p>
                             </div>
                         </div>
@@ -444,7 +444,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_16'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_16'); ?></p>
                             </div>
                         </div>
@@ -460,7 +460,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('product_title_17'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('product_description_17'); ?></p>
                             </div>
                         </div>
@@ -484,7 +484,7 @@
                     <?php the_field('service_1'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 pt-8">
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 flex items-center lg:hidden">
                             <?php $img = get_field('service_image_1'); ?>
                             <?php if ($img): ?>
@@ -504,7 +504,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_1'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_1'); ?></p>
                             </div>
                         </div>
@@ -520,7 +520,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_2'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_2'); ?></p>
                             </div>
                         </div>
@@ -536,12 +536,12 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_3'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_3'); ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 lg:flex items-center hidden">
                             <?php $img = get_field('service_image_1'); ?>
                             <?php if ($img): ?>
@@ -567,7 +567,7 @@
                     <?php the_field('service_2'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 pt-8">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full h-80 flex items-center">
                             <?php $img = get_field('service_image_2'); ?>
                             <?php if ($img): ?>
@@ -576,7 +576,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div
                             class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300">
                             <span class="*:size-6 text-gray-800">
@@ -589,7 +589,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_4'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_4'); ?></p>
                             </div>
                         </div>
@@ -605,7 +605,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_5'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_5'); ?></p>
                             </div>
                         </div>
@@ -621,7 +621,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_6'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_6'); ?></p>
                             </div>
                         </div>
@@ -637,7 +637,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_7'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_7'); ?></p>
                             </div>
                         </div>
@@ -653,7 +653,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_8'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_8'); ?></p>
                             </div>
                         </div>
@@ -675,7 +675,7 @@
                     <?php the_field('service_3'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
@@ -695,7 +695,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_9'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_9'); ?></p>
                             </div>
                         </div>
@@ -711,7 +711,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_10'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_10'); ?></p>
                             </div>
                         </div>
@@ -727,7 +727,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_11'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_11'); ?></p>
                             </div>
                         </div>
@@ -743,7 +743,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_12'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_12'); ?></p>
                             </div>
                         </div>
@@ -759,7 +759,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_13'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_13'); ?></p>
                             </div>
                         </div>
@@ -775,12 +775,12 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_14'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_14'); ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
@@ -793,8 +793,7 @@
             </div>
 
             <div class="w-full mb-6 rounded-lg">
-                <h4
-                    class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
+                <h4 class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -802,11 +801,12 @@
                             <path
                                 d="M13 11.33 18 18H6l5-6.67V6h2m2.96-2H8.04c-.42 0-.65.48-.39.81L9 6.5v4.17L3.2 18.4c-.49.66-.02 1.6.8 1.6h16c.82 0 1.29-.94.8-1.6L15 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81z">
                             </path>
-                        </svg></span>
+                        </svg>
+                    </span>
                     <?php the_field('service_4'); ?>
                 </h4>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('service_image_4'); ?>
                             <?php if ($img): ?>
@@ -815,7 +815,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3">
+                    <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
 
                         <div
                             class="flex items-start py-3 bg-gradient-to-r from-[#e0e3ed] to-transparent gap-2 rounded-lg duration-300">
@@ -829,7 +829,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_15'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_15'); ?></p>
                             </div>
                         </div>
@@ -845,7 +845,7 @@
                                 <h4 class="lg:text-lg text-sm !leading-6 text-[#212121] font-semibold">
                                     <?php the_field('service_title_16'); ?></h4>
                                 <p
-                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                                    class="font-normal md:text-base text-sm  tracking-[0.3px] text-start text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('service_description_16'); ?></p>
                             </div>
                         </div>

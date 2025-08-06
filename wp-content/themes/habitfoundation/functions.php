@@ -91,9 +91,10 @@ function habit_custom_header_shortcode() {
                     </a>
                     <ul
                         class="bg-white w-52 absolute top-[3.2rem] -left-5 rounded-md p-0 opacity-0 z-40 transition-all translate-y-4 shadow-[0px_7px_10px_-1px_rgba(0,0,0,0.2)] invisible group-hover/cs:visible group-hover/cs:opacity-100">
-                        <li
-                            class="relative w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
-                            <span class="*:size-5 inline-block *:text-black"><svg stroke="currentColor" fill="none"
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/key-event/" class="w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="none"
                                     stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
                                     height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 2v4"></path>
@@ -101,12 +102,14 @@ function habit_custom_header_shortcode() {
                                     <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                     <path d="M3 10h18"></path>
                                     <path d="m9 16 2 2 4-4"></path>
-                                </svg></span>
-                            <a href="https://project.imgglobal.in/habit-foundation/key-event/">Key Events</a>
+                                </svg>
+                                </span>
+                                Key Events
+                            </a>
                         </li>
-                        <li
-                            class="relative w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
-                            <span class="*:size-5 inline-block *:text-black">
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/basic-event" class=" w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                     stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -121,12 +124,12 @@ function habit_custom_header_shortcode() {
                                     <path d="M12 18h.01"></path>
                                     <path d="M16 18h.01"></path>
                                 </svg>
-                            </span>
-                            <a href="https://project.imgglobal.in/habit-foundation/basic-event">Basic Events</a>
+                                </span>Basic Events
+                            </a>
                         </li>
-                        <li
-                            class="relative w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
-                            <span class="*:size-5 inline-block *:text-black">
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/upcoming-event" class=" w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                                     height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="none" d="M0 0h24v24H0z"></path>
@@ -134,17 +137,18 @@ function habit_custom_header_shortcode() {
                                         d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z">
                                     </path>
                                 </svg>
-                            </span>
-                            <a href="https://project.imgglobal.in/habit-foundation/upcoming-event">Upcoming Events</a>
+                                </span>
+                                Upcoming Events
+                            </a>
                         </li>
                     </ul>
-
+                
                 </li>
 
                 <li>
-                    <a href="#"
-                        class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact
-                        Us</a>
+                    <a href="#" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact
+                    Us
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -343,9 +347,9 @@ function habit_orientation_section_shortcode() {
             </h2>
 
             <?php 
-          $btn_text = get_field('orientation_btn_text',);
-          $btn_link = get_field('orientation_btn_link',);
-        ?>
+            $btn_text = get_field('orientation_btn_text',);
+            $btn_link = get_field('orientation_btn_link',);
+            ?>
             <a href="<?php echo esc_url($btn_link); ?>"
                 class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#bf4b50] text-white rounded-full ring-2 ring-inset ring-[#bf4b50] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
                 <?php echo esc_html($btn_text); ?>
@@ -361,14 +365,14 @@ function habit_orientation_section_shortcode() {
     </div>
 </section>
 <?php
-  return ob_get_clean();
+    return ob_get_clean();
 }
 add_shortcode('habit_orientation_section', 'habit_orientation_section_shortcode');
 
 
 function habit_footer_shortcode() {
-  ob_start();
-  ?>
+    ob_start();
+    ?>
 
 <footer class="w-full relative lg:pt-16 lg:pb-4 md:py-10 py-8 h-full w-full bg-cover bg-center"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/dark-background.jpg');">
