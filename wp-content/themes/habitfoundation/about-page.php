@@ -630,7 +630,7 @@ get_header();?>
                     </h2>
                     <span class="lg:text-lg md:text-base text-sm !leading-normal text-center font-semibold text-[#2a1313] mb-4">Submit Your Details to Download the PDF</span>
                     <!-- Contact Form 7 Shortcode Start -->
-                    <div class="w-full mx-auto flex justify-center">
+                    <div class="w-full mx-auto flex justify-center contact-form-popup">
                         <?php echo do_shortcode('[contact-form-7 id="49c2112" title="popup-contact"]'); ?>
                     </div>
                     <!-- Contact Form 7 Shortcode End -->

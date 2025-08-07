@@ -45,18 +45,7 @@ get_header();?>
                         <label for="event1"
                             class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event1:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
-                                <!-- <span class="lg:size-5 size-4 *:!size-full inline-block">
-                                    <svg class="!text-[#bf4b50] group-has-[#event1:checked]:!text-white"
-                                        stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                        stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 2v4"></path>
-                                        <path d="M16 2v4"></path>
-                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                                        <path d="M3 10h18"></path>
-                                        <path d="m9 16 2 2 4-4"></path>
-                                    </svg>
-                                </span> -->
+                                
                                 <div
                                     class="text-[#bf4b50] group-has-[#event1:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
                                     <?php the_field('event_top_heading_1'); ?>
@@ -169,8 +158,37 @@ get_header();?>
                 <div class="block">
                     <input type="radio" name="event" id="event1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
-                        <div class="w-full event-tabs ">
-                            <div class="w-full mt-5">
+                        <div class="w-full event-tabs group">
+                        <div class="w-full mt-5">
+                            <!-- <ul class="flex flex-nowrap justify-center gap-4 w-max min-w-full py-2 px-2 lg:px-0 mb-5">
+                                <li class="group/date">
+                                    <label for="date1"
+                                        class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-md w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#date1:checked]:!bg-[#bf4b50]">
+                                        <div class="flex items-center lg:gap-2 gap-1">
+                                            <div
+                                                class="text-[#bf4b50] group-has-[#date1:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                                2023-24
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+
+                                <li class="group/date">
+                                    <label for="date2"
+                                        class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-md w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#date2:checked]:!bg-[#bf4b50]">
+                                        <div class="flex items-center lg:gap-2 gap-1">
+                                            <div
+                                                class="text-[#bf4b50] group-has-[#date2:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                                2025-26
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul> -->
+                        <div class="w-full">
+                            <div class="block">
+                                <input type="radio" name="date" id="date1" class="hidden peer" checked="">
+                                <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                                 <div
                                     class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                     <div class="flex flex-col gap-y-1 my-4">
@@ -220,6 +238,7 @@ get_header();?>
                                         <?php endif; ?>
                                     </div>
                                 </div>
+
                                 <div
                                     class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                     <div class="flex flex-col gap-y-1 my-4">
@@ -450,8 +469,16 @@ get_header();?>
                                     </div>
                                 </div>
 
+                                </div>
                             </div>
 
+                            <!-- <div class="block">
+                                <input type="radio" name="date" id="date2" class="hidden peer">
+                                <div class="hidden peer-checked:flex flex-wrap *:w-auto">
+                                </div>
+                            </div> -->
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>

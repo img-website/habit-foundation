@@ -9,7 +9,7 @@
             
             <div class="bg-white flex flex-col items-start justify-between rounded-xl mb-4 lg:py-10 lg:px-7 py-5 px-4 gap-8">
                 <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center mx-auto flex justify-center font-semibold text-[#2a1313] lg:mb-4">
-                    Connect with us
+                    Connect Us
                 </h2>    
                 <iframe 
                     src="https://docs.google.com/forms/d/e/1FAIpQLSeK8J4BBV8EhNxEyWJeeK20UaDLbgRkbKyzTlzubXdCh8zJag/viewform?embedded=true" 

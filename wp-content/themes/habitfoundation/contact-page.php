@@ -37,11 +37,11 @@
             </h2>
         </div>
         <div class="w-full flex items-center flex-row justify-center lg:gap-4 gap-2 lg:pb-8 pb-6">
-            <a href="https://project.imgglobal.in/habit-foundation/application-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#215887] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
+            <a href="https://project.imgglobal.in/habit-foundation/application-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#bf4b50] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
                 Incubatee Application Form            
             </a>
 
-            <a href="https://project.imgglobal.in/habit-foundation/contact-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#215887] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
+            <a href="https://project.imgglobal.in/habit-foundation/contact-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#bf4b50] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
                 Connect with us           
             </a>
         </div>

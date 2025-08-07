@@ -163,6 +163,11 @@
     margin-bottom: 5px;
     font-size: 13px;
 }
+.contact-form-popup .wpcf7-form {
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+}
 @media (max-width: 1600px) {
   .wpcf7-form {
     width: 100%;
