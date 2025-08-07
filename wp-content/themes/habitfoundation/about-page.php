@@ -640,50 +640,33 @@ get_header();?>
     </div>
 
 <script>
-function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown");
-    const iconDown = document.getElementById("iconDown");
-    const iconUp = document.getElementById("iconUp");
+document.addEventListener('DOMContentLoaded', function () {
+    const popupForm = document.querySelector('#popup2 form.wpcf7-form');
 
-    const isHidden = dropdown.classList.contains("hidden");
+    if (popupForm) {
+        // Listen to Contact Form 7's submit event
+        document.addEventListener('wpcf7submit', function (event) {
+            if (!popupForm.contains(event.target)) return;
 
-    if (isHidden) {
-        dropdown.classList.remove("hidden");
-        iconDown.classList.add("hidden");
-        iconUp.classList.remove("hidden");
-    } else {
-        dropdown.classList.add("hidden");
-        iconDown.classList.remove("hidden");
-        iconUp.classList.add("hidden");
+            console.log("CF7 form successfully submitted");
+
+            const localStorageLink = localStorage.getItem('childPdfLink');
+            if (localStorageLink) {
+                const downloadUrl = localStorageLink.replace('preview', 'export?format=pdf');
+
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.download = 'DownloadedFile.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }, false);
     }
-}
+});
+</script>
 
-function selectItem(element) {
-    const items = document.querySelectorAll('#dropdownList li');
-    items.forEach(item => {
-        item.classList.remove("bg-white", "text-black");
-    });
-
-    element.classList.add("bg-white", "text-black");
-    document.getElementById("selectedText").textContent = element.textContent;
-
-    document.getElementById("dropdown").classList.add("hidden");
-    document.getElementById("iconUp").classList.add("hidden");
-    document.getElementById("iconDown").classList.remove("hidden");
-}
-
-// Close dropdown if clicked outside
-// document.addEventListener("click", function(event) {
-//     const wrapper = document.getElementById("dropdownWrapper");
-//     if (!wrapper.contains(event.target)) {
-//         document.getElementById("dropdown").classList.add("hidden");
-//         document.getElementById("iconUp").classList.add("hidden");
-//         document.getElementById("iconDown").classList.remove("hidden");
-//     }
-// });
-
-
-
+<script>
 
 // Reset Contact Form 7 form and remove validation messages when popup opens
 function resetContactForm7Popup() {
@@ -704,19 +687,14 @@ function resetContactForm7Popup() {
     }
 }
 
-// Call this function when opening the popup (add to your popup open button)
-// Example: document.getElementById('openPopupBtn').onclick = function() { ...; resetContactForm7Popup(); };
-
 // Optionally, also reset when closing the popup
-function closePDFPopup() {
-    // ...existing code for closing popup...
-    resetContactForm7Popup();
-}
+    function closePDFPopup() {
+        // ...existing code for closing popup...
+        resetContactForm7Popup();
+    }
     
     // NOTE: If you are on localhost (xampp), install and configure 'WP Mail SMTP' plugin for email delivery.
-    </script>
-
-<script>
+    
     document.addEventListener('DOMContentLoaded', function () {
     const popupForm = document.querySelector('#popup2 form.wpcf7-form');
 
@@ -745,23 +723,4 @@ function closePDFPopup() {
     });
 
 </script> 
-
-<script>
-    
-    // if(localStorage.getItem('childPdfLink')){
-
-    //     const localStorageLink = localStorage.getItem('childPdfLink');
-    //     const downloadUrl = localStorageLink.replace('preview','export?format=pdf')
-
-    //     const a = document.createElement('a');
-    //     a.href = downloadUrl;
-    //     a.download = 'DownloadedFile.pdf'; // Change the filename if needed
-    //     document.body.appendChild(a);
-    //     a.click();
-    //     document.body.removeChild(a);
-
-    //     localStorage.removeItem('childPdfLink')
-    // }
-
-</script>
 <?php get_footer();?>
