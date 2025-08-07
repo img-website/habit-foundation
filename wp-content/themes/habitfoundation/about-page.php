@@ -712,38 +712,37 @@ function closePDFPopup() {
     // ...existing code for closing popup...
     resetContactForm7Popup();
 }
- 
-// NOTE: If you are on localhost (xampp), install and configure 'WP Mail SMTP' plugin for email delivery.
-</script>
+    
+    // NOTE: If you are on localhost (xampp), install and configure 'WP Mail SMTP' plugin for email delivery.
+    </script>
 
 <script>
-  
-  document.addEventListener('DOMContentLoaded', function () {
-  const popupForm = document.querySelector('#popup2 form.wpcf7-form');
+    document.addEventListener('DOMContentLoaded', function () {
+    const popupForm = document.querySelector('#popup2 form.wpcf7-form');
 
-  if (popupForm) {
-    popupForm.addEventListener('submit', function (e) {
-      e.preventDefault(); // Stop the default submit
+    if (popupForm) {
+        popupForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Stop the default submit
 
-      console.log("Form submission intercepted");
+        console.log("Form submission intercepted");
+        
+        const localStorageLink = localStorage.getItem('childPdfLink');
+        const downloadUrl = localStorageLink.replace('preview','export?format=pdf')
+
     
-    const localStorageLink = localStorage.getItem('childPdfLink');
-    const downloadUrl = localStorageLink.replace('preview','export?format=pdf')
-
- 
-      const link = document.createElement('a');
-      link.href = downloadUrl // Your PDF path
-      link.download = 'DownloadedFile.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
- 
-      setTimeout(() => {
-        popupForm.submit(); 
-      }, 2000);  
+        const link = document.createElement('a');
+        link.href = downloadUrl // Your PDF path
+        link.download = 'DownloadedFile.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    
+        setTimeout(() => {
+            popupForm.submit(); 
+        }, 2000);  
+        });
+    }
     });
-  }
-});
 
 </script> 
 

@@ -128,7 +128,7 @@
     border-radius: 5px;
     outline: none;
     font-weight: 400;
-    color: #555855;
+    color: #334155;
     background: #f1f1f1;
 }
 
@@ -136,4 +136,42 @@
   border-color: #6e6c6c;
   background-color: #fff;
   outline: none;
+}
+.form-field-radio, .check-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 10px;
+}
+.check-input label {
+  display: flex;
+  align-items: center;
+}
+.wpcf7-list-item-label {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+/* .wpcf7-form label{
+  font-size: 15px;
+    font-weight: 500;
+    color: #585858;
+} */
+.form-sub-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+@media (max-width: 1600px) {
+  .wpcf7-form {
+    width: 100%;
+    max-width: 100%;
+    }
+}
+@media (max-width: 360px) {
+  .wpcf7-form {
+    width: 260px;
+    max-width: 100%;
+  }
 }

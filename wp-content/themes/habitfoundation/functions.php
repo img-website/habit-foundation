@@ -146,7 +146,7 @@ function habit_custom_header_shortcode() {
                 </li>
 
                 <li>
-                    <a href="#" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact
+                    <a href="https://project.imgglobal.in/habit-foundation/contact-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact
                     Us
                     </a>
                 </li>
@@ -436,7 +436,7 @@ function habit_footer_shortcode() {
                         <li><a href="https://project.imgglobal.in/habit-foundation/focus"
                                 class="md:hover:text-white">Focus</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/benefits" class="md:hover:text-white">Benefits</a></li>
-                        <li><a href="#" class="md:hover:text-white">Contact Us</a></li>
+                        <li><a href="https://project.imgglobal.in/habit-foundation/contact-us" class="md:hover:text-white">Contact Us</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/key-event/"
                                 class="md:hover:text-white">Key Events</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/basic-event"

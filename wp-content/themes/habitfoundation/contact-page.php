@@ -37,24 +37,15 @@
             </h2>
         </div>
         <div class="w-full flex items-center flex-row justify-center lg:gap-4 gap-2 lg:pb-8 pb-6">
-            <a href="" class="px-6 py-4 cursor-pointer float-left bg-[#215887] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
+            <a href="https://project.imgglobal.in/habit-foundation/application-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#215887] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
                 Incubatee Application Form            
             </a>
 
-            <a href="" class="px-6 py-4 cursor-pointer float-left bg-[#215887] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
+            <a href="https://project.imgglobal.in/habit-foundation/contact-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#215887] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
                 Connect with us           
             </a>
         </div>
-
-        <div class="bg-white flex flex-col items-start justify-between rounded-xl mb-4 lg:py-10 lg:px-7 py-5 px-4 gap-8">
-            <h2
-                class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-2">
-                Personal Information
-            </h2>
-            <?php echo do_shortcode('[contact-form-7 id="31aae7f" title="Application Form"]'); ?>
-        </div>
-
-        <div class="bg-white flex items-start justify-between rounded-xl lg:py-10 lg:px-7 py-5 px-4 gap-8">
+        <div class="bg-white flex items-start justify-between md:flex-row flex-col rounded-xl lg:py-10 lg:px-7 sm:py-5 sm:px-4 py-2 px-2 gap-8">
             <div class="lg:w-1/2 w-full flex flex-col">
                 <!-- <div class="flex flex-col gap-2 mb-6">
                     <h4 class="lg:text-lg text-black font-semibold"><?php the_field('contact_info_title'); ?></h4>
@@ -76,35 +67,35 @@
                         </a>
                     </span>
                 </div> -->
-                <div class="flex flex-col lg:gap-y-5">
-                    <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] px-4 py-5 flex-row">
+                <div class="flex flex-col lg:gap-y-5 gap-4">
+                    <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] lg:px-4 lg:py-5 px-3 py-4 flex-row">
                         <span class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300">
                             <svg class="size-6 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M83.19,174.4a8,8,0,0,0,11.21-1.6,52,52,0,0,1,83.2,0,8,8,0,1,0,12.8-9.6A67.88,67.88,0,0,0,163,141.51a40,40,0,1,0-53.94,0A67.88,67.88,0,0,0,81.6,163.2,8,8,0,0,0,83.19,174.4ZM112,112a24,24,0,1,1,24,24A24,24,0,0,1,112,112Zm96-88H64A16,16,0,0,0,48,40V64H32a8,8,0,0,0,0,16H48v40H32a8,8,0,0,0,0,16H48v40H32a8,8,0,0,0,0,16H48v24a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V40A16,16,0,0,0,208,24Zm0,192H64V40H208Z"></path></svg>
                         </span>
                         <div class="flex flex-col">
                             <span class="text-black lg:text-lg text-base font-semibold">
                                 <?php the_field('contact_address'); ?></span>
-                            <p class="text-slate-700 font-medium tracking-[0.3px] lg:w-4/5 text-[15px]"><?php the_field('contact_address_detail'); ?></p>
+                            <p class="text-slate-700 font-medium tracking-[0.3px] lg:w-4/5 lg:text-[15px] text-[13px]"><?php the_field('contact_address_detail'); ?></p>
                         </div>
                     </div>
-                    <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] px-4 py-5 flex-row">
+                    <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] lg:px-4 lg:py-5 px-3 py-4 flex-row">
                         <span class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300">
                             <svg class="size-6 text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M16.23 7h2.6c-.06-.47-.36-.94-.79-1.17L10.5 2 2.8 5.83c-.48.26-.8.81-.8 1.34V15c0 1.1.9 2 2 2V7.4L10.5 4l5.73 3z"></path><path d="M20 8H7c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2zm0 11H7v-7l6.5 3.33L20 12v7zm-6.5-5.67L7 10h13l-6.5 3.33z"></path></svg>
                         </span>
                         <a href="mailto:info@habitfoundation.in" class="flex flex-col text-black text-base font-medium hover:underline">
                             <span class="text-black lg:text-lg text-base font-semibold">
                             <?php the_field('contact_email'); ?></span>
-                            <p class="text-slate-700 font-medium tracking-[0.3px] text-[15px]"><?php the_field('contact_email_detail'); ?></p>
+                            <p class="text-slate-700 font-medium tracking-[0.3px] lg:text-[15px] text-[13px]"><?php the_field('contact_email_detail'); ?></p>
                         </a>
                     </div>
-                    <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] px-4 py-5 flex-row">
+                    <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] lg:px-4 lg:py-5 px-3 py-4 flex-row">
                         <span class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300">
                             <svg class="size-6 text-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         </span>
                         <div class="flex flex-col">
                             <span class="text-black lg:text-lg text-base font-semibold">
                                 <?php the_field('contact_phone'); ?></span>
-                            <p class="text-slate-700 font-medium tracking-[0.3px] text-[15px]"><?php the_field('contact_phone_detail'); ?></p>
+                            <p class="text-slate-700 font-medium tracking-[0.3px] lg:text-[15px] text-[13px]"><?php the_field('contact_phone_detail'); ?></p>
                         </div>
                     </div>
                 </div>
