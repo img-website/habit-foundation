@@ -53,16 +53,9 @@ function habit_custom_header_shortcode() {
         <nav class="lg:flex justify-center mx-auto hidden">
             <ul class="lg:flex items-center space-x-10">
                 <li>
-                <!-- <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-medium hover:text-[#bf4b50] tracking-[0.5px] 
-                before:content-[''] before:absolute before:-bottom-2 before:right-0 
-                before:h-[3px] before:w-full before:bg-[#bf4b50] 
-                before:transition-transform before:duration-500 before:scale-x-0 before:origin-top-right 
-                hover:before:scale-x-100 hover:before:origin-top-left duration-300">
-                About Us
-                </a> -->
                     <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
-                    duration-300">
-                        About Us
+                        duration-300">
+                            About Us
                     </a>
                 </li>
                 <li>
@@ -72,7 +65,7 @@ function habit_custom_header_shortcode() {
                 </li>
 
                 <li>
-                    <a href="https://project.imgglobal.in/habit-foundation/benefits/"
+                    <a href="javascript:;"
                         class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits
                     </a>
                 </li>
@@ -227,13 +220,11 @@ function habit_custom_header_shortcode() {
             </li>
 
             <li class="relative flex flex-col">
-                <a href="https://project.imgglobal.in/habit-foundation/focus"
-                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Focus</a>
+                <a href="https://project.imgglobal.in/habit-foundation/focus" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Focus</a>
             </li>
 
             <li class="relative flex flex-col">
-                <a href="https://project.imgglobal.in/habit-foundation/benefits"
-                    class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
+                <a href="javascript:;" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
             </li>
 
             <li class="relative flex flex-col">
@@ -252,8 +243,7 @@ function habit_custom_header_shortcode() {
                     </span>
                 </label>
 
-                <ul
-                    class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all max-h-0 overflow-hidden peer-checked:max-h-[500px] peer-checked:py-2 duration-300">
+                <ul class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all max-h-0 overflow-hidden peer-checked:max-h-[500px] peer-checked:py-2 duration-300">
                     <li
                         class="relative w-full py-3 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black text-sm !leading-7 cursor-pointer">
                         <span class="*:size-5 inline-block *:text-black">
@@ -346,13 +336,9 @@ function habit_orientation_section_shortcode() {
                 Get the support, tools, and mentorship you need
             </h2>
 
-            <?php 
-            $btn_text = get_field('orientation_btn_text',);
-            $btn_link = get_field('orientation_btn_link',);
-            ?>
-            <a href="<?php echo esc_url($btn_link); ?>"
+            <a href="https://project.imgglobal.in/habit-foundation/about-us/"
                 class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#bf4b50] text-white rounded-full ring-2 ring-inset ring-[#bf4b50] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
-                <?php echo esc_html($btn_text); ?>
+                    Know More
                 <span class="bg-white rounded-full p-2 ms-3">
                     <svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"

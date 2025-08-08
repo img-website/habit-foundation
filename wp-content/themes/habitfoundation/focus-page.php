@@ -66,7 +66,7 @@
 
         <div id="productContent" class="tab-content w-full flex flex-col">
             
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -80,7 +80,7 @@
 
                     <?php the_field('product_1'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('product_image_1'); ?>
@@ -139,7 +139,7 @@
                         </div>
 
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
@@ -152,7 +152,7 @@
                 </div>
             </div>
             
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -165,8 +165,8 @@
                         </svg></span>
                     <?php the_field('product_2'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('product_image_2'); ?>
                             <?php if ($img): ?>
@@ -260,7 +260,7 @@
                 </div>
             </div>
 
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -273,7 +273,7 @@
                         </svg></span>
                     <?php the_field('product_3'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('product_image_3'); ?>
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
@@ -376,7 +376,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -389,8 +389,8 @@
                         </svg></span>
                     <?php the_field('product_4'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('product_image_4'); ?>
                             <?php if ($img): ?>
@@ -470,7 +470,7 @@
         </div>
 
         <div id="serviceContent" class="tab-content hidden w-full flex flex-col items-center lg:gap-6 gap-4">
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -483,7 +483,7 @@
                         </svg></span>
                     <?php the_field('service_1'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 pt-8">
+                <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 lg:pt-8">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 flex items-center lg:hidden">
                             <?php $img = get_field('service_image_1'); ?>
@@ -541,7 +541,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 lg:flex items-center hidden">
                             <?php $img = get_field('service_image_1'); ?>
                             <?php if ($img): ?>
@@ -553,7 +553,7 @@
                 </div>
             </div>
 
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -566,8 +566,8 @@
                         </svg></span>
                     <?php the_field('service_2'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 pt-8">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 lg:pt-8">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full h-80 flex items-center">
                             <?php $img = get_field('service_image_2'); ?>
                             <?php if ($img): ?>
@@ -661,7 +661,7 @@
                 </div>
             </div>
 
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
@@ -674,7 +674,7 @@
                         </svg></span>
                     <?php the_field('service_3'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
                             <?php $img = get_field('service_image_3'); ?>
@@ -780,7 +780,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full lg:flex items-center hidden">
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
@@ -792,7 +792,7 @@
                 </div>
             </div>
 
-            <div class="w-full mb-6 rounded-lg">
+            <div class="w-full lg:mb-6 rounded-lg">
                 <h4 class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -805,8 +805,8 @@
                     </span>
                     <?php the_field('service_4'); ?>
                 </h4>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4">
-                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-32 self-start mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
+                    <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
                             <?php $img = get_field('service_image_4'); ?>
                             <?php if ($img): ?>

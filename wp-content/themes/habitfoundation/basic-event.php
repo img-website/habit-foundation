@@ -39,31 +39,33 @@ get_header();?>
             </h2>
         </div>
         <div class="w-full flex flex-col mx-auto group mt-6 lg:gap-6 gap-4">
-            <ul class="flex flex-wrap justify-center gap-4">
-                <li class="group/event">
-                    <label for="event1"
-                        class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 py-3 px-5 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event1:checked]:!bg-[#bf4b50]">
-                        <div class="flex items-center lg:gap-2 gap-1">
-                            <div
-                                class="text-[#bf4b50] group-has-[#event1:checked]:!text-white font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
-                                <?php the_field('event_top_heading_1'); ?>
+            <div class="w-full overflow-x-auto">
+                <ul class="flex flex-nowrap justify-center gap-4 w-max min-w-full py-2 px-2 lg:px-0">
+                    <li class="group/event">
+                        <label for="event1"
+                            class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event1:checked]:!bg-[#bf4b50]">
+                            <div class="flex items-center lg:gap-2 gap-1">
+                                <div
+                                    class="text-[#bf4b50] group-has-[#event1:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                    <?php the_field('event_top_heading_1'); ?>
+                                </div>
                             </div>
-                        </div>
-                    </label>
-                </li>
+                        </label>
+                    </li>
 
-                <li class="group/event">
-                    <label for="event2"
-                        class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 py-3 px-5 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event2:checked]:!bg-[#bf4b50]">
-                        <div class="flex items-center lg:gap-2 gap-1">
-                            <div
-                                class="text-[#bf4b50] group-has-[#event2:checked]:!text-white font-semibold tracking-[0.5px] lg:text-base xs:text-[13px] sm:text-sm">
-                                <?php the_field('event_top_heading_2'); ?>
+                    <li class="group/event">
+                        <label for="event2"
+                            class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event2:checked]:!bg-[#bf4b50]">
+                            <div class="flex items-center lg:gap-2 gap-1">
+                                <div
+                                    class="text-[#bf4b50] group-has-[#event2:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                    <?php the_field('event_top_heading_2'); ?>
+                                </div>
                             </div>
-                        </div>
-                    </label>
-                </li>
-            </ul>
+                        </label>
+                    </li>
+                </ul>
+            </div>
             <div class="content-sec w-full">
                 <div class="block">
                     <input type="radio" name="event" id="event1" class="hidden peer" checked="">
