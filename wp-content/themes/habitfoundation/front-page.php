@@ -3,6 +3,7 @@
     echo do_shortcode('[smartslider3 slider="2"]');
 ?>
 
+
 <!-- <section class="w-full bg-white relative lg:pb-12 md:py-10 py-8">
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex items-center justify-center lg:-mt-28">
@@ -640,8 +641,4 @@
     </div>
 </section>
 
-<?php echo do_shortcode('[habit_orientation_section]'); ?>
-
-
-
-<?php get_footer();?>
+<?php echo do_shortcode('[habit_orientation_section]'); ?><?php get_footer();?>

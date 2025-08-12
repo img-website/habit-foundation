@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (swiperEl) {
     new Swiper(".NewSwiper", {
       slidesPerView: 1,
+      autoplay: true,
       spaceBetween: 20,
+
       loop: true,
       pagination: {
         el: ".swiper-pagination",
@@ -296,3 +298,4 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.addEventListener('click', () => showTab(btn));
       });
   });
+
