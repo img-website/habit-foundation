@@ -114,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
- 
   
   // Handler for Popup 1
   if (popup1) {
@@ -260,3 +259,40 @@ document.addEventListener("DOMContentLoaded", () => {
             popup.classList.remove("flex");
             }
         });
+
+  // event date listing date
+      document.querySelectorAll('.event-tabs, .event-tabs2').forEach(tabGroup => {
+      const tabButtons = tabGroup.querySelectorAll('.agile-tab-btn');
+      const tabContents = tabGroup.querySelectorAll('.agile-tab-content');
+
+      // Function to show a specific tab
+      function showTab(btn) {
+          const target = btn.getAttribute('data-tab');
+
+          // Hide all content
+          tabContents.forEach(content => content.classList.add('hidden'));
+
+          // Remove active class from all buttons
+          tabButtons.forEach(button => {
+              button.classList.remove('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
+              button.classList.add('text-gray-700');
+          });
+
+          // Show target content
+          document.getElementById(target).classList.remove('hidden');
+
+          // Activate clicked tab
+          btn.classList.add('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
+          btn.classList.remove('text-gray-700');
+      }
+
+      // Always open first tab by default
+      if (tabButtons.length > 0) {
+          showTab(tabButtons[0]);
+      }
+
+      // Add click event to each button
+      tabButtons.forEach(btn => {
+          btn.addEventListener('click', () => showTab(btn));
+      });
+  });

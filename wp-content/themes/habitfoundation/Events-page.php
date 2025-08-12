@@ -131,9 +131,9 @@ get_header();?>
                             </div>
                             <!-- Tab Content -->
                             <div class="agile-tab-content mt-8" id="tab1">
-
-                                <div
-                                    class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
+                                
+                            <div
+                                class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
                                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 grid-cols-1">
                                         <?php $img1 = get_field('event_image_3'); ?>
                                         <?php if ($img1): ?>
@@ -173,8 +173,7 @@ get_header();?>
                                             <?php the_field('event_description_1'); ?>
                                         </p>
                                     </div>
-
-
+                                
                                 </div>
 
                                 <div
@@ -260,7 +259,7 @@ get_header();?>
                                             class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
                                             <?php the_field('event_description_3'); ?></p>
                                     </div>
-
+                                
                                 </div>
 
                                 <div
@@ -346,7 +345,7 @@ get_header();?>
                                             class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
                                             <?php the_field('event_description_5'); ?></p>
                                     </div>
-
+                                
                                 </div>
 
                                 <div
@@ -526,7 +525,7 @@ get_header();?>
                         <span class="md:size-8 size-5 *:size-full md:opacity-0 md:group-has-[#event2:checked]:opacity-100 max-md:rotate-90 group-has-[#event2:checked]:max-md:-rotate-90">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg>
                         </span>
-                </label> -->
+                    </label> -->
                     <input type="radio" name="event" id="event2" class="hidden peer">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
 
@@ -582,7 +581,6 @@ get_header();?>
                                             class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 grow">
                                             <?php the_field('event_description_9'); ?></p>
                                     </div>
-
                                 </div>
                                 <div
                                     class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-2 py-4 mb-4">
@@ -736,9 +734,10 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-
+                    
                     </div>
                 </div>
+
                 <div class="block">
                     <!-- <label for="event3" class="inline-flex md:hidden items-center justify-between p-4 mt-4 text-white rounded-2xl w-full hover:md:bg-black/10 duration-300 transition-all bg-theme4 group-has-[#event3:checked]:!bg-[#0876bd]">
                         <div class="flex items-center gap-4">
@@ -770,6 +769,30 @@ get_header();?>
     </div>
     </div>
 </section>
-
+<script>
+        document.querySelectorAll('.agile-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-tab');
+    
+        // Hide all content
+        document.querySelectorAll('.agile-tab-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+    
+        // Remove active class from all buttons
+        document.querySelectorAll('.agile-tab-btn').forEach(button => {
+            button.classList.remove('border-b-2', 'border-orange-500', 'text-orange-600');
+            button.classList.add('text-gray-700');
+        });
+    
+        // Show target content
+        document.getElementById(target).classList.remove('hidden');
+    
+        // Activate the clicked tab
+        btn.classList.add('border-b-2', 'border-orange-500', 'text-orange-600');
+        btn.classList.remove('text-gray-700');
+        });
+    });
+</script>
 
 <?php get_footer();?>

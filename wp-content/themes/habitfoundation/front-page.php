@@ -1,30 +1,30 @@
 <?php /* Template Name: home page */ get_header(); ?>
 <?php
-  echo do_shortcode('[smartslider3 slider="2"]');
+    echo do_shortcode('[smartslider3 slider="2"]');
 ?>
 
 <!-- <section class="w-full bg-white relative lg:pb-12 md:py-10 py-8">
-  <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex items-center justify-center lg:-mt-28">
-      <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon1.svg" alt="Idea Builder" title="Idea Builder" width="48" height="48" class="w-12 h-12 object-contain">
-        <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('inspire_title'); ?></h3>
-        <p class="text-sm/7 text-center text-[#dbdbdb]"><?php the_field('inspire_desc'); ?></p>
-      </div>
+    <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex items-center justify-center lg:-mt-28">
+        <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon1.svg" alt="Idea Builder" title="Idea Builder" width="48" height="48" class="w-12 h-12 object-contain">
+            <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('inspire_title'); ?></h3>
+            <p class="text-sm/7 text-center text-[#dbdbdb]"><?php the_field('inspire_desc'); ?></p>
+        </div>
 
-      <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon2.svg" alt="Innovation Hub" title="Innovation Hub" width="48" height="48" class="w-12 h-12 object-contain">
-        <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('build_title'); ?></h3>
-        <p class="text-sm/7 text-[#dbdbdb] text-center"><?php the_field('build_desc'); ?></p>
-      </div>
+        <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon2.svg" alt="Innovation Hub" title="Innovation Hub" width="48" height="48" class="w-12 h-12 object-contain">
+            <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('build_title'); ?></h3>
+            <p class="text-sm/7 text-[#dbdbdb] text-center"><?php the_field('build_desc'); ?></p>
+        </div>
 
-      <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon3.svg" alt="Growth Path" title="Growth Path" width="48" height="48" class="w-12 h-12 object-contain">
-        <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('collab_title'); ?></h3>
-        <p class="text-sm/7 text-[#dbdbdb] text-center"><?php the_field('collab_desc'); ?></p>
-      </div>
+        <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon3.svg" alt="Growth Path" title="Growth Path" width="48" height="48" class="w-12 h-12 object-contain">
+            <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('collab_title'); ?></h3>
+            <p class="text-sm/7 text-[#dbdbdb] text-center"><?php the_field('collab_desc'); ?></p>
+        </div>
+        </div>
     </div>
-  </div>
 </section> -->
 
 <section class="w-full bg-white relative lg:py-16 md:py-10 py-8">
@@ -288,7 +288,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" />
                         </div>
                         <?php endif; ?>
                     </div>
@@ -299,7 +299,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" />
                         </div>
                         <?php endif; ?>
                     </div>
