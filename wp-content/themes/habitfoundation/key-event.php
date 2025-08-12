@@ -82,21 +82,11 @@ get_header();?>
                             </div>
                         </label>
                     </li>
-
+<!-- 
                     <li class="group/event">
                         <label for="event3"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event3:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
-                                <!-- <span class="lg:size-5 size-4 *:!size-full inline-block group-has-[#event3:checked]:!text-white">
-                                    <svg class="!text-[#bf4b50] group-has-[#event3:checked]:!text-white"
-                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                        height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="none" d="M0 0h24v24H0z"></path>
-                                        <path
-                                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z">
-                                        </path>
-                                    </svg>
-                                </span> -->
                                 <div
                                     class="text-[#bf4b50] group-has-[#event3:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
                                     <?php the_field('event_top_heading_3'); ?>
@@ -104,7 +94,7 @@ get_header();?>
                             </div>
 
                         </label>
-                    </li>
+                    </li> -->
 
                     <li class="group/event">
                         <label for="event4"
@@ -138,20 +128,17 @@ get_header();?>
                         </label>
                     </li>
 
-                    <li class="group/event">
+                    <!-- <li class="group/event">
                         <label for="event6"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event6:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
-                                <!-- <span class="lg:size-5 size-4 *:!size-full inline-block group-has-[#event6:checked]:!text-white">
-                                    <svg class="!text-[#bf4b50] group-has-[#event6:checked]:!text-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="10" r="1"></circle><path d="M22 20V8h-4l-6-4-6 4H2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2"></path><path d="M6 17v.01"></path><path d="M6 13v.01"></path><path d="M18 17v.01"></path><path d="M18 13v.01"></path><path d="M14 22v-5a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5"></path></svg>
-                                </span> -->
                                 <div
                                     class="text-[#bf4b50] group-has-[#event6:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
                                     <?php the_field('event_top_heading_6'); ?>
                                 </div>
                             </div>
                         </label>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="content-sec w-full">
@@ -647,7 +634,7 @@ get_header();?>
                         </div>
                     </div>
                 
-            </div>
+                </div>
         </div>
     </div>
 </section>

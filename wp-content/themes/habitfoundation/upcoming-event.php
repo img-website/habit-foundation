@@ -36,17 +36,23 @@ get_header();?>
             </h2>
         </div>
         <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
-            <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] p-[15px] lg:p-[30px] md:pb-[35px] lg:pb-[70px] xl:pb-[30px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-start gap-2 md:gap-2.5">
-                <button class="design-tab-btn text-base lg:text-lg font-semibold px-4 py-3"
+            <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] py-6 px-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-center gap-2 md:gap-2.5">
+                <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
                     data-tab="design-tab">Design Thinking Workshop</button>
+                <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
             </div>
-            <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] p-[15px] lg:p-[30px] md:pb-[35px] lg:pb-[70px] xl:pb-[30px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-start gap-2 md:gap-2.5">
-                <button class="design-tab-btn text-base lg:text-lg font-semibold px-4 py-3"
+
+            <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] py-6 px-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-center gap-2 md:gap-2.5">
+                <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
                     data-tab="design-tab">Patent Awareness Session</button>
+                <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
             </div>
-            <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] p-[15px] lg:p-[30px] md:pb-[35px] lg:pb-[70px] xl:pb-[30px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-start gap-2 md:gap-2.5">
-                <button class="design-tab-btn text-base lg:text-lg font-semibold px-4 py-3"
+            
+            <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] py-6 px-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-center gap-2 md:gap-2.5">
+                <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
                     data-tab="design-tab">Session on Startup Regulatory Compliance</button>
+                <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
+
             </div>
         </div>
         </div>
