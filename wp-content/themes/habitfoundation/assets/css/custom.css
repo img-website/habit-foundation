@@ -137,13 +137,13 @@
   background-color: #fff;
   outline: none;
 }
-.form-field-radio, .check-input {
+.form-field-radio, .wpcf7-checkbox {
     display: flex;
     flex-direction: column;
     gap: 6px;
     margin: 10px;
 }
-.check-input label {
+.wpcf7-checkbox label {
   display: flex;
   align-items: center;
 }

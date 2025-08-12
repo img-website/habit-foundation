@@ -23,7 +23,6 @@
     </div>
 </section>
 
-
 <section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6">
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
         <div class="w-full flex flex-col">
@@ -37,11 +36,11 @@
             </h2>
         </div>
         <div class="w-full flex items-center flex-row justify-center lg:gap-4 gap-2 lg:pb-8 pb-6">
-            <a href="https://project.imgglobal.in/habit-foundation/application-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#bf4b50] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
+            <a href="https://project.imgglobal.in/habit-foundation/incubatee-application-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#bf4b50] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
                 Incubatee Application Form            
             </a>
 
-            <a href="https://project.imgglobal.in/habit-foundation/contact-form/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#bf4b50] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
+            <a href="https://project.imgglobal.in/habit-foundation/connect-us/" class="lg:px-6 lg:py-4 px-2 py-2 lg:text-base sm:text-sm text-[12px] cursor-pointer float-left bg-[#bf4b50] border border-[#dadada] rounded-[2px] shadow-[0_4px_6px_rgb(196,194,194)] text-white text-center duration-300">
                 Connect with us           
             </a>
         </div>
@@ -109,49 +108,48 @@
     </div>
 </section>
 
-
 <script>
-function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown");
-    const iconDown = document.getElementById("iconDown");
-    const iconUp = document.getElementById("iconUp");
+    function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown");
+        const iconDown = document.getElementById("iconDown");
+        const iconUp = document.getElementById("iconUp");
 
-    const isHidden = dropdown.classList.contains("hidden");
+        const isHidden = dropdown.classList.contains("hidden");
 
-    if (isHidden) {
-        dropdown.classList.remove("hidden");
-        iconDown.classList.add("hidden");
-        iconUp.classList.remove("hidden");
-    } else {
-        dropdown.classList.add("hidden");
-        iconDown.classList.remove("hidden");
-        iconUp.classList.add("hidden");
+        if (isHidden) {
+            dropdown.classList.remove("hidden");
+            iconDown.classList.add("hidden");
+            iconUp.classList.remove("hidden");
+        } else {
+            dropdown.classList.add("hidden");
+            iconDown.classList.remove("hidden");
+            iconUp.classList.add("hidden");
+        }
     }
-}
 
-function selectItem(element) {
-    const items = document.querySelectorAll('#dropdownList li');
-    items.forEach(item => {
-        item.classList.remove("bg-white", "text-black");
-    });
+    function selectItem(element) {
+        const items = document.querySelectorAll('#dropdownList li');
+        items.forEach(item => {
+            item.classList.remove("bg-white", "text-black");
+        });
 
-    element.classList.add("bg-white", "text-black");
-    document.getElementById("selectedText").textContent = element.textContent;
+        element.classList.add("bg-white", "text-black");
+        document.getElementById("selectedText").textContent = element.textContent;
 
-    document.getElementById("dropdown").classList.add("hidden");
-    document.getElementById("iconUp").classList.add("hidden");
-    document.getElementById("iconDown").classList.remove("hidden");
-}
-
-// Close dropdown if clicked outside
-document.addEventListener("click", function(event) {
-    const wrapper = document.getElementById("dropdownWrapper");
-    if (!wrapper.contains(event.target)) {
         document.getElementById("dropdown").classList.add("hidden");
         document.getElementById("iconUp").classList.add("hidden");
         document.getElementById("iconDown").classList.remove("hidden");
     }
-});
+
+    // Close dropdown if clicked outside
+    document.addEventListener("click", function(event) {
+        const wrapper = document.getElementById("dropdownWrapper");
+        if (!wrapper.contains(event.target)) {
+            document.getElementById("dropdown").classList.add("hidden");
+            document.getElementById("iconUp").classList.add("hidden");
+            document.getElementById("iconDown").classList.remove("hidden");
+        }
+    });
 </script>
 
 <?php get_footer();?>
