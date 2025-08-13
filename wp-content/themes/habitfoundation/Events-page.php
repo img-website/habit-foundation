@@ -769,6 +769,7 @@ get_header();?>
     </div>
     </div>
 </section>
+
 <script>
         document.querySelectorAll('.agile-tab-btn').forEach(btn => {
         btn.addEventListener('click', () => {

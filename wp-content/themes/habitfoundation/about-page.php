@@ -51,15 +51,18 @@ get_header();?>
                         title="Shri Baldev Boolani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('director_1_name'); ?></h4>
+                    
+                    <!-- <a href="<?php the_field('director_linkedin1'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a> -->
                 </div>
             </div>
 
-            <div
-                class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
+            <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg">
                 <?php $img2 = get_field('director_2_image'); ?>
                 <?php if ($img2): ?>
                 <div class="py-2 px-2 w-full h-auto h-auto">
@@ -68,10 +71,13 @@ get_header();?>
                         title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
-                    <h4
-                        class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('director_2_name'); ?></h4>
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                    <h4 class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
+                        <?php the_field('director_2_name'); ?>
+                    </h4>
+                    <a href="<?php the_field('director_linkedin2'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a>
                 </div>
             </div>
 
@@ -85,10 +91,14 @@ get_header();?>
                         title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('director_3_name'); ?></h4>
+                        <?php the_field('director_3_name'); ?>
+                    </h4>
+                    <a href="<?php the_field('director_linkedin3'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a>
                 </div>
             </div>
 
@@ -103,10 +113,13 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('director_4_name'); ?></h4>
+                    <a href="<?php the_field('director_linkedin4'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a>              
                 </div>
             </div>
 
@@ -121,10 +134,14 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('director_5_name'); ?></h4>
+                        <?php the_field('director_5_name'); ?>
+                    </h4>
+                    <!-- <a href="<?php the_field('director_linkedin5'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a>   -->
                 </div>
             </div>
 
@@ -139,10 +156,14 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('director_6_name'); ?></h4>
+                        <?php the_field('director_6_name'); ?>
+                    </h4>
+                    <a href="<?php the_field('director_linkedin6'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a> 
                 </div>
             </div>
 
@@ -174,12 +195,17 @@ get_header();?>
                         class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_1_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_1_designation'); ?></p>
+                </div>
+                    <a href="<?php the_field('leadership_team_linkedin1'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                    </a> 
                 </div>
             </div>
 
@@ -194,13 +220,18 @@ get_header();?>
                         class="aspect-[257/171] size-full object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_2_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_2_designation'); ?>
                     </p>
+                </div>
+                <!-- <a href="<?php the_field('leadership_team_linkedin2'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a>  -->
                 </div>
             </div>
 
@@ -215,13 +246,18 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_3_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_3_designation'); ?></p>
                 </div>
+                <a href="<?php the_field('leadership_team_linkedin3'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a> 
+                </div>           
             </div>
 
             <div
@@ -235,13 +271,18 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_4_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_4_designation'); ?>
                     </p>
+                </div>
+                <a href="<?php the_field('leadership_team_linkedin4'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a> 
                 </div>
             </div>
 
@@ -256,12 +297,17 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_5_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_5_designation'); ?></p>
+                </div>
+                <a href="<?php the_field('leadership_team_linkedin5'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a> 
                 </div>
             </div>
 
@@ -276,12 +322,17 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_6_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_6_designation'); ?></p>
+                </div>
+                <!-- <a href="<?php the_field('leadership_team_linkedin6'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a>  -->
                 </div>
             </div>
 
@@ -296,12 +347,17 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_7_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_7_designation'); ?></p>
+                </div>
+                <a href="<?php the_field('leadership_team_linkedin7'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a> 
                 </div>
             </div>
 
@@ -316,12 +372,17 @@ get_header();?>
                         class="aspect-[257/171] size-full object-top object-cover rounded-md">
                 </div>
                 <?php endif; ?>
-                <div class="flex flex-col gap-y-1 px-4 py-4">
+                <div class="flex items-center justify-between gap-y-1 px-4 py-4">
+                <div class="flex flex-col gap-y-1">
                     <h4
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
                         <?php the_field('leadership_team_8_name'); ?></h4>
-                    <p class="font-medium text-gray-800 lg:text-base text-sm">
+                    <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_8_designation'); ?></p>
+                </div>
+                <a href="<?php the_field('leadership_team_linkedin8'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                    <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a> 
                 </div>
             </div>
         </div>
