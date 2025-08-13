@@ -1,6 +1,6 @@
 <?php /* Template Name: cover page2 */ get_header(); ?>
 
-<!-- <section class="hero-section w-full swiper bg-white lg:py-16 md:py-8 py-6 h-full swiper-initialized swiper-horizontal swiper-backface-hidden"
+<section class="hero-section w-full swiper bg-white lg:py-16 md:py-8 py-6 h-full swiper-initialized swiper-horizontal swiper-backface-hidden"
     data-swiper="{
             slidesPerView: 1,
             spaceBetween: 0,
@@ -55,10 +55,10 @@
                                 </div>
                         </div>
                         <div class="md:w-[45%] w-full flex flex-col">
-                            <?php $img = get_field('cover_page_img'); ?>
+                            <?php $img = get_field('cover_page_img2'); ?>
                                 <?php if ($img): ?>
-                                <img src="<?php echo esc_url($img['url']); ?>" alt="Company" title="Company" width="477" height="414"
-                                    class="size-full object-contain mx-auto max-w-[32rem] max-md:aspect-[384/496]">
+                                <img src="<?php echo esc_url($img['url']); ?>" alt=" <?php the_field('popup_title_2'); ?>" title=" <?php the_field('popup_title_2'); ?>" width="477" height="414"
+                                    class="size-full object-contain mx-auto max-w-[32rem] max-md:aspect-[384/496]"/>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -66,9 +66,9 @@
                 </div>
             </div>
         </div>
-</section> -->
+</section>
 
-<section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
+<!-- <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
         <a href="<?php the_field('back_button_link'); ?>"
@@ -92,8 +92,7 @@
         </div>
         </div>
     </div>
-</section>
-
+</section> -->
 
 
 <?php get_footer();?>

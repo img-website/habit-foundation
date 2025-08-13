@@ -20,58 +20,65 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Your mobile menu toggle code here as well
-  const toggle = document.getElementById("menuToggle");
-  const menu = document.getElementById("mobile-menu");
-  const close = document.getElementById("menuClose");
-  const mobileOverlay = document.getElementById("mobileOverlay");
+// Your mobile menu toggle code here as well
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("mobile-menu");
+const close = document.getElementById("menuClose");
+const mobileOverlay = document.getElementById("mobileOverlay");
 
-  if (toggle && menu && close && mobileOverlay) {
-    toggle.addEventListener("click", () => {
-      menu.classList.remove("translate-x-full");
-      menu.classList.add("translate-x-0");
-      mobileOverlay.classList.remove("hidden");
-    });
+if (toggle && menu && close && mobileOverlay) {
+  toggle.addEventListener("click", () => {
+    menu.classList.remove("translate-x-full");
+    menu.classList.add("translate-x-0");
+    mobileOverlay.classList.remove("hidden");
 
-    function closeMenu() {
-      menu.classList.add("translate-x-full");
-      menu.classList.remove("translate-x-0");
-      mobileOverlay.classList.add("hidden");
-    }
+    // Background scroll disable
+    document.documentElement.classList.add("overflow-hidden");
+    document.body.classList.add("overflow-hidden");
+  });
 
-    close.addEventListener("click", closeMenu);
-    mobileOverlay.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menu.classList.add("translate-x-full");
+    menu.classList.remove("translate-x-0");
+    mobileOverlay.classList.add("hidden");
+
+    // Background scroll enable
+    document.documentElement.classList.remove("overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
   }
+
+  close.addEventListener("click", closeMenu);
+  mobileOverlay.addEventListener("click", closeMenu);
+}
 });
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".benefitSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
-    loop: true,
+    autoplay: true,
+    loop: false,
     pagination: {
-      el: ".swiper-pagination",
+      // el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
     },
   });
 });
 
 
-
-
-
-// ------------------pdf popup------------------
+//-------------------PDF popup-----------------  
 function openPDFPopup(pdfUrl) {
   const popup = document.getElementById('pdfPopup');
   document.getElementById('pdfFrame').src = pdfUrl;
   popup.classList.remove('hidden');
   popup.classList.add('flex');
 
+  document.body.classList.add('overflow-hidden');
 }
 
 function closePDFPopup() {
@@ -80,14 +87,16 @@ function closePDFPopup() {
   popup.classList.remove('flex');
   document.getElementById('pdfFrame').src = '';
 
+  document.body.classList.remove('overflow-hidden');
 }
 
-function handleOutsideClick(event) {
-  const modalBox = document.getElementById('pdfModalBox');
-  if (!modalBox.contains(event.target)) {
+// Close when clicking backdrop only
+document.getElementById('pdfPopup').addEventListener('click', function (event) {
+  if (event.target.id === 'pdfPopup') {
     closePDFPopup();
   }
-}
+});
+
 
 //-------------------cover page popup-----------------
 document.addEventListener("DOMContentLoaded", () => {

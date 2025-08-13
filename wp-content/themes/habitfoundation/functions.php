@@ -70,6 +70,62 @@ function habit_custom_header_shortcode() {
                     </a>
                 </li>
 
+                <!-- <li class="relative group/cs">
+                    <a href="javascript:;"
+                        class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits
+                        <span class="*:size-5 transition-transform duration-500 group-hover/cs:[transform:rotateX(180deg)]"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul
+                        class="bg-white w-52 absolute top-[3.2rem] -left-5 rounded-md p-0 opacity-0 z-40 transition-all translate-y-4 shadow-[0px_7px_10px_-1px_rgba(0,0,0,0.2)] invisible group-hover/cs:visible group-hover/cs:opacity-100">
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/benefits/" class="w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 12h3L12 3 2 12h3v3H3v2h2v3h2v-3h4v3h2v-3h4v3h2v-3h2v-2h-2v-3zM7 15v-4.81l4-3.6V15H7zm6 0V6.59l4 3.6V15h-4z"></path></svg>
+                                </span>
+                                Infrastructure
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/benefits/" class=" w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path></svg>                                </span>Mentorship
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/benefits/" class=" w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM13.5003 8C13.8278 8.43606 14.0625 8.94584 14.175 9.5H16V11H14.175C13.8275 12.7117 12.3142 14 10.5 14H10.3107L14.0303 17.7197L12.9697 18.7803L8 13.8107V12.5H10.5C11.4797 12.5 12.3131 11.8739 12.622 11H8V9.5H12.622C12.3131 8.62611 11.4797 8 10.5 8H8V6.5H16V8H13.5003Z"></path></svg>
+                                </span>
+                                Venture Funding
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/benefits/" class=" w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" d="M6,9 C7.65685425,9 9,7.65685425 9,6 C9,4.34314575 7.65685425,3 6,3 C4.34314575,3 3,4.34314575 3,6 C3,7.65685425 4.34314575,9 6,9 Z M6,3 L6,0 M6,12 L6,9 M0,6 L3,6 M9,6 L12,6 M2,2 L4,4 M8,8 L10,10 M10,2 L8,4 M4,8 L2,10 M18,12 C19.6568542,12 21,10.6568542 21,9 C21,7.34314575 19.6568542,6 18,6 C16.3431458,6 15,7.34314575 15,9 C15,10.6568542 16.3431458,12 18,12 Z M18,6 L18,3 M18,15 L18,12 M12,9 L15,9 M21,9 L24,9 M14,5 L16,7 M20,11 L22,13 M22,5 L20,7 M16,11 L14,13 M9,21 C10.6568542,21 12,19.6568542 12,18 C12,16.3431458 10.6568542,15 9,15 C7.34314575,15 6,16.3431458 6,18 C6,19.6568542 7.34314575,21 9,21 Z M9,15 L9,12 M9,24 L9,21 M3,18 L6,18 M12,18 L15,18 M5,14 L7,16 M11,20 L13,22 M13,14 L11,16 M7,20 L5,22"></path></svg>
+                                </span>
+                                Services
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="https://project.imgglobal.in/habit-foundation/benefits/" class=" w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                                <span class="*:size-5 inline-block *:text-black">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M928 224H768v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56H548v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56H328v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56H96c-17.7 0-32 14.3-32 32v576c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32zm-40 568H136V296h120v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56h148v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56h148v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56h120v496zM416 496H232c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm0 136H232c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm308.2-177.4L620.6 598.3l-52.8-73.1c-3-4.2-7.8-6.6-12.9-6.6H500c-6.5 0-10.3 7.4-6.5 12.7l114.1 158.2a15.9 15.9 0 0 0 25.8 0l165-228.7c3.8-5.3 0-12.7-6.5-12.7H737c-5-.1-9.8 2.4-12.8 6.5z"></path></svg>
+                                </span>
+                                Programmes
+                            </a>
+                        </li>
+                    </ul>
+                
+                </li> -->
+
                 <li class="relative group/cs">
                     <a href="javascript:;"
                         class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Events
@@ -201,7 +257,7 @@ function habit_custom_header_shortcode() {
 
     <!-- Mobile Slide-in Menu -->
     <div id="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuLabel"
-        class="fixed top-0 right-0 h-full w-full max-w-xs bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg overflow-y-auto">
+        class="fixed top-0 right-0 h-full overflow-y-auto w-full max-w-xs bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg">
 
         <!-- Header with Close -->
         <div class="flex justify-between items-center p-4 border-b">
@@ -213,7 +269,7 @@ function habit_custom_header_shortcode() {
         </div>
 
         <!-- Navigation Links -->
-        <ul class="flex flex-col p-4 space-y-4">
+        <ul class="flex flex-col p-4 space-y-4 h-[28rem] overflow-y-auto">
             <li class="relative flex flex-col">
                 <a href="https://project.imgglobal.in/habit-foundation/about-us"
                     class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">About Us</a>
@@ -222,10 +278,70 @@ function habit_custom_header_shortcode() {
             <li class="relative flex flex-col">
                 <a href="https://project.imgglobal.in/habit-foundation/focus" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Focus</a>
             </li>
-
+            
             <li class="relative flex flex-col">
-                <a href="javascript:;" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
+                <a href="https://project.imgglobal.in/habit-foundation/benefits" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
             </li>
+
+            <!-- <li class="relative flex flex-col">
+                <input type="checkbox" id="benefits-toggle" class="peer hidden">
+
+                <label for="benefits-toggle"
+                    class="relative flex items-center justify-between gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold tracking-[0.5px] duration-300 cursor-pointer">
+                    Benefits
+                    <span class="*:size-5">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny"
+                            viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z">
+                            </path>
+                        </svg>
+                    </span>
+                </label>
+                <ul class="bg-white flex flex-col w-full whitespace-nowrap p-0 z-40 transition-all max-h-0 overflow-hidden peer-checked:max-h-[500px] peer-checked:py-2 duration-300">
+                    <li class="relative w-full py-3 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black text-sm !leading-7 cursor-pointer">
+                    <span class="*:size-5 inline-block *:text-black">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 12h3L12 3 2 12h3v3H3v2h2v3h2v-3h4v3h2v-3h4v3h2v-3h2v-2h-2v-3zM7 15v-4.81l4-3.6V15H7zm6 0V6.59l4 3.6V15h-4z"></path></svg>
+                    </span>
+                    <a href="https://project.imgglobal.in/habit-foundation/benefits/" class="md:hover:text-white">Infrastructure</a>
+                    </li>
+
+                    <li
+                        class="relative w-full py-3 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path></svg>
+                        </span>
+                        <a href="https://project.imgglobal.in/habit-foundation/benefits/"
+                                class="md:hover:text-white">Mentorship</a>
+                    </li>
+
+                    <li
+                        class="relative w-full py-3 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM13.5003 8C13.8278 8.43606 14.0625 8.94584 14.175 9.5H16V11H14.175C13.8275 12.7117 12.3142 14 10.5 14H10.3107L14.0303 17.7197L12.9697 18.7803L8 13.8107V12.5H10.5C11.4797 12.5 12.3131 11.8739 12.622 11H8V9.5H12.622C12.3131 8.62611 11.4797 8 10.5 8H8V6.5H16V8H13.5003Z"></path></svg>
+                        </span>
+                        <a href="https://project.imgglobal.in/habit-foundation/benefits/"
+                                class="md:hover:text-white">Venture Funding</a>
+                    </li>
+                    <li
+                        class="relative w-full py-3 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" d="M6,9 C7.65685425,9 9,7.65685425 9,6 C9,4.34314575 7.65685425,3 6,3 C4.34314575,3 3,4.34314575 3,6 C3,7.65685425 4.34314575,9 6,9 Z M6,3 L6,0 M6,12 L6,9 M0,6 L3,6 M9,6 L12,6 M2,2 L4,4 M8,8 L10,10 M10,2 L8,4 M4,8 L2,10 M18,12 C19.6568542,12 21,10.6568542 21,9 C21,7.34314575 19.6568542,6 18,6 C16.3431458,6 15,7.34314575 15,9 C15,10.6568542 16.3431458,12 18,12 Z M18,6 L18,3 M18,15 L18,12 M12,9 L15,9 M21,9 L24,9 M14,5 L16,7 M20,11 L22,13 M22,5 L20,7 M16,11 L14,13 M9,21 C10.6568542,21 12,19.6568542 12,18 C12,16.3431458 10.6568542,15 9,15 C7.34314575,15 6,16.3431458 6,18 C6,19.6568542 7.34314575,21 9,21 Z M9,15 L9,12 M9,24 L9,21 M3,18 L6,18 M12,18 L15,18 M5,14 L7,16 M11,20 L13,22 M13,14 L11,16 M7,20 L5,22"></path></svg>                   
+                        </span>
+                        <a href="https://project.imgglobal.in/habit-foundation/benefits/"
+                                class="md:hover:text-white">Services</a>
+                    </li>
+                    <li
+                        class="relative w-full py-3 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black text-sm !leading-7 cursor-pointer">
+                        <span class="*:size-5 inline-block *:text-black">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M928 224H768v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56H548v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56H328v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56H96c-17.7 0-32 14.3-32 32v576c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32zm-40 568H136V296h120v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56h148v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56h148v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56h120v496zM416 496H232c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm0 136H232c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm308.2-177.4L620.6 598.3l-52.8-73.1c-3-4.2-7.8-6.6-12.9-6.6H500c-6.5 0-10.3 7.4-6.5 12.7l114.1 158.2a15.9 15.9 0 0 0 25.8 0l165-228.7c3.8-5.3 0-12.7-6.5-12.7H737c-5-.1-9.8 2.4-12.8 6.5z"></path></svg>
+                        </span>
+                        <a href="https://project.imgglobal.in/habit-foundation/benefits/"
+                                class="md:hover:text-white">Programmes
+                        </a>
+                    </li>
+                </ul>
+            </li> -->
 
             <li class="relative flex flex-col">
                 <input type="checkbox" id="events-toggle" class="peer hidden">
