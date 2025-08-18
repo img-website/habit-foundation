@@ -126,7 +126,7 @@ get_header();?>
                         </label>
                     </li>
 
-                    <li class="group/event">
+                    <!-- <li class="group/event">
                         <label for="event6"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event6:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
@@ -136,7 +136,7 @@ get_header();?>
                                 </div>
                             </div>
                         </label>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="content-sec w-full">
@@ -529,10 +529,10 @@ get_header();?>
                         <div class="hidden peer-checked:flex flex-wrap">
                                 <div class="w-full event-tabs">
                                 <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                    <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab5">2025</button>
-                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab6">2026</button>
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab5">2024</button>
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab6">2025</button>
                                 </div>
-                                <div class="agile-tab-content mt-8" id="tab5">
+                                <div class="agile-tab-content mt-8" id="tab6">
                                     <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                             <div class="flex flex-col gap-y-1 my-4">
                                                 <span
@@ -585,7 +585,7 @@ get_header();?>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center mt-8" id="tab6">2025 Event Calendar Coming Soon</div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab5">2024 Event Calendar Coming Soon</div>
                             </div>
                         </div>
                     </div>
@@ -729,7 +729,7 @@ get_header();?>
                         </div>
                         </div>
                     </div>
-                    <div class="block">
+                    <!-- <div class="block">
                         <input type="radio" name="event" id="event6" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full flex flex-wrap">
@@ -738,7 +738,7 @@ get_header();?>
                                 data-tab="design-tab">Vescop</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
         </div>
     </div>

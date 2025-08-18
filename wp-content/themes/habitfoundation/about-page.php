@@ -631,7 +631,7 @@ get_header();?>
                     </div>
                 </div>
             </div>
-            <div
+            <!-- <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <div class="flex items-center justify-between gap-3 w-full">
                     <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
@@ -662,7 +662,7 @@ get_header();?>
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </div>
@@ -688,7 +688,7 @@ get_header();?>
     </div>
 
     <div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="lg:w-3/5 w-full h-auto lg:top-12 top-4 bg-white rounded-xl relative lg:py-6 lg:px-4 overflow-y-auto">
+        <div class="lg:w-3/5 w-full h-auto lg:top-6 top-4 bg-white rounded-xl relative lg:py-6 lg:px-4 overflow-y-auto">
             <button id="button" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
                 <div class="w-full mx-auto bg-white py-3 px-7 rounded-2xl">
                 <div class="flex flex-col gap-2 w-full">

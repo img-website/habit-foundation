@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".benefitSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
-    speed: 2000,
+    speed: 3000,
     autoplay: true,
     loop: false,
     pagination: {
@@ -149,56 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
     popupElement.classList.remove("flex");
   }
 });
-// -------------------tabbing---------------------
-document.addEventListener("DOMContentLoaded", () => {
-  const tabs = {
-    product: {
-      tab: document.getElementById("productTab"),
-      content: document.getElementById("productContent"),
-    },
-    service: {
-      tab: document.getElementById("serviceTab"),
-      content: document.getElementById("serviceContent"),
-    },
-  };
-
-  function showTab(name) {
-    Object.keys(tabs).forEach((key) => {
-      const tab = tabs[key].tab;
-      const content = tabs[key].content;
-      const isActive = key === name;
-
-      if (!tab || !content) return; // Avoid error if any element is missing
-
-      tab.classList.toggle("bg-[#bf4b50]", isActive);
-      tab.classList.toggle("bg-[#000000]", !isActive);
-
-      const iconText = tab.querySelector(".icon-text");
-      if (iconText) {
-        iconText.classList.toggle("text-white", isActive);
-        iconText.classList.toggle("text-[#212121]", !isActive);
-      }
-
-      content.classList.toggle("hidden", !isActive);
-    });
-
-    localStorage.setItem("activeTab", name);
-  }
-
-  Object.keys(tabs).forEach((key) => {
-    const tab = tabs[key].tab;
-    if (tab) {
-      tab.addEventListener("click", (e) => {
-        e.preventDefault();
-        showTab(key);
-      });
-    }
-  });
-
-  const savedTab = localStorage.getItem("activeTab") || "product";
-  showTab(savedTab);
-});
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -272,40 +222,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-  // event date listing date
-      document.querySelectorAll('.event-tabs, .event-tabs2').forEach(tabGroup => {
-      const tabButtons = tabGroup.querySelectorAll('.agile-tab-btn');
-      const tabContents = tabGroup.querySelectorAll('.agile-tab-content');
-
-      // Function to show a specific tab
-      function showTab(btn) {
-          const target = btn.getAttribute('data-tab');
-
-          // Hide all content
-          tabContents.forEach(content => content.classList.add('hidden'));
-
-          // Remove active class from all buttons
-          tabButtons.forEach(button => {
-              button.classList.remove('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
-              button.classList.add('text-gray-700');
-          });
-
-          // Show target content
-          document.getElementById(target).classList.remove('hidden');
-
-          // Activate clicked tab
-          btn.classList.add('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
-          btn.classList.remove('text-gray-700');
-      }
-
-      // Always open first tab by default
-      if (tabButtons.length > 0) {
-          showTab(tabButtons[0]);
-      }
-
-      // Add click event to each button
-      tabButtons.forEach(btn => {
-          btn.addEventListener('click', () => showTab(btn));
-      });
-  });
-
+        

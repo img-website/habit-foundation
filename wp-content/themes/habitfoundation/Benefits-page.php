@@ -1,24 +1,24 @@
 <?php
 /* Template Name: benefits page */get_header();?>
 <section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
-  <?php $bg = get_field('benefits_banner_image'); ?>
-  <?php if ($bg): ?>
-    <div class="absolute inset-0">
-      <img src="<?php echo esc_url($bg['url']); ?>" alt="benefits Banner" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-[#01142a8c] bg-opacity-70"></div>
+    <?php $bg = get_field('benefits_banner_image'); ?>
+    <?php if ($bg): ?>
+        <div class="absolute inset-0">
+        <img src="<?php echo esc_url($bg['url']); ?>" alt="benefits Banner" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-[#01142a8c] bg-opacity-70"></div>
+        </div>
+    <?php endif; ?>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
+        <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
+        <?php the_field('benefits_main_heading'); ?>
+        <span class="text-[lime-500]"><?php the_field('benefits_highlight'); ?></span>
+        </h2>
+        <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
+        <span class="font-medium inline-block text-[#bf4b50]">—</span>
+        <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_benefits'); ?></span>
+        </div>
     </div>
-  <?php endif; ?>
-  <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-    <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
-      <?php the_field('benefits_main_heading'); ?>
-      <span class="text-[lime-500]"><?php the_field('benefits_highlight'); ?></span>
-    </h2>
-    <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
-      <span class="font-medium inline-block text-[#bf4b50]">—</span>
-      <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_benefits'); ?></span>
-    </div>
-  </div>
 </section>
 
 <section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
@@ -155,21 +155,7 @@
                     <input type="radio" name="benefit" id="benefit1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                         <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized swiper-horizontal swiper-backface-hidden"
-                                    data-swiper="{
-                                        slidesPerView: 1,
-                                        spaceBetween: 0,
-                                        speed: 2000,
-                                        loop: true,
-                                        keyboard: {enabled: true},
-                                        pagination: {
-                                            clickable: true,
-                                            el: .swiper-pagination
-                                        },
-                                        navigation: {
-                                            nextEl: .next,
-                                            prevEl: .prev
-                                        }
-                                    }">
+                                    >
                                         <div class="swiper-wrapper relative">
                                             <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                                 <div class="flex flex-col items-center gap-2">
@@ -328,7 +314,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
+                                        <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
                                             <div class="swiper-prev bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer ">
                                                 <svg class="w-5 h-5 text-gray-100" fill="currentColor" viewBox="0 0 20 20">
                                                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -339,7 +325,7 @@
                                                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                                 </svg>
                                             </div>
-                                        </div> -->
+                                        </div>
                                         <div class="swiper-pagination"></div>
                         </div>
                         <div class="w-full flex flex-col justify-center items-center gap-4 mx-auto mt-6">

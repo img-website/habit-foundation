@@ -855,5 +855,55 @@
 
         </div>
 </section>
+<script>
+    // -------------------tabbing---------------------
+    document.addEventListener("DOMContentLoaded", () => {
+    const tabs = {
+        product: {
+        tab: document.getElementById("productTab"),
+        content: document.getElementById("productContent"),
+        },
+        service: {
+        tab: document.getElementById("serviceTab"),
+        content: document.getElementById("serviceContent"),
+        },
+    };
 
+    function showTab(name) {
+        Object.keys(tabs).forEach((key) => {
+        const tab = tabs[key].tab;
+        const content = tabs[key].content;
+        const isActive = key === name;
+
+        if (!tab || !content) return; // Avoid error if any element is missing
+
+        tab.classList.toggle("bg-[#bf4b50]", isActive);
+        tab.classList.toggle("bg-[#000000]", !isActive);
+
+        const iconText = tab.querySelector(".icon-text");
+        if (iconText) {
+            iconText.classList.toggle("text-white", isActive);
+            iconText.classList.toggle("text-[#212121]", !isActive);
+        }
+
+        content.classList.toggle("hidden", !isActive);
+        });
+
+        localStorage.setItem("activeTab", name);
+    }
+
+    Object.keys(tabs).forEach((key) => {
+        const tab = tabs[key].tab;
+        if (tab) {
+        tab.addEventListener("click", (e) => {
+            e.preventDefault();
+            showTab(key);
+        });
+        }
+    });
+
+    const savedTab = localStorage.getItem("activeTab") || "product";
+    showTab(savedTab);
+    });
+</script>
 <?php get_footer();?>

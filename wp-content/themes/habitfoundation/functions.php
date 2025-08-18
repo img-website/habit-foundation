@@ -415,7 +415,7 @@ function habit_custom_header_shortcode() {
             </li>
 
             <li class="relative flex flex-col ">
-                <a href="http://localhost/habit-foundation/contact-us"
+                <a href="https://project.imgglobal.in/habit-foundation/contact-us"
                 class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
             </li>
             
