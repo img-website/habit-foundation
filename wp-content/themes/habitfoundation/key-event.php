@@ -82,7 +82,6 @@ get_header();?>
                             </div>
                         </label>
                     </li>
-<!-- 
                     <li class="group/event">
                         <label for="event3"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event3:checked]:!bg-[#bf4b50]">
@@ -94,8 +93,7 @@ get_header();?>
                             </div>
 
                         </label>
-                    </li> -->
-
+                    </li> 
                     <li class="group/event">
                         <label for="event4"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event4:checked]:!bg-[#bf4b50]">
@@ -128,7 +126,7 @@ get_header();?>
                         </label>
                     </li>
 
-                    <!-- <li class="group/event">
+                    <li class="group/event">
                         <label for="event6"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event6:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
@@ -138,7 +136,7 @@ get_header();?>
                                 </div>
                             </div>
                         </label>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
             <div class="content-sec w-full">
@@ -453,97 +451,206 @@ get_header();?>
                     <div class="block">
                         <input type="radio" name="event" id="event2" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
-                        <div class="w-full event-tabs">
-                            <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2025</button>
-                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">2026</button>
-                            </div>
-                            <div class="agile-tab-content" id="tab3">
-                                <!-- tab content -->
-                                <div class="w-full mt-5" id="orientation-tab">
-                                    <div
-                                        class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
-                                        <div class="flex flex-col gap-y-1 my-4">
-                                            <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_2'); ?></span>
-                                            <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                <?php the_field('event_title_7'); ?></h4>
-                                            <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
-                                                <?php the_field('event_description_7'); ?></p>
-                                        </div>
-                                        <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 h-full">
-                                            <?php $img1 = get_field('event_image_20'); ?>
-                                            <?php if ($img1): ?>
-                                            <div class="relative w-full flex justify-center mb-2">
-                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
-                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                            <div class="w-full event-tabs">
+                                <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2025</button>
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">2026</button>
+                                </div>
+                                <div class="agile-tab-content" id="tab3">
+                                    <!-- tab content -->
+                                    <div class="w-full mt-5" id="orientation-tab">
+                                        <div
+                                            class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                            <div class="flex flex-col gap-y-1 my-4">
+                                                <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_2'); ?></span>
+                                                <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                    <?php the_field('event_title_7'); ?></h4>
+                                                <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                                    <?php the_field('event_description_7'); ?></p>
+                                            </div>
+                                            <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 h-full">
+                                                <?php $img1 = get_field('event_image_20'); ?>
+                                                <?php if ($img1): ?>
+                                                <div class="relative w-full flex justify-center mb-2">
+                                                    <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                        style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                    </div>
+                                                    <!-- Foreground image -->
+                                                    <img 
+                                                        src="<?php echo esc_url($img1['url']); ?>" 
+                                                        alt="<?php the_field('event_title_7'); ?>" 
+                                                        title="<?php the_field('event_title_7'); ?>" 
+                                                        width="284" 
+                                                        height="188"
+                                                        class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                    >
                                                 </div>
-                                                <!-- Foreground image -->
-                                                <img 
-                                                    src="<?php echo esc_url($img1['url']); ?>" 
-                                                    alt="<?php the_field('event_title_7'); ?>" 
-                                                    title="<?php the_field('event_title_7'); ?>" 
-                                                    width="284" 
-                                                    height="188"
-                                                    class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
-                                                >
-                                            </div>
-                                            <?php endif; ?>
+                                                <?php endif; ?>
 
-                                            <?php $img1 = get_field('event_image_21'); ?>
-                                            <?php if ($img1): ?>
-                                            <div class="relative w-full flex justify-center mb-2">
-                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                    alt="<?php the_field('event_title_7'); ?>"
-                                                    title="<?php the_field('event_title_7'); ?>" width="284" height="188"
-                                                    class="w-full rounded-md shadow aspect-[284/188] h-auto object-cover object-top rounded-md ">
-                                            </div>
-                                            <?php endif; ?>
+                                                <?php $img1 = get_field('event_image_21'); ?>
+                                                <?php if ($img1): ?>
+                                                <div class="relative w-full flex justify-center mb-2">
+                                                    <img src="<?php echo esc_url($img1['url']); ?>"
+                                                        alt="<?php the_field('event_title_7'); ?>"
+                                                        title="<?php the_field('event_title_7'); ?>" width="284" height="188"
+                                                        class="w-full rounded-md shadow aspect-[284/188] h-auto object-cover object-top rounded-md ">
+                                                </div>
+                                                <?php endif; ?>
 
-                                            <?php $img1 = get_field('event_image_22'); ?>
-                                            <?php if ($img1): ?>
-                                            <div class="relative w-full flex justify-center mb-2">
-                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                    alt="<?php the_field('event_title_7'); ?>"
-                                                    title="<?php the_field('event_title_7'); ?>" width="284" height="188"
-                                                    class="w-full rounded-md shadow aspect-[284/188] h-auto object-cover object-top rounded-md ">
+                                                <?php $img1 = get_field('event_image_22'); ?>
+                                                <?php if ($img1): ?>
+                                                <div class="relative w-full flex justify-center mb-2">
+                                                    <img src="<?php echo esc_url($img1['url']); ?>"
+                                                        alt="<?php the_field('event_title_7'); ?>"
+                                                        title="<?php the_field('event_title_7'); ?>" width="284" height="188"
+                                                        class="w-full rounded-md shadow aspect-[284/188] h-auto object-cover object-top rounded-md ">
+                                                </div>
+                                                <?php endif; ?>
+                                                <?php $img1 = get_field('event_image_23'); ?>
+                                                <?php if ($img1): ?>
+                                                <div class="relative w-full flex justify-center mb-2">
+                                                    <img src="<?php echo esc_url($img1['url']); ?>"
+                                                        alt="<?php the_field('event_title_7'); ?>"
+                                                        title="<?php the_field('event_title_7'); ?>" width="284" height="188"
+                                                        class="w-full rounded-md shadow aspect-[284/188] h-auto object-cover object-top rounded-md ">
+                                                </div>
+                                                <?php endif; ?>
                                             </div>
-                                            <?php endif; ?>
-                                            <?php $img1 = get_field('event_image_23'); ?>
-                                            <?php if ($img1): ?>
-                                            <div class="relative w-full flex justify-center mb-2">
-                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                    alt="<?php the_field('event_title_7'); ?>"
-                                                    title="<?php the_field('event_title_7'); ?>" width="284" height="188"
-                                                    class="w-full rounded-md shadow aspect-[284/188] h-auto object-cover object-top rounded-md ">
-                                            </div>
-                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab4">2026 Event Calendar Coming Soon</div>
                             </div>
-                            <div class="agile-tab-content hidden text-center mt-8" id="tab4">2026 Event Calendar Coming Soon</div>
-                        </div>
                         </div>
                     </div>
                     <!-- third tab -->
                     <div class="block">
                         <input type="radio" name="event" id="event3" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
-                                <div class="w-full flex flex-wrap">
-                                <button
-                                    class="design-tab-btn text-base lg:text-lg font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]"
-                                    data-tab="design-tab">Vesit Hackathon</button>
+                                <div class="w-full event-tabs">
+                                <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab5">2025</button>
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab6">2026</button>
                                 </div>
-                                
+                                <div class="agile-tab-content mt-8" id="tab5">
+                                    <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                            <div class="flex flex-col gap-y-1 my-4">
+                                                <span
+                                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                                <h4
+                                                    class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                    <?php the_field('event_title_10'); ?></h4>
+                                                <p
+                                                    class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                                    <?php the_field('event_description_10'); ?></p>
+                                            </div>
+                                            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
+                                                    <?php $img1 = get_field('event_image_31'); ?>
+                                                    <?php if ($img1): ?>
+                                                    <div class="relative w-full flex justify-center mb-2">
+                                                        <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                            style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                        </div>
+                                                        <!-- Foreground image -->
+                                                        <img 
+                                                            src="<?php echo esc_url($img1['url']); ?>" 
+                                                            alt="<?php the_field('event_title_10'); ?>" 
+                                                            title="<?php the_field('event_title_10'); ?>" 
+                                                            width="284" 
+                                                            height="240"
+                                                            class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                                    </div>
+                                                    <?php endif; ?>
+
+                                                    <?php $img1 = get_field('event_image_32'); ?>
+                                                    <?php if ($img1): ?>
+                                                    <div class="relative w-full flex justify-center mb-2">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                            alt="<?php the_field('event_title_10'); ?>"
+                                                            title="<?php the_field('event_title_10'); ?>" width="373" height="240"
+                                                            class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                                    </div>
+                                                    <?php endif; ?>
+
+                                                    <?php $img1 = get_field('event_image_33'); ?>
+                                                    <?php if ($img1): ?>
+                                                    <div class="relative w-full flex justify-center mb-2">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                            alt="<?php the_field('event_title_10'); ?>"
+                                                            title="<?php the_field('event_title_10'); ?>" width="373" height="240"
+                                                            class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                                    </div>
+                                                    <?php endif; ?>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab6">2025 Event Calendar Coming Soon</div>
+                            </div>
                         </div>
                     </div>
                     <div class="block">
                         <input type="radio" name="event" id="event4" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
-                            <div class="w-full flex flex-wrap">
-                                <button
-                                    class="design-tab-btn text-base lg:text-lg font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]"
-                                    data-tab="design-tab">Basic</button>
+                            <div class="w-full event-tabs">
+                                <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab7">2024</button>
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab8">2025</button>
+                                </div>
+                                <div class="agile-tab-content mt-8" id="tab7">
+                                    <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                            <div class="flex flex-col gap-y-1 my-4">
+                                                <span
+                                                    class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                                <h4
+                                                    class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                    <?php the_field('event_title_9'); ?></h4>
+                                                <p
+                                                    class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                                    <?php the_field('event_description_9'); ?></p>
+                                            </div>
+                                            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
+                                                    <?php $img1 = get_field('event_image_28'); ?>
+                                                    <?php if ($img1): ?>
+                                                    <div class="relative w-full flex justify-center mb-2">
+                                                        <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                            style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                        </div>
+                                                        <!-- Foreground image -->
+                                                        <img 
+                                                            src="<?php echo esc_url($img1['url']); ?>" 
+                                                            alt="<?php the_field('event_title_9'); ?>" 
+                                                            title="<?php the_field('event_title_9'); ?>" 
+                                                            width="284" 
+                                                            height="240"
+                                                            class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                                    </div>
+                                                    <?php endif; ?>
+
+                                                    <?php $img1 = get_field('event_image_29'); ?>
+                                                    <?php if ($img1): ?>
+                                                    <div class="relative w-full flex justify-center mb-2">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                            alt="<?php the_field('event_title_9'); ?>"
+                                                            title="<?php the_field('event_title_9'); ?>" width="373" height="240"
+                                                            class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                                    </div>
+                                                    <?php endif; ?>
+
+                                                    <?php $img1 = get_field('event_image_30'); ?>
+                                                    <?php if ($img1): ?>
+                                                    <div class="relative w-full flex justify-center mb-2">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                            alt="<?php the_field('event_title_9'); ?>"
+                                                            title="<?php the_field('event_title_9'); ?>" width="373" height="240"
+                                                            class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                                    </div>
+                                                    <?php endif; ?>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab8">2025 Event Calendar Coming Soon</div>
                             </div>
                         </div>
                     </div>
@@ -552,10 +659,10 @@ get_header();?>
                         <div class="hidden peer-checked:flex flex-wrap">
                         <div class="w-full event-tabs">
                             <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab5">2024</button>
-                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab6">2025</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab9">2024</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab10">2025</button>
                             </div>
-                            <div class="agile-tab-content mt-8" id="tab5">
+                            <div class="agile-tab-content mt-8" id="tab9">
                                 <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                     <div class="flex flex-col gap-y-1 my-4">
                                             <span
@@ -618,12 +725,11 @@ get_header();?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="agile-tab-content hidden text-center mt-8" id="tab6">2025 Event Calendar Coming Soon</div>
+                            <div class="agile-tab-content hidden text-center mt-8" id="tab10">2025 Event Calendar Coming Soon</div>
                         </div>
                         </div>
                     </div>
                     <div class="block">
-                        
                         <input type="radio" name="event" id="event6" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full flex flex-wrap">
@@ -633,11 +739,47 @@ get_header();?>
                             </div>
                         </div>
                     </div>
-                
                 </div>
         </div>
     </div>
 </section>
 
+<script>
+  // event date listing date
+        document.querySelectorAll('.event-tabs, .event-tabs2').forEach(tabGroup => {
+        const tabButtons = tabGroup.querySelectorAll('.agile-tab-btn');
+        const tabContents = tabGroup.querySelectorAll('.agile-tab-content');
 
+        // Function to show a specific tab
+        function showTab(btn) {
+            const target = btn.getAttribute('data-tab');
+
+            // Hide all content
+            tabContents.forEach(content => content.classList.add('hidden'));
+
+            // Remove active class from all buttons
+            tabButtons.forEach(button => {
+                button.classList.remove('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
+                button.classList.add('text-gray-700');
+            });
+
+            // Show target content
+            document.getElementById(target).classList.remove('hidden');
+
+            // Activate clicked tab
+            btn.classList.add('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
+            btn.classList.remove('text-gray-700');
+        }
+
+        // Always open first tab by default
+        if (tabButtons.length > 0) {
+            showTab(tabButtons[0]);
+        }
+
+        // Add click event to each button
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => showTab(btn));
+        });
+    });
+</script>
 <?php get_footer();?>

@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".benefitSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
+    speed: 2000,
     autoplay: true,
     loop: false,
     pagination: {
