@@ -1,6 +1,7 @@
 <?php
 /* Template Name: about page */
 get_header();?>
+
 <section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
     <?php $bg = get_field('about_banner_image'); ?>
     <?php if ($bg): ?>
@@ -595,38 +596,7 @@ get_header();?>
                     </div>
                 </div>
             </div>
-            <div
-                class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
-                <div class="flex items-center justify-between gap-3 w-full">
-                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
-                    <?php the_field('guidelines_sec_title_7'); ?></h4>
-                    <div class="flex items-center gap-2">
-                        <a href="<?php the_field('guidelines_sec_link_7'); ?>"
-                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
-                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
-                                <path
-                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="javascript:void(0)"
-                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
-                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_7'); ?></pre>
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 13v8l-4-4"></path>
-                                <path d="m12 21 4-4"></path>
-                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
             <div
                 class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
                 <div
@@ -661,21 +631,57 @@ get_header();?>
                     </div>
                 </div>
             </div>
+            <div
+                class="w-full h-full bg-white border border-[#e9e7e3] rounded-xl py-4 px-4 shadow-[0px_0px_5px_-1px_rgba(0,_0,_0,_0.26)] duration-300 group md:group-hover:shadow-lg flex items-center">
+                <div class="flex items-center justify-between gap-3 w-full">
+                    <h4 class="lg:text-base font-medium !leading-6 text-start text-[#212121] lg:w-4/5">
+                    <?php the_field('guidelines_sec_title_7'); ?></h4>
+                    <div class="flex items-center gap-2">
+                        <a href="<?php the_field('guidelines_sec_link_7'); ?>"
+                            class="*:size-4 flex flex items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white"
+                            onclick="event.preventDefault(); openPDFPopup('<?php the_field('guidelines_sec_link_7'); ?>')">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="*:size-4 flex flex contactFormLink items-center justify-center bg-[#bf4b50] p-2 rounded-full text-white">
+                            <pre class="readMoreLink hidden"><?php the_field('guidelines_sec_link_7'); ?></pre>
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13v8l-4-4"></path>
+                                <path d="m12 21 4-4"></path>
+                                <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 </section>
 
-<!-- PDF Modal Background -->
+    <!-- PDF Modal Background -->
     <div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
     onclick="handleOutsideClick(event)">
 
         <div id="pdfModalBox"
             class="fixed inset-0 relative max-w-5xl w-full top-2 lg:h-[80%] h-96 flex flex-wrap items-stretch bg-white rounded-xl shadow-lg overflow-y-auto overflow-x-hidden">
-            <button onclick="closePDFPopup()"
-                class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-10">
-                ✖
-            </button>
+            <div class="absolute top-3 right-4 z-50">
+                <div class="absolute bg-black/0 rounded-full w-[100px] h-[100px] pointer-events-auto top-[-30px] left-[-30px] z-40"></div>
+                <!-- Close button -->
+                <button onclick="closePDFPopup()" 
+                    class="relative text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-[8px] rounded-full shadow z-50">
+                    ✖
+                </button>
+            </div>
 
             <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
         </div>

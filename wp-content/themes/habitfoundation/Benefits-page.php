@@ -158,7 +158,7 @@
                                     data-swiper="{
                                         slidesPerView: 1,
                                         spaceBetween: 0,
-                                        speed: 3000,
+                                        speed: 2000,
                                         loop: true,
                                         keyboard: {enabled: true},
                                         pagination: {
@@ -173,90 +173,162 @@
                                         <div class="swiper-wrapper relative">
                                             <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                                 <div class="flex flex-col items-center gap-2">
-                                                        <div class="flex items-center justify-center lg:py-8 py-6">
+                                                    <div class="flex items-center justify-center lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_2_image'); ?>
                                                         <?php if ($img1): ?>
                                                         <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_3_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_4_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
+                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">First Floor</div>
+                                                </div>
+                                                </div>
+
+                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
+                                                <div class="flex flex-col items-center gap-2">
+                                                    <div class="flex items-center justify-center lg:py-8 py-6">
+                                                        <?php $img1 = get_field('incubation_infra_5_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_6_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_7_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Second Floor</div>
+
                                                 </div>
                                             </div>
                                             <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center lg:py-8 py-6">
-                                                        <?php $img1 = get_field('incubation_infra_3_image'); ?>
+                                                        <?php $img1 = get_field('incubation_infra_8_image'); ?>
                                                         <?php if ($img1): ?>
                                                         <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_9_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_10_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
+                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Third Floor</div>
+
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center lg:py-8 py-6">
-                                                        <?php $img1 = get_field('incubation_infra_4_image'); ?>
+                                                        <?php $img1 = get_field('incubation_infra_11_image'); ?>
                                                         <?php if ($img1): ?>
                                                         <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_12_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_13_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
+                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Fourth Floor</div>
+
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
-                                                    <div class="flex items-center justify-center">
-                                                        <?php $img1 = get_field('incubation_infra_5_image'); ?>
+                                                    <div class="flex items-center justify-center lg:py-8 py-6">
+                                                        <?php $img1 = get_field('incubation_infra_14_image'); ?>
                                                         <?php if ($img1): ?>
                                                         <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_15_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_16_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
+                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Sixth Floor</div>
+
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
-                                                    <div class="flex items-center justify-center">
-                                                        <?php $img1 = get_field('incubation_infra_6_image'); ?>
+                                                    <div class="flex items-center justify-center lg:py-8 py-6">
+                                                        <?php $img1 = get_field('incubation_infra_17_image'); ?>
                                                         <?php if ($img1): ?>
                                                         <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_18_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_19_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                                <div class="flex flex-col items-center gap-2">
-                                                    <div class="flex items-center justify-center">
-                                                        <?php $img1 = get_field('incubation_infra_6_image'); ?>
-                                                        <?php if ($img1): ?>
-                                                        <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
-                                                        </div>
-                                                        <?php endif; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                                <div class="flex flex-col items-center gap-2">
-                                                    <div class="flex items-center justify-center">
-                                                        <?php $img1 = get_field('incubation_infra_6_image'); ?>
-                                                        <?php if ($img1): ?>
-                                                        <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="257" height="171" class="size-full w-full aspect-[1120/579] h-auto object-cover object-top rounded-md">
-                                                        </div>
-                                                        <?php endif; ?>
-                                                    </div>
+                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Ground Floor</div>
+
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
+                                        <!-- <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
                                             <div class="swiper-prev bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer ">
                                                 <svg class="w-5 h-5 text-gray-100" fill="currentColor" viewBox="0 0 20 20">
                                                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -267,7 +339,7 @@
                                                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                                 </svg>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="swiper-pagination"></div>
                         </div>
                         <div class="w-full flex flex-col justify-center items-center gap-4 mx-auto mt-6">
@@ -700,7 +772,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_1_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_1_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_1_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -730,7 +802,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_2_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_2_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_2_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -760,7 +832,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_3_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_3_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_3_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -790,7 +862,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_4_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_4_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_4_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -820,7 +892,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_5_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_5_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_5_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -850,7 +922,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_6_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_6_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_6_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -880,7 +952,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_7_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_7_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_7_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -910,7 +982,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_8_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_8_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_8_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -940,7 +1012,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_9_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_9_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_9_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -970,7 +1042,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_10_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_10_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_10_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
@@ -1000,7 +1072,7 @@
                             <div class="py-2 px-2 w-full h-auto">
                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                     alt="<?php echo esc_attr(get_field('mentorship_team_11_name')); ?>"
-                                    title="<?php echo esc_attr(get_field('mentorship_team_11_name')); ?>" width="257" height="171"
+                                    title="<?php echo esc_attr(get_field('mentorship_team_11_name')); ?>" width="280" height="240"
                                     class="aspect-[257/171] size-full object-top object-cover rounded-md">
                             </div>
                             <?php endif; ?>
