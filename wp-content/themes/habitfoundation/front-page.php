@@ -1,8 +1,8 @@
 <?php /* Template Name: home page */ get_header(); ?>
+
 <?php
     echo do_shortcode('[smartslider3 slider="2"]');
 ?>
-
 
 <!-- <section class="w-full bg-white relative lg:pb-12 md:py-10 py-8">
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">

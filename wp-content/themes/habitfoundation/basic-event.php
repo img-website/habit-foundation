@@ -69,12 +69,12 @@ get_header();?>
                 <div class="block">
                     <input type="radio" name="event" id="event1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap">
-                        <div class="w-full event-tabs">
+                    <div class="w-full event-tabs">
                             <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">2025</button>
-                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">2024</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">2024</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">2025</button>
                             </div>
-                            <div class="agile-tab-content mt-8" id="tab1">
+                            <div class="agile-tab-content mt-8" id="tab2">
                                 <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                     <div class="flex flex-col gap-y-1 my-4">
                                         <div class="flex items-start lg:flex-row flex-col gap-2 mb-2">
@@ -152,7 +152,7 @@ get_header();?>
                                         </div>
                                 </div>
                             </div>
-                            <div class="agile-tab-content mt-8" id="tab2">
+                            <div class="agile-tab-content mt-8" id="tab1">
                                 <div
                                     class="w-full h-full flex lg:flex-row flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4 gap-4">
                                         <div class="lg:w-4/5 w-full h-full flex items-center">
@@ -233,7 +233,6 @@ get_header();?>
                                         </div>
                                 </div>
                             </div>
-                        
                         </div>
                     </div>
                 </div>
@@ -243,11 +242,11 @@ get_header();?>
                     <div class="hidden peer-checked:flex flex-wrap">
                         <div class="w-full event-tabs">
                             <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2025</button>
-                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">2024</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2024</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">2025</button>
                             </div>
                             <!-- tab content -->
-                            <div class="agile-tab-content mt-8" id="tab3">
+                            <div class="agile-tab-content mt-8" id="tab4">
                                 <div class="w-full mt-5" id="orientation-tab">
                                     <div
                                         class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
@@ -313,7 +312,7 @@ get_header();?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="agile-tab-content mt-9" id="tab4">
+                            <div class="agile-tab-content mt-9 text-center" id="tab3">
                                 2025 Event Calendar Coming Soon
                             </div>
                         </div>
@@ -325,4 +324,42 @@ get_header();?>
 </section>
 
 
+<script>
+  // event date listing date
+        document.querySelectorAll('.event-tabs, .event-tabs2').forEach(tabGroup => {
+        const tabButtons = tabGroup.querySelectorAll('.agile-tab-btn');
+        const tabContents = tabGroup.querySelectorAll('.agile-tab-content');
+
+        // Function to show a specific tab
+        function showTab(btn) {
+            const target = btn.getAttribute('data-tab');
+
+            // Hide all content
+            tabContents.forEach(content => content.classList.add('hidden'));
+
+            // Remove active class from all buttons
+            tabButtons.forEach(button => {
+                button.classList.remove('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
+                button.classList.add('text-gray-700');
+            });
+
+            // Show target content
+            document.getElementById(target).classList.remove('hidden');
+
+            // Activate clicked tab
+            btn.classList.add('border-b-2', 'border-[#bf4b50]', 'text-[#bf4b50]');
+            btn.classList.remove('text-gray-700');
+        }
+
+        // Always open first tab by default
+        if (tabButtons.length > 0) {
+            showTab(tabButtons[0]);
+        }
+
+        // Add click event to each button
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => showTab(btn));
+        });
+    });
+</script>
 <?php get_footer();?>
