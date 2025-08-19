@@ -144,11 +144,11 @@ get_header();?>
                     <input type="radio" name="event" id="event1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap">
                     <div class="w-full event-tabs group">
-                            <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">2024</button>
-                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">2025</button>
-                            </div>
-                            <div class="agile-tab-content mt-8" id="tab1">
+                        <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                            <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">2024</button>
+                            <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">2025</button>
+                        </div>
+                        <div class="agile-tab-content mt-8" id="tab1">
                                 <div class="w-full">
                                     <div class="block">
                                         <input type="radio" name="date" id="date1" class="hidden peer" checked="">
@@ -442,8 +442,8 @@ get_header();?>
                                         </div>
                                     </div> -->
                                 </div>
-                            </div>
-                            <div class="agile-tab-content hidden text-center mt-8" id="tab2">2025 Event Calendar Coming Soon</div>
+                        </div>
+                        <div class="agile-tab-content hidden text-center mt-8" id="tab2"></div>
                     </div>
                     </div>
                 </div>
@@ -453,8 +453,8 @@ get_header();?>
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full event-tabs">
                                 <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700 " data-tab="tab4">2024</button>
                                     <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2025</button>
-                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">2026</button>
                                 </div>
                                 <div class="agile-tab-content" id="tab3">
                                     <!-- tab content -->
@@ -519,7 +519,7 @@ get_header();?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center mt-8" id="tab4">2026 Event Calendar Coming Soon</div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab4"></div>
                             </div>
                         </div>
                     </div>
@@ -585,7 +585,7 @@ get_header();?>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center mt-8" id="tab5">2024 Event Calendar Coming Soon</div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab5"></div>
                             </div>
                         </div>
                     </div>
@@ -650,7 +650,7 @@ get_header();?>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center mt-8" id="tab8">2025 Event Calendar Coming Soon</div>
+                                <div class="agile-tab-content hidden text-center mt-8" id="tab8"></div>
                             </div>
                         </div>
                     </div>
@@ -725,7 +725,7 @@ get_header();?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="agile-tab-content hidden text-center mt-8" id="tab10">2025 Event Calendar Coming Soon</div>
+                            <div class="agile-tab-content hidden text-center mt-8" id="tab10"></div>
                         </div>
                         </div>
                     </div>
@@ -782,4 +782,7 @@ get_header();?>
         });
     });
 </script>
+
+
+
 <?php get_footer();?>

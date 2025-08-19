@@ -154,10 +154,9 @@
                 <div class="block">
                     <input type="radio" name="benefit" id="benefit1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
-                        <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized swiper-horizontal swiper-backface-hidden"
-                                    >
-                                        <div class="swiper-wrapper relative">
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                        <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized swiper-horizontal swiper-backface-hidden">
+                                <div class="swiper-wrapper relative">
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center gap-3 lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_2_image'); ?>
@@ -181,9 +180,8 @@
                                                     </div>
                                                     <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3">First Floor</div>
                                                 </div>
-                                                </div>
-
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
+                                    </div>
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center gap-3 lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_5_image'); ?>
@@ -208,8 +206,8 @@
                                                     <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Second Floor</div>
 
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
+                                    </div>
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center gap-3 lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_8_image'); ?>
@@ -234,8 +232,8 @@
                                                     <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Third Floor</div>
 
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 gap-y-3"> 
+                                    </div>
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_11_image'); ?>
@@ -260,8 +258,8 @@
                                                     <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Fourth Floor</div>
 
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 gap-y-3"> 
+                                    </div>
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center gap-3 lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_14_image'); ?>
@@ -286,8 +284,8 @@
                                                     <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Sixth Floor</div>
 
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
+                                    </div>
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center lg:py-8 py-6">
                                                         <?php $img1 = get_field('incubation_infra_17_image'); ?>
@@ -312,22 +310,23 @@
                                                     <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Ground Floor</div>
 
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
-                                            <div class="swiper-prev bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer ">
-                                                <svg class="w-5 h-5 text-gray-100" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="swiper-next bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer rotate-180">
-                                                <svg class="w-5 h-5 text-gray-100" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
+                                    <div class="swiper-prev bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer ">
+                                        <svg class="w-5 h-5 text-gray-100" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-next bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer rotate-180">
+                                        <svg class="w-5 h-5 text-gray-100" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L8.414 11l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
                         </div>
+                        
                         <div class="w-full flex flex-col justify-center items-center gap-4 mx-auto mt-6">
                             <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
                             <?php the_field('benefit_badge_2'); ?>
@@ -337,6 +336,7 @@
                                 <?php the_field('benefit_title_2'); ?>
                             </h2>
                         </div>
+
                         <div class="w-full flex flex-col justify-center items-center gap-4">
                             <h2 class="lg:text-3xl md:text-2xl text-xl tracking-[-0.04em] text-black text-balance first:*:font-normal
                                 last:*:font-bold lg:pb-6 pb-3">
@@ -714,6 +714,7 @@
                             </div>
                             
                         </div>
+                        
                         <div class="relative bg-slate-50 py-6 md:py-8 lg:py-16 select-nonee group/flip">
                             <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
                                 <div class="mx-auto max-w-container gap-7 flex max-lg:flex-col group-[]/flip:flex-row-reverse group-[]/flip:max-lg:flex-col max-lg:gap-4 
