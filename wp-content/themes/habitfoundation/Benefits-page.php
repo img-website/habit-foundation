@@ -156,6 +156,38 @@
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                         <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized swiper-horizontal swiper-backface-hidden">
                                 <div class="swiper-wrapper relative">
+                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
+                                                <div class="flex flex-col items-center gap-2">
+                                                    <div class="flex items-center justify-center lg:pt-8 pt-6 pb-2">
+                                                        <?php $img1 = get_field('incubation_infra_17_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_18_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                        <?php $img1 = get_field('incubation_infra_19_image'); ?>
+                                                        <?php if ($img1): ?>
+                                                        <div class="py-2 px-2 w-full">
+                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                                        <div class="p-4 bg-gray-50">
+                                                            <h2 class="lg:text-[15px] text-sm font-bold text-gray-800">GROUND FLOOR</h2>
+                                                            <p class="text-sm text-gray-600 mt-1 leading-relaxed">
+                                                            RECEPTION, WAITING AND DISPLAY AREA WITH LOUNGE
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
                                     <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                                 <div class="flex flex-col items-center gap-2">
                                                     <div class="flex items-center justify-center gap-3 lg:py-8 py-6">
@@ -178,7 +210,45 @@
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
-                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3">First Floor</div>
+                                                    
+                                                    <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                                    <!-- Heading -->
+                                                    <div class="p-3 border-b">
+                                                        <h2 class="lg:text-[15px] text-sm font-bold text-gray-800">FIRST FLOOR</h2>
+                                                    </div>
+
+                                                    <!-- Grid Layout -->
+                                                    <div class="grid grid-cols-3">
+                                                        <div class="border-b p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                        </div>
+                                                        <div class="border-b p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">WASHROOMS &amp; PANTRY</p>
+                                                        </div>
+                                                        <div class="border-b p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">STAIRCASE BLOCK</p>
+                                                        </div>
+                                                        <div class="border-b p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">STOREROOM</p>
+                                                        </div>
+                                                        <div class="border-b p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">ROBOTIC ARM ROOM</p>
+                                                        </div>
+                                                        <div class="border-b p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">CNC CUTTING ROOM</p>
+                                                        </div>
+                                                        <div class="p-3">
+                                                        <p class="text-xs text-gray-500">AREA</p>
+                                                        <p class="text-sm font-medium">3D PRINTER ROOM</p>
+                                                        </div>
+                                                    </div>
+                                                    </div>
                                                 </div>
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
@@ -203,8 +273,52 @@
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
-                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Second Floor</div>
+                                                    <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                                        <div class="p-3 border-b flex flex-col gap-y-1">
+                                                            <div class="lg:text-[15px] text-sm font-bold text-gray-800">SECOND FLOOR </div>
+                                                            <div class="lg:text-[15px] text-sm font-semibold text-gray-700">ADMINISTRATION AREA</div>
+                                                        </div>
 
+                                                        <!-- Grid Layout -->
+                                                        <div class="grid grid-cols-3">
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">BOARD ROOM 1</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">BOARD ROOM 2</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">TRUSTEE CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">MANAGER CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CEO CABIN</p>
+                                                            </div>
+                                                            <div class="p-3">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">ADMIN STAFF AREA</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
@@ -229,8 +343,51 @@
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
-                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Third Floor</div>
-
+                                                    <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                                        <!-- Heading -->
+                                                        <div class="p-3 border-b flex flex-col gap-y-1">
+                                                            <p class="lg:text-[15px] text-sm font-bold text-gray-800">THIRD FLOOR </p>
+                                                            <p class="lg:text-[15px] text-sm font-semibold text-gray-700">CO-WORKING SPACE</p>
+                                                        </div>
+                                                        <div class="grid grid-cols-3">
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">PASSAGE</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CO-WORKING SPACE</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 gap-y-3"> 
@@ -255,7 +412,43 @@
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
-                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Fourth Floor</div>
+                                                    <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                                        <!-- Heading -->
+                                                        <div class="p-3 border-b flex flex-col gap-y-1">
+                                                            <p class="lg:text-[15px] text-sm font-bold text-gray-800">FOURTH FLOOR </p>
+                                                            <p class="lg:text-[15px] text-sm font-semibold text-gray-700">CO-WORKING SPACE & AR-VR</p>
+                                                        </div>
+                                                        <div class="grid grid-cols-3">
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">BOARD ROOM 2</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CO-WORKING SPACE</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">AR VR ROOM</p>
+                                                            </div>
+                                                            <div class="p-3">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">TOTAL AREA (2098)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                     </div>
@@ -281,36 +474,46 @@
                                                         </div>
                                                         <?php endif; ?>
                                                     </div>
-                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Sixth Floor</div>
-
-                                                </div>
-                                    </div>
-                                    <div class="swiper-slide relative flex flex-col justify-between items-stretch bg-white rounded-3xl xl:p-6 md:p-3 py-2 px-2 gap-y-3"> 
-                                                <div class="flex flex-col items-center gap-2">
-                                                    <div class="flex items-center justify-center lg:py-8 py-6">
-                                                        <?php $img1 = get_field('incubation_infra_17_image'); ?>
-                                                        <?php if ($img1): ?>
-                                                        <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                    <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                                        <!-- Heading -->
+                                                        <div class="p-3 border-b flex flex-col gap-y-1">
+                                                            <p class="lg:text-[15px] text-sm font-bold text-gray-800">SEVENTH FLOOR </p>
+                                                            <p class="lg:text-[15px] text-sm font-semibold text-gray-700">MEETING ROOMS</p>
                                                         </div>
-                                                        <?php endif; ?>
-                                                        <?php $img1 = get_field('incubation_infra_18_image'); ?>
-                                                        <?php if ($img1): ?>
-                                                        <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <div class="grid grid-cols-3">
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CABIN</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">BOARD ROOM 2</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">CO-WORKING SPACE</p>
+                                                            </div>
+                                                            <div class="p-3 border-b">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">AR VR ROOM</p>
+                                                            </div>
+                                                            <div class="p-3">
+                                                            <p class="text-xs text-gray-500">AREA</p>
+                                                            <p class="text-sm font-medium">TOTAL AREA (2098)</p>
+                                                            </div>
                                                         </div>
-                                                        <?php endif; ?>
-                                                        <?php $img1 = get_field('incubation_infra_19_image'); ?>
-                                                        <?php if ($img1): ?>
-                                                        <div class="py-2 px-2 w-full">
-                                                            <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
-                                                        </div>
-                                                        <?php endif; ?>
                                                     </div>
-                                                    <div class="border border-gray-600 w-full text-black lg:text-xl text-lg font-medium flex items-center justify-center py-2 px-3 ">Ground Floor</div>
-
                                                 </div>
                                     </div>
+                                    
                                 </div>
                                 <div class="inline-flex items-center justify-between absolute inset-x-0 top-1/2 z-10">
                                     <div class="swiper-prev bg-gradient-to-b from-[#201f1f] to-[#767676] inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg cursor-pointer ">

@@ -1,5 +1,5 @@
 <?php
-/* Template Name: basic-event page */
+/* Template Name: other-event page */
 get_header();?>
 
 <section class="relative w-full md:h-[200px] flex items-center max-md:py-4">
@@ -12,14 +12,14 @@ get_header();?>
     <?php endif; ?>
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
         <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
-            <?php the_field('basic_events_heading'); ?>
+             Other Events
             <span class="text-[lime-500]"><?php the_field('events_highlight'); ?></span>
         </h2>
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>"
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
-            <a href="https://project.imgglobal.in/habit-foundation/basic-event/">
+            <a href="https://project.imgglobal.in/habit-foundation/other-event/">
             <span
                 class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('label_basicevents'); ?></span>
             </a>
@@ -242,7 +242,7 @@ get_header();?>
                     <div class="hidden peer-checked:flex flex-wrap">
                         <div class="w-full event-tabs">
                             <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2024</button>
+                                <!-- <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2024</button> -->
                                 <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">2025</button>
                             </div>
                             <!-- tab content -->
@@ -313,7 +313,6 @@ get_header();?>
                                 </div>
                             </div>
                             <div class="agile-tab-content mt-9 text-center" id="tab3">
-                                2025 Event Calendar Coming Soon
                             </div>
                         </div>
                     </div>

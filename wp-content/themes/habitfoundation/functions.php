@@ -157,7 +157,7 @@ function habit_custom_header_shortcode() {
                             </a>
                         </li>
                         <li class="relative">
-                            <a href="https://project.imgglobal.in/habit-foundation/basic-event" class=" w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <a href="https://project.imgglobal.in/habit-foundation/other-event" class=" w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
                                 <span class="*:size-5 inline-block *:text-black">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                     stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -173,7 +173,7 @@ function habit_custom_header_shortcode() {
                                     <path d="M12 18h.01"></path>
                                     <path d="M16 18h.01"></path>
                                 </svg>
-                                </span>Basic Events
+                                </span>Other Events
                             </a>
                         </li>
                         <li class="relative">
@@ -393,8 +393,8 @@ function habit_custom_header_shortcode() {
                                 <path d="M16 18h.01"></path>
                             </svg>
                         </span>
-                        <a href="https://project.imgglobal.in/habit-foundation/basic-event"
-                                class="md:hover:text-white">Basic Events</a>
+                        <a href="https://project.imgglobal.in/habit-foundation/other-event"
+                                class="md:hover:text-white">Other Events</a>
                     </li>
 
                     <li
@@ -541,8 +541,8 @@ function habit_footer_shortcode() {
                         <li><a href="https://project.imgglobal.in/habit-foundation/contact-us" class="md:hover:text-white">Contact Us</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/key-event/"
                                 class="md:hover:text-white">Key Events</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/basic-event"
-                                class="md:hover:text-white">Basic Events</a></li>
+                        <li><a href="https://project.imgglobal.in/habit-foundation/other-event"
+                                class="md:hover:text-white">Other Events</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/upcoming-event"
                                 class="md:hover:text-white">Upcoming Events</a></li>
                     </ul>

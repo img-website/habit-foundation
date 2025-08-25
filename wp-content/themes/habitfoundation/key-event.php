@@ -443,7 +443,7 @@ get_header();?>
                                     </div> -->
                                 </div>
                         </div>
-                        <div class="agile-tab-content hidden text-center mt-8" id="tab2"></div>
+                        <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab2">Coming Soon</div>
                     </div>
                     </div>
                 </div>
@@ -453,7 +453,7 @@ get_header();?>
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full event-tabs">
                                 <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700 " data-tab="tab4">2024</button>
+                                    <!-- <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700 " data-tab="tab4">2024</button> -->
                                     <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab3">2025</button>
                                 </div>
                                 <div class="agile-tab-content" id="tab3">
@@ -529,7 +529,7 @@ get_header();?>
                         <div class="hidden peer-checked:flex flex-wrap">
                                 <div class="w-full event-tabs">
                                 <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                    <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab5">2024</button>
+                                    <!-- <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab5">2024</button> -->
                                     <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab6">2025</button>
                                 </div>
                                 <div class="agile-tab-content mt-8" id="tab6">
@@ -650,7 +650,7 @@ get_header();?>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center mt-8" id="tab8"></div>
+                                <div class="agile-tab-content hidden text-center text-sm font-medium mt-8" id="tab8"></div>
                             </div>
                         </div>
                     </div>
@@ -725,7 +725,7 @@ get_header();?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="agile-tab-content hidden text-center mt-8" id="tab10"></div>
+                            <div class="agile-tab-content hidden text-center text-sm font-medium mt-8" id="tab10">Coming Soon</div>
                         </div>
                         </div>
                     </div>
