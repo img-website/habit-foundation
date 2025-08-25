@@ -447,8 +447,8 @@ get_header();?>
                     </div>
                     </div>
                 </div>
-                    <!-- second tab  -->
-                    <div class="block">
+                <!-- second tab  -->
+                <div class="block">
                         <input type="radio" name="event" id="event2" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full event-tabs">
@@ -522,9 +522,9 @@ get_header();?>
                                 <div class="agile-tab-content hidden text-center mt-8" id="tab4"></div>
                             </div>
                         </div>
-                    </div>
+                </div>
                     <!-- third tab -->
-                    <div class="block">
+                <div class="block">
                         <input type="radio" name="event" id="event3" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                                 <div class="w-full event-tabs">
@@ -585,11 +585,11 @@ get_header();?>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center mt-8" id="tab5"></div>
+                                <div class="agile-tab-content hidden text-center font-medium text-sm  mt-8" id="tab5"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block">
+                </div>
+                <div class="block">
                         <input type="radio" name="event" id="event4" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full event-tabs">
@@ -650,11 +650,11 @@ get_header();?>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="agile-tab-content hidden text-center text-sm font-medium mt-8" id="tab8"></div>
+                                <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab8">Coming Soon</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block">
+                </div>
+                <div class="block">
                         <input type="radio" name="event" id="event5" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                         <div class="w-full event-tabs">
@@ -725,11 +725,11 @@ get_header();?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="agile-tab-content hidden text-center text-sm font-medium mt-8" id="tab10">Coming Soon</div>
+                            <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab10">Coming Soon</div>
                         </div>
                         </div>
-                    </div>
-                    <!-- <div class="block">
+                </div>
+                <!-- <div class="block">
                         <input type="radio" name="event" id="event6" class="hidden peer">
                         <div class="hidden peer-checked:flex flex-wrap">
                             <div class="w-full flex flex-wrap">
@@ -738,8 +738,8 @@ get_header();?>
                                 data-tab="design-tab">Vescop</button>
                             </div>
                         </div>
-                    </div> -->
-                </div>
+                </div> -->
+            </div>
         </div>
     </div>
 </section>
@@ -782,7 +782,5 @@ get_header();?>
         });
     });
 </script>
-
-
 
 <?php get_footer();?>

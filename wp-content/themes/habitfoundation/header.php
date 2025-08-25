@@ -9,5 +9,5 @@
 	<script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<body class="font-heebo">
+<body class="font-poppins ">
 <?php echo do_shortcode('[habit_header]'); ?>
