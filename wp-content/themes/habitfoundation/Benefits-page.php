@@ -15,7 +15,7 @@
             <span class="text-[lime-500]"><?php the_field('benefits_highlight'); ?></span>
         </h2>
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="text targe-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
             <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_benefits'); ?></span>
         </div>
@@ -607,7 +607,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -651,7 +651,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -695,7 +695,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -739,7 +739,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -783,7 +783,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -836,7 +836,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -879,7 +879,7 @@
 
                                                                     <!-- Explore More Link -->
                                                                     <div>
-                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
+                                                                        <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
                                                                             <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
                                                                                 <?php the_field('explore_text'); ?>
                                                                             </div>
@@ -953,7 +953,7 @@
                                                                         <?php the_field('mentorship_1_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin1'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin1'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -986,7 +986,7 @@
                                                                         <?php the_field('mentorship_2_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin2'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin2'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1019,7 +1019,7 @@
                                                                         <?php the_field('mentorship_3_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin3'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin3'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1052,7 +1052,7 @@
                                                                         <?php the_field('mentorship_4_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin4'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin4'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1085,7 +1085,7 @@
                                                                         <?php the_field('mentorship_5_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin5'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin5'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1118,7 +1118,7 @@
                                                                         <?php the_field('mentorship_5_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin6'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin6'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1151,7 +1151,7 @@
                                                                         <?php the_field('mentorship_7_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin7'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin7'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1184,7 +1184,7 @@
                                                                         <?php the_field('mentorship_8_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin8'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin8'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1217,7 +1217,7 @@
                                                                         <?php the_field('mentorship_9_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin9'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin9'); ?>"  targeclass="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1250,7 +1250,7 @@
                                                                         <?php the_field('mentorship_10_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin10'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin10'); ?>" targe class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1269,7 +1269,40 @@
                                                                 <img src="<?php echo esc_url($img2['url']); ?>"
                                                                     alt="<?php echo esc_attr(get_field('mentorship_team_11_name')); ?>"
                                                                     title="<?php echo esc_attr(get_field('mentorship_team_11_name')); ?>" width="280" height="240"
-                                                                    class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                                                                    class="aspect-[257/171] size-full object-top object-contain rounded-md bg-[#cfcfcf]">
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                            <div class="flex items-start justify-between mb-0.5">
+                                                                <div class="flex flex-col">
+                                                                    <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_team_11_name'); ?></h4>
+                                                                    <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_company_11_name'); ?></h5>
+                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <?php the_field('mentorship_11_designation'); ?></p>
+                                                                </div>
+                                                                <div class="flex flex-col">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin11'); ?>" targe class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                            <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                <?php the_field('mentorship_11_category'); ?></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <?php $img2 = get_field('mentorship_team_12_image'); ?>
+                                                        <?php if ($img2): ?>
+                                                            <div class="py-2 px-2 w-full h-auto">
+                                                                <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                    alt="<?php echo esc_attr(get_field('mentorship_team_12_name')); ?>"
+                                                                    title="<?php echo esc_attr(get_field('mentorship_team_12_name')); ?>" width="280" height="240"
+                                                                    class="aspect-[257/171] size-full object-top object-contain rounded-md bg-[#cfcfcf]">
                                                             </div>
                                                         <?php endif; ?>
                                                         <div class="flex flex-col gap-y-1 px-4 py-4">
@@ -1283,7 +1316,7 @@
                                                                         <?php the_field('mentorship_12_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
-                                                                    <a href="<?php the_field('mentorship_team_linkedin12'); ?>" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin12'); ?>" targe class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                                                                         <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="4.983" cy="5.009" r="2.188"></circle>
                                                                             <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -1293,6 +1326,105 @@
                                                             </div>
                                                             <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                 <?php the_field('mentorship_12_category'); ?></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <?php $img2 = get_field('mentorship_team_13_image'); ?>
+                                                        <?php if ($img2): ?>
+                                                            <div class="py-2 px-2 w-full h-auto">
+                                                                <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                    alt="<?php echo esc_attr(get_field('mentorship_team_13_name')); ?>"
+                                                                    title="<?php echo esc_attr(get_field('mentorship_team_13_name')); ?>" width="280" height="240"
+                                                                    class="aspect-[257/171] size-full object-top object-contain rounded-md bg-[#cfcfcf]">
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                            <div class="flex items-start justify-between mb-0.5">
+                                                                <div class="flex flex-col">
+                                                                    <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_team_13_name'); ?></h4>
+                                                                    <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_company_13_name'); ?></h5>
+                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <?php the_field('mentorship_13_designation'); ?></p>
+                                                                </div>
+                                                                <div class="flex flex-col">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin13'); ?>" targe class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                            <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                <?php the_field('mentorship_13_category'); ?></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <?php $img2 = get_field('mentorship_team_14_image'); ?>
+                                                        <?php if ($img2): ?>
+                                                            <div class="py-2 px-2 w-full h-auto">
+                                                                <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                    alt="<?php echo esc_attr(get_field('mentorship_team_14_name')); ?>"
+                                                                    title="<?php echo esc_attr(get_field('mentorship_team_14_name')); ?>" width="280" height="240"
+                                                                    class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                            <div class="flex items-start justify-between mb-0.5">
+                                                                <div class="flex flex-col">
+                                                                    <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_team_14_name'); ?></h4>
+                                                                    <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_company_14_name'); ?></h5>
+                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <?php the_field('mentorship_14_designation'); ?></p>
+                                                                </div>
+                                                                <div class="flex flex-col">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin14'); ?>" targe class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                            <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                <?php the_field('mentorship_14_category'); ?></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <?php $img2 = get_field('mentorship_team_15_image'); ?>
+                                                        <?php if ($img2): ?>
+                                                            <div class="py-2 px-2 w-full h-auto">
+                                                                <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                    alt="<?php echo esc_attr(get_field('mentorship_team_15_name')); ?>"
+                                                                    title="<?php echo esc_attr(get_field('mentorship_team_15_name')); ?>" width="280" height="240"
+                                                                    class="aspect-[257/171] size-full object-top object-contain rounded-md bg-[#cfcfcf]">
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                            <div class="flex items-start justify-between mb-0.5">
+                                                                <div class="flex flex-col">
+                                                                    <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_team_15_name'); ?></h4>
+                                                                    <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                        <?php the_field('mentorship_company_15_name'); ?></h5>
+                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <?php the_field('mentorship_15_designation'); ?></p>
+                                                                </div>
+                                                                <div class="flex flex-col">
+                                                                    <a href="<?php the_field('mentorship_team_linkedin15'); ?>" targe class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
+                                                                        <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                            <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                <?php the_field('mentorship_15_category'); ?></p>
                                                         </div>
                                                     </div>
                                                     
