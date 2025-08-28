@@ -17,7 +17,9 @@
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
+            <a href="https://project.imgglobal.in/habit-foundation/benefits/">
             <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_benefits'); ?></span>
+            </a>
         </div>
     </div>
 </section>
@@ -175,7 +177,7 @@
                                 <div class="swiper-wrapper relative flex items-stretch z-10">
                                     <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3 z-10">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex items-center justify-center gap-3">
+                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_17_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="py-2 px-2 w-full">
@@ -201,7 +203,7 @@
                                                 <div class="p-3 border-b flex flex-col gap-y-1">
                                                     <p class="lg:text-[15px] text-sm font-bold text-[#bc4349]">GROUND FLOOR</p>
                                                 </div>
-                                                <div class="grid grid-cols-3">
+                                                <div class="lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">RECEPTION</p>
@@ -220,7 +222,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex items-center justify-center gap-3">
+                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_2_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
@@ -248,7 +250,7 @@
                                                 </div>
 
                                                 <!-- Grid Layout -->
-                                                <div class="grid grid-cols-3">
+                                                <div class="grid lg:grid-cols-3 grid-cols-2">
                                                     <div class="border-b p-3">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
@@ -283,7 +285,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex items-center justify-center gap-3">
+                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_5_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
@@ -310,7 +312,7 @@
                                                 </div>
 
                                                 <!-- Grid Layout -->
-                                                <div class="grid grid-cols-3">
+                                                <div class="grid lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
@@ -353,7 +355,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex items-center justify-center gap-3">
+                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_8_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
@@ -379,7 +381,7 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">THIRD FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">CO-WORKING SPACE</p>
                                                 </div>
-                                                <div class="grid grid-cols-3">
+                                                <div class="grid lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
@@ -422,7 +424,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex items-center justify-center gap-3">
+                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_11_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
@@ -448,7 +450,7 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">FOURTH FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">CO-WORKING SPACE & AR-VR</p>
                                                 </div>
-                                                <div class="grid grid-cols-3">
+                                                <div class="grid lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
@@ -483,7 +485,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex items-center justify-center gap-3">
+                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_14_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
@@ -509,7 +511,7 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">SEVENTH FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">MEETING ROOMS</p>
                                                 </div>
-                                                <div class="grid grid-cols-3">
+                                                <div class="lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
@@ -563,18 +565,18 @@
                                         <?php the_field('benefit_title_2'); ?>
                                     </h2>
                                 </div>
-                                <div class="w-full event-tabs px-4">
-                                    <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
-                                        <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">Management Infrastructure</button>
-                                        <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">Polytechnic</button>
+                                <div class="w-full event-tabs lg:px-4">
+                                    <div class="w-full flex lg:flex-nowrap flex-wrap mx-auto justify-center overflow-x-auto gap-2 lg:gap-4">
+                                        <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">Management</button>
+                                        <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">Engineering</button>
                                         <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab3">Pharmacy</button>
-                                        <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">Engineering</button>
+                                        <!-- <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">Engineering</button> -->
                                     </div>
-                                    <div class="agile-tab-content mt-8" id="tab1">
+                                    <div class="agile-tab-content lg:mt-8 mt-4" id="tab1">
                                         <div class="w-full">
                                             <div class="block">
                                                     <div class="w-full flex flex-col justify-center items-center gap-4">
-                                                        <div class="grid grid-cols-2 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
+                                                        <div class="grid grid-cols-1 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
                                                                 <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
                                                                     <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
 
@@ -593,7 +595,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title1'); ?>
                                                                                 </div>
 
@@ -637,7 +639,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title2'); ?>
                                                                                 </div>
 
@@ -680,7 +682,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title3'); ?>
                                                                                 </div>
 
@@ -724,7 +726,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title4'); ?>
                                                                                 </div>
 
@@ -768,7 +770,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title5'); ?>
                                                                                 </div>
 
@@ -798,13 +800,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab2">
+                                    <div class="agile-tab-content hidden text-center text-base font-medium lg:mt-8 mt-4" id="tab2">
                                         <div class="w-full">
                                             <div class="block">
                                                 <div class="w-full flex flex-col justify-center items-center gap-4">
-                                                            <div class="w-full flex relative items-center justify-between gap-6 lg:py-6 py-4">
+                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between gap-6 lg:py-6">
                                                                 <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="flex items-center">
+                                                                    <div class="lg:flex items-center hidden">
                                                                         <?php $img1 = get_field('infra_top_image6'); ?>
                                                                         <?php if ($img1): ?>
                                                                             <div class="w-full flex justify-center">
@@ -820,59 +822,57 @@
                                                                     <div class="flex flex-col gap-3 text-start">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title6'); ?>
                                                                                 </div>
-
+                                                                
+                                                                                <div class="flex items-center lg:hidden">
+                                                                                    <?php $img1 = get_field('infra_top_image6'); ?>
+                                                                                    <?php if ($img1): ?>
+                                                                                        <div class="w-full flex justify-center py-4">
+                                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                                alt="<?php the_field('infra_title6'); ?>"
+                                                                                                title="<?php the_field('infra_title6'); ?>" width="357" height="230"
+                                                                                                class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                                        </div>
+                                                                                    <?php endif; ?>
+                                                                                </div>
                                                                                 <!-- Description -->
                                                                                 <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
                                                                                     <?php the_field('infra_description6'); ?>
                                                                                 </div>
                                                                             </div>
-
-                                                                            <!-- Explore More Link -->
-                                                                            <div>
-                                                                                <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
-                                                                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                        <?php the_field('explore_text'); ?>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="w-full flex relative items-center justify-between gap-6 lg:py-6 py-4">
+                                                    </div>
+                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between gap-6 lg:py-6">
                                                                 <div class="lg:w-3/5 w-full flex flex-col">
                                                                     <div class="flex flex-col gap-3 text-start">
                                                                         <div class="flex flex-col gap-3 md:gap-4">
                                                                             <!-- Title -->
-                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                 <?php the_field('infra_title7'); ?>
                                                                             </div>
-
+                                                                            <div class="flex items-center lg:hidden">
+                                                                                <?php $img1 = get_field('infra_top_image7'); ?>
+                                                                                <?php if ($img1): ?>
+                                                                                    <div class="w-full flex justify-center py-4">
+                                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                            alt="<?php the_field('infra_title7'); ?>"
+                                                                                            title="<?php the_field('infra_title7'); ?>" width="357" height="230"
+                                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
+                                                                                    </div>
+                                                                                <?php endif; ?>
+                                                                            </div> 
                                                                             <!-- Description -->
                                                                             <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
                                                                                 <?php the_field('infra_description7'); ?>
                                                                             </div>
                                                                         </div>
-
-                                                                        <div>
-                                                                            <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
-                                                                                <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                    <?php the_field('explore_text'); ?>
-                                                                                </div>
-                                                                                <div>
-                                                                                    <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="flex items-center">
+                                                                    <div class="lg:flex hidden items-center">
                                                                         <?php $img1 = get_field('infra_top_image7'); ?>
                                                                         <?php if ($img1): ?>
                                                                             <div class="w-full flex justify-center">
@@ -884,10 +884,10 @@
                                                                         <?php endif; ?>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="w-full flex relative items-center justify-between gap-6 lg:py-6 py-4">
+                                                    </div>
+                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between gap-6 lg:py-6">
                                                                 <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="flex items-center">
+                                                                    <div class="lg:flex items-center hidden">
                                                                         <?php $img1 = get_field('infra_top_image8'); ?>
                                                                         <?php if ($img1): ?>
                                                                             <div class="w-full flex justify-center">
@@ -900,37 +900,54 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="lg:w-3/5 w-full flex flex-col">
-
-                                                                    <div class="flex flex-col gap-3 text-start">
-                                                                        <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                 <?php the_field('infra_title8'); ?>
+                                                                            </div>
+                                                                            <div class="flex items-center lg:hidden">
+                                                                                <?php $img1 = get_field('infra_top_image8'); ?>
+                                                                                <?php if ($img1): ?>
+                                                                                    <div class="w-full flex justify-center py-4">
+                                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                            alt="<?php the_field('infra_title8'); ?>"
+                                                                                            title="<?php the_field('infra_title8'); ?>" width="357" height="230"
+                                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                                    </div>
+                                                                                <?php endif; ?>
                                                                             </div>
                                                                                 <!-- Description -->
                                                                             <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
                                                                                 <?php the_field('infra_description8'); ?>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="w-full flex relative items-center justify-between gap-6 lg:py-6 py-4">
+                                                    </div>
+                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between lg:gap-6 lg:py-6">
                                                                 <div class="lg:w-3/5 w-full flex flex-col">
-                                                                    <div class="flex flex-col gap-3 text-start">
-                                                                        <div class="flex flex-col gap-3 md:gap-4">
-                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                 <?php the_field('infra_title9'); ?>
+                                                                            </div>
+                                                                            <div class="flex items-center lg:hidden">
+                                                                                <?php $img1 = get_field('infra_top_image9'); ?>
+                                                                                <?php if ($img1): ?>
+                                                                                    <div class="w-full flex justify-center py-4">
+                                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                            alt="<?php the_field('infra_title9'); ?>"
+                                                                                            title="<?php the_field('infra_title9'); ?>" width="357" height="230"
+                                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                                    </div>
+                                                                                <?php endif; ?>
                                                                             </div>
                                                                             <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
                                                                                 <?php the_field('infra_description9'); ?>
                                                                             </div>
                                                                             
                                                                         </div>
-                                                                    </div> 
                                                                 </div>
                                                                 <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="flex items-center">
+                                                                    <div class="lg:flex items-center hidden">
                                                                         <?php $img1 = get_field('infra_top_image9'); ?>
                                                                         <?php if ($img1): ?>
                                                                             <div class="w-full flex justify-center">
@@ -942,8 +959,8 @@
                                                                         <?php endif; ?>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="flex flex-wrap gap-y-6 -mx-2.5 items-stretch">
+                                                    </div>
+                                                    <div class="w-full flex lg:flex-row flex-col flex-wrap gap-y-6 -mx-2.5 items-stretch">
                                                                 <div class="md:w-1/2 sm:w-1/2 w-full px-2.5">
                                                                     <h3 class="text-lg font-semibold text-[#b93a40] text-start mb-3">Industrial Uses of UTM</h3>
                                                                     <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start ">
@@ -989,7 +1006,7 @@
                                                                         <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Quality Control – Ensures safety standards under impact.</li>
                                                                     </ul>
                                                                 </div>
-                                                            </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -997,44 +1014,167 @@
                                     <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab3"> 
                                         <div class="w-full">
                                             <div class="block">
-                                                <div class="w-full flex lg:flex-row flex-col justify-between relative items-center gap-8 lg:py-6 py-4">
-                                                    <div class="lg:w-2/5 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start">
+                                                <div class="grid grid-cols-1 md:grid-2 lg:grid-cols-2 items-start lg:gap-6 gap-4 h-auto w-full">
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
                                                             <div class="flex items-center">
-                                                                <?php $img1 = get_field('infra_top_image11'); ?>
+                                                                <?php $img1 = get_field('infra_top_image12'); ?>
                                                                 <?php if ($img1): ?>
                                                                     <div class="w-full flex justify-center">
                                                                         <img src="<?php echo esc_url($img1['url']); ?>"
                                                                             alt="<?php the_field('infra_title12'); ?>"
                                                                             title="<?php the_field('infra_title12'); ?>" width="357" height="230"
-                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad10] h-auto object-cover object-top rounded-md ">
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
                                                                     </div>
                                                                 <?php endif; ?>
                                                             </div>
-                                                    </div>
-                                                    <div class="lg:w-3/5 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
-                                                            <div class="flex flex-col gap-3 text-start">
+
+                                                            <div class="flex flex-col gap-3">
                                                                 <div class="flex flex-col gap-3 md:gap-4">
                                                                     <!-- Title -->
-                                                                    <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                        Aseptic Area
+                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title12'); ?>
                                                                     </div>
 
-                                                                            <!-- Description -->
+                                                                    <!-- Description -->
                                                                     <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                    Aseptic Area is a state-of-the-art ISO Class 5 (Class 100) facility designed to support sterile pharmaceutical research and skill development. Built to industry standards, it features contamination-controlled infrastructure, including a garment-changing room, high-efficiency air shower, horizontal laminar airflow benches, HEPA filtration, UV sterilization, and interlocked entry systems to maintain positive pressure. These elements ensure a sterile environment for critical operations.
-                                                                        <br><br>
-                                                                    This facility enables startups, researchers, and students to conduct advanced activities such as developing sterile formulations (ophthalmic solutions, parenteral preparations), performing sterility testing, microbial limit assays, and preservative efficacy evaluations. It also supports antibacterial/antifungal research, microbial culture maintenance, and hands-on training in aseptic techniques like gowning protocols and contamination control.
-                                                                    <br>                                                
-                                                                    By simulating cleanroom environments, the Aseptic Area bridges academic training with industrial requirements, fostering innovation in pharmaceutical manufacturing and quality assurance. It empowers users to refine technical skills, conduct compliant microbiological testing, and explore novel therapeutic solutions, aligning with the incubation center’s mission to drive cutting-edge research and entrepreneurship in healthcare.
-                                                                    <br><br>
-                                                                    Ideal for startups and academic projects, this infrastructure ensures precision, regulatory compliance, and readiness for careers in sterile production, R&D, and microbiological quality control.
-
+                                                                        <?php the_field('infra_description12'); ?>
                                                                     </div>
-                                                                    
-                                                                    
                                                                 </div>
+
                                                             </div>
+
+                                                        </div>
                                                     </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image13'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title13'); ?>"
+                                                                            title="<?php the_field('infra_title13'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title13'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description13'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image14'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title14'); ?>"
+                                                                            title="<?php the_field('infra_title14'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title14'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description14'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image15'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title15'); ?>"
+                                                                            title="<?php the_field('infra_title15'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title15'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description15'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image16'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title16'); ?>"
+                                                                            title="<?php the_field('infra_title16'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title16'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description16'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1057,14 +1197,11 @@
                                                             </div>
                                                     </div>
                                                     <div class="lg:w-3/5 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
-                                                            <div class="flex flex-col gap-3 text-start">
-                                                                <div class="flex flex-col gap-3 md:gap-4">
-                                                                    <!-- Title -->
-                                                                    <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                        <?php the_field('infra_title10'); ?>
-                                                                    </div>
+                                                        <div class="flex flex-col gap-3 md:gap-4">
+                                                                <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <?php the_field('infra_title10'); ?>
+                                                                </div>
 
-                                                                            <!-- Description -->
                                                                     <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
                                                                         <?php the_field('infra_description10'); ?>
                                                                     </div>
@@ -1081,53 +1218,12 @@
                                                                             <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Grandway optical multimeter and OTDR</li>
                                                                         </ul>
                                                                     </div>
-                                                                </div>
-                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <!-- <div class="w-full flex lg:flex-row flex-col justify-between relative items-center gap-8 lg:py-6 py-4">
-                                                    <div class="lg:w-3/5 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
-                                                            <div class="flex flex-col gap-3 text-start">
-                                                                <div class="flex flex-col gap-3 md:gap-4">
-                                                                    <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[15px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                        <?php the_field('infra_title11'); ?>
-                                                                    </div>
-                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                        <?php the_field('infra_description11'); ?>
-                                                                    </div>
-                                                                    <div class="w-full px-2.5">
-                                                                        <h3 class="text-base font-medium text-gray-800 text-start mb-3">It consists of the following major instruments--
-                                                                        <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start ">
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Integrated Testing system with DC Power supply - Triple output Programmable Model, Digital Multimeter, Function generator and Mixed signal oscilloscope</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">1.5 GHz Synthesized Signal Generator</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">DMM 6.5-digit digital Multimeter</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Arbitrary waveform generator 120 MHz DDS</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">3 GHz Spectrum analyers with 2 channels</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">100 MHz, 200 MHz DSOs</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">1MHz, 20 MHz Pulse Function Generator</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Grandway optical multimeter and OTDR</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                                    <div class="lg:w-2/5 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start">
-                                                            <div class="flex items-center">
-                                                                <?php $img1 = get_field('infra_top_image11'); ?>
-                                                                <?php if ($img1): ?>
-                                                                    <div class="w-full flex justify-center">
-                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                            alt="<?php the_field('infra_title11'); ?>"
-                                                                            title="<?php the_field('infra_title11'); ?>" width="357" height="230"
-                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad10] h-auto object-cover object-top rounded-md ">
-                                                                    </div>
-                                                                <?php endif; ?>
-                                                            </div>
-                                                    </div>
-                                                </div> -->
                                             </div>
                                         </div>
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                     </div>
@@ -1135,7 +1231,7 @@
                 <div class="block">
                     <input type="radio" name="benefit" id="benefit2" class="hidden peer">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
-                        <div class="w-full event-tabs px-4">
+                        <div class="w-full event-tabs lg:px-4">
                                     <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
                                         <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab5">Alumni</button>
                                         <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab6">Industry Expert</button>
