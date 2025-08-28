@@ -203,7 +203,7 @@
                                                 <div class="p-3 border-b flex flex-col gap-y-1">
                                                     <p class="lg:text-[15px] text-sm font-bold text-[#bc4349]">GROUND FLOOR</p>
                                                 </div>
-                                                <div class="lg:grid-cols-3 grid-cols-2">
+                                                <div class="grid lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">RECEPTION</p>
@@ -511,7 +511,7 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">SEVENTH FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">MEETING ROOMS</p>
                                                 </div>
-                                                <div class="lg:grid-cols-3 grid-cols-2">
+                                                <div class="grid lg:grid-cols-3 grid-cols-2">
                                                     <div class="p-3 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
@@ -692,17 +692,7 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            <!-- Explore More Link -->
-                                                                            <div>
-                                                                                <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
-                                                                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                        <?php the_field('explore_text'); ?>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
+                                                                           
                                                                         </div>
 
                                                                     </div>
