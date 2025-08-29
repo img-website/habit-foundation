@@ -2723,7 +2723,7 @@
                                                 alt="<?php echo esc_attr($img1['alt']); ?>"
                                                 title="<?php echo esc_attr($img1['title']); ?>"
                                                 width="357" height="230"
-                                                class="w-full rounded-md shadow h-[300px] aspect-[357/230] h-auto object-cover object-center">
+                                                class="w-full rounded-md shadow lg:h-[300px] aspect-[357/230] h-auto object-cover object-center">
                                         </div>
                                     <?php endif; ?>
                             </div>
