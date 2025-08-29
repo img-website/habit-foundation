@@ -180,20 +180,20 @@
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_17_image'); ?>
                                                 <?php if ($img1): ?>
-                                                    <div class="py-2 px-2 w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                    <div class="w-full">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_18_image'); ?>
                                                 <?php if ($img1): ?>
-                                                    <div class="py-2 px-2 w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                    <div class="w-full">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_19_image'); ?>
                                                 <?php if ($img1): ?>
-                                                    <div class="py-2 px-2 w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                    <div class="w-full">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -226,19 +226,19 @@
                                                 <?php $img1 = get_field('incubation_infra_2_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_3_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_4_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -289,19 +289,19 @@
                                                 <?php $img1 = get_field('incubation_infra_5_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_6_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_7_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -359,19 +359,19 @@
                                                 <?php $img1 = get_field('incubation_infra_8_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_9_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_10_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -428,19 +428,19 @@
                                                 <?php $img1 = get_field('incubation_infra_11_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_12_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_13_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -489,19 +489,19 @@
                                                 <?php $img1 = get_field('incubation_infra_14_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_15_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_16_image'); ?>
                                                 <?php if ($img1): ?>
-                                                    <div class="py-2 px-2 w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full aspect-[280/240] h-auto object-cover object-top rounded-md">
+                                                    <div class="w-full">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -542,13 +542,13 @@
                                     </div>
                                 </div>
                                 <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between -px-6 !z-50">
-                                    <div class="swiper-prev bg-gradient-to-b from-[#b93a40] to-[#c75e63] inline-flex items-center justify-center w-10 h-10 rounded-full shadow-lg cursor-pointer">
-                                        <svg class="w-5 h-5 text-gray-100" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="swiper-prev bg-gradient-to-b from-[#b93a40] to-[#c75e63] inline-flex items-center justify-center lg:w-10 lg:h-10 w-5 h-5 rounded-full shadow-lg cursor-pointer">
+                                        <svg class="lg:w-5 lg:h-5 w-3 h-3 text-gray-100" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
                                         </svg>
                                     </div>
-                                    <div class="swiper-next bg-gradient-to-b from-[#b93a40] to-[#c75e63] inline-flex items-center justify-center w-10 h-10 rounded-full shadow-lg cursor-pointer">
-                                        <svg class="w-5 h-5 text-gray-100" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="swiper-next bg-gradient-to-b from-[#b93a40] to-[#c75e63] inline-flex items-center justify-center lg:w-10 lg:h-10 w-5 h-5 rounded-full shadow-lg cursor-pointer">
+                                        <svg class="lg:w-5 lg:h-5 w-3 h-3 text-gray-100" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                         </svg>
                                     </div>
@@ -1218,6 +1218,7 @@
                             </div>
                     </div>
                 </div>
+                <!-- Mentorship tab section -->
                 <div class="block">
                     <input type="radio" name="benefit" id="benefit2" class="hidden peer">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
@@ -1231,7 +1232,7 @@
                                             <div class="block">
                                                 <div class="w-full flex flex-col justify-center items-center gap-4">
                                                     <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 py-4">
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_1_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1263,7 +1264,7 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_1_category'); ?></p>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_2_image'); ?>
                                                             <?php if ($img2): ?>
@@ -1330,7 +1331,7 @@
                                                                     <?php the_field('mentorship_3_category'); ?></p>
                                                             </div>
                                                         </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_4_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1362,7 +1363,7 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_4_category'); ?></p>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_5_image'); ?>
                                                             <?php if ($img2): ?>
@@ -1396,7 +1397,7 @@
                                                                     <?php the_field('mentorship_5_category'); ?></p>
                                                             </div>
                                                         </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_6_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1428,7 +1429,7 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_6_category'); ?></p>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_7_image'); ?>
                                                             <?php if ($img2): ?>
@@ -1495,7 +1496,7 @@
                                                                     <?php the_field('mentorship_8_category'); ?></p>
                                                             </div>
                                                         </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_9_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1560,7 +1561,7 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_10_category'); ?></p>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_11_image'); ?>
                                                             <?php if ($img2): ?>
@@ -1594,7 +1595,7 @@
                                                                     <?php the_field('mentorship_11_category'); ?></p>
                                                             </div>
                                                         </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_12_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1626,107 +1627,9 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_12_category'); ?></p>
                                                             </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
-                                                            <?php $img2 = get_field('mentorship_team_13_image'); ?>
-                                                            <?php if ($img2): ?>
-                                                                <div class="py-2 px-2 w-full h-auto">
-                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
-                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_13_name')); ?>"
-                                                                        title="<?php echo esc_attr(get_field('mentorship_team_13_name')); ?>" width="280" height="240"
-                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
-                                                                <div class="flex items-start justify-between mb-0.5">
-                                                                    <div class="flex flex-col">
-                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_team_13_name'); ?></h4>
-                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_company_13_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
-                                                                            <?php the_field('mentorship_13_designation'); ?></p>
-                                                                    </div>
-                                                                    <div class="flex flex-col">
-                                                                        <a href="<?php the_field('mentorship_team_linkedin13'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
-                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_13_category'); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
-                                                            <?php $img2 = get_field('mentorship_team_14_image'); ?>
-                                                            <?php if ($img2): ?>
-                                                                <div class="py-2 px-2 w-full h-auto">
-                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
-                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_14_name')); ?>"
-                                                                        title="<?php echo esc_attr(get_field('mentorship_team_14_name')); ?>" width="280" height="240"
-                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
-                                                                <div class="flex items-start justify-between mb-0.5">
-                                                                    <div class="flex flex-col">
-                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_team_14_name'); ?></h4>
-                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_company_14_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
-                                                                            <?php the_field('mentorship_14_designation'); ?></p>
-                                                                    </div>
-                                                                    <div class="flex flex-col">
-                                                                        <a href="<?php the_field('mentorship_team_linkedin14'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
-                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_14_category'); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
-                                                            <?php $img2 = get_field('mentorship_team_15_image'); ?>
-                                                            <?php if ($img2): ?>
-                                                                <div class="py-2 px-2 w-full h-auto">
-                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
-                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_15_name')); ?>"
-                                                                        title="<?php echo esc_attr(get_field('mentorship_team_15_name')); ?>" width="280" height="240"
-                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
-                                                                <div class="flex items-start justify-between mb-0.5">
-                                                                    <div class="flex flex-col">
-                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_team_15_name'); ?></h4>
-                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_company_15_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
-                                                                            <?php the_field('mentorship_15_designation'); ?></p>
-                                                                    </div>
-                                                                    <div class="flex flex-col">
-                                                                        <a href="<?php the_field('mentorship_team_linkedin15'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
-                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_15_category'); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        </div> -->
+                                                        
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_16_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1758,107 +1661,9 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_16_category'); ?></p>
                                                             </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
-                                                            <?php $img2 = get_field('mentorship_team_17_image'); ?>
-                                                            <?php if ($img2): ?>
-                                                                <div class="py-2 px-2 w-full h-auto">
-                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
-                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_17_name')); ?>"
-                                                                        title="<?php echo esc_attr(get_field('mentorship_team_17_name')); ?>" width="280" height="240"
-                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
-                                                                <div class="flex items-start justify-between mb-0.5">
-                                                                    <div class="flex flex-col">
-                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_team_17_name'); ?></h4>
-                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_company_17_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
-                                                                            <?php the_field('mentorship_17_designation'); ?></p>
-                                                                    </div>
-                                                                    <div class="flex flex-col">
-                                                                        <a href="<?php the_field('mentorship_team_linkedin17'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
-                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_17_category'); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
-                                                            <?php $img2 = get_field('mentorship_team_18_image'); ?>
-                                                            <?php if ($img2): ?>
-                                                                <div class="py-2 px-2 w-full h-auto">
-                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
-                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_18_name')); ?>"
-                                                                        title="<?php echo esc_attr(get_field('mentorship_team_18_name')); ?>" width="280" height="240"
-                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
-                                                                <div class="flex items-start justify-between mb-0.5">
-                                                                    <div class="flex flex-col">
-                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_team_18_name'); ?></h4>
-                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_company_18_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
-                                                                            <?php the_field('mentorship_18_designation'); ?></p>
-                                                                    </div>
-                                                                    <div class="flex flex-col">
-                                                                        <a href="<?php the_field('mentorship_team_linkedin18'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
-                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_18_category'); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
-                                                            <?php $img2 = get_field('mentorship_team_19_image'); ?>
-                                                            <?php if ($img2): ?>
-                                                                <div class="py-2 px-2 w-full h-auto">
-                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
-                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_19_name')); ?>"
-                                                                        title="<?php echo esc_attr(get_field('mentorship_team_19_name')); ?>" width="280" height="240"
-                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
-                                                                <div class="flex items-start justify-between mb-0.5">
-                                                                    <div class="flex flex-col">
-                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_team_19_name'); ?></h4>
-                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
-                                                                            <?php the_field('mentorship_company_19_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
-                                                                            <?php the_field('mentorship_19_designation'); ?></p>
-                                                                    </div>
-                                                                    <div class="flex flex-col">
-                                                                        <a href="<?php the_field('mentorship_team_linkedin19'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
-                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_19_category'); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        </div> -->
+                                                       
+                                                        <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_20_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -1890,7 +1695,7 @@
                                                                 <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_20_category'); ?></p>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_21_image'); ?>
                                                             <?php if ($img2): ?>
@@ -2486,6 +2291,204 @@
                                                                     <?php the_field('mentorship_38_category'); ?></p>
                                                             </div>
                                                         </div>
+                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                            <?php $img2 = get_field('mentorship_team_13_image'); ?>
+                                                            <?php if ($img2): ?>
+                                                                <div class="py-2 px-2 w-full h-auto">
+                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_13_name')); ?>"
+                                                                        title="<?php echo esc_attr(get_field('mentorship_team_13_name')); ?>" width="280" height="240"
+                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
+                                                                </div>
+                                                            <?php endif; ?>
+                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                                <div class="flex items-start justify-between mb-0.5">
+                                                                    <div class="flex flex-col">
+                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_team_13_name'); ?></h4>
+                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_company_13_name'); ?></h5>
+                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                            <?php the_field('mentorship_13_designation'); ?></p>
+                                                                    </div>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="<?php the_field('mentorship_team_linkedin13'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
+                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_13_category'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                            <?php $img2 = get_field('mentorship_team_14_image'); ?>
+                                                            <?php if ($img2): ?>
+                                                                <div class="py-2 px-2 w-full h-auto">
+                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_14_name')); ?>"
+                                                                        title="<?php echo esc_attr(get_field('mentorship_team_14_name')); ?>" width="280" height="240"
+                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
+                                                                </div>
+                                                            <?php endif; ?>
+                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                                <div class="flex items-start justify-between mb-0.5">
+                                                                    <div class="flex flex-col">
+                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_team_14_name'); ?></h4>
+                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_company_14_name'); ?></h5>
+                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                            <?php the_field('mentorship_14_designation'); ?></p>
+                                                                    </div>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="<?php the_field('mentorship_team_linkedin14'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
+                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_14_category'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                            <?php $img2 = get_field('mentorship_team_15_image'); ?>
+                                                            <?php if ($img2): ?>
+                                                                <div class="py-2 px-2 w-full h-auto">
+                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_15_name')); ?>"
+                                                                        title="<?php echo esc_attr(get_field('mentorship_team_15_name')); ?>" width="280" height="240"
+                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
+                                                                </div>
+                                                            <?php endif; ?>
+                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                                <div class="flex items-start justify-between mb-0.5">
+                                                                    <div class="flex flex-col">
+                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_team_15_name'); ?></h4>
+                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_company_15_name'); ?></h5>
+                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                            <?php the_field('mentorship_15_designation'); ?></p>
+                                                                    </div>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="<?php the_field('mentorship_team_linkedin15'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
+                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_15_category'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                            <?php $img2 = get_field('mentorship_team_17_image'); ?>
+                                                            <?php if ($img2): ?>
+                                                                <div class="py-2 px-2 w-full h-auto">
+                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_17_name')); ?>"
+                                                                        title="<?php echo esc_attr(get_field('mentorship_team_17_name')); ?>" width="280" height="240"
+                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
+                                                                </div>
+                                                            <?php endif; ?>
+                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                                <div class="flex items-start justify-between mb-0.5">
+                                                                    <div class="flex flex-col">
+                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_team_17_name'); ?></h4>
+                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_company_17_name'); ?></h5>
+                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                            <?php the_field('mentorship_17_designation'); ?></p>
+                                                                    </div>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="<?php the_field('mentorship_team_linkedin17'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
+                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_17_category'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                            <?php $img2 = get_field('mentorship_team_18_image'); ?>
+                                                            <?php if ($img2): ?>
+                                                                <div class="py-2 px-2 w-full h-auto">
+                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_18_name')); ?>"
+                                                                        title="<?php echo esc_attr(get_field('mentorship_team_18_name')); ?>" width="280" height="240"
+                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
+                                                                </div>
+                                                            <?php endif; ?>
+                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                                <div class="flex items-start justify-between mb-0.5">
+                                                                    <div class="flex flex-col">
+                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_team_18_name'); ?></h4>
+                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_company_18_name'); ?></h5>
+                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                            <?php the_field('mentorship_18_designation'); ?></p>
+                                                                    </div>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="<?php the_field('mentorship_team_linkedin18'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
+                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_18_category'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                            <?php $img2 = get_field('mentorship_team_19_image'); ?>
+                                                            <?php if ($img2): ?>
+                                                                <div class="py-2 px-2 w-full h-auto">
+                                                                    <img src="<?php echo esc_url($img2['url']); ?>"
+                                                                        alt="<?php echo esc_attr(get_field('mentorship_team_19_name')); ?>"
+                                                                        title="<?php echo esc_attr(get_field('mentorship_team_19_name')); ?>" width="280" height="240"
+                                                                        class="aspect-[257/210] size-full object-top object-cover rounded-md">
+                                                                </div>
+                                                            <?php endif; ?>
+                                                            <div class="flex flex-col gap-y-1 px-4 py-4">
+                                                                <div class="flex items-start justify-between mb-0.5">
+                                                                    <div class="flex flex-col">
+                                                                        <h4 class="font-semibold text-gray-900 text-start lg:text-lg text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_team_19_name'); ?></h4>
+                                                                        <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
+                                                                            <?php the_field('mentorship_company_19_name'); ?></h5>
+                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                            <?php the_field('mentorship_19_designation'); ?></p>
+                                                                    </div>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="<?php the_field('mentorship_team_linkedin19'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 ">
+                                                                            <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                                                                <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_19_category'); ?></p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2495,7 +2498,7 @@
                                         <div class="w-full">
                                             <div class="block">
                                                 <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 py-4">
-                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                    <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_39_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
@@ -2528,7 +2531,7 @@
                                                                     <?php the_field('mentorship_39_category'); ?>
                                                                 </p>
                                                             </div>
-                                                    </div>
+                                                    </div> -->
                                                     <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                         <?php $img40 = get_field('mentorship_team_40_image'); ?>
                                                         <?php if ($img40): ?>
@@ -2563,7 +2566,7 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                    <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                         <?php $img40 = get_field('mentorship_team_41_image'); ?>
                                                         <?php if ($img40): ?>
                                                             <div class="py-2 px-2 w-full h-auto">
@@ -2596,8 +2599,8 @@
                                                                 <?php the_field('mentorship_41_category'); ?>
                                                             </p>
                                                         </div>
-                                                    </div>
-                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                    </div> -->
+                                                    <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                         <?php $img40 = get_field('mentorship_team_42_image'); ?>
                                                         <?php if ($img40): ?>
                                                             <div class="py-2 px-2 w-full h-auto">
@@ -2630,8 +2633,8 @@
                                                                 <?php the_field('mentorship_42_category'); ?>
                                                             </p>
                                                         </div>
-                                                    </div>
-                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                    </div> -->
+                                                    <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                         <?php $img40 = get_field('mentorship_team_43_image'); ?>
                                                         <?php if ($img40): ?>
                                                             <div class="py-2 px-2 w-full h-auto">
@@ -2664,8 +2667,8 @@
                                                                 <?php the_field('mentorship_43_category'); ?>
                                                             </p>
                                                         </div>
-                                                    </div>
-                                                    <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                    </div> -->
+                                                    <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                         <?php $img40 = get_field('mentorship_team_44_image'); ?>
                                                         <?php if ($img40): ?>
                                                             <div class="py-2 px-2 w-full h-auto">
@@ -2698,7 +2701,7 @@
                                                                 <?php the_field('mentorship_44_category'); ?>
                                                             </p>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -2710,11 +2713,24 @@
                     <input type="radio" name="benefit" id="benefit3" class="hidden peer">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
                     <div class="flex md:flex-nowrap lg:flex-nowrap flex-wrap justify-between items-center lg:gap-x-10 gap-6 px-4 relative">
+                        
                         <div class="w-full flex flex-col mx-auto">
+                            <div class="flex items-center">
+                                <?php $img1 = get_field('venture_image'); ?>
+                                    <?php if ($img1): ?>
+                                        <div class="w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php echo esc_attr($img1['alt']); ?>"
+                                                title="<?php echo esc_attr($img1['title']); ?>"
+                                                width="357" height="230"
+                                                class="w-full rounded-md shadow h-[300px] aspect-[357/230] h-auto object-cover object-center">
+                                        </div>
+                                    <?php endif; ?>
+                            </div>
                             <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313]">
                                 <!-- <?php the_field('about_heading1'); ?> --> 
                             </h2>
-                            <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                            <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:my-6 mb-4">
                                 <?php the_field('venture_desc'); ?></p>
                         </div>
                     </div>
@@ -2881,6 +2897,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
 <script>
@@ -2921,4 +2938,5 @@
         });
     });
 </script>
+
 <?php get_footer(); ?>

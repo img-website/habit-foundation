@@ -52,7 +52,6 @@ get_header();?>
                 <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
                     data-tab="design-tab">Session on Startup Regulatory Compliance</button>
                 <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
-
             </div>
         </div>
         </div>
