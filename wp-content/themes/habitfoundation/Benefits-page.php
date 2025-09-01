@@ -169,31 +169,31 @@
                 <div class="block">
                     <input type="radio" name="benefit" id="benefit1" class="hidden peer" checked="">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
-                            <h2 class="lg:text-3xl md:text-2xl text-xl tracking-[-0.02em] w-full lg:text-3xl md:text-2xl text-xl mx-auto !leading-normal text-center font-semibold text-[#2a1313] text-balance first:*:font-normal
-                                last:*:font-bold lg:pb-8 pb-4 text-center mx-auto">
-                                <span class="font-normal">HABIT</span><span class="font-bold"> Infrastructure</span>
-                            </h2>
-                            <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized relative z-0 swiper-horizontal swiper-backface-hidden px-4">
-                                <div class="swiper-wrapper relative flex items-stretch z-10">
-                                    <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3 z-10">
+                        <h2 class="lg:text-3xl md:text-2xl text-xl tracking-[-0.02em] w-full lg:text-3xl md:text-2xl text-xl mx-auto !leading-normal text-center font-semibold text-[#2a1313] text-balance first:*:font-normal
+                            last:*:font-bold lg:pb-8 pb-4 text-center mx-auto">
+                            <span class="font-normal">HABIT</span><span class="font-bold"> Infrastructure</span>
+                        </h2>
+                        <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized relative z-0 swiper-horizontal swiper-backface-hidden px-4">
+                            <div class="swiper-wrapper relative flex items-stretch z-10">
+                                <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3 z-10">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_17_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_18_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] border-[4px] border-gray-200 aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_19_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] border-[4px] border-gray-200 aspect-[260/148] h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -204,41 +204,41 @@
                                                     <p class="lg:text-[15px] text-sm font-bold text-[#bc4349]">GROUND FLOOR</p>
                                                 </div>
                                                 <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">RECEPTION</p>
                                                     </div>
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">WAITING</p>
                                                     </div>
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">DISPLAY AREA WITH LOUNGE</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                </div>
+                                <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_2_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_3_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_4_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -250,58 +250,58 @@
                                                 </div>
 
                                                 <!-- Grid Layout -->
-                                                <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="border-b p-3">
+                                                <div class="grid lg:grid-cols-7 grid-cols-5">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
                                                     </div>
-                                                    <div class="border-b p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">WASHROOMS &amp; PANTRY</p>
                                                     </div>
-                                                    <div class="border-b p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">STAIRCASE BLOCK</p>
                                                     </div>
-                                                    <div class="border-b p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">STOREROOM</p>
                                                     </div>
-                                                    <div class="border-b p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">ROBOTIC ARM ROOM</p>
                                                     </div>
-                                                    <div class="border-b p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CNC CUTTING ROOM</p>
                                                     </div>
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">3D PRINTER ROOM</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                </div>
+                                <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_5_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_6_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_7_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -312,66 +312,66 @@
                                                 </div>
 
                                                 <!-- Grid Layout -->
-                                                <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="p-3 border-b">
+                                                <div class="grid lg:grid-cols-7 grid-cols-5">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">BOARD ROOM 1</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">BOARD ROOM 2</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">TRUSTEE CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">MANAGER CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CEO CABIN</p>
                                                     </div>
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">ADMIN STAFF AREA</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                </div>
+                                <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_8_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_9_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_10_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -381,66 +381,66 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">THIRD FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">CO-WORKING SPACE</p>
                                                 </div>
-                                                <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="p-3 border-b">
+                                                <div class="grid lg:grid-cols-7 grid-cols-5">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">PASSAGE</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2 border-b">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CO-WORKING SPACE</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                </div>
+                                <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_11_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_12_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_13_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -450,58 +450,58 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">FOURTH FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">CO-WORKING SPACE & AR-VR</p>
                                                 </div>
-                                                <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="p-3 border-b">
+                                                <div class="grid lg:grid-cols-7 grid-cols-5">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">BOARD ROOM 2</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CO-WORKING SPACE</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">AR VR ROOM</p>
                                                     </div>
-                                                    <div class="p-3">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">TOTAL AREA (2098)</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
+                                </div>
+                                <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
                                         <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_14_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_15_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_16_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[280/240] aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
@@ -511,24 +511,24 @@
                                                     <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">SEVENTH FLOOR </p>
                                                     <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">MEETING ROOMS</p>
                                                 </div>
-                                                <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="p-3 border-b">
+                                                <div class="grid lg:grid-cols-7 grid-cols-5">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">LIFT LOBBY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">CABIN</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">STAFF</p>
                                                     </div>
-                                                    <div class="p-3 border-b">
+                                                    <div class="p-2">
                                                         <p class="text-xs text-gray-500">AREA</p>
                                                         <p class="text-sm font-medium">SEMINAR ROOM</p>
                                                     </div>
@@ -539,9 +539,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
-                                <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between -px-6 !z-50">
+                            </div>
+                            <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between -px-6 !z-50">
                                     <div class="swiper-prev bg-gradient-to-b from-[#b93a40] to-[#c75e63] inline-flex items-center justify-center lg:w-10 lg:h-10 w-5 h-5 rounded-full shadow-lg cursor-pointer">
                                         <svg class="lg:w-5 lg:h-5 w-3 h-3 text-gray-100" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
@@ -552,10 +552,10 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                         </svg>
                                     </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="w-full flex flex-col gap-y-4 lg:py-12 py-8">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="w-full flex flex-col gap-y-4 lg:py-12 py-8">
                                 <div class="w-full flex flex-col justify-center items-center gap-4 mx-auto">
                                     <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
                                     <?php the_field('benefit_badge_2'); ?>
@@ -1215,7 +1215,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Mentorship tab section -->
@@ -2390,7 +2390,7 @@
                                                                     <?php the_field('mentorship_15_category'); ?></p>
                                                             </div>
                                                         </div>
-                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
+                                                        <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_17_image'); ?>
                                                             <?php if ($img2): ?>
                                                                 <div class="py-2 px-2 w-full h-auto">
