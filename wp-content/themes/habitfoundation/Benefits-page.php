@@ -162,8 +162,8 @@
 
                         </label>
                     </li>
-
                 </ul>
+            
             </div>
             <div class="content-sec w-full flex flex-col justify-center">
                 <div class="block">
@@ -176,365 +176,327 @@
                         <div class="hero-section w-full swiper benefitSwiper h-full rounded-3xl swiper-initialized relative z-0 swiper-horizontal swiper-backface-hidden px-4">
                             <div class="swiper-wrapper relative flex items-stretch z-10">
                                 <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3 z-10">
-                                        <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
-                                            <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
+                                    <div class="flex flex-col items-center">
+                                        <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_17_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_18_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] border-[4px] border-gray-200 aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_19_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] border-[4px] border-gray-200 aspect-[260/148] h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
+                                        </div>
+                                        <div class="w-full mx-auto rounded-2xl py-6 px-5 bg-white">
+                                            <!-- Floor Title -->
+                                            <div class="mb-4">
+                                                <p class="text-lg font-semibold text-[#bc4349]">Ground Floor</p>
+                                                <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                             </div>
 
-                                            <div class="w-full mx-auto border rounded-lg overflow-hidden">
-                                                <!-- Heading -->
-                                                <div class="p-3 border-b flex flex-col gap-y-1">
-                                                    <p class="lg:text-[15px] text-sm font-bold text-[#bc4349]">GROUND FLOOR</p>
+                                            <!-- Area Pills -->
+                                            <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                Reception
                                                 </div>
-                                                <div class="grid lg:grid-cols-3 grid-cols-2">
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">RECEPTION</p>
-                                                    </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">WAITING</p>
-                                                    </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">DISPLAY AREA WITH LOUNGE</p>
-                                                    </div>
+
+                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                Waiting
+                                                </div>
+
+                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                Display Area with Lounge
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                        <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
+                                    <div class="flex flex-col items-center">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_2_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_3_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_4_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
 
-                                            <div class="w-full mx-auto border rounded-lg overflow-hidden">
+                                            <div class="w-full mx-auto rounded-2xl py-6 px-5 bg-white">
                                                 <!-- Heading -->
-                                                <div class="p-3 border-b">
-                                                    <h2 class="lg:text-[15px] text-base font-bold text-[#bc4349]">FIRST FLOOR</h2>
+                                                <div class="mb-4">
+                                                    <p class="text-lg font-semibold text-[#bc4349]">First Floor</p>
+                                                    <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
 
                                                 <!-- Grid Layout -->
-                                                <div class="grid lg:grid-cols-7 grid-cols-5">
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    Lift Lobby
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">WASHROOMS &amp; PANTRY</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    Washrooms &amp; Pantry
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">STAIRCASE BLOCK</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    Staircase block
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">STOREROOM</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    Storeroom
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">ROBOTIC ARM ROOM</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    Robotic Arm Room
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CNC CUTTING ROOM</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    Cnc Cutting Room
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">3D PRINTER ROOM</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    3d Printer Room
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+
+                                    </div>
                                 </div>
                                 <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                        <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
+                                    <div class="flex flex-col items-center">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_5_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_6_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_7_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
-                                            <div class="w-full mx-auto border rounded-lg overflow-hidden">
-                                                <div class="p-3 border-b flex flex-col gap-y-1">
-                                                    <div class="lg:text-[15px] text-base font-bold text-[#bc4349]">SECOND FLOOR </div>
-                                                    <div class="lg:text-[15px] text-sm font-medium text-[#bc4349]">ADMINISTRATION AREA</div>
+                                            <div class="w-full mx-auto rounded-2xl py-6 px-5 bg-white">
+                                                <div class="mb-4">
+                                                    <p class="text-lg font-semibold text-[#bc4349]">Second Floor - Administration Area</p>
+                                                    <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
-
                                                 <!-- Grid Layout -->
-                                                <div class="grid lg:grid-cols-7 grid-cols-5">
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Lift Lobby
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Washroom & Pantry
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">BOARD ROOM 1</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Board Room 1
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">BOARD ROOM 2</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Board Room 2
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">TRUSTEE CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Trustee Cabin
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">MANAGER CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Manager Cabin
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CEO CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Ceo Cabin
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">ADMIN STAFF AREA</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Admin Staff Area
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                        <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
+                                        <div class="flex flex-col items-center">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_8_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_9_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_10_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
-                                            <div class="w-full mx-auto border rounded-lg overflow-hidden">
-                                                <!-- Heading -->
-                                                <div class="p-3 border-b flex flex-col gap-y-1">
-                                                    <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">THIRD FLOOR </p>
-                                                    <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">CO-WORKING SPACE</p>
+                                            <div class="w-full mx-auto rounded-2xl py-6 px-5 bg-white">
+                                                <div class="mb-4">
+                                                    <p class="text-lg font-semibold text-[#bc4349]">Third Floor - Co-Working Space</p>
+                                                    <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
-                                                <div class="grid lg:grid-cols-7 grid-cols-5">
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Lift Lobby
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Washroom & Pantry
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">PASSAGE</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Passage
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2 border-b">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CO-WORKING SPACE</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Co-Working Space
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                 </div>
                                 <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                        <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
+                                        <div class="flex flex-col items-center">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_11_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_12_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_13_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
-                                            <div class="w-full mx-auto border rounded-lg overflow-hidden">
-                                                <!-- Heading -->
-                                                <div class="p-3 border-b flex flex-col gap-y-1">
-                                                    <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">FOURTH FLOOR </p>
-                                                    <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">CO-WORKING SPACE & AR-VR</p>
+                                            <div class="w-full mx-auto rounded-2xl py-6 px-5 bg-white">
+                                                <div class="mb-4">
+                                                    <p class="text-lg font-semibold text-[#bc4349]">Fourth Floor - Co-Working Space & AR VR</p>
+                                                    <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
-                                                <div class="grid lg:grid-cols-7 grid-cols-5">
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Lift Lobby
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Washroom &amp; Pantry
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">BOARD ROOM 2</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Board Room 2
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CO-WORKING SPACE</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        CO-Working Space
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">AR VR ROOM</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        AR VR Room
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">TOTAL AREA (2098)</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Total Area (2098)
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                 </div>
                                 <div class="swiper-slide relative flex flex-col justify-between bg-white rounded-3xl h-auto xl:p-6 md:p-3 py-2 px-2 gap-y-3">
-                                        <div class="flex flex-col items-center gap-y-6 lg:py-3 py-2">
+                                        <div class="flex flex-col items-center">
                                             <div class="flex lg:flex-row flex-col items-center justify-center lg:gap-3 gap-1">
                                                 <?php $img1 = get_field('incubation_infra_14_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_15_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php $img1 = get_field('incubation_infra_16_image'); ?>
                                                 <?php if ($img1): ?>
                                                     <div class="w-full">
-                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[4px] border-gray-200 h-auto object-cover object-top rounded-md">
+                                                        <img src="<?php echo esc_url($img1['url']); ?>" alt="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>" title="<?php echo esc_attr(get_field('incubation_infra_1_name')); ?>i" width="280" height="240" class="size-full w-full lg:aspect-[230/140] aspect-[260/148] border-[3px] border-gray-200 h-auto object-cover object-top rounded-2xl">
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
-                                            <div class="w-full mx-auto border rounded-lg overflow-hidden">
-                                                <!-- Heading -->
-                                                <div class="p-3 border-b flex flex-col gap-y-1">
-                                                    <p class="lg:text-[15px] text-base font-bold text-[#bc4349]">SEVENTH FLOOR </p>
-                                                    <p class="lg:text-[15px] text-sm font-medium text-[#bc4349]">MEETING ROOMS</p>
+                                            <div class="w-full mx-auto rounded-2xl py-6 px-5 bg-white">
+                                                <div class="mb-4">
+                                                    <p class="text-lg font-semibold text-[#bc4349]">Seventh Floor - Meeting Rooms</p>
+                                                    <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
-                                                <div class="grid lg:grid-cols-7 grid-cols-5">
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">LIFT LOBBY</p>
+                                                
+                                                <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Lift Lobby
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">WASHROOM &amp; PANTRY</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Washroom &amp; Pantry
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CABIN</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Cabin
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">STAFF</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Staff
                                                     </div>
-                                                    <div class="p-2">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">SEMINAR ROOM</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Seminar Room
                                                     </div>
-                                                    <div class="p-3">
-                                                        <p class="text-xs text-gray-500">AREA</p>
-                                                        <p class="text-sm font-medium">CONFERENCE HAL</p>
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                        Conference Hall
                                                     </div>
                                                 </div>
                                             </div>
@@ -555,17 +517,16 @@
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-                        <div class="w-full flex flex-col gap-y-4 lg:py-12 py-8">
-                                <div class="w-full flex flex-col justify-center items-center gap-4 mx-auto">
-                                    <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
-                                    <?php the_field('benefit_badge_2'); ?>
+                        <div class="w-full bg-[#f6f5f2] relative lg:py-20 py-8">
+                            <div class="w-full flex flex-col justify-center items-center mx-auto">
+                                    <span class="bg-[#bf4b50] w-fit py-[5px] px-7 font-medium rounded-full text-white lg:text-3xl md:text-2xl text-xl flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+                                        <?php the_field('benefit_badge_2'); ?>
                                     </span>
-                                    <h2
-                                        class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto text-[#2a1313] lg:mb-6 mb-4">
+                                    <h2 class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto text-[#2a1313] lg:mb-6 mb-4">
                                         <?php the_field('benefit_title_2'); ?>
                                     </h2>
-                                </div>
-                                <div class="w-full event-tabs lg:px-4">
+                            </div>
+                            <div class="w-full event-tabs lg:px-4">
                                     <div class="w-full flex lg:flex-nowrap flex-wrap mx-auto justify-center overflow-x-auto gap-2 lg:gap-4">
                                         <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">Management</button>
                                         <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">Engineering</button>
@@ -1214,7 +1175,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1249,7 +1210,7 @@
                                                                             <?php the_field('mentorship_team_1_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_1_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_1_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1282,7 +1243,7 @@
                                                                             <?php the_field('mentorship_team_2_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_2_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_2_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1294,8 +1255,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_2_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_2_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1315,7 +1276,7 @@
                                                                             <?php the_field('mentorship_team_3_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_3_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_3_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1327,8 +1288,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_3_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1348,7 +1307,7 @@
                                                                             <?php the_field('mentorship_team_4_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_4_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_4_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1360,8 +1319,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_4_category'); ?></p>
                                                             </div>
                                                         </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1381,7 +1338,7 @@
                                                                             <?php the_field('mentorship_team_5_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_5_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_5_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1393,8 +1350,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_5_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_5_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1414,7 +1371,7 @@
                                                                             <?php the_field('mentorship_team_6_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_6_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_5_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1447,7 +1404,7 @@
                                                                             <?php the_field('mentorship_team_7_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_7_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_7_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1459,8 +1416,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_7_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1480,7 +1435,7 @@
                                                                             <?php the_field('mentorship_team_8_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_8_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_8_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1492,8 +1447,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_8_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1513,7 +1466,7 @@
                                                                             <?php the_field('mentorship_team_9_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_9_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_9_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1546,7 +1499,7 @@
                                                                             <?php the_field('mentorship_team_10_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_10_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_10_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1558,8 +1511,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_10_category'); ?></p>
                                                             </div>
                                                         </div> -->
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1579,7 +1530,7 @@
                                                                             <?php the_field('mentorship_team_11_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_11_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_11_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1591,8 +1542,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_11_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1612,7 +1561,7 @@
                                                                             <?php the_field('mentorship_team_12_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_12_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_12_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1646,7 +1595,7 @@
                                                                             <?php the_field('mentorship_team_16_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_16_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_16_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1662,7 +1611,7 @@
                                                                     <?php the_field('mentorship_16_category'); ?></p>
                                                             </div>
                                                         </div> -->
-                                                       
+
                                                         <!-- <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
                                                             <?php $img2 = get_field('mentorship_team_20_image'); ?>
                                                             <?php if ($img2): ?>
@@ -1680,7 +1629,7 @@
                                                                             <?php the_field('mentorship_team_20_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_20_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_20_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1713,7 +1662,7 @@
                                                                             <?php the_field('mentorship_team_21_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_21_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_21_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1725,8 +1674,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_21_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_21_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1746,7 +1695,7 @@
                                                                             <?php the_field('mentorship_team_22_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_22_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_22_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1758,8 +1707,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_22_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_22_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1779,7 +1728,7 @@
                                                                             <?php the_field('mentorship_team_23_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_23_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_23_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1812,7 +1761,7 @@
                                                                             <?php the_field('mentorship_team_24_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_24_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_24_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1824,8 +1773,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_24_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1845,7 +1792,7 @@
                                                                             <?php the_field('mentorship_team_25_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_25_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_25_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1857,8 +1804,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_25_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1878,7 +1823,7 @@
                                                                             <?php the_field('mentorship_team_26_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_26_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_26_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1890,8 +1835,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_26_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1911,7 +1854,7 @@
                                                                             <?php the_field('mentorship_team_27_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_27_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_27_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1923,8 +1866,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_27_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_27_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1944,7 +1887,7 @@
                                                                             <?php the_field('mentorship_team_28_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_28_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_28_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1956,8 +1899,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_28_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_28_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -1977,7 +1920,7 @@
                                                                             <?php the_field('mentorship_team_29_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_29_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_29_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -1989,8 +1932,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_29_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_29_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2010,7 +1953,7 @@
                                                                             <?php the_field('mentorship_team_30_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_30_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_30_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2022,8 +1965,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_30_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_30_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2043,7 +1986,7 @@
                                                                             <?php the_field('mentorship_team_31_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_31_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_31_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2055,8 +1998,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_31_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2076,7 +2017,7 @@
                                                                             <?php the_field('mentorship_team_32_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_32_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_32_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2088,9 +2029,9 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
                                                                     <?php the_field('mentorship_32_category'); ?>
-                                                                </p>
+                                                                </p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2110,7 +2051,7 @@
                                                                             <?php the_field('mentorship_team_33_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_33_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_33_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2122,8 +2063,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_33_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2143,7 +2082,7 @@
                                                                             <?php the_field('mentorship_team_34_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_34_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_34_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2155,8 +2094,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_34_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2176,7 +2113,7 @@
                                                                             <?php the_field('mentorship_team_35_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_35_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_35_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2188,8 +2125,8 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_35_category'); ?></p>
+                                                                <!-- <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
+                                                                    <?php the_field('mentorship_35_category'); ?></p> -->
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2209,7 +2146,7 @@
                                                                             <?php the_field('mentorship_team_36_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_36_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_36_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2221,8 +2158,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_36_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2242,7 +2177,7 @@
                                                                             <?php the_field('mentorship_team_37_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_37_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_37_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2254,8 +2189,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_37_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2275,7 +2208,7 @@
                                                                             <?php the_field('mentorship_team_38_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_38_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_38_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2287,8 +2220,6 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <p class="w-full font-medium text-[#4c4949] lg:text-sm text-sm">
-                                                                    <?php the_field('mentorship_38_category'); ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="w-full h-full flex flex-col bg-white border border-[#e9e7e3] rounded-xl shadow-sm duration-300 group md:group-hover:shadow-lg lg:mt-3">
@@ -2308,7 +2239,7 @@
                                                                             <?php the_field('mentorship_team_13_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_13_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_13_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2341,7 +2272,7 @@
                                                                             <?php the_field('mentorship_team_14_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_14_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_14_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2374,7 +2305,7 @@
                                                                             <?php the_field('mentorship_team_15_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_15_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_15_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2407,7 +2338,7 @@
                                                                             <?php the_field('mentorship_team_17_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_17_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_17_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2440,7 +2371,7 @@
                                                                             <?php the_field('mentorship_team_18_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_18_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_18_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2473,7 +2404,7 @@
                                                                             <?php the_field('mentorship_team_19_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_19_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_19_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2515,7 +2446,7 @@
                                                                             <?php the_field('mentorship_team_39_name'); ?></h4>
                                                                         <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_company_39_name'); ?></h5>
-                                                                        <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                        <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                             <?php the_field('mentorship_39_designation'); ?></p>
                                                                     </div>
                                                                     <div class="flex flex-col">
@@ -2549,7 +2480,7 @@
                                                                         <?php the_field('mentorship_team_40_name'); ?></h4>
                                                                     <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_company_40_name'); ?></h5>
-                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                    <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_40_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
@@ -2583,7 +2514,7 @@
                                                                         <?php the_field('mentorship_team_41_name'); ?></h4>
                                                                     <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_company_41_name'); ?></h5>
-                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                    <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_41_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
@@ -2617,7 +2548,7 @@
                                                                         <?php the_field('mentorship_team_42_name'); ?></h4>
                                                                     <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_company_42_name'); ?></h5>
-                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                    <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_42_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
@@ -2651,7 +2582,7 @@
                                                                         <?php the_field('mentorship_team_43_name'); ?></h4>
                                                                     <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_company_43_name'); ?></h5>
-                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                    <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_43_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
@@ -2685,7 +2616,7 @@
                                                                         <?php the_field('mentorship_team_44_name'); ?></h4>
                                                                     <h5 class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_company_44_name'); ?></h5>
-                                                                    <p class="font-medium text-gray-800 lg:text-sm text-sm pe-3">
+                                                                    <p class="font-medium text-gray-800 text-start lg:text-base text-sm !leading-8 duration-300 pe-2">
                                                                         <?php the_field('mentorship_44_designation'); ?></p>
                                                                 </div>
                                                                 <div class="flex flex-col">
@@ -2730,7 +2661,7 @@
                             <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313]">
                                 <!-- <?php the_field('about_heading1'); ?> --> 
                             </h2>
-                            <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:my-6 mb-4">
+                            <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:my-6 my-4">
                                 <?php the_field('venture_desc'); ?></p>
                         </div>
                     </div>
