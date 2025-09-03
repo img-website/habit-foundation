@@ -206,15 +206,15 @@
 
                                             <!-- Area Pills -->
                                             <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
-                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                 Reception
                                                 </div>
 
-                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                 Waiting
                                                 </div>
 
-                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                 Display Area with Lounge
                                                 </div>
                                             </div>
@@ -253,25 +253,25 @@
 
                                                 <!-- Grid Layout -->
                                                 <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     Lift Lobby
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     Washrooms &amp; Pantry
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     Staircase block
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     Storeroom
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     Robotic Arm Room
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     Cnc Cutting Room
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                     3d Printer Room
                                                     </div>
                                                 </div>
@@ -308,31 +308,31 @@
                                                 </div>
                                                 <!-- Grid Layout -->
                                                 <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Lift Lobby
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Washroom & Pantry
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Board Room 1
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Board Room 2
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Trustee Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Manager Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Ceo Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Admin Staff Area
                                                     </div>
                                                 </div>
@@ -367,31 +367,31 @@
                                                     <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
                                                 <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Lift Lobby
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Washroom & Pantry
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Passage
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Co-Working Space
                                                     </div>
                                                 </div>
@@ -426,25 +426,25 @@
                                                     <div class="w-16 h-1 bg-[#bc4349] rounded mt-1"></div>
                                                 </div>
                                                 <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Lift Lobby
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Washroom &amp; Pantry
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Board Room 2
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         CO-Working Space
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         AR VR Room
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Total Area (2098)
                                                     </div>
                                                 </div>
@@ -480,22 +480,22 @@
                                                 </div>
                                                 
                                                 <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Lift Lobby
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Washroom &amp; Pantry
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Cabin
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Staff
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Seminar Room
                                                     </div>
-                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm hover-md:bg-[#bc4349] hover-md:text-white hover-md:border-[#bc4349] transition-all duration-300 py-2 px-5">
+                                                    <div class="flex items-center justify-center  text-center text-sm font-medium rounded-full border border-gray-300 text-gray-700 bg-gray-50 shadow-sm md:hover:bg-[#bc4349] md:hover:text-white md:hover:border-[#bc4349] transition-all duration-300 py-2 px-5">
                                                         Conference Hall
                                                     </div>
                                                 </div>
@@ -519,12 +519,12 @@
                         </div>
                         <div class="w-full bg-[#f6f5f2] relative lg:py-20 py-8">
                             <div class="w-full flex flex-col justify-center items-center mx-auto">
-                                    <span class="bg-[#bf4b50] w-fit py-[5px] px-7 font-medium rounded-full text-white lg:text-3xl md:text-2xl text-xl flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
-                                        <?php the_field('benefit_badge_2'); ?>
-                                    </span>
-                                    <h2 class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto text-[#2a1313] lg:mb-6 mb-4">
-                                        <?php the_field('benefit_title_2'); ?>
-                                    </h2>
+                                <span class="bg-[#bf4b50] w-fit py-[5px] px-7 font-medium rounded-full text-white lg:text-3xl md:text-2xl text-xl flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
+                                    <?php the_field('benefit_badge_2'); ?>
+                                </span>
+                                <h2 class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto text-[#2a1313] lg:mb-6 mb-4">
+                                    <?php the_field('benefit_title_2'); ?>
+                                </h2>
                             </div>
                             <div class="w-full event-tabs lg:px-4">
                                     <div class="w-full flex lg:flex-nowrap flex-wrap mx-auto justify-center overflow-x-auto gap-2 lg:gap-4">
@@ -2640,6 +2640,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Venture Funding -->
                 <div class="block">
                     <input type="radio" name="benefit" id="benefit3" class="hidden peer">
                     <div class="hidden peer-checked:flex flex-wrap *:w-auto">
