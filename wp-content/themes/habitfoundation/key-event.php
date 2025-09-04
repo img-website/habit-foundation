@@ -26,8 +26,7 @@ get_header();?>
     </div>
 </section>
 
-<section
-    class="w-full bg-white relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
+<section class="w-full bg-white relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <!-- <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-medium flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
@@ -39,8 +38,8 @@ get_header();?>
             </h2>
         </div>
         <div class="w-full flex flex-col mx-auto group lg:mt-6 mt-3 lg:gap-6 gap-4">
-            <div class="w-full overflow-x-auto">
-                <ul class="flex flex-nowrap justify-center gap-4 w-max min-w-full py-2 px-2 lg:px-0">
+            <div class="w-full overflow-x-auto px-0.5">
+                <ul class="flex flex-nowrap justify-center gap-4 w-max min-w-full py-2 px-2 lg:px-0 mb-3"  style="scrollbar-width:none;">
                     <li class="group/event">
                         <label for="event1"
                             class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event1:checked]:!bg-[#bf4b50]">
@@ -82,6 +81,7 @@ get_header();?>
                             </div>
                         </label>
                     </li>
+
                     <li class="group/event">
                         <label for="event3"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event3:checked]:!bg-[#bf4b50]">
@@ -94,6 +94,7 @@ get_header();?>
 
                         </label>
                     </li> 
+                    
                     <li class="group/event">
                         <label for="event4"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event4:checked]:!bg-[#bf4b50]">
@@ -114,11 +115,7 @@ get_header();?>
                         <label for="event5"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event5:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
-                                <!-- <span class="lg:size-5 size-4 *:!size-full inline-block group-has-[#event5:checked]:!text-white">
-                                    <svg class="!text-[#bf4b50] group-has-[#event5:checked]:!text-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M11 20h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7"></path><path d="M15 19l2 2l4 -4"></path><path d="M9 17h2.5"></path></svg>
-                                </span> -->
-                                <div
-                                    class="text-[#bf4b50] group-has-[#event5:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                <div class="text-[#bf4b50] group-has-[#event5:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
                                     <?php the_field('event_top_heading_5'); ?>
                                 </div>
                             </div>
@@ -126,7 +123,7 @@ get_header();?>
                         </label>
                     </li>
 
-                    <!-- <li class="group/event">
+                    <li class="group/event">
                         <label for="event6"
                             class=" cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event6:checked]:!bg-[#bf4b50]">
                             <div class="flex items-center lg:gap-2 gap-1">
@@ -136,7 +133,43 @@ get_header();?>
                                 </div>
                             </div>
                         </label>
-                    </li> -->
+                    </li>
+
+                    <li class="group/event">
+                        <label for="event7"
+                            class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event7:checked]:!bg-[#bf4b50]">
+                            <div class="flex items-center lg:gap-2 gap-1">
+                                <div
+                                    class="text-[#bf4b50] group-has-[#event7:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                    <?php the_field('event_top_heading_7'); ?>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+
+                    <li class="group/event">
+                        <label for="event8"
+                            class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event8:checked]:!bg-[#bf4b50]">
+                            <div class="flex items-center lg:gap-2 gap-1">
+                                <div
+                                    class="text-[#bf4b50] group-has-[#event8:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                    <?php the_field('event_top_heading_8'); ?>
+                                </div>
+                            </div>
+                        </label>
+                    </li>   
+
+                    <li class="group/event">
+                        <label for="event9"
+                            class="cursor-pointer inline-flex items-center justify-between lg:py-[10px] lg:px-9 sm:py-3 sm:px-5 py-2 px-2 text-white rounded-full w-full duration-300 transition-all bg-white ring-1 ring-[#bf4b50]  group-has-[#event9:checked]:!bg-[#bf4b50]">
+                            <div class="flex items-center lg:gap-2 gap-1">
+                                <div
+                                    class="text-[#bf4b50] group-has-[#event9:checked]:!text-white font-semibold tracking-[0.5px] lg:!text-base text-[13px] sm:!text-sm">
+                                    <?php the_field('event_top_heading_9'); ?>
+                                </div>
+                            </div>
+                        </label>
+                    </li>   
                 </ul>
             </div>
             <div class="content-sec w-full">
@@ -726,53 +759,53 @@ get_header();?>
                                                 <?php the_field('event_description_8'); ?></p>
                                     </div>
                                     <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
-                                                <?php $img1 = get_field('event_image_24'); ?>
-                                                <?php if ($img1): ?>
-                                                <div class="relative w-full flex justify-center mb-2">
-                                                    <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
-                                                        style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
-                                                    </div>
-                                                    <!-- Foreground image -->
-                                                    <img 
-                                                        src="<?php echo esc_url($img1['url']); ?>" 
-                                                        alt="<?php the_field('event_title_8'); ?>" 
-                                                        title="<?php the_field('event_title_8'); ?>" 
-                                                        width="284" 
-                                                        height="240"
-                                                        class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                        <?php $img1 = get_field('event_image_24'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center mb-2">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_8'); ?>" 
+                                                title="<?php the_field('event_title_8'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
                                                     >
-                                                </div>
-                                                <?php endif; ?>
+                                        </div>
+                                        <?php endif; ?>
 
-                                                <?php $img1 = get_field('event_image_25'); ?>
-                                                <?php if ($img1): ?>
-                                                <div class="relative w-full flex justify-center mb-2">
+                                        <?php $img1 = get_field('event_image_25'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center mb-2">
                                                     <img src="<?php echo esc_url($img1['url']); ?>"
-                                                        alt="<?php the_field('event_title_8'); ?>"
-                                                        title="<?php the_field('event_title_8'); ?>" width="373" height="240"
-                                                        class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
-                                                </div>
-                                                <?php endif; ?>
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                        </div>
+                                        <?php endif; ?>
 
-                                                <?php $img1 = get_field('event_image_26'); ?>
-                                                <?php if ($img1): ?>
-                                                <div class="relative w-full flex justify-center mb-2">
-                                                    <img src="<?php echo esc_url($img1['url']); ?>"
-                                                        alt="<?php the_field('event_title_8'); ?>"
-                                                        title="<?php the_field('event_title_8'); ?>" width="373" height="240"
-                                                        class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
-                                                </div>
-                                                <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_26'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center mb-2">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                        </div>
+                                        <?php endif; ?>
 
-                                                <?php $img1 = get_field('event_image_27'); ?>
-                                                <?php if ($img1): ?>
-                                                <div class="relative w-full flex justify-center mb-2">
-                                                    <img src="<?php echo esc_url($img1['url']); ?>"
-                                                        alt="<?php the_field('event_title_8'); ?>"
-                                                        title="<?php the_field('event_title_8'); ?>" width="373" height="240"
-                                                        class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
-                                                </div>
-                                                <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_27'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center mb-2">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -780,16 +813,605 @@ get_header();?>
                         </div>
                         </div>
                 </div>
-                <!-- <div class="block">
-                        <input type="radio" name="event" id="event6" class="hidden peer">
-                        <div class="hidden peer-checked:flex flex-wrap">
-                            <div class="w-full flex flex-wrap">
-                                <button
-                                class="design-tab-btn text-base lg:text-lg font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]"
-                                data-tab="design-tab">Vescop</button>
+                <div class="block">
+                    <input type="radio" name="event" id="event6" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap">
+                    <div class="w-full event-tabs">
+                        <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                            <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab11">2024</button>
+                            <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab12">2025</button>
+                        </div>
+                        <div class="agile-tab-content mt-8" id="tab11">
+                            <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 my-4">
+                                        <span
+                                            class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                        <h4
+                                            class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('event_title_13'); ?></h4>
+
+                                        <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                            <?php the_field('event_description_12'); ?></p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
+                                        <?php $img1 = get_field('event_image_37'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_13'); ?>" 
+                                                title="<?php the_field('event_title_13'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                    >
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_38'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_39'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_40'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_41'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_42'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_43'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_44'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_8'); ?>"
+                                                title="<?php the_field('event_title_8'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+
+                                    </div>
                             </div>
                         </div>
-                </div> -->
+                        <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab12">Coming Soon</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <input type="radio" name="event" id="event7" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap">
+                    <div class="w-full event-tabs">
+                        <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                            <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab13">2024</button>
+                            <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab14">2025</button>
+                        </div>
+                        <div class="agile-tab-content mt-8" id="tab13">
+                            <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                <div class="flex flex-col gap-y-1 my-4">
+                                    <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                    <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                        <?php the_field('event_title_13'); ?></h4>
+
+                                    <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                        <?php the_field('event_description_13'); ?></p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
+                                        
+                                        <?php $img1 = get_field('event_image_45'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_13'); ?>" 
+                                                title="<?php the_field('event_title_13'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                    >
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_46'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_13'); ?>" 
+                                                title="<?php the_field('event_title_13'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                    >
+                                        </div>
+                                        <?php endif; ?>
+                                        
+                                        <?php $img1 = get_field('event_image_47'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_13'); ?>" 
+                                                title="<?php the_field('event_title_13'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                    >
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_48'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_13'); ?>" 
+                                                title="<?php the_field('event_title_13'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
+                                                    >
+                                        </div>
+                                        <?php endif; ?>
+                                        
+                                        <?php $img1 = get_field('event_image_49'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_50'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_51'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_52'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_53'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_54'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_55'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_56'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_57'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_58'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_59'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php $img1 = get_field('event_image_60'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_13'); ?>"
+                                                title="<?php the_field('event_title_13'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab14">Coming Soon</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <input type="radio" name="event" id="event8" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap">
+                    <div class="w-full event-tabs">
+                        <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                            <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab15">2025</button>
+                        </div>
+                        <div class="agile-tab-content mt-8" id="tab15">
+                            <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                <div class="flex flex-col gap-y-1 my-4">
+                                    <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                    <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                        <?php the_field('event_title_14'); ?></h4>
+
+                                    <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                        <?php the_field('event_description_14'); ?></p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
+                                        
+                                        <?php $img1 = get_field('event_image_61'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                            </div>
+                                            <!-- Foreground image -->
+                                            <img 
+                                                src="<?php echo esc_url($img1['url']); ?>" 
+                                                alt="<?php the_field('event_title_14'); ?>" 
+                                                title="<?php the_field('event_title_14'); ?>" 
+                                                width="284" 
+                                                height="240"
+                                                class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                    >
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_62'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_14'); ?>"
+                                                title="<?php the_field('event_title_14'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+
+                                        <?php $img1 = get_field('event_image_63'); ?>
+                                        <?php if ($img1): ?>
+                                        <div class="relative w-full flex justify-center">
+                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                alt="<?php the_field('event_title_14'); ?>"
+                                                title="<?php the_field('event_title_14'); ?>" width="373" height="240"
+                                                class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                        </div>
+                                        <?php endif; ?>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <input type="radio" name="event" id="event9" class="hidden peer">
+                    <div class="hidden peer-checked:flex flex-wrap">
+                        <div class="w-full event-tabs">
+                            <div class="w-full flex flex-wrap mx-auto justify-center gap-2 lg:gap-4">
+                                <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab16">2024</button>
+                                <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab17">2025</button>
+                            </div>
+                            <div class="agile-tab-content mt-8" id="tab16">
+                                <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
+                                    <div class="flex flex-col gap-y-1 my-4">
+                                        <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
+                                        <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('event_title_15'); ?></h4>
+
+                                        <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
+                                            <?php the_field('event_description_15'); ?>
+                                        </p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 lg:gap-4 gap-2 h-full">
+                                            <?php $img1 = get_field('event_image_64'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_65'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_66'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_67'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_68'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_69'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_70'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_71'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_72'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+                                            
+                                            <?php $img1 = get_field('event_image_73'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <div class="absolute inset-0 w-full lg:top-0 lg:left-0 max-w-full h-full rounded-md bg-cover bg-center filter blur-[2px] brightness-75 z-0"
+                                                    style="background-image: url('<?php echo esc_url($img1['url']); ?>');">
+                                                </div>
+                                                <!-- Foreground image -->
+                                                <img 
+                                                    src="<?php echo esc_url($img1['url']); ?>" 
+                                                    alt="<?php the_field('event_title_15'); ?>" 
+                                                    title="<?php the_field('event_title_15'); ?>" 
+                                                    width="284" 
+                                                    height="240"
+                                                    class="relative z-10 w-full aspect-[361/240] h-auto rounded-md shadow object-contain object-top"
+                                                        >
+                                            </div>
+                                            <?php endif; ?>
+
+                                            <?php $img1 = get_field('event_image_74'); ?>
+                                            <?php if ($img1): ?>
+                                            <div class="relative w-full flex justify-center">
+                                                <img src="<?php echo esc_url($img1['url']); ?>"
+                                                    alt="<?php the_field('event_title_15'); ?>"
+                                                    title="<?php the_field('event_title_15'); ?>" width="373" height="240"
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                            </div>
+                                            <?php endif; ?>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab17">Coming Soon</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

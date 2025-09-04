@@ -536,53 +536,37 @@
                                     <div class="agile-tab-content lg:mt-8 mt-4" id="tab1">
                                         <div class="w-full">
                                             <div class="block">
-                                                    <div class="w-full flex flex-col justify-center items-center gap-4">
-                                                        <div class="grid grid-cols-1 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
-                                                                <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
-                                                                    <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
-
-                                                                        <div class="flex items-center">
-                                                                            <?php $img1 = get_field('infra_top_image1'); ?>
-                                                                            <?php if ($img1): ?>
-                                                                                <div class="w-full flex justify-center">
-                                                                                    <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                        alt="<?php the_field('infra_title1'); ?>"
-                                                                                        title="<?php the_field('infra_title1'); ?>" width="357" height="230"
-                                                                                        class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
-                                                                                </div>
-                                                                            <?php endif; ?>
+                                                <div class="w-full flex flex-col justify-center items-center gap-4">
+                                                    <div class="grid grid-cols-1 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="w-full flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image1'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                alt="<?php the_field('infra_title1'); ?>"
+                                                                                title="<?php the_field('infra_title1'); ?>" width="357" height="230"
+                                                                                class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                                <div class="flex flex-col gap-3">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <?php the_field('infra_title1'); ?>
                                                                         </div>
 
-                                                                        <div class="flex flex-col gap-3">
-                                                                            <div class="flex flex-col gap-3 md:gap-4">
-                                                                                <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                                    <?php the_field('infra_title1'); ?>
-                                                                                </div>
-
-                                                                                <!-- Description -->
-                                                                                <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                                    <?php the_field('infra_description1'); ?>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <!-- Explore More Link -->
-                                                                            <div>
-                                                                                <a href="<?php the_field('explore_link'); ?>" class="inline-flex items-center gap-2 group">
-                                                                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                        <?php the_field('explore_text'); ?>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description1'); ?>
                                                                         </div>
-
                                                                     </div>
                                                                 </div>
-
-                                                                <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
                                                                     <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
 
                                                                         <div class="flex items-center">
@@ -600,7 +584,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title2'); ?>
                                                                                 </div>
 
@@ -609,24 +593,11 @@
                                                                                     <?php the_field('infra_description2'); ?>
                                                                                 </div>
                                                                             </div>
-
-                                                                            <!-- Explore More Link -->
-                                                                            <div>
-                                                                                <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
-                                                                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                        <?php the_field('explore_text'); ?>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
                                                                         </div>
 
                                                                     </div>
-                                                                </div>
-
-                                                                <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
                                                                     <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
                                                                         <div class="flex items-center">
                                                                             <?php $img1 = get_field('infra_top_image3'); ?>
@@ -643,7 +614,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title3'); ?>
                                                                                 </div>
 
@@ -652,14 +623,10 @@
                                                                                     <?php the_field('infra_description3'); ?>
                                                                                 </div>
                                                                             </div>
-
-                                                                           
                                                                         </div>
-
                                                                     </div>
-                                                                </div>
-
-                                                                <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
                                                                     <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl shadow-md gap-5 md:gap-10 w-full">
 
                                                                         <div class="flex items-center">
@@ -677,7 +644,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title4'); ?>
                                                                                 </div>
 
@@ -686,25 +653,11 @@
                                                                                     <?php the_field('infra_description4'); ?>
                                                                                 </div>
                                                                             </div>
-
-                                                                            <!-- Explore More Link -->
-                                                                            <div>
-                                                                                <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
-                                                                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                        <?php the_field('explore_text'); ?>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
                                                                         </div>
-
                                                                     </div>
-                                                                </div>
-
-                                                                <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
-                                                                    <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                                <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
 
                                                                         <div class="flex items-center">
                                                                             <?php $img1 = get_field('infra_top_image5'); ?>
@@ -721,7 +674,7 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-lg md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title5'); ?>
                                                                                 </div>
 
@@ -730,24 +683,11 @@
                                                                                     <?php the_field('infra_description5'); ?>
                                                                                 </div>
                                                                             </div>
-
-                                                                            <!-- Explore More Link -->
-                                                                            <div>
-                                                                                <a href="<?php the_field('explore_link'); ?>" class="inline targe-flex items-center gap-2 group">
-                                                                                    <div class="text-[16px] md:text-[18px] text-[#f48120] font-medium font-primary group-hover:text-black transition-all duration-300">
-                                                                                        <?php the_field('explore_text'); ?>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <img src="<?php the_field('explore_icon'); ?>" alt="">
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
                                                                         </div>
-
-                                                                    </div>
                                                                 </div>
                                                         </div>
                                                     </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -755,208 +695,180 @@
                                         <div class="w-full">
                                             <div class="block">
                                                 <div class="w-full flex flex-col justify-center items-center gap-4">
-                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between gap-6 lg:py-6">
-                                                                <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="lg:flex items-center hidden">
-                                                                        <?php $img1 = get_field('infra_top_image6'); ?>
-                                                                        <?php if ($img1): ?>
-                                                                            <div class="w-full flex justify-center">
-                                                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                    alt="<?php the_field('infra_title6'); ?>"
-                                                                                    title="<?php the_field('infra_title6'); ?>" width="357" height="230"
-                                                                                    class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
-                                                                            </div>
-                                                                        <?php endif; ?>
+                                                    <div class="grid grid-cols-1 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image6'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                alt="<?php the_field('infra_title6'); ?>"
+                                                                                title="<?php the_field('infra_title6'); ?>" width="357" height="230"
+                                                                                class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
+                                                                </div>
+
+                                                                <div class="flex flex-col gap-3">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg text-start font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <?php the_field('infra_title6'); ?>
+                                                                        </div>
+
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description6'); ?>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="lg:w-3/5 w-full flex flex-col">
-                                                                    <div class="flex flex-col gap-3 text-start">
-                                                                            <div class="flex flex-col gap-3 md:gap-4">
-                                                                                <!-- Title -->
-                                                                                <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                                    <?php the_field('infra_title6'); ?>
-                                                                                </div>
-                                                                
-                                                                                <div class="flex items-center lg:hidden">
-                                                                                    <?php $img1 = get_field('infra_top_image6'); ?>
-                                                                                    <?php if ($img1): ?>
-                                                                                        <div class="w-full flex justify-center py-4">
-                                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                                alt="<?php the_field('infra_title6'); ?>"
-                                                                                                title="<?php the_field('infra_title6'); ?>" width="357" height="230"
-                                                                                                class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
-                                                                                        </div>
-                                                                                    <?php endif; ?>
-                                                                                </div>
-                                                                                <!-- Description -->
-                                                                                <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                                    <?php the_field('infra_description6'); ?>
-                                                                                </div>
-                                                                            </div>
-                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image7'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                alt="<?php the_field('infra_title7'); ?>"
+                                                                                title="<?php the_field('infra_title7'); ?>" width="357" height="230"
+                                                                                class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                    </div>
-                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between gap-6 lg:py-6">
-                                                                <div class="lg:w-3/5 w-full flex flex-col">
-                                                                    <div class="flex flex-col gap-3 text-start">
-                                                                        <div class="flex flex-col gap-3 md:gap-4">
-                                                                            <!-- Title -->
-                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+
+                                                                <div class="flex flex-col gap-3">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg text-start font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                 <?php the_field('infra_title7'); ?>
-                                                                            </div>
-                                                                            <div class="flex items-center lg:hidden">
-                                                                                <?php $img1 = get_field('infra_top_image7'); ?>
-                                                                                <?php if ($img1): ?>
-                                                                                    <div class="w-full flex justify-center py-4">
-                                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                            alt="<?php the_field('infra_title7'); ?>"
-                                                                                            title="<?php the_field('infra_title7'); ?>" width="357" height="230"
-                                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
-                                                                                    </div>
-                                                                                <?php endif; ?>
-                                                                            </div> 
-                                                                            <!-- Description -->
-                                                                            <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                                <?php the_field('infra_description7'); ?>
-                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description7'); ?>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="lg:flex hidden items-center">
-                                                                        <?php $img1 = get_field('infra_top_image7'); ?>
-                                                                        <?php if ($img1): ?>
-                                                                            <div class="w-full flex justify-center">
-                                                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                    alt="<?php the_field('infra_title7'); ?>"
-                                                                                    title="<?php the_field('infra_title7'); ?>" width="357" height="230"
-                                                                                    class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md ">
-                                                                            </div>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image8'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                alt="<?php the_field('infra_title8'); ?>"
+                                                                                title="<?php the_field('infra_title8'); ?>" width="357" height="230"
+                                                                                class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                    </div>
-                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between gap-6 lg:py-6">
-                                                                <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="lg:flex items-center hidden">
-                                                                        <?php $img1 = get_field('infra_top_image8'); ?>
-                                                                        <?php if ($img1): ?>
-                                                                            <div class="w-full flex justify-center">
-                                                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                    alt="<?php the_field('infra_title8'); ?>"
-                                                                                    title="<?php the_field('infra_title8'); ?>" width="357" height="230"
-                                                                                    class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
-                                                                            </div>
-                                                                        <?php endif; ?>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="lg:w-3/5 w-full flex flex-col">
+
+                                                                <div class="flex flex-col gap-3">
                                                                     <div class="flex flex-col gap-3 md:gap-4">
-                                                                                <!-- Title -->
-                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg text-start font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                 <?php the_field('infra_title8'); ?>
-                                                                            </div>
-                                                                            <div class="flex items-center lg:hidden">
-                                                                                <?php $img1 = get_field('infra_top_image8'); ?>
-                                                                                <?php if ($img1): ?>
-                                                                                    <div class="w-full flex justify-center py-4">
-                                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                            alt="<?php the_field('infra_title8'); ?>"
-                                                                                            title="<?php the_field('infra_title8'); ?>" width="357" height="230"
-                                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
-                                                                                    </div>
-                                                                                <?php endif; ?>
-                                                                            </div>
-                                                                                <!-- Description -->
-                                                                            <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                                <?php the_field('infra_description8'); ?>
-                                                                            </div>
                                                                         </div>
-                                                                </div>
-                                                    </div>
-                                                    <div class="w-full flex lg:flex-row flex-col relative items-center justify-between lg:gap-6 lg:py-6">
-                                                                <div class="lg:w-3/5 w-full flex flex-col">
-                                                                    <div class="flex flex-col gap-3 md:gap-4">
-                                                                            <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                                <?php the_field('infra_title9'); ?>
-                                                                            </div>
-                                                                            <div class="flex items-center lg:hidden">
-                                                                                <?php $img1 = get_field('infra_top_image9'); ?>
-                                                                                <?php if ($img1): ?>
-                                                                                    <div class="w-full flex justify-center py-4">
-                                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                            alt="<?php the_field('infra_title9'); ?>"
-                                                                                            title="<?php the_field('infra_title9'); ?>" width="357" height="230"
-                                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
-                                                                                    </div>
-                                                                                <?php endif; ?>
-                                                                            </div>
-                                                                            <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                                <?php the_field('infra_description9'); ?>
-                                                                            </div>
-                                                                            
+
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description8'); ?>
                                                                         </div>
-                                                                </div>
-                                                                <div class="lg:w-2/5 w-full flex flex-col">
-                                                                    <div class="lg:flex items-center hidden">
-                                                                        <?php $img1 = get_field('infra_top_image9'); ?>
-                                                                        <?php if ($img1): ?>
-                                                                            <div class="w-full flex justify-center">
-                                                                                <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                                    alt="<?php the_field('infra_title9'); ?>"
-                                                                                    title="<?php the_field('infra_title9'); ?>" width="357" height="230"
-                                                                                    class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
-                                                                            </div>
-                                                                        <?php endif; ?>
                                                                     </div>
                                                                 </div>
-                                                    </div>
-                                                    <div class="w-full flex lg:flex-row flex-col flex-wrap gap-y-6 -mx-2.5 items-stretch">
-                                                                <div class="md:w-1/2 sm:w-1/2 w-full px-2.5">
-                                                                    <h3 class="text-lg font-semibold text-[#b93a40] text-start mb-3">Industrial Uses of UTM</h3>
-                                                                    <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start ">
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Quality Control – Ensures raw materials and products meet standards.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Material Selection – Choose the best materials for applications.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Product Development – Understands material behavior under stress.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Failure Analysis – Investigates component failure causes.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Standard Compliance – Verifies ASTM, ISO standards.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Research & Development – Analyzes new materials or composites.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Welding/Joint Testing – Tests strength of welded joints.</li>
-                                                                    </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image9'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                            <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                                alt="<?php the_field('infra_title9'); ?>"
+                                                                                title="<?php the_field('infra_title9'); ?>" width="357" height="230"
+                                                                                class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                                <div class="md:w-1/2 sm:w-1/2 w-full px-2.5">
-                                                                    <h3 class="text-lg font-semibold text-[#b93a40] text-start mb-3">Industrial Uses of Compression Testing Machine</h3>
-                                                                    <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start">
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Concrete & Construction – Strength of concrete, bricks, blocks.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Packaging – Durability of cartons under load.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Metals & Alloys – Compressive strength and deformation.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Automotive & Aerospace – Load-bearing parts testing.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Plastics & Rubbers – Compression resistance measurement.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Ceramics & Glass – Crushing strength of brittle materials.</li>
-                                                                    </ul>
+
+                                                                <div class="flex flex-col gap-3">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg text-start font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <?php the_field('infra_title9'); ?>
+                                                                        </div>
+
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description9'); ?>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="md:w-1/2 sm:w-1/2 w-full px-2.5">
-                                                                    <h3 class="text-lg font-semibold text-[#b93a40] text-start mb-3">Industrial Uses of Torsion Testing Machine</h3>
-                                                                    <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start">
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Automotive – Tests drive shafts, axles, steering parts.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Aerospace – Torque strength of turbine blades, joints.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Metal & Alloy Industry – Torsional strength of rods, wires.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Medical Devices – Strength of surgical tools and implants.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Tool Manufacturing – Torque capacity of wrenches, screws.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Construction – Torsional loads on rebar, connectors.</li>
-                                                                    </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="w-full flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image10'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title10'); ?>"
+                                                                            title="<?php the_field('infra_title10'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                                <div class="md:w-1/2 sm:w-1/2 w-full px-2.5">
-                                                                    <h3 class="text-lg font-semibold text-[#b93a40] text-start mb-3">Industrial Uses of Impact Testing Machine</h3>
-                                                                    <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start">
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Automotive – Crash resistance and toughness testing.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Aerospace – Impact safety of materials.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Metal Industry – Toughness and brittleness testing.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Construction – Building materials impact durability.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Tool Manufacturing – Sudden load resistance testing.</li>
-                                                                        <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Quality Control – Ensures safety standards under impact.</li>
-                                                                    </ul>
+
+                                                                <div class="flex flex-col gap-3">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg text-start font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <?php the_field('infra_title10'); ?>
+                                                                        </div>
+
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description10'); ?>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                            <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                                <div class="w-full flex items-center">
+                                                                    <?php $img1 = get_field('infra_top_image11'); ?>
+                                                                    <?php if ($img1): ?>
+                                                                        <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title11'); ?>"
+                                                                            title="<?php the_field('infra_title11'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad6] h-auto object-cover object-top rounded-md ">
+                                                                        </div>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                                <div class="flex flex-col gap-3">
+                                                                    <div class="flex flex-col gap-3 md:gap-4">
+                                                                        <!-- Title -->
+                                                                        <div class="relative text-base md:text-lg text-start font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                            <?php the_field('infra_title11'); ?>
+                                                                        </div>
+
+                                                                        <!-- Description -->
+                                                                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                            <?php the_field('infra_description11'); ?>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -965,7 +877,7 @@
                                     <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab3"> 
                                         <div class="w-full">
                                             <div class="block">
-                                                <div class="grid grid-cols-1 md:grid-2 lg:grid-cols-2 items-start lg:gap-6 gap-4 h-auto w-full">
+                                                <div class="grid grid-cols-1 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
                                                     <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
                                                         <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
 
@@ -984,7 +896,7 @@
                                                             <div class="flex flex-col gap-3">
                                                                 <div class="flex flex-col gap-3 md:gap-4">
                                                                     <!-- Title -->
-                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                         <?php the_field('infra_title12'); ?>
                                                                     </div>
 
@@ -1016,7 +928,7 @@
                                                             <div class="flex flex-col gap-3">
                                                                 <div class="flex flex-col gap-3 md:gap-4">
                                                                     <!-- Title -->
-                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                         <?php the_field('infra_title13'); ?>
                                                                     </div>
 
@@ -1048,7 +960,7 @@
                                                             <div class="flex flex-col gap-3">
                                                                 <div class="flex flex-col gap-3 md:gap-4">
                                                                     <!-- Title -->
-                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                         <?php the_field('infra_title14'); ?>
                                                                     </div>
 
@@ -1079,7 +991,7 @@
                                                             <div class="flex flex-col gap-3">
                                                                 <div class="flex flex-col gap-3 md:gap-4">
                                                                     <!-- Title -->
-                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                         <?php the_field('infra_title15'); ?>
                                                                     </div>
 
@@ -1111,7 +1023,7 @@
                                                             <div class="flex flex-col gap-3">
                                                                 <div class="flex flex-col gap-3 md:gap-4">
                                                                     <!-- Title -->
-                                                                    <div class="relative text-lg md:text-xl font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                         <?php the_field('infra_title16'); ?>
                                                                     </div>
 
@@ -1125,7 +1037,6 @@
 
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -1133,45 +1044,7 @@
                                     <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab4">
                                         <div class="w-full">
                                             <div class="block">
-                                                <div class="w-full flex lg:flex-row flex-col justify-between relative items-center gap-8 lg:py-6 py-4">
-                                                    <div class="lg:w-2/5 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start">
-                                                            <div class="flex items-center">
-                                                                <?php $img1 = get_field('infra_top_image10'); ?>
-                                                                <?php if ($img1): ?>
-                                                                    <div class="w-full flex justify-center">
-                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
-                                                                            alt="<?php the_field('infra_title10'); ?>"
-                                                                            title="<?php the_field('infra_title10'); ?>" width="357" height="230"
-                                                                            class="w-full rounded-md shadow aspect-[357/230] bg-[#dbdad10] h-auto object-cover object-top rounded-md ">
-                                                                    </div>
-                                                                <?php endif; ?>
-                                                            </div>
-                                                    </div>
-                                                    <div class="lg:w-3/5 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
-                                                        <div class="flex flex-col gap-3 md:gap-4">
-                                                                <div class="relative text-lg text-start md:text-xl font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
-                                                                    <?php the_field('infra_title10'); ?>
-                                                                </div>
-
-                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
-                                                                        <?php the_field('infra_description10'); ?>
-                                                                    </div>
-                                                                    <div class="w-full px-2.5">
-                                                                        <h3 class="text-base font-medium text-gray-800 text-start mb-3">It consists of the following major instruments--
-                                                                        <ul class="list-disc list-inside text-gray-700 space-y-1 flex flex-col items-start ">
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Integrated Testing system with DC Power supply - Triple output Programmable Model, Digital Multimeter, Function generator and Mixed signal oscilloscope</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">1.5 GHz Synthesized Signal Generator</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">DMM 6.5-digit digital Multimeter</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Arbitrary waveform generator 120 MHz DDS</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">3 GHz Spectrum analyers with 2 channels</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">100 MHz, 200 MHz DSOs</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">1MHz, 20 MHz Pulse Function Generator</li>
-                                                                            <li class="text-start font-normal text-[#4c4949] w-full md:text-sm text-sm tracking-[0.3px] !leading-7 text-justify">Grandway optical multimeter and OTDR</li>
-                                                                        </ul>
-                                                                    </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>

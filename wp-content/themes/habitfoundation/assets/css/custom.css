@@ -20,6 +20,24 @@
     background-size: 100%;
   }
 }
+::-webkit-scrollbar {
+  width: 1px;
+  height:1px;
+  padding-top:6px;               /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;      /* track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;      /* scrollbar color */
+  border-radius: 40px;      /* rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b93a40;      /* hover color */
+}
 
 .animate-bg-zoom {
   animation: animateImg 5s ease-in-out infinite;
