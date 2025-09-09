@@ -70,8 +70,8 @@
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="flex flex-col w-full">
             <div class="w-full relative">    
-                <div class="flex flex-wrap justify-between items-stretch">
-                    <div class="md:w-4/12 w-full max-md:order-first rounded-3xl aspect-square flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] p-2">
+                <div class="flex flex-wrap justify-between items-stretch lg:bg-transparent bg-white rounded-3xl lg:p-0 p-6 lg:shadow-none shadow-lg">
+                    <div class="md:w-4/12 w-full max-md:order-first rounded-3xl flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] p-2 lg:my-0 mb-6">
                         <?php 
                         $image = get_field('mentoring_session_image_1');
                         if ($image): ?>
@@ -81,8 +81,8 @@
                         <?php endif; ?>
                     </div>
                     <!-- Content -->
-                    <div class="md:w-7/12 w-full bg-white rounded-3xl xl:p-12 md:p-8 py-6 px-4">
-                        <h2 class="w-full lg:text-2xl md:text-xl text-lg !leading-normal text-start font-semibold mx-auto lg:mb-4 mb-6 text-[#b93a40] relative z-10">
+                    <div class="md:w-7/12 w-full lg:bg-white rounded-3xl xl:p-12 md:p-8">
+                        <h2 class="w-full lg:text-2xl md:text-xl text-lg !leading-normal text-start font-semibold mx-auto lg:mb-4 mb-4 text-[#b93a40] relative z-10">
                             <?php the_field('mentoring_session_title_1'); ?>
                         </h2>
                         <div class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
