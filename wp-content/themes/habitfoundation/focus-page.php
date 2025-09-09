@@ -27,8 +27,7 @@
     </div>
 </section>
 
-<section
-    class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6  animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
+<section class="w-full bg-[#f6f5f2] relative lg:py-16 md:py-8 py-6 animate-bg-zoom bg-[url(<?php echo get_template_directory_uri(); ?>/assets/img/elevate4.webp)] bg-cover bg-center">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <!-- <span class="bg-[#bf4b50] w-fit py-[5px] px-7 rounded-full text-white lg:text-3xl md:text-2xl text-xl font-bold flex items-center inline-block mx-auto mb-6 tracking-[1px] leading-[1.5]">
@@ -376,6 +375,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
@@ -470,6 +470,7 @@
         </div>
 
         <div id="serviceContent" class="tab-content hidden w-full flex flex-col items-center lg:gap-6 gap-4">
+
             <div class="w-full lg:mb-6 rounded-lg">
                 <h4
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
@@ -854,6 +855,7 @@
             </div>
 
         </div>
+    </div>
 </section>
 <script>
     // -------------------tabbing---------------------
