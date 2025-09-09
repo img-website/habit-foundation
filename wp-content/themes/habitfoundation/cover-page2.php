@@ -67,30 +67,34 @@
 </section>
 
 
-<section class="w-full lg:py-16 md:py-8 py-6 relative bg-[#b7353b] ">
+<section class="w-full lg:py-20 md:py-10 py-8 relative bg-[#b93a40]">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="flex flex-col w-full">
-            <h2 class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto lg:mb-9 mb-6 text-white relative z-10 md:text-center">Mentoring Session on E-Commerce Growth & Strategies</h2>
             <div class="w-full relative">    
-                <div class="flex flex-wrap justify-between items-stretch bg-white rounded-3xl xl:p-12 md:p-8 py-6 px-4 gap-y-6 ">
-                        <div class="md:w-7/12 w-full">
-                            <div class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4 truncate-5-lines">The HABIT Foundation conducted a mentoring session for its incubatees BAT-Re, FAD,
-                                and Zennoia, featuring insightful one-on-one discussions with Mr. Arun Naikar, Ex-Chief
-                                E-commerce Head, Fab India Group, alongside Mr. Vijay Talreja (Director, HABIT
-                                Foundation), Ms. Kavita Valecha (Director, HABIT Foundation), and Dr. Jyoti Chandwani
-                                (Nodal Officer, HABIT Foundation). Mr. Naikar shared his expertise on brand-building,
-                                customer trust, operational challenges, and profitability within the e-commerce sector.
-                                The session emphasized the significance of marketing, logistics costs, supply chain
-                                efficiency, and technology integration for sustainable growth, offering incubatees a deeper
-                                understanding of the evolving e-commerce ecosystem.</div>
-                            
-                        </div>
-                        <div class="md:w-4/12 w-full max-md:order-first rounded-3xl aspect-square flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] p-2">
-                            <img src="http://localhost/habit-foundation/wp-content/uploads/2025/09/Mr.Arun-Naikar_Mentoring-poster.png"  width="375" height="375" class="rounded-2xl size-full object-contain object-center">
+                <div class="flex flex-wrap justify-between items-stretch">
+                    <div class="md:w-4/12 w-full max-md:order-first rounded-3xl aspect-square flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] p-2">
+                        <?php 
+                        $image = get_field('mentoring_session_image_1');
+                        if ($image): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" 
+                                alt="<?php echo esc_attr($image['alt']); ?>" 
+                                class="rounded-2xl size-full object-contain object-center" />
+                        <?php endif; ?>
+                    </div>
+                    <!-- Content -->
+                    <div class="md:w-7/12 w-full bg-white rounded-3xl xl:p-12 md:p-8 py-6 px-4">
+                        <h2 class="w-full lg:text-2xl md:text-xl text-lg !leading-normal text-start font-semibold mx-auto lg:mb-4 mb-6 text-[#b93a40] relative z-10">
+                            <?php the_field('mentoring_session_title_1'); ?>
+                        </h2>
+                        <div class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                            <?php the_field('mentoring_session_description_2'); ?>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <?php get_footer();?>
