@@ -36,7 +36,7 @@
                 <?php $img = get_field('company_image'); ?>
                 <?php if ($img): ?>
                 <img src="<?php echo esc_url($img['url']); ?>" alt="Company" title="Company" width="477" height="414"
-                    class="w-full rounded-md">
+                    class="w-full rounded-md" loading="eager" fetchpriority="high">
                 <?php endif; ?>
             </div>
 
@@ -52,7 +52,7 @@
                     <?php $img = get_field('company_image'); ?>
                     <?php if ($img): ?>
                     <img src="<?php echo esc_url($img['url']); ?>" alt="Company" title="Company" width="477"
-                        height="414" class="w-full rounded-md">
+                        height="414" class="w-full rounded-md" loading="eager" fetchpriority="high">
                     <?php endif; ?>
                 </div>
                 <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -94,7 +94,7 @@
                     <?php $img = get_field('mission_image'); ?>
                     <?php if ($img): ?>
                     <img src="<?php echo esc_url($img['url']); ?>" alt="Our Mission" title="Our Mission" width="477"
-                        height="293" class="w-full rounded-md object-cover aspect-[497/296]">
+                        height="293" class="w-full rounded-md object-cover aspect-[497/296]" loading="lazy" fetchpriority="low">
                     <?php endif; ?>
                 </div>
                 <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -104,7 +104,7 @@
                 <?php $img = get_field('mission_image'); ?>
                 <?php if ($img): ?>
                 <img src="<?php echo esc_url($img['url']); ?>" alt="Our Mission" title="Our Mission" width="477"
-                    height="293" class="w-full rounded-md object-cover aspect-[497/296]">
+                    height="293" class="w-full rounded-md object-cover aspect-[497/296]" loading="lazy" fetchpriority="low">
                 <?php endif; ?>
             </div>
         </div>
@@ -119,7 +119,7 @@
                 <?php $img = get_field('vision_image'); ?>
                 <?php if ($img): ?>
                 <img src="<?php echo esc_url($img['url']); ?>" alt="Our Vision" title="Our Vision" width="477"
-                    height="293" class="w-full rounded-md object-cover aspect-[497/296]">
+                    height="293" class="w-full rounded-md object-cover aspect-[497/296]" loading="lazy" fetchpriority="low">
                 <?php endif; ?>
             </div>
             <div class="lg:w-7/12 md:w-7/12 w-full flex flex-col">
@@ -134,7 +134,7 @@
                     <?php $img = get_field('vision_image'); ?>
                     <?php if ($img): ?>
                     <img src="<?php echo esc_url($img['url']); ?>" alt="Our Vision" title="Our Vision" width="477"
-                        height="293" class="w-full rounded-md object-cover aspect-[497/296]">
+                        height="293" class="w-full rounded-md object-cover aspect-[497/296]" loading="lazy" fetchpriority="low">
                     <?php endif; ?>
                 </div>
                 <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
@@ -278,7 +278,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low" />
                         </div>
                         <?php endif; ?>
                     </div>
@@ -289,29 +289,27 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
-
                     <div class="swiper-slide w-full justify-center">
                         <?php $event_img = get_field('event_image_2'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
-
                     <div class="swiper-slide w-full justify-center">
                         <?php $event_img = get_field('event_image_3'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -321,7 +319,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -331,7 +329,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -341,7 +339,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -406,7 +404,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientation Image"
                                 width="361" height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -416,7 +414,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($orientation_image_2['url']); ?>" alt="Orientation Image"
                                 width="361" height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -427,7 +425,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($orientation_image_3['url']); ?>" alt="Orientation Image"
                                 width="361" height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -437,7 +435,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($orientation_image_4['url']); ?>" alt="Orientation Image"
                                 width="361" height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -447,7 +445,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($orientation_image_5['url']); ?>" alt="Orientation Image"
                                 width="361" height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -510,7 +508,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($patent_image['url']); ?>" alt="Patent Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -521,7 +519,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($patent_image_1['url']); ?>" alt="Patent Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -532,7 +530,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($patent_image_2['url']); ?>" alt="Patent Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -543,7 +541,7 @@
                         <div class="w-full flex justify-center">
                             <img src="<?php echo esc_url($patent_image_3['url']); ?>" alt="Patent Image" width="361"
                                 height="156"
-                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
+                                class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
                         <?php endif; ?>
                     </div>

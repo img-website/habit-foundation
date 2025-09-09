@@ -58,7 +58,7 @@
                                 <?php $img = get_field('cover_page_img'); ?>
                                     <?php if ($img): ?>
                                     <img src="<?php echo esc_url($img['url']); ?>" alt="Company" title="Company" width="477" height="414"
-                                        class="size-full object-contain mx-auto max-w-[32rem] max-md:aspect-[384/320]">
+                                        class="size-full object-contain mx-auto max-w-[32rem] max-md:aspect-[384/320]" loading="lazy" fetchpriority="low">
                                 <?php endif; ?>
                             </div>
                     </div>

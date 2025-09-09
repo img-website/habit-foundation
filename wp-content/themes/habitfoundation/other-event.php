@@ -12,7 +12,7 @@ get_header();?>
     <?php endif; ?>
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
         <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
-             Other Events
+            Other Events
             <span class="text-[lime-500]"><?php the_field('events_highlight'); ?></span>
         </h2>
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
@@ -99,7 +99,7 @@ get_header();?>
                                                     title="<?php the_field('event_title_9'); ?>" 
                                                     width="284" 
                                                     height="188"
-                                                    class="relative z-10 w-full aspect-[284/240] h-auto rounded-md shadow object-contain object-top"
+                                                    class="relative z-10 w-full aspect-[284/240] h-auto rounded-md shadow object-contain object-top" loading="lazy" fetchpriority="low"
                                                 >
                                             </div>
                                             <?php endif; ?>
@@ -110,7 +110,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_9'); ?>"
                                                     title="<?php the_field('event_title_9'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md">
                                             </div>
                                             <?php endif; ?>
                                             <?php $img1 = get_field('event_image_30'); ?>
@@ -119,7 +119,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_9'); ?>"
                                                     title="<?php the_field('event_title_9'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                         </div>
@@ -147,7 +147,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_11'); ?>"
                                                     title="<?php the_field('event_title_11'); ?>" width="473" height="440"
-                                                    class="w-full rounded-md shadow aspect-[361/440] h-auto object-contain object-top rounded-md">
+                                                    class="w-full rounded-md shadow aspect-[361/440] h-auto object-contain object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                         </div>
                                 </div>
@@ -177,7 +177,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_12'); ?>"
                                                     title="<?php the_field('event_title_12'); ?>" width="473" height="440"
-                                                    class="w-full rounded-md shadow aspect-[361/440] h-auto object-contain object-top rounded-md">
+                                                    class="w-full rounded-md shadow aspect-[361/440] h-auto object-contain object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                         </div>
@@ -208,7 +208,7 @@ get_header();?>
                                                     title="<?php the_field('event_title_10'); ?>" 
                                                     width="284" 
                                                     height="188"
-                                                    class="relative z-10 w-full aspect-[284/240] h-auto rounded-md shadow object-contain object-top"
+                                                    class="relative z-10 w-full aspect-[284/240] h-auto rounded-md shadow object-contain object-top" loading="lazy" fetchpriority="low"
                                                 >
                                             </div>
                                             <?php endif; ?>
@@ -218,7 +218,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_10'); ?>"
                                                     title="<?php the_field('event_title_10'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                             <?php $img1 = get_field('event_image_33'); ?>
@@ -227,7 +227,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_10'); ?>"
                                                     title="<?php the_field('event_title_10'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                         </div>
@@ -276,8 +276,7 @@ get_header();?>
                                                     title="<?php the_field('event_title_13'); ?>" 
                                                     width="284" 
                                                     height="188"
-                                                    class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top"
-                                                >
+                                                    class="relative z-10 w-full aspect-[284/188] h-auto rounded-md shadow object-contain object-top" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                             <?php $img1 = get_field('event_image_37'); ?>
@@ -286,7 +285,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_13'); ?>"
                                                     title="<?php the_field('event_title_13'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
 
@@ -296,7 +295,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_13'); ?>"
                                                     title="<?php the_field('event_title_13'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                             <?php $img1 = get_field('event_image_39'); ?>
@@ -305,7 +304,7 @@ get_header();?>
                                                 <img src="<?php echo esc_url($img1['url']); ?>"
                                                     alt="<?php the_field('event_title_13'); ?>"
                                                     title="<?php the_field('event_title_13'); ?>" width="373" height="240"
-                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md ">
+                                                    class="w-full rounded-md shadow aspect-[361/240] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
                                             </div>
                                             <?php endif; ?>
                                         </div>

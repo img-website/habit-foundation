@@ -66,7 +66,6 @@
         </div>
 </section>
 
-
 <section class="w-full lg:py-20 md:py-10 py-8 relative bg-[#b93a40]">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="flex flex-col w-full">
@@ -78,7 +77,7 @@
                         if ($image): ?>
                             <img src="<?php echo esc_url($image['url']); ?>" 
                                 alt="<?php echo esc_attr($image['alt']); ?>" 
-                                class="rounded-2xl size-full object-contain object-center" />
+                                class="rounded-2xl size-full object-contain object-center" loading="lazy" fetchpriority="low"/>
                         <?php endif; ?>
                     </div>
                     <!-- Content -->
@@ -95,6 +94,5 @@
         </div>
     </div>
 </section>
-
 
 <?php get_footer();?>

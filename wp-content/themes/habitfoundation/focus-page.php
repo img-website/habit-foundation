@@ -4,7 +4,7 @@
     <?php $bg = get_field('focus_banner_image'); ?>
     <?php if ($bg): ?>
     <div class="absolute inset-0">
-        <img src="<?php echo esc_url($bg['url']); ?>" alt="focus Banner" class="w-full h-full object-cover" />
+        <img src="<?php echo esc_url($bg['url']); ?>" alt="focus Banner" class="w-full h-full object-cover" loading="eager" fetchpriority="high"/>
         <div class="absolute inset-0 bg-[#01142a8c] bg-opacity-70"></div>
     </div>
     <?php endif; ?>
@@ -23,7 +23,7 @@
             <span
                 class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_focus'); ?></span>
             </a>
-            </div>
+        </div>
     </div>
 </section>
 
@@ -86,7 +86,7 @@
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
-                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                         <div
@@ -144,7 +144,7 @@
                             <?php $img = get_field('product_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Science" title="Science" width="477"
-                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" img id="dynamicImage" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                             <?php $img = get_field('product_image_2'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
-                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -279,7 +279,7 @@
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Engineering" title="Engineering"
-                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]">
+                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                         <div
@@ -370,7 +370,7 @@
                             <?php $img = get_field('product_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Engineering" title="Engineering"
-                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]">
+                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -395,7 +395,7 @@
                             <?php $img = get_field('product_image_4'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
-                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                             <?php $img = get_field('service_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
-                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                         <div
@@ -546,7 +546,7 @@
                             <?php $img = get_field('service_image_1'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Pharmacy" title="Pharmacy" width="477"
-                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -572,7 +572,7 @@
                             <?php $img = get_field('service_image_2'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Management" title="Management"
-                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]">
+                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -680,7 +680,7 @@
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Law" title="Law" width="477"
-                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                         <div
@@ -785,7 +785,7 @@
                             <?php $img = get_field('service_image_3'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Management" title="Management"
-                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]">
+                                width="477" height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -811,7 +811,7 @@
                             <?php $img = get_field('service_image_4'); ?>
                             <?php if ($img): ?>
                             <img src="<?php echo esc_url($img['url']); ?>" alt="Law" title="Law" width="477"
-                                height="293" class="object-cover w-full h-full rounded-[40px]">
+                                height="293" class="object-cover w-full h-full rounded-[40px]" loading="lazy" fetchpriority="low">
                             <?php endif; ?>
                         </div>
                     </div>

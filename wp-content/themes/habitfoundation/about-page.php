@@ -6,7 +6,7 @@ get_header();?>
     <?php $bg = get_field('about_banner_image'); ?>
     <?php if ($bg): ?>
     <div class="absolute inset-0">
-        <img src="<?php echo esc_url($bg['url']); ?>" alt="About Banner" class="w-full h-full object-cover" />
+        <img src="<?php echo esc_url($bg['url']); ?>" alt="About Banner" class="w-full h-full object-cover" loading="eager" fetchpriority="high"/>
         <div class="absolute inset-0 bg-[#01142a8c] bg-opacity-70"></div>
     </div>
     <?php endif; ?>
@@ -347,7 +347,7 @@ get_header();?>
                 <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img1['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_1_name')); ?>" alt="Shri Baldev Boolani"
-                        title="Shri Baldev Boolani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md">
+                        title="Shri Baldev Boolani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -367,7 +367,7 @@ get_header();?>
                 <div class="py-2 px-2 w-full h-auto h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_2_name')); ?>" alt="Shri Rajesh Gehani"
-                        title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md">
+                        title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -387,7 +387,7 @@ get_header();?>
                 <div class="py-2 px-2 w-full h-auto">
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_3_name')); ?>" alt="Shri Rajesh Gehani"
-                        title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        title="Shri Rajesh Gehani" width="257" height="171" class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -409,7 +409,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_4_name')); ?>"
                         title="<?php echo esc_attr(get_field('director_4_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -430,7 +430,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_5_name')); ?>"
                         title="<?php echo esc_attr(get_field('director_5_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -452,7 +452,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('director_6_name')); ?>"
                         title="<?php echo esc_attr(get_field('director_6_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low"> 
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -491,7 +491,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img1['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_1_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_1_name')); ?>i" width="257" height="171"
-                        class="aspect-[257/171] size-full object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -516,7 +516,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_2_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_2_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -542,7 +542,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_3_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_3_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -567,7 +567,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_4_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_4_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -593,7 +593,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_5_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_5_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -617,7 +617,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_6_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_6_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -642,7 +642,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_7_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_7_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -667,7 +667,7 @@ get_header();?>
                     <img src="<?php echo esc_url($img2['url']); ?>"
                         alt="<?php echo esc_attr(get_field('leadership_team_8_name')); ?>"
                         title="<?php echo esc_attr(get_field('leadership_team_8_name')); ?>" width="257" height="171"
-                        class="aspect-[257/171] size-full object-top object-cover rounded-md">
+                        class="aspect-[257/171] size-full object-top object-cover rounded-md" loading="lazy" fetchpriority="low">
                 </div>
                 <?php endif; ?>
                 <div class="flex items-center justify-between gap-y-1 px-4 py-4">
@@ -689,7 +689,7 @@ get_header();?>
 
 
     <!-- PDF Modal Background -->
-    <div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
+<div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
     onclick="handleOutsideClick(event)">
 
         <div id="pdfModalBox"
@@ -705,11 +705,11 @@ get_header();?>
 
             <iframe id="pdfFrame" src="" class="w-full h-full border-none"></iframe>
         </div>
-    </div>
+</div>
 
-    <div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="lg:w-3/5 w-full h-auto lg:top-6 top-4 bg-white rounded-xl relative lg:py-6 lg:px-4 overflow-y-auto">
-            <button id="button" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
+<div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="lg:w-3/5 w-full h-auto lg:top-6 top-4 bg-white rounded-xl relative lg:py-6 lg:px-4 overflow-y-auto">
+        <button id="button" class="absolute top-3 right-4 text-white bg-[#bf4b50] hover:bg-red-600 px-[13px] py-2 rounded-full shadow z-10">✖</button>
                 <div class="w-full mx-auto bg-white py-3 px-7 rounded-2xl">
                 <div class="flex flex-col gap-2 w-full">
                     <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#bf4b50]">
@@ -723,8 +723,8 @@ get_header();?>
                     <!-- Contact Form 7 Shortcode End -->
                 </div>
                 </div>
-        </div>
     </div>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

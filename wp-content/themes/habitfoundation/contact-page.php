@@ -4,7 +4,7 @@
     <?php $bg = get_field('contact_banner_image'); ?>
     <?php if ($bg): ?>
     <div class="absolute inset-0">
-        <img src="<?php echo esc_url($bg['url']); ?>" alt="contact Banner" class="w-full h-full object-cover" />
+        <img src="<?php echo esc_url($bg['url']); ?>" alt="contact Banner" class="w-full h-full object-cover" loading="lazy" fetchpriority="low"/>
         <div class="absolute inset-0 bg-[#01142a8c] bg-opacity-70"></div>
     </div>
     <?php endif; ?>
@@ -18,7 +18,8 @@
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
             <span
-                class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_contact'); ?></span>
+                class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_contact'); ?>
+            </span>
         </div>
     </div>
 </section>
