@@ -183,43 +183,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-  document.addEventListener("DOMContentLoaded", () => {
-            const popup = document.getElementById("popup2");
-            const trigger = document.querySelector('a[href="#readmore2"]');
-            const closeBtn = popup.querySelector("button"); // Assumes the close button is inside popup
+document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup2");
+    const trigger = document.querySelector('a[href="#readmore2"]');
+    const closeBtn = popup.querySelector("button"); // Assumes the close button is inside popup
 
-            // Open popup on trigger click
-            if (trigger && popup) {
-            trigger.addEventListener("click", (e) => {
-                e.preventDefault();
-                popup.classList.remove("hidden");
-                popup.classList.add("flex");
+    // Open popup on trigger click
+    if (trigger && popup) {
+    trigger.addEventListener("click", (e) => {
+        e.preventDefault();
+        popup.classList.remove("hidden");
+        popup.classList.add("flex");
             });
 
-            // Close popup on background click
-            popup.addEventListener("click", (e) => {
-                if (e.target === popup) {
-                closePopup();
-                }
-            });
-
-            // Close on Escape key
-            document.addEventListener("keydown", (e) => {
-                if (e.key === "Escape") {
-                closePopup();
-                }
-            });
-
-            // Close on button click
-            if (closeBtn) {
-                closeBtn.addEventListener("click", closePopup);
-            }
-            }
-
-            function closePopup() {
-            popup.classList.add("hidden");
-            popup.classList.remove("flex");
+        // Close popup on background click
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+            closePopup();
             }
         });
 
-        
+        // Close on Escape key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+            closePopup();
+            }
+        });
+
+        // Close on button click
+        if (closeBtn) {
+            closeBtn.addEventListener("click", closePopup);
+        }
+        }
+        function closePopup() {
+        popup.classList.add("hidden");
+        popup.classList.remove("flex");
+        }
+    });
+

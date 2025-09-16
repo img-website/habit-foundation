@@ -531,7 +531,7 @@
                                         <button class="agile-tab-btn font-semibold px-4 py-3 border-b-2 border-[#bf4b50] text-[#bf4b50]" data-tab="tab1">Management</button>
                                         <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab2">Engineering</button>
                                         <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab3">Pharmacy</button>
-                                        <!-- <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">Engineering</button> -->
+                                        <button class="agile-tab-btn font-semibold px-4 py-3 text-gray-700" data-tab="tab4">Law</button>
                                     </div>
                                     <div class="agile-tab-content lg:mt-8 mt-4" id="tab1">
                                         <div class="w-full">
@@ -1044,7 +1044,165 @@
                                     <div class="agile-tab-content hidden text-center text-base font-medium mt-8" id="tab4">
                                         <div class="w-full">
                                             <div class="block">
-                                                
+                                                <div class="grid grid-cols-1 md:grid-3 lg:grid-cols-3 items-start lg:gap-6 gap-4 h-auto w-full">
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image17'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title17'); ?>"
+                                                                            title="<?php the_field('infra_title17'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title17'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description17'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image18'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title18'); ?>"
+                                                                            title="<?php the_field('infra_title18'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title18'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description18'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image19'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title19'); ?>"
+                                                                            title="<?php the_field('infra_title19'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title19'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description19'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image15'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title20'); ?>"
+                                                                            title="<?php the_field('infra_title20'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <!-- Title -->
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title20'); ?>
+                                                                    </div>
+
+                                                                    <!-- Description -->
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description20'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="w-full flex flex-wrap relative items-start justify-center h-full grow bg-gradient-to-b from-[#FFFFFF] to-[#ffebeb] hover:lg:bg-gradient-to-b hover:lg:from-[#fda8ac] rounded-3xl lg:hover:shadow-[0_2px_5px_rgba(0,0,0,0.2)] duration-500 transition-all">
+                                                        <div class="md:py-3 md:px-4 px-2 py-2 flex flex-col items-start rounded-3xl gap-5 md:gap-10 w-full">
+
+                                                            <div class="flex items-center">
+                                                                <?php $img1 = get_field('infra_top_image21'); ?>
+                                                                <?php if ($img1): ?>
+                                                                    <div class="w-full flex justify-center">
+                                                                        <img src="<?php echo esc_url($img1['url']); ?>"
+                                                                            alt="<?php the_field('infra_title21'); ?>"
+                                                                            title="<?php the_field('infra_title21'); ?>" width="357" height="230"
+                                                                            class="w-full rounded-md shadow aspect-[357/230] h-auto object-cover object-top rounded-md" loading="lazy" fetchpriority="low">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            </div>
+
+                                                            <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 md:gap-4">
+                                                                    <div class="relative text-base md:text-lg font-semibold transition-all text-start duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <?php the_field('infra_title21'); ?>
+                                                                    </div>
+
+                                                                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
+                                                                        <?php the_field('infra_description21'); ?>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div> -->
+                                                </div> 
                                             </div>
                                         </div>
                                     </div>
