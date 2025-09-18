@@ -68,33 +68,76 @@
             <!-- <div class="swiper-pagination"></div> -->
         </div>
 </section>
-<!-- 
-<section class="w-full relative lg:py-16 md:py-10 py-8 bg-white">
+
+<section class="w-full lg:py-20 md:py-10 py-8 relative bg-[#b93a40]">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
-        <div class="w-full flex flex-col">
-            <a href="<?php the_field('back_button_link'); ?>"
-                    class="w-fit inline-flex items-center shadow py-2 lg:pe-6 lg:ps-3 pe-4 ps-2 bg-[#121212] mb-4 text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
-                <span class="bg-white rounded-full p-2 me-3">
-                    <svg class="w-3 h-3 text-black -rotate-90" stroke="currentColor" fill="currentColor" stroke-width="0"
-                        viewBox="0 0 24 24" aria-hidden="true" height="200px" width="200px"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </span>
-                <?php the_field('back_button_text'); ?>
-            </a>
-            <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
-                <?php the_field('popup_title'); ?>
-            </h2>
-            <div class="font-normal md:text-base text-sm  text-justify text-[#4c4949] !leading-7 lg:mb-6">
-                <?php the_field('popup_content'); ?>
+        <div class="flex flex-col w-full lg:gap-y-8 gap-y-6">
+            <div class="flex flex-wrap items-stretch bg-white border-t-[12px] border-[#e09900] lg:py-4 py-2 px-3 rounded-sm lg:shadow-none shadow-lg">
+                <div class="md:w-1/5 w-full max-md:order-first flex items-center justify-center p-3 lg:my-0 mb-6">
+                    <div class="py-1 px-1 w-full">
+                        <?php 
+                        $image = get_field('mentoring_session_image_2');
+                        if ($image): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" 
+                                alt="<?php echo esc_attr($image['alt']); ?>" 
+                                class="w-full shadow aspect-[190/190] h-auto object-contain object-top rounded-3xl" width="300" height="500" loading="lazy" fetchpriority="low"/>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="md:w-4/5 w-full lg:bg-white rounded-3xl lg:py-6 px-6">
+                    <h2 class="w-full lg:text-xl md:text-lg text-base !leading-normal text-start font-semibold mx-auto mb-2 text-[#b93a40] relative z-10">
+                        <?php the_field('mentoring_session_Title_2'); ?> 
+                    </h2>
+                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7">
+                        <?php the_field('session_description_1'); ?> 
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-stretch bg-white border-t-[12px] border-[#e09900] lg:py-4 py-2 px-3 rounded-sm lg:shadow-none shadow-lg">
+                <div class="md:w-1/5 w-full max-md:order-first flex items-center justify-center p-3 lg:my-0 mb-6">
+                    <div class="py-1 px-1 w-full">
+                        <?php 
+                        $image = get_field('mentoring_session_image_3');
+                        if ($image): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" 
+                                alt="<?php echo esc_attr($image['alt']); ?>" 
+                                class="w-full shadow aspect-[190/190] h-auto object-contain object-top rounded-3xl" width="300" height="500" loading="lazy" fetchpriority="low"/>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="md:w-4/5 w-full lg:bg-white rounded-3xl lg:py-6 px-6">
+                    <h2 class="w-full lg:text-xl md:text-lg text-base !leading-normal text-start font-semibold mx-auto mb-2 text-[#b93a40] relative z-10">
+                        <?php the_field('mentoring_session_Title_3'); ?> 
+                    </h2>
+                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7">
+                        <?php the_field('session_description_2'); ?> 
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-stretch bg-white border-t-[12px] border-[#e09900] lg:py-4 py-2 px-3 rounded-sm lg:shadow-none shadow-lg">
+                <div class="md:w-1/5 w-full max-md:order-first flex items-center justify-center p-3 lg:my-0 mb-6">
+                    <div class="py-1 px-1 w-full">
+                        <?php 
+                        $image = get_field('mentoring_session_image_4');
+                        if ($image): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" 
+                                alt="<?php echo esc_attr($image['alt']); ?>" 
+                                class="w-full shadow aspect-[190/190] h-auto object-contain object-top rounded-3xl" width="300" height="500" loading="lazy" fetchpriority="low"/>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="md:w-4/5 w-full lg:bg-white rounded-3xl lg:py-6 px-6">
+                    <h2 class="w-full lg:text-xl md:text-lg text-base !leading-normal text-start font-semibold mx-auto mb-2 text-[#b93a40] relative z-10">
+                        <?php the_field('mentoring_session_Title_4'); ?> 
+                    </h2>
+                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7">
+                        <?php the_field('session_description_3'); ?> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section> -->
-
+</section>
 
 
 <?php get_footer();?>

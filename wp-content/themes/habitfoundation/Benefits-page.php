@@ -1264,7 +1264,7 @@
                                                                     <img src="<?php echo esc_url($img2['url']); ?>"
                                                                         alt="<?php echo esc_attr(get_field('mentorship_team_2_name')); ?>"
                                                                         title="<?php echo esc_attr(get_field('mentorship_team_2_name')); ?>" width="150" height="150"
-                                                           class="aspect-[150/150] size-[170px] object-top object-cover rounded-full mx-auto" loading="lazy" fetchpriority="low">
+                                                                    class="aspect-[150/150] size-[170px] object-top object-cover rounded-full mx-auto" loading="lazy" fetchpriority="low">
                                                                 </div>
                                                             <?php endif; ?>
                                                             <div class="flex flex-col gap-y-1 px-4 py-4">

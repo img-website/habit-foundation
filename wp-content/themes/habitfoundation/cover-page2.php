@@ -69,7 +69,7 @@
 <section class="w-full lg:py-20 md:py-10 py-8 relative bg-[#b93a40]">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
     <div class="flex flex-col w-full">
-       <div class="flex flex-wrap items-stretch bg-white rounded-3xl p-6 lg:shadow-none shadow-lg lg:gap-8 gap-5">
+        <div class="flex flex-wrap items-stretch bg-white rounded-3xl p-6 lg:shadow-none shadow-lg lg:gap-8 gap-5">
                 <div class="md:w-3/12 w-full max-md:order-first rounded-3xl flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] lg:my-0 mb-6">
                     <div class="py-1 px-1 w-full">
                         <?php 
