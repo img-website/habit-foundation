@@ -65,7 +65,7 @@ function habit_custom_header_shortcode() {
                 </li>
 
                 <li>
-                    <a href="javscript:;"
+                    <a href="https://project.imgglobal.in/habit-foundation/benefits/"
                         class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits
                     </a>
                 </li>
@@ -225,9 +225,8 @@ function habit_custom_header_shortcode() {
             </li>
             
             <li class="relative flex flex-col">
-                <a href="javascript:;" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
+                <a href="https://project.imgglobal.in/habit-foundation/benefits/" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
             </li>
-            
             <li class="relative flex flex-col">
                 <input type="checkbox" id="events-toggle" class="peer hidden">
 
@@ -298,7 +297,6 @@ function habit_custom_header_shortcode() {
                     </li>
                 </ul>
             </li>
-
             <li class="relative flex flex-col ">
                 <a href="https://project.imgglobal.in/habit-foundation/contact-us"
                 class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
@@ -422,7 +420,7 @@ function habit_footer_shortcode() {
                                 class="md:hover:text-white">About Us</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/focus"
                                 class="md:hover:text-white">Focus</a></li>
-                        <li><a href="javscript:;" class="md:hover:text-white">Benefits</a></li>
+                        <li><a href="https://project.imgglobal.in/habit-foundation/benefits/" class="md:hover:text-white">Benefits</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/contact-us" class="md:hover:text-white">Contact Us</a></li>
                         <li><a href="https://project.imgglobal.in/habit-foundation/key-event/"
                                 class="md:hover:text-white">Key Events</a></li>
