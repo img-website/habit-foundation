@@ -12,10 +12,10 @@ get_header();?>
     <?php endif; ?>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
+        <h1 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
             <?php the_field('about_main_heading'); ?>
             <span class="text-[lime-500]"><?php the_field('about_highlight'); ?></span>
-        </h2>
+        </h1>
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>"
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
@@ -687,8 +687,7 @@ get_header();?>
     </div>
 </section>
 
-
-    <!-- PDF Modal Background -->
+<!-- PDF Modal Background -->
 <div id="pdfPopup" class="size-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center"
     onclick="handleOutsideClick(event)">
 

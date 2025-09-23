@@ -9,10 +9,10 @@
     </div>
     <?php endif; ?>
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
+        <h1 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
             <?php the_field('contact_main_heading'); ?>
             <span class="text-[lime-500]"><?php the_field('contact_highlight'); ?></span>
-        </h2>
+        </h1>
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>"
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
@@ -47,26 +47,6 @@
         </div>
         <div class="bg-white flex items-start justify-between md:flex-row flex-col rounded-xl lg:py-10 lg:px-7 sm:py-5 sm:px-4 py-2 px-2 gap-8">
             <div class="lg:w-1/2 w-full flex flex-col">
-                <!-- <div class="flex flex-col gap-2 mb-6">
-                    <h4 class="lg:text-lg text-black font-semibold"><?php the_field('contact_info_title'); ?></h4>
-                    <p class="lg:text-base text-sm text-slate-700"><?php the_field('contact_main_descritpion'); ?></p>
-                </div> -->
-
-                <!-- <div class="flex flex-col gap-1">
-                    <span class="inline-flex items-center gap-2">
-                        <svg class="size-5 text-white" stroke="currentColor" fill="none" stroke-width="2"
-                            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px"
-                            width="200px" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                            </path>
-                        </svg>
-                        <a href="tel:<?php the_field('contact_num'); ?>"
-                            class="text-white text-base font-medium hover:underline">
-                            <?php the_field('contact_num'); ?>
-                        </a>
-                    </span>
-                </div> -->
                 <div class="flex flex-col lg:gap-y-5 gap-4">
                     <div class="w-full flex items-center gap-2 flex rounded-lg shadow space-x-3 shadow-[#9C9292] lg:px-4 lg:py-5 px-3 py-4 flex-row">
                         <span class="bg-[#bf4b50] p-2 rounded-full transition-all duration-300">

@@ -33,9 +33,9 @@
                 <div class="max-w-7xl mx-auto px-4 lg:px-6">
                     <div class="flex items-center flex-col lg:flex-row justify-between md:gap-6 gap-4">
                         <div class="md:w-[50%] w-full flex flex-col">
-                                <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#b93a40] mb-4">
+                                <h1 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#b93a40] mb-4">
                                     <?php the_field('popup_title_2'); ?>
-                                </h2>
+                                </h1>
                                 <div class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                                     <?php the_field('popup_content_2'); ?>
                                 </div>
@@ -68,29 +68,33 @@
 
 <section class="w-full lg:py-20 md:py-10 py-8 relative bg-[#b93a40]">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
-    <div class="flex flex-col w-full">
-        <div class="flex flex-wrap items-stretch bg-white rounded-3xl p-6 lg:shadow-none shadow-lg lg:gap-8 gap-5">
-                <div class="md:w-3/12 w-full max-md:order-first rounded-3xl flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] lg:my-0 mb-6">
-                    <div class="py-1 px-1 w-full">
-                        <?php 
-                        $image = get_field('mentoring_session_image_1');
-                        if ($image): ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" 
-                                alt="<?php echo esc_attr($image['alt']); ?>" 
-                                class="w-full shadow aspect-[361/400] h-auto object-contain object-top rounded-3xl" width="473" height="400" loading="lazy" fetchpriority="low"/>
-                        <?php endif; ?>
+            
+        <h2 class="w-full lg:text-2xl md:text-xl text-lg mx-auto !leading-normal text-center font-semibold mx-auto text-white mb-8">
+            Insights From Industry Leaders
+        </h2>
+        <div class="flex flex-col w-full">
+            <div class="flex flex-wrap items-stretch bg-white rounded-3xl p-6 lg:shadow-none shadow-lg lg:gap-8 gap-5">
+                    <div class="md:w-3/12 w-full max-md:order-first rounded-3xl flex items-center justify-center bg-gradient-to-br from-[#b47b00] to-[#FFAE00] lg:my-0 mb-6">
+                        <div class="py-1 px-1 w-full">
+                            <?php 
+                            $image = get_field('mentoring_session_image_1');
+                            if ($image): ?>
+                                <img src="<?php echo esc_url($image['url']); ?>" 
+                                    alt="<?php echo esc_attr($image['alt']); ?>" 
+                                    class="w-full shadow aspect-[361/400] h-auto object-contain object-top rounded-3xl" width="473" height="400" loading="lazy" fetchpriority="low"/>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="md:w-8/12 w-full lg:bg-white rounded-3xl">
+                        <h3 class="w-full lg:text-xl md:text-lg text-base !leading-normal text-start font-semibold mx-auto mb-2 text-[#b93a40] relative z-10">
+                            <?php the_field('mentoring_session_title_1'); ?>
+                        </h3>
+                        <div class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7">
+                            <?php the_field('mentoring_session_description_2'); ?>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-8/12 w-full lg:bg-white rounded-3xl">
-                    <h2 class="w-full lg:text-xl md:text-lg text-base !leading-normal text-start font-semibold mx-auto mb-2 text-[#b93a40] relative z-10">
-                        <?php the_field('mentoring_session_title_1'); ?>
-                    </h2>
-                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7">
-                        <?php the_field('mentoring_session_description_2'); ?>
-                    </div>
-                </div>
-            </div>
-    </div>
+        </div>
     </div>
 </section>
 

@@ -5,8 +5,6 @@ function habitfoundation_theme_setup() {
     add_theme_support('post-thumbnails');
     add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
     add_theme_support('custom-logo');
-
-  
 }
 add_action('after_setup_theme', 'habitfoundation_theme_setup');
 
@@ -16,17 +14,15 @@ function habitfoundation_enqueue_assets() {
 
     wp_enqueue_script('habitfoundation-script', get_template_directory_uri() . '/js/script.js', array(), null, true);
 }
-add_action('wp_enqueue_scripts', 'habitfoundation_enqueue_assets');
+    add_action('wp_enqueue_scripts', 'habitfoundation_enqueue_assets');
 
 
 // Allow SVG uploads
 function allow_svg_uploads($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
-}
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+    }
 add_filter('upload_mimes', 'allow_svg_uploads');
-
-
 
 function habit_custom_header_shortcode() {  
     ob_start();
@@ -35,21 +31,16 @@ function habit_custom_header_shortcode() {
     class="w-full relative bg-white shadow-[0px_4px_4px_0px_#0000001F] border-b-[3px] border-[#b93a40] sticky top-0 z-40">
     <div class="max-w-7xl mx-auto lg:px-4 lg:px-6 lg:py-2 flex justify-between items-center ">
         <div class="flex items-center">
-
             <a href="https://project.imgglobal.in/habit-foundation" class="hidden lg:block w-20 cursor-pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png"
-                    alt="Habit Foundation Logo" class="w-full h-auto" />
+                alt="Habit Foundation Logo" class="w-full h-auto" />
             </a>
-
-
             <a href="https://project.imgglobal.in/habit-foundation" class="block lg:hidden w-full cursor-pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-header.webp"
-                    alt="Habit Foundation Mobile Logo" class="max-w-full object-cover h-full aspect-[1100/160]"
-                    width="1100" height="160" />
+                alt="Habit Foundation Mobile Logo" class="max-w-full object-cover h-full aspect-[1100/160]"
+                width="1100" height="160" />
             </a>
         </div>
-
-        
         <nav class="lg:flex justify-center mx-auto hidden">
             <ul class="lg:flex items-center space-x-10">
                 <li>
@@ -183,7 +174,6 @@ function habit_custom_header_shortcode() {
             </li>
 
         </ul>
-
         <div class="flex items-end space-x-4">
             <button id="menuToggle"
                 class="lg:hidden px-4 focus:outline-none z-50 absolute right-0 top-0 pt-2  text-white h-full flex items-center justify-center">
@@ -308,8 +298,6 @@ function habit_custom_header_shortcode() {
     <div id="drawerOverlay" class="fixed inset-0 bg-black bg-opacity-20 hidden z-30"></div>
 
 </header>
-
-
 
 <?php
     return ob_get_clean();

@@ -10,10 +10,10 @@
     <?php endif; ?>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
+        <h1 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
             <?php the_field('focus_main_heading'); ?>
             <span class="text-[lime-500]"><?php the_field('focus_highlight'); ?></span>
-        </h2>
+        </h1>
 
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>"
@@ -66,7 +66,7 @@
         <div id="productContent" class="tab-content w-full flex flex-col">
             
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -78,7 +78,7 @@
                         </svg></span>
 
                     <?php the_field('product_1'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
@@ -152,7 +152,7 @@
             </div>
             
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -163,7 +163,7 @@
                             </path>
                         </svg></span>
                     <?php the_field('product_2'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
@@ -260,7 +260,7 @@
             </div>
 
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -271,7 +271,7 @@
                             </path>
                         </svg></span>
                     <?php the_field('product_3'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
@@ -377,7 +377,7 @@
             </div>
             
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -388,7 +388,7 @@
                             </path>
                         </svg></span>
                     <?php the_field('product_4'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
@@ -472,7 +472,7 @@
         <div id="serviceContent" class="tab-content hidden w-full flex flex-col items-center lg:gap-6 gap-4">
 
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -483,7 +483,7 @@
                             </path>
                         </svg></span>
                     <?php the_field('service_1'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 lg:pt-8">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 flex items-center lg:hidden">
@@ -555,7 +555,7 @@
             </div>
 
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -566,7 +566,7 @@
                             </path>
                         </svg></span>
                     <?php the_field('service_2'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 gap-4 lg:pt-8">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full h-80 flex items-center">
@@ -663,7 +663,7 @@
             </div>
 
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4
+                <h3
                     class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -674,7 +674,7 @@
                             </path>
                         </svg></span>
                     <?php the_field('service_3'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col gap-y-3 h-auto md:sticky md:top-24 self-start">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center lg:hidden">
@@ -794,7 +794,7 @@
             </div>
 
             <div class="w-full lg:mb-6 rounded-lg">
-                <h4 class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
+                <h3 class="flex items-center gap-2 lg:text-2xl text-lg border-b border-gray-400 text-[#bf4b50] tracking-[0.5px] w-full font-semibold py-4 text-center duration-400 mb-3">
                     <span class="*:size-6 w-fit flex items-center bg-white p-2 rounded-full *:text-[#bf4b50]"><svg
                             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                             height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -805,7 +805,7 @@
                         </svg>
                     </span>
                     <?php the_field('service_4'); ?>
-                </h4>
+                </h3>
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:pt-4">
                     <div class="lg:w-1/2 w-full flex flex-col items-center gap-y-2 relative z-10 pointer-events-none h-auto lg:sticky lg:top-44 self-start mx-auto">
                         <div class="w-full lg:h-80 md:h-72 h-full flex items-center">
