@@ -1,32 +1,7 @@
 <?php /* Template Name: home page */ get_header(); ?>
-
 <?php
     echo do_shortcode('[smartslider3 slider="2"]');
 ?>
-
-<!-- <section class="w-full bg-white relative lg:pb-12 md:py-10 py-8">
-    <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex items-center justify-center lg:-mt-28">
-        <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon1.svg" alt="Idea Builder" title="Idea Builder" width="48" height="48" class="w-12 h-12 object-contain">
-            <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('inspire_title'); ?></h3>
-            <p class="text-sm/7 text-center text-[#dbdbdb]"><?php the_field('inspire_desc'); ?></p>
-        </div>
-
-        <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon2.svg" alt="Innovation Hub" title="Innovation Hub" width="48" height="48" class="w-12 h-12 object-contain">
-            <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('build_title'); ?></h3>
-            <p class="text-sm/7 text-[#dbdbdb] text-center"><?php the_field('build_desc'); ?></p>
-        </div>
-
-        <div class="rounded-xl shadow-md lg:py-8 lg:px-4 py-4 px-3 flex flex-col gap-y-2 items-center saturate-200 text-white bg-gradient-to-r from-[#000000E6] to-[#000000E6]">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon3.svg" alt="Growth Path" title="Growth Path" width="48" height="48" class="w-12 h-12 object-contain">
-            <h3 class="text-lg text-[#dbdbdb] font-medium mb-2"><?php the_field('collab_title'); ?></h3>
-            <p class="text-sm/7 text-[#dbdbdb] text-center"><?php the_field('collab_desc'); ?></p>
-        </div>
-        </div>
-    </div>
-</section> -->
 
 <section class="w-full bg-white relative lg:py-16 md:py-10 py-8">
     <div class="max-w-7xl mx-auto px-4 px-4 lg:px-6">
@@ -35,7 +10,7 @@
             <div class="lg:w-2/5 md:2/5 w-full lg:flex flex-col hidden">
                 <?php $img = get_field('company_image'); ?>
                 <?php if ($img): ?>
-                <img src="<?php echo esc_url($img['url']); ?>" alt="Company" title="Company" width="477" height="414"
+                <img src="<?php echo esc_url($img['url']); ?>" alt="<?php the_field('company_heading'); ?>" title="<?php the_field('company_heading'); ?>" width="477" height="414"
                     class="w-full rounded-md" loading="eager" fetchpriority="high">
                 <?php endif; ?>
             </div>
@@ -142,118 +117,7 @@
             </div>
         </div>
     </div>
-</section>
-
-<!-- <section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-4 lg:px-6">
-    <span class="text-sm font-medium inline-block flex items-center justify-center text-[#bf4b50] text-center lg:text-base font-normal mb-[15px] tracking-[2.4px] leading-[1.5] mb-6">
-      <?php the_field('poster_sec_badge'); ?>
-    </span>
-    <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-14 mb-8">
-    <?php the_field('poster_sec_heading'); ?>   </h2>
-    <div class="lg:w-full flex flex-wrap lg:flex-nowrap items-start">
-      <div class="lg:w-1/3 w-full flex flex-col flex-wrap lg:flex-nowrap items-start lg:gap-x-10 gap-3 relative">
-      <?php $event_img = get_field('event_image'); ?>
-      <?php if ($event_img): ?>
-        <div class="w-full lg:flex justify-center hidden">
-            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" title="Event Image" width="584" height="252" class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
-        </div>
-      <?php endif; ?>
-
-      <?php if (get_field('event_heading')): ?>
-        <h2 class="lg:text-2xl md:text-xl text-lg leading-snug text-[#2a1313] text-start font-semibold ">
-          <?php the_field('event_heading'); ?>
-        </h2>
-      <?php endif; ?>
-        <?php $event_img = get_field('event_image'); ?>
-      <?php if ($event_img): ?>
-        <div class="w-full flex justify-center lg:hidden">
-            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" title="Event Image" width="584" height="252" class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
-        </div>
-      <?php endif; ?>
-      <?php if (get_field('event_desc')): ?>
-        <p class="font-normal w-full md:text-sm text-xs text-[#606060] !leading-7 text-start lg:mb-4 mb-2">
-          <?php the_field('event_desc'); ?>
-        </p>
-      <?php endif; ?>
-
-        <a href="<?php the_field('event_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
-          <?php the_field('event_btn_text'); ?>
-          <span class="bg-white rounded-full p-2 ms-3">
-            <svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd"/>
-            </svg>
-          </span>
-        </a>
-      </div>
-    <div class="lg:w-1/3 w-full flex flex-col flex-wrap lg:flex-nowrap items-start lg:gap-x-10 gap-3 relative">
-        <?php $orientation_image = get_field('orientation_image'); ?>
-        <?php if ($orientation_image): ?>
-          <div class=" w-full lg:h-[250px] h-[250px] lg:flex hidden justify-center">
-            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientaion Image" title="Orientaion Image" width="584" height="250" class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
-          </div>
-          <?php endif; ?>
-          <?php if (get_field('orientation_heading')): ?>
-        <h2 class="lg:text-2xl md:text-xl text-lg leading-snug text-[#2a1313] text-start font-semibold ">
-          <?php the_field('orientation_heading'); ?>
-        </h2>
-      <?php endif; ?>
-      <?php $orientation_image = get_field('orientation_image'); ?>
-        <?php if ($orientation_image): ?>
-          <div class=" w-full lg:h-[250px] h-[250px] flex justify-center lg:hidden">
-            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientaion Image" title="Orientaion Image" width="584" height="250" class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
-          </div>
-          <?php endif; ?>
-        <p class="font-normal w-full md:text-sm text-xs text-[#606060] !leading-7 text-start lg:mb-6 mb-4">
-          <?php the_field('orientation_desc'); ?>
-        </p>
-    
-          <a href="<?php the_field('orientation_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
-            <?php the_field('orientation_btn_text'); ?>
-            <span class="bg-white rounded-full p-2 ms-3">
-              <svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd"/>
-              </svg>
-            </span>
-          </a>
-      </div>
-    </div>
-    <div class="lg:w-1/3 w-full flex flex-col flex-wrap lg:flex-nowrap items-start lg:gap-x-10 gap-3 relative">
-        <?php $orientation_image = get_field('orientation_image'); ?>
-        <?php if ($orientation_image): ?>
-          <div class=" w-full lg:h-[250px] h-[250px] lg:flex hidden justify-center">
-            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientaion Image" title="Orientaion Image" width="584" height="250" class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
-          </div>
-          <?php endif; ?>
-          <?php if (get_field('orientation_heading')): ?>
-        <h2 class="lg:text-2xl md:text-xl text-lg leading-snug text-[#2a1313] text-start font-semibold ">
-          <?php the_field('orientation_heading'); ?>
-        </h2>
-      <?php endif; ?>
-      <?php $orientation_image = get_field('orientation_image'); ?>
-        <?php if ($orientation_image): ?>
-          <div class=" w-full lg:h-[250px] h-[250px] flex justify-center lg:hidden">
-            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientaion Image" title="Orientaion Image" width="584" height="250" class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
-          </div>
-          <?php endif; ?>
-        <p class="font-normal w-full md:text-sm text-xs text-[#606060] !leading-7 text-start lg:mb-6 mb-4">
-          <?php the_field('orientation_desc'); ?>
-        </p>
-    
-          <a href="<?php the_field('orientation_btn_link'); ?>" class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#121212] text-white rounded-full ring-2 ring-inset ring-[#121212] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
-            <?php the_field('orientation_btn_text'); ?>
-            <span class="bg-white rounded-full p-2 ms-3">
-              <svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd"/>
-              </svg>
-            </span>
-          </a>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
+</section><section class="w-full relative lg:py-16 md:py-10 py-8 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-6">
         <div class="w-full flex flex-col">
             <span
@@ -270,13 +134,13 @@
         <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
 
             <div
-                class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+                class="swiper NewSwiper w-full bg-white border pt-4 pb-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
                 <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $event_img = get_field('event_image'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low" />
                         </div>
@@ -287,7 +151,7 @@
                         <?php $event_img = get_field('event_image_1'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -297,7 +161,7 @@
                         <?php $event_img = get_field('event_image_2'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -307,7 +171,7 @@
                         <?php $event_img = get_field('event_image_3'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -317,7 +181,7 @@
                         <?php $event_img = get_field('event_image_4'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -327,7 +191,7 @@
                         <?php $event_img = get_field('event_image_5'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -337,7 +201,7 @@
                         <?php $event_img = get_field('event_image_6'); ?>
                         <?php if ($event_img): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361"
+                            <img src="<?php echo esc_url($event_img['url']); ?>" alt="HABITia 2024 entrepreneurship event" title="HABITia 2024 entrepreneurship event" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -371,7 +235,7 @@
 
                 <!-- <?php if ($event_img): ?>
                 <div class="w-full flex justify-center lg:hidden">
-                    <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" width="361" height="156"
+                    <img src="<?php echo esc_url($event_img['url']); ?>" alt="Event Image" title="Event Image" width="361" height="156"
                         class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
                 </div>
                 <?php endif; ?> -->
@@ -395,14 +259,14 @@
             </div>
 
             <div
-                class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+                class="swiper NewSwiper w-full bg-white border pt-4 pb-4 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
 
                 <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $orientation_image = get_field('orientation_image'); ?>
                         <?php if ($orientation_image): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientation Image"
+                            <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="HABIT Orientation for aspiring changemakers" title="HABIT Orientation for aspiring changemakers"
                                 width="361" height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -412,7 +276,7 @@
                         <?php $orientation_image_2 = get_field('orientation_image_2'); ?>
                         <?php if ($orientation_image_2): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($orientation_image_2['url']); ?>" alt="Orientation Image"
+                            <img src="<?php echo esc_url($orientation_image_2['url']); ?>" alt="HABIT Orientation for aspiring changemakers" title="HABIT Orientation for aspiring changemakers"
                                 width="361" height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -423,7 +287,7 @@
                         <?php $orientation_image_3 = get_field('orientation_image_3'); ?>
                         <?php if ($orientation_image_3): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($orientation_image_3['url']); ?>" alt="Orientation Image"
+                            <img src="<?php echo esc_url($orientation_image_3['url']); ?>" alt="HABIT Orientation for aspiring changemakers" title="HABIT Orientation for aspiring changemakers"
                                 width="361" height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -433,7 +297,7 @@
                         <?php $orientation_image_4 = get_field('orientation_image_4'); ?>
                         <?php if ($orientation_image_4): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($orientation_image_4['url']); ?>" alt="Orientation Image"
+                            <img src="<?php echo esc_url($orientation_image_4['url']); ?>" alt="HABIT Orientation for aspiring changemakers" title="HABIT Orientation for aspiring changemakers"
                                 width="361" height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -443,7 +307,7 @@
                         <?php $orientation_image_5 = get_field('orientation_image_5'); ?>
                         <?php if ($orientation_image_5): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($orientation_image_5['url']); ?>" alt="Orientation Image"
+                            <img src="<?php echo esc_url($orientation_image_5['url']); ?>" alt="HABIT Orientation for aspiring changemakers" title="HABIT Orientation for aspiring changemakers"
                                 width="361" height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -477,7 +341,7 @@
 
                 <!-- <?php if ($orientation_image): ?>
                 <div class="w-full flex justify-center lg:hidden">
-                    <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="Orientation Image" width="361"
+                    <img src="<?php echo esc_url($orientation_image['url']); ?>" alt="HABIT Orientation for aspiring changemakers" title="HABIT Orientation for aspiring changemakers" width="361"
                         height="156"
                         class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
                 </div>
@@ -500,13 +364,13 @@
             </div>
 
             <div
-                class="swiper NewSwiper w-full bg-white border py-6 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
+                class="swiper NewSwiper w-full bg-white border pt-4 pb-4 px-4 rounded-md shadow-md flex flex-col items-start gap-3">
                 <div class="swiper-wrapper h-auto">
                     <div class="swiper-slide w-full justify-center">
                         <?php $patent_image = get_field('patent_image'); ?>
                         <?php if ($patent_image): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($patent_image['url']); ?>" alt="Patent Image" width="361"
+                            <img src="<?php echo esc_url($patent_image['url']); ?>" alt="HABIT Patent Horizon innovation support" title="HABIT Patent Horizon innovation support"  width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -517,7 +381,7 @@
                         <?php $patent_image_1 = get_field('patent_image_1'); ?>
                         <?php if ($patent_image_1): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($patent_image_1['url']); ?>" alt="Patent Image" width="361"
+                            <img src="<?php echo esc_url($patent_image_1['url']); ?>" alt="HABIT Patent Horizon innovation support" title="HABIT Patent Horizon innovation support" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -528,7 +392,7 @@
                         <?php $patent_image_2 = get_field('patent_image_2'); ?>
                         <?php if ($patent_image_2): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($patent_image_2['url']); ?>" alt="Patent Image" width="361"
+                            <img src="<?php echo esc_url($patent_image_2['url']); ?>" alt="HABIT Patent Horizon innovation support" title="HABIT Patent Horizon innovation support" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -539,7 +403,7 @@
                         <?php $patent_image_3 = get_field('patent_image_3'); ?>
                         <?php if ($patent_image_3): ?>
                         <div class="w-full flex justify-center">
-                            <img src="<?php echo esc_url($patent_image_3['url']); ?>" alt="Patent Image" width="361"
+                            <img src="<?php echo esc_url($patent_image_3['url']); ?>" alt="HABIT Patent Horizon innovation support" title="HABIT Patent Horizon innovation support" width="361"
                                 height="156"
                                 class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top" loading="lazy" fetchpriority="low"/>
                         </div>
@@ -574,7 +438,7 @@
 
                 <!-- <?php if ($patent_image): ?>
                 <div class="w-full flex justify-center lg:hidden">
-                    <img src="<?php echo esc_url($patent_image['url']); ?>" alt="Patent Image" width="361" height="156"
+                    <img src="<?php echo esc_url($patent_image['url']); ?>" alt="HABIT Patent Horizon innovation support" title="HABIT Patent Horizon innovation support" width="361" height="156"
                         class="w-full rounded-md shadow aspect-[361/156] h-auto object-cover object-top " />
                 </div>
                 <?php endif; ?> -->
@@ -629,7 +493,7 @@
             $logo = get_field($field_name);
             if ($logo) {
                 echo '<div class="lg:px-12 px-6">';
-                echo '<img src="' . esc_url($logo['url']) . '" alt="Partner Logo" title="Partner Logo" width="133" height="120" class="max-w-full max-h-[120px] object-contain" />';
+                echo '<img src="' . esc_url($logo['url']) . '" alt="HABIT Foundation ecosystem partners" title="HABIT Foundation ecosystem partners" width="133" height="120" class="max-w-full max-h-[120px] object-contain" />';
                 echo '</div>';
                 $i++;
             }

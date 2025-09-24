@@ -9,6 +9,11 @@
   clip-path: polygon(0 100%, 100% 100%, 0 0);
 }
 
+header, .site-header, .navbar {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 @keyframes animateImg {
   0% {
     background-size: 100%;
