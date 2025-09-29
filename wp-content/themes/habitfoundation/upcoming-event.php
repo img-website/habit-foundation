@@ -11,10 +11,10 @@ get_header();?>
     </div>
     <?php endif; ?>
     <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <h2 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
+        <h1 class="text-white text-2xl sm:text-3xl  md:text-5xl font-bold lg:mb-4 mb-2 text-center justify-center">
             <?php the_field('upcoming_events_heading'); ?>
             <span class="text-[lime-500]"><?php the_field('events_highlight'); ?></span>
-        </h2>
+        </h1>
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>"
                 class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
@@ -38,20 +38,17 @@ get_header();?>
         </div>
         <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
             <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] py-6 px-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-center gap-2 md:gap-2.5">
-                <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
-                    data-tab="design-tab">Design Thinking Workshop</button>
+                <h3 class="design-tab-btn text-base lg:text-base font-semibold py-3" data-tab="design-tab">Design Thinking Workshop</h3>
                 <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
             </div>
 
             <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] py-6 px-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-center gap-2 md:gap-2.5">
-                <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
-                    data-tab="design-tab">Patent Awareness Session</button>
+                <h3 class="design-tab-btn text-base lg:text-base font-semibold py-3" data-tab="design-tab">Patent Awareness Session</h3>
                 <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
             </div>
             
             <div class="bg-gradient-to-r from-[#e7e7e7] to-[#efd8d8] rounded-[10px] py-6 px-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col items-center gap-2 md:gap-2.5">
-                <button class="design-tab-btn text-base lg:text-base font-semibold py-3"
-                    data-tab="design-tab">Session on Startup Regulatory Compliance</button>
+                <h3 class="design-tab-btn text-base lg:text-base font-semibold py-3" data-tab="design-tab">Session on Startup Regulatory Compliance</h3>
                 <a href="<?php the_field('upcoming_events_link'); ?>" class="px-4 py-3 border border-[#b93b41] text-[#b93b41] font-medium rounded-sm text-sm text-center flex items-center justify-center mx-auto"><?php the_field('upcoming_events_text'); ?></a>
             </div>
         </div>
