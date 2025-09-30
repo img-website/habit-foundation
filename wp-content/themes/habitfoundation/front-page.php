@@ -20,9 +20,9 @@
                     class="font-medium flex items-center inline-block bg-[#bf4b50] py-[5px] px-7 rounded-full text-white rounded-full w-fit lg:text-3xl md:text-2xl text-xl mb-[15px] tracking-[1px] leading-[1.5] mb-6">
                     <?php the_field('company_badge'); ?>
                 </span>
-                <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
+                <div class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] mb-4">
                     <?php the_field('company_heading'); ?>
-                </h2>
+                </div>
                 <div class="lg:w-2/5 md:2/5 w-full flex flex-col lg:hidden mb-4">
                     <?php $img = get_field('company_image'); ?>
                     <?php if ($img): ?>
@@ -30,8 +30,11 @@
                         height="414" class="w-full rounded-md" loading="eager" fetchpriority="high">
                     <?php endif; ?>
                 </div>
-                <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
+                <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-3 mb-2">
                     <?php the_field('company_mission'); ?></p>
+                <h2 class="lg:text-2xl md:text-xl text-lg !leading-normal font-semibold text-[#2a1313] lg:mb-3 mb-2">
+                    Why Choose Our Startup Incubator in Mumbai
+                </h2>
                 <p class="font-normal md:text-base text-sm text-justify text-[#4c4949] !leading-7 lg:mb-6 mb-4">
                     <?php the_field('company_mission2'); ?></p>
 

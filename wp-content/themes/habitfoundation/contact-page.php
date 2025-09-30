@@ -33,7 +33,8 @@
             </span> -->
             <h2
                 class="lg:text-2xl md:text-xl text-lg !leading-normal text-center font-semibold text-[#2a1313] lg:mb-8 mb-4">
-                <?php the_field('contact_sec_heading'); ?>
+                <!-- <?php the_field('contact_sec_heading'); ?> -->
+                 Apply to Join Our Startup Incubation Program
             </h2>
         </div>
         <div class="w-full flex items-center flex-row justify-center lg:gap-4 gap-2 lg:pb-8 pb-6">

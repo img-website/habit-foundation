@@ -353,9 +353,9 @@ function habit_footer_shortcode() {
     <div class="max-w-7xl mx-auto px-4 lg:px-6 relative z-20">
         <div class="flex flex-row flex-wrap lg:flex-nowrap items-start gap-8">
             <div class="lg:w-2/5 w-full">
-                <h3
+                <div
                     class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">
-                    Contact Info</h3>
+                    Contact Info</div>
                 <ul class="space-y-3 text-sm/6 text-gray-300 tracking-[0.8px]">
                     <li class="inline-flex items-start gap-2">
                         <svg class="w-6 h-6 text-[#bf4b50]" stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -399,9 +399,9 @@ function habit_footer_shortcode() {
             </div>
 
             <div class="lg:w-1/4 md:w-1/2 w-full">
-                <h3
+                <div
                     class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">
-                    About HABIT</h3>
+                    About HABIT</div>
                 <div class="flex items-start lg:gap-6 gap-3">
                     <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
                         <li><a href="https://project.imgglobal.in/habit-foundation/about-us/"
@@ -421,9 +421,9 @@ function habit_footer_shortcode() {
             </div>
 
             <div class="lg:w-1/4 md:w-1/2 w-full">
-                <h3
+                <div
                     class="text-lg inline-block text-center font-medium tracking-[2.4px] leading-[1.5] mb-4 relative before:absolute before:left-[-12px] before:top-[2px] before:bg-[#bf4b50] before:translateY-1/2 before:h-5 before:w-1 text-white">
-                    Follow Us On</h3>
+                    Follow Us On</div>
                 <div class="flex items-center gap-3">
 
                     <a href="https://www.facebook.com/people/Habit-Foundation/61570220092085" target="_blank"
