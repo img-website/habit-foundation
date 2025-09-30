@@ -556,9 +556,9 @@
                                                                 <div class="flex flex-col gap-3">
                                                                     <div class="flex flex-col gap-3 md:gap-4">
                                                                         <!-- Title -->
-                                                                        <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                        <h3 class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                             <?php the_field('infra_title1'); ?>
-                                                                        </div>
+                                                                        </h3>
 
                                                                         <!-- Description -->
                                                                         <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
@@ -586,9 +586,9 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <h3 class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title2'); ?>
-                                                                                </div>
+                                                                                </h3>
 
                                                                                 <!-- Description -->
                                                                                 <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
@@ -616,9 +616,9 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <h3 class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title3'); ?>
-                                                                                </div>
+                                                                                </h3>
 
                                                                                 <!-- Description -->
                                                                                 <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
@@ -646,9 +646,9 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <h3 class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title4'); ?>
-                                                                                </div>
+                                                                                </h3>
 
                                                                                 <!-- Description -->
                                                                                 <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">
@@ -676,9 +676,9 @@
                                                                         <div class="flex flex-col gap-3">
                                                                             <div class="flex flex-col gap-3 md:gap-4">
                                                                                 <!-- Title -->
-                                                                                <div class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
+                                                                                <h3 class="relative text-base md:text-lg font-semibold transition-all duration-500 before:absolute before:top-[28px] md:before:top-[30px] xl:before:top-[32px] before:left-0 md:before:left-0 before:w-[78px] before:h-1 before:bg-[linear-gradient(89deg,#bf4b50,#e9bfc1)] before:bg-no-repeat before:bg-origin-padding before:transition-ease">
                                                                                     <?php the_field('infra_title5'); ?>
-                                                                                </div>
+                                                                            </h3>
 
                                                                                 <!-- Description -->
                                                                                 <div class="font-normal text-[#4c4949] w-full md:text-base text-sm tracking-[0.3px] !leading-7 text-justify grow">

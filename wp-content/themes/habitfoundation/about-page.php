@@ -498,7 +498,7 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_1_name'); ?></h3>
+                        <?php the_field('leadership_team_1_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_1_designation'); ?></p>
                 </div>
@@ -523,10 +523,10 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_2_name'); ?></h3>
+                        <?php the_field('leadership_team_2_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_2_designation'); ?>
-                    </p>
+                    </h4>
                 </div>
                 <!-- <a href="<?php the_field('leadership_team_linkedin2'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                     <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
@@ -549,7 +549,7 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_3_name'); ?></h3>
+                        <?php the_field('leadership_team_3_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_3_designation'); ?></p>
                 </div>
@@ -574,10 +574,10 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_4_name'); ?></h3>
+                        <?php the_field('leadership_team_4_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_4_designation'); ?>
-                    </p>
+                    </h4>
                 </div>
                 <a href="<?php the_field('leadership_team_linkedin4'); ?>" target="_blank" class="!leading-8 border border-[#0077B5] flex items-center p-2 -mt-1">
                     <svg class="text-[#0077B5] size-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
@@ -600,7 +600,7 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_5_name'); ?></h3>
+                        <?php the_field('leadership_team_5_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_5_designation'); ?></p>
                 </div>
@@ -624,7 +624,7 @@ get_header();?>
                     <div class="flex flex-col gap-y-1">
                         <h3
                             class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                            <?php the_field('leadership_team_6_name'); ?></h3>
+                            <?php the_field('leadership_team_6_name'); ?></h4>
                         <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                             <?php the_field('leadership_team_6_designation'); ?></p>
                     </div>
@@ -649,7 +649,7 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_7_name'); ?></h3>
+                        <?php the_field('leadership_team_7_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_7_designation'); ?></p>
                 </div>
@@ -674,7 +674,7 @@ get_header();?>
                 <div class="flex flex-col gap-y-1">
                     <h3
                         class="font-medium text-[#2a1313] text-start lg:text-lg text-sm !leading-8 duration-300 pe-2 md:group-hover:text-[#bf4b50]">
-                        <?php the_field('leadership_team_8_name'); ?></h3>
+                        <?php the_field('leadership_team_8_name'); ?></h4>
                     <p class="font-medium text-gray-800 lg:text-base text-sm pe-3">
                         <?php the_field('leadership_team_8_designation'); ?></p>
                 </div>
@@ -726,30 +726,30 @@ get_header();?>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const popupForm = document.querySelector('#popup2 form.wpcf7-form');
+    document.addEventListener('DOMContentLoaded', function () {
+        const popupForm = document.querySelector('#popup2 form.wpcf7-form');
 
-    if (popupForm) {
-        // Listen to Contact Form 7's submit event
-        document.addEventListener('wpcf7submit', function (event) {
-            if (!popupForm.contains(event.target)) return;
+        if (popupForm) {
+            // Listen to Contact Form 7's submit event
+            document.addEventListener('wpcf7submit', function (event) {
+                if (!popupForm.contains(event.target)) return;
 
-            console.log("CF7 form successfully submitted");
+                console.log("CF7 form successfully submitted");
 
-            const localStorageLink = localStorage.getItem('childPdfLink');
-            if (localStorageLink) {
-                const downloadUrl = localStorageLink.replace('preview', 'export?format=pdf');
+                const localStorageLink = localStorage.getItem('childPdfLink');
+                if (localStorageLink) {
+                    const downloadUrl = localStorageLink.replace('preview', 'export?format=pdf');
 
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                link.download = 'DownloadedFile.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        }, false);
-    }
-});
+                    const link = document.createElement('a');
+                    link.href = downloadUrl;
+                    link.download = 'DownloadedFile.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            }, false);
+        }
+    });
 </script>
 
 <script>

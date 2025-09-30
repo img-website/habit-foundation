@@ -189,9 +189,9 @@ get_header();?>
                                             <div
                                                 class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                                 <div class="flex flex-col gap-y-1 my-4">
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_1'); ?></h4>
+                                                        <?php the_field('event_title_1'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_1'); ?>
@@ -239,9 +239,9 @@ get_header();?>
                                                 class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_2'); ?></h4>
+                                                        <?php the_field('event_title_2'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_2'); ?></p>
@@ -290,9 +290,9 @@ get_header();?>
                                                 
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_3'); ?></h4>
+                                                        <?php the_field('event_title_3'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_3'); ?></p>
@@ -339,9 +339,9 @@ get_header();?>
                                                 class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_4'); ?></h4>
+                                                        <?php the_field('event_title_4'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_4'); ?></p>
@@ -383,9 +383,9 @@ get_header();?>
                                                 
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <!-- <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_1'); ?></span> -->
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_5'); ?></h4>
+                                                        <?php the_field('event_title_5'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_5'); ?></p>
@@ -426,9 +426,9 @@ get_header();?>
                                                 class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                                 
                                                 <div class="flex flex-col gap-y-1 my-4">
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_6'); ?></h4>
+                                                        <?php the_field('event_title_6'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_6'); ?></p>
@@ -494,8 +494,8 @@ get_header();?>
                                                 class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_2'); ?></span>
-                                                    <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_7'); ?></h4>
+                                                    <h3 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                        <?php the_field('event_title_7'); ?></h3>
                                                     <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_7'); ?></p>
                                                 </div>
@@ -568,9 +568,9 @@ get_header();?>
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <span
                                                         class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_10'); ?></h4>
+                                                        <?php the_field('event_title_10'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_10'); ?></p>
@@ -633,9 +633,9 @@ get_header();?>
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <span
                                                         class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_9'); ?></h4>
+                                                        <?php the_field('event_title_9'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_9'); ?></p>
@@ -685,9 +685,9 @@ get_header();?>
                                                 <div class="flex flex-col gap-y-1 my-4">
                                                     <span
                                                         class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                                    <h4
+                                                    <h3
                                                         class="lg:text-xl md:text-lg text-base text-start text-lg font-semibold text-[#2a1313] mb-2">
-                                                        <?php the_field('event_title_11'); ?></h4>
+                                                        <?php the_field('event_title_11'); ?></h3>
                                                     <p
                                                         class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                         <?php the_field('event_description_11'); ?></p>
@@ -749,9 +749,9 @@ get_header();?>
                                         <div class="flex flex-col gap-y-1 my-4">
                                                 <span
                                                     class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                                <h4
+                                                <h3
                                                     class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                    <?php the_field('event_title_8'); ?></h4>
+                                                    <?php the_field('event_title_8'); ?></h3>
                                                 <p
                                                     class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                     <?php the_field('event_description_8'); ?></p>
@@ -824,9 +824,9 @@ get_header();?>
                                         <div class="flex flex-col gap-y-1 my-4">
                                             <span
                                                 class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                            <h4
+                                            <h3
                                                 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                <?php the_field('event_title_13'); ?></h4>
+                                                <?php the_field('event_title_13'); ?></h3>
 
                                             <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                 <?php the_field('event_description_12'); ?></p>
@@ -935,8 +935,8 @@ get_header();?>
                                 <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                     <div class="flex flex-col gap-y-1 my-4">
                                         <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                        <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                            <?php the_field('event_title_13'); ?></h4>
+                                        <h3 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('event_title_13'); ?></h3>
 
                                         <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                             <?php the_field('event_description_13'); ?></p>
@@ -1142,8 +1142,8 @@ get_header();?>
                                 <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                     <div class="flex flex-col gap-y-1 my-4">
                                         <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                        <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                            <?php the_field('event_title_14'); ?></h4>
+                                        <h3 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                            <?php the_field('event_title_14'); ?></h3>
 
                                         <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                             <?php the_field('event_description_14'); ?></p>
@@ -1206,8 +1206,8 @@ get_header();?>
                                     <div class="w-full h-full flex flex-col bg-white rounded-2xl border-t border-[#b5474c] border-t-4 shadow-[0px_8px_24px_rgba(149,_157,_165,_0.4)] backdrop-blur-3xl backdrop-saturate-[180%] duration-300 group lg:px-5 lg:py-6 px-4 py-4 mb-4">
                                         <div class="flex flex-col gap-y-1 my-4">
                                             <span class="rounded-full text-[#bf4b50] text-base lg:text-lg font-semibold flex items-start text-start inline-block leading-[1.5]"><?php the_field('event_sub_heading_3'); ?></span>
-                                            <h4 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
-                                                <?php the_field('event_title_15'); ?></h4>
+                                            <h3 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313] mb-2">
+                                                <?php the_field('event_title_15'); ?></h3>
 
                                             <p class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7 grow">
                                                 <?php the_field('event_description_15'); ?>

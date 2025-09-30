@@ -138,6 +138,27 @@
                     </div>
                 </div>
         </div>
+        <div class="flex flex-wrap items-stretch bg-white border-t-[12px] border-[#e09900] lg:py-4 py-2 px-3 rounded-sm lg:shadow-none shadow-lg">
+                <div class="md:w-1/5 w-full max-md:order-first flex items-center justify-center p-3 lg:my-0 mb-6">
+                    <div class="py-1 px-1 w-full">
+                        <?php 
+                        $image = get_field('mentoring_session_image_5');
+                        if ($image): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" 
+                                alt="<?php echo esc_attr($image['alt']); ?>" 
+                                class="w-full shadow aspect-[190/190] h-auto object-contain object-top rounded-3xl" width="300" height="500" loading="lazy" fetchpriority="low"/>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="md:w-4/5 w-full lg:bg-white rounded-3xl lg:py-6 px-6">
+                    <h3 class="w-full lg:text-xl md:text-lg text-base !leading-normal text-start font-semibold mx-auto mb-2 text-[#b93a40] relative z-10">
+                        <?php the_field('mentoring_session_Title_5'); ?> 
+                    </h3>
+                    <div class="font-normal text-[#4c4949] w-full md:text-base text-sm text-justify !leading-7">
+                        <?php the_field('session_description_4'); ?> 
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
 </section>

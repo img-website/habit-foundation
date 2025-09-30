@@ -232,8 +232,8 @@
                 </div>
 
                 <?php if (get_field('event_heading')): ?>
-                <h2 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]">
-                    <?php the_field('event_heading'); ?></h2>
+                <h3 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]">
+                    <?php the_field('event_heading'); ?></h3>
                 <?php endif; ?>
 
                 <!-- <?php if ($event_img): ?>
@@ -338,8 +338,8 @@
                 </div>
 
                 <?php if (get_field('orientation_heading')): ?>
-                <h2 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
-                    <?php the_field('orientation_heading'); ?></h2>
+                <h3 class="lg:text-xl md:text-lg text-base text-lg font-semibold text-[#2a1313]">
+                    <?php the_field('orientation_heading'); ?></h3>
                 <?php endif; ?>
 
                 <!-- <?php if ($orientation_image): ?>
@@ -434,9 +434,9 @@
                     </button>
                 </div>
                 <?php if (get_field('patent_heading')): ?>
-                <h2 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]">
+                <h3 class="lg:text-xl md:text-lg text-base font-semibold text-[#2a1313]">
                     <?php the_field('patent_heading'); ?>
-                </h2>
+                </h3>
                 <?php endif; ?>
 
                 <!-- <?php if ($patent_image): ?>
