@@ -100,3 +100,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+
+// Load .env file
+if (file_exists(__DIR__ . '/.env')) {
+    $env = parse_ini_file(__DIR__ . '/.env');
+    foreach ($env as $key => $value) {
+        putenv("$key=$value");
+    }
+}
+
+// Set environment
+$env = getenv('WP_ENV') ?: 'production';
+
+// Override WordPress URLs
+if (getenv('WP_HOME')) {
+    define('WP_HOME', getenv('WP_HOME'));
+}
+if (getenv('WP_SITEURL')) {
+    define('WP_SITEURL', getenv('WP_SITEURL'));
+}
