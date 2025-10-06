@@ -31,11 +31,11 @@ function habit_custom_header_shortcode() {
     class="w-full relative bg-white shadow-[0px_4px_4px_0px_#0000001F] border-b-[3px] border-[#b93a40] sticky top-0 z-40">
     <div class="max-w-7xl mx-auto lg:px-4 lg:px-6 lg:py-2 flex justify-between items-center ">
         <div class="flex items-center">
-            <a href="https://project.imgglobal.in/habit-foundation" class="hidden lg:block w-20 cursor-pointer">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hidden lg:block w-20 cursor-pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png"
                 alt="Habit Foundation Logo" class="w-full h-auto" />
             </a>
-            <a href="https://project.imgglobal.in/habit-foundation" class="block lg:hidden w-full cursor-pointer">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="block lg:hidden w-full cursor-pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-header.webp"
                 alt="Habit Foundation Mobile Logo" class="max-w-full object-cover h-full aspect-[1100/160]"
                 width="1100" height="160" />
@@ -44,19 +44,19 @@ function habit_custom_header_shortcode() {
         <nav class="lg:flex justify-center mx-auto hidden">
             <ul class="lg:flex items-center space-x-10">
                 <li>
-                    <a href="https://project.imgglobal.in/habit-foundation/about-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
+                    <a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
                         duration-300">
                             About Us
                     </a>
                 </li>
                 <li>
-                    <a href="https://project.imgglobal.in/habit-foundation/focus/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
+                    <a href="<?php echo esc_url( home_url( '/focus/' ) ); ?>" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] 
                     duration-300">Focus
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://project.imgglobal.in/habit-foundation/benefits/"
+                    <a href="<?php echo esc_url( home_url( '/benefits/' ) ); ?>"
                         class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits
                     </a>
                 </li>
@@ -77,7 +77,7 @@ function habit_custom_header_shortcode() {
                     <ul
                         class="bg-white w-52 absolute top-[3.2rem] -left-5 rounded-md p-0 opacity-0 z-40 transition-all translate-y-4 shadow-[0px_7px_10px_-1px_rgba(0,0,0,0.2)] invisible group-hover/cs:visible group-hover/cs:opacity-100">
                         <li class="relative">
-                            <a href="https://project.imgglobal.in/habit-foundation/key-event/" class="w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <a href="<?php echo esc_url( home_url( '/key-event/' ) ); ?>" class="w-full py-4 px-5 flex items-center gap-2 rounded-tr-md font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowra hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
                                 <span class="*:size-5 inline-block *:text-black">
                                 <svg stroke="currentColor" fill="none"
                                     stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
@@ -93,7 +93,7 @@ function habit_custom_header_shortcode() {
                             </a>
                         </li>
                         <li class="relative">
-                            <a href="https://project.imgglobal.in/habit-foundation/other-event" class=" w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <a href="<?php echo esc_url( home_url( '/other-event/' ) ); ?>" class=" w-full py-4 px-5 flex items-center gap-2 border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
                                 <span class="*:size-5 inline-block *:text-black">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                     stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px"
@@ -113,7 +113,7 @@ function habit_custom_header_shortcode() {
                             </a>
                         </li>
                         <li class="relative">
-                            <a href="https://project.imgglobal.in/habit-foundation/upcoming-event" class=" w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
+                            <a href="<?php echo esc_url( home_url( '/upcoming-event/' ) ); ?>" class=" w-full py-4 px-5 flex items-center gap-2 rounded-br-md border-t border-gray-200 font-semibold text-black font-semibold text-sm !leading-7 duration-500 whitespace-nowrap hover:ps-[46px] hover:bg-[#bd686b2e] cursor-pointer">
                                 <span class="*:size-5 inline-block *:text-black">
                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                                     height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +131,7 @@ function habit_custom_header_shortcode() {
                 </li>
 
                 <li>
-                    <a href="https://project.imgglobal.in/habit-foundation/contact-us/" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact
+                    <a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>" class="relative text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact
                     Us
                     </a>
                 </li>
@@ -196,7 +196,7 @@ function habit_custom_header_shortcode() {
 
         <!-- Header with Close -->
         <div class="flex justify-between items-center p-4 border-b">
-            <a href="https://project.imgglobal.in/habit-foundation" class="cursor-pointer block h-auto w-full"> <img
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="cursor-pointer block h-auto w-full"> <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/Habit-LOGO.png"
                     alt="Habit Foundation Logo" class="sm:w-16 w-12" /></a>
 
@@ -206,16 +206,16 @@ function habit_custom_header_shortcode() {
         <!-- Navigation Links -->
         <ul class="flex flex-col p-4 space-y-4 h-[28rem] overflow-y-auto">
             <li class="relative flex flex-col">
-                <a href="https://project.imgglobal.in/habit-foundation/about-us"
+                <a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>"
                     class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">About Us</a>
             </li>
 
             <li class="relative flex flex-col">
-                <a href="https://project.imgglobal.in/habit-foundation/focus" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Focus</a>
+                <a href="<?php echo esc_url( home_url( '/focus/' ) ); ?>" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Focus</a>
             </li>
             
             <li class="relative flex flex-col">
-                <a href="https://project.imgglobal.in/habit-foundation/benefits/" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
+                <a href="<?php echo esc_url( home_url( '/benefits/' ) ); ?>" class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Benefits</a>
             </li>
             <li class="relative flex flex-col">
                 <input type="checkbox" id="events-toggle" class="peer hidden">
@@ -246,7 +246,7 @@ function habit_custom_header_shortcode() {
                                 <path d="m9 16 2 2 4-4"></path>
                             </svg>
                         </span>
-                        <a href="https://project.imgglobal.in/habit-foundation/key-event/"
+                        <a href="<?php echo esc_url( home_url( '/key-event/' ) ); ?>"
                                 class="md:hover:text-white">Key Events</a>
                     </li>
 
@@ -267,7 +267,7 @@ function habit_custom_header_shortcode() {
                                 <path d="M16 18h.01"></path>
                             </svg>
                         </span>
-                        <a href="https://project.imgglobal.in/habit-foundation/other-event"
+                        <a href="<?php echo esc_url( home_url( '/other-event/' ) ); ?>"
                                 class="md:hover:text-white">Other Events</a>
                     </li>
 
@@ -282,13 +282,13 @@ function habit_custom_header_shortcode() {
                                 </path>
                             </svg>
                         </span>
-                        <a href="https://project.imgglobal.in/habit-foundation/upcoming-event"
+                        <a href="<?php echo esc_url( home_url( '/upcoming-event/' ) ); ?>"
                                 class="md:hover:text-white">Upcoming Events</a>
                     </li>
                 </ul>
             </li>
             <li class="relative flex flex-col ">
-                <a href="https://project.imgglobal.in/habit-foundation/contact-us"
+                <a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"
                 class="relative flex items-center gap-1 text-[#0c0c0c] xl:text-[18px] lg:text-[15px] text-sm !leading-6 font-semibold hover:text-[#bf4b50] tracking-[0.5px] duration-300">Contact Us</a>
             </li>
             
@@ -298,7 +298,7 @@ function habit_custom_header_shortcode() {
     <div id="drawerOverlay" class="fixed inset-0 bg-black bg-opacity-20 hidden z-30"></div>
 
 </header>
-
+    
 <?php
     return ob_get_clean();
 }
@@ -323,7 +323,7 @@ function habit_orientation_section_shortcode() {
                 Get the support, tools, and mentorship you need
             </h2>
 
-            <a href="https://project.imgglobal.in/habit-foundation/about-us/"
+            <a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>"
                 class="w-fit inline-flex items-center shadow py-2 lg:ps-6 lg:pe-3 ps-4 pe-2 bg-[#bf4b50] text-white rounded-full ring-2 ring-inset ring-[#bf4b50] hover:ring-[#525252] hover:-translate-y-2 text-sm duration-500 transition-all hover:bg-gradient-to-r hover:from-[#000000] hover:to-[#545454]">
                     Know More
                 <span class="bg-white rounded-full p-2 ms-3">
@@ -390,7 +390,7 @@ function habit_footer_shortcode() {
                         <div
                             class="text-gray-300 text-xs lg:text-[15px] sm:w-2/3 w-full text-start leading-6 whitespace-nowrap">
                             Website:
-                            <a href="https://habitfoundation.in/" class="text-[#b0c8ff]">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="text-[#b0c8ff]">
                                 https://habitfoundation.in/ </a><br>
                         </div>
                     </li>
@@ -402,18 +402,13 @@ function habit_footer_shortcode() {
                     About HABIT</div>
                 <div class="flex items-start lg:gap-6 gap-3">
                     <ul class="space-y-2 text-sm/6 text-gray-300 tracking-[0.8px]">
-                        <li><a href="https://project.imgglobal.in/habit-foundation/about-us/"
-                                class="md:hover:text-white">About Us</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/focus"
-                                class="md:hover:text-white">Focus</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/benefits/" class="md:hover:text-white">Benefits</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/contact-us" class="md:hover:text-white">Contact Us</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/key-event/"
-                                class="md:hover:text-white">Key Events</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/other-event"
-                                class="md:hover:text-white">Other Events</a></li>
-                        <li><a href="https://project.imgglobal.in/habit-foundation/upcoming-event"
-                                class="md:hover:text-white">Upcoming Events</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>"class="md:hover:text-white">About Us</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/focus/' ) ); ?>"class="md:hover:text-white">Focus</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/benefits/' ) ); ?>" class="md:hover:text-white">Benefits</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>" class="md:hover:text-white">Contact Us</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/key-event/' ) ); ?>"class="md:hover:text-white">Key Events</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/other-event/' ) ); ?>"class="md:hover:text-white">Other Events</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/upcoming-event/' ) ); ?>"class="md:hover:text-white">Upcoming Events</a></li>
                     </ul>
                 </div>
             </div>

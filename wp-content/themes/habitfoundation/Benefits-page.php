@@ -17,7 +17,7 @@
         <div class="flex items-center text-white text-sm font-medium space-x-2 justify-center">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="text-sm font-medium inline-block hover:underline lg:text-base font-medium tracking-[0.8px]">Home</a>
             <span class="font-medium inline-block text-[#bf4b50]">—</span>
-            <a href="https://project.imgglobal.in/habit-foundation/benefits/">
+            <a href="<?php echo esc_url(home_url('/benefits/')); ?>">
             <span class="text-sm font-medium inline-block text-[#bf4b50] lg:text-base font-medium tracking-[0.8px]"><?php the_field('breadcrumb_label_benefits'); ?></span>
             </a>
         </div>
